@@ -6,3 +6,5 @@ tests/
 __pycache__/
 *.pyc
 *.bak
+.greennode.json
+.agentbase/
