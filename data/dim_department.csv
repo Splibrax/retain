@@ -1,0 +1,87 @@
+dept_code,dept_name,dept_short_name,parent_dept_code,business_unit,org_level,region,is_active
+01CN000025,Ngân hàng Đối tác Chiến lược,CN,01MK000001,Ngân hàng Đối tác Chiến lược,1.0,HSC01,1
+01CN000004,Ban Bảo lãnh và Tài trợ Xuất nhập khẩu Cấp 2,B. BLTTXNK,01CN000025,Ngân hàng Đối tác Chiến lược,2.0,HSC01,1
+01CN000058,Phòng Kênh Phân phối Đối tác Cấp 3,P. KPPĐT,01CN000025,Ngân hàng Đối tác Chiến lược,2.0,HSC01,1
+01CN000068,Ban Quản lý Danh mục,B. QLDM,01CN000025,Ngân hàng Đối tác Chiến lược,2.0,HSC01,1
+01CN000028,Trung tâm Khách hàng Lớn Cấp 2,TT KHL,01CN000025,Ngân hàng Đối tác Chiến lược,2.0,HSC01,1
+01CN000057,Phòng Quản lý Chất lượng Dịch vụ Miền Trung,P. QLCLDV,01CN000025,Ngân hàng Đối tác Chiến lược,2.0,HSC01,1
+01CN000077,Phòng Thẩm định Khách hàng Khu vực 2,P. TĐKH,01CN000025,Ngân hàng Đối tác Chiến lược,2.0,HSC01,1
+01CN000078,Phòng Phân tích Kinh doanh Cấp 1,P. PTKD,01CN000028,Ngân hàng Đối tác Chiến lược,3.0,HSC01,1
+01CN000032,Phòng Hỗ trợ Tín dụng Khu vực 1,P. HTTD,01CN000028,Ngân hàng Đối tác Chiến lược,3.0,HNO01,1
+01CN000071,Tổ Quan hệ Đối tác Chiến lược Miền Trung,T. QHĐTCL,01CN000028,Ngân hàng Đối tác Chiến lược,3.0,HNO01,1
+01CN000054,Phòng Quản lý Định phí Khu vực 1,P. QLĐP,01CN000028,Ngân hàng Đối tác Chiến lược,3.0,HNO01,1
+01CN000050,Phòng Khách hàng Lớn Khu vực 2,P. KHL,01CN000028,Ngân hàng Đối tác Chiến lược,3.0,HNO01,1
+01CN000017,Phòng Điều phối Hoạt động Kinh doanh Miền Nam,P. ĐPHĐKD,01CN000028,Ngân hàng Đối tác Chiến lược,3.0,HNO01,1
+01CN000042,Tổ Thẩm định Khách hàng Cấp 1,T. TĐKH,01CN000028,Ngân hàng Đối tác Chiến lược,3.0,HNO01,1
+01CN000053,Tổ Phát triển Sản phẩm Cấp 1,T. PTSP,01CN000028,Ngân hàng Đối tác Chiến lược,3.0,HCM01,1
+01CN000048,Phòng Khách hàng Tổ chức Miền Bắc,P. KHTC,01CN000028,Ngân hàng Đối tác Chiến lược,3.0,HCM01,1
+01CN000029,Phòng Khách hàng Vừa và Nhỏ Khu vực 2,P. KHN,01CN000028,Ngân hàng Đối tác Chiến lược,3.0,HCM01,1
+01CN000065,Tổ Hỗ trợ Tín dụng Cấp 4,T. HTTD,01CN000028,Ngân hàng Đối tác Chiến lược,3.0,HCM01,1
+01CN000009,Phòng Phân tích Dữ liệu Kinh doanh Cấp 3,P. PTDLKD,01CN000028,Ngân hàng Đối tác Chiến lược,3.0,HCM01,1
+01CN000021,Tổ Bảo lãnh và Tài trợ Xuất nhập khẩu Khu vực 2,T. BLTTXNK,01CN000028,Ngân hàng Đối tác Chiến lược,3.0,HCM01,1
+01CN000015,Phòng Tăng trưởng Kinh doanh Miền Bắc,P. TTKD,01CN000004,Ngân hàng Đối tác Chiến lược,3.0,HSC01,1
+01CN000084,Trung tâm Thẩm định Khách hàng Cấp 1,TT TĐKH,01CN000058,Ngân hàng Đối tác Chiến lược,3.0,HSC01,1
+01CN000062,Tổ Đối tác Kinh doanh Khu vực 2,T. ĐTKD,01CN000058,Ngân hàng Đối tác Chiến lược,3.0,HNO20,1
+01CN000008,Tổ Khách hàng Vừa và Nhỏ,T. KHN,01CN000058,Ngân hàng Đối tác Chiến lược,3.0,HCM29,1
+01CN000005,Trung tâm Đối tác Kinh doanh Khu vực 2,TT ĐTKD,01CN000058,Ngân hàng Đối tác Chiến lược,3.0,HSC01,1
+01CN000081,Tổ Điều phối Hoạt động Kinh doanh Cấp 2,T. ĐPHĐKD,01CN000058,Ngân hàng Đối tác Chiến lược,3.0,HSC02,1
+01CN000086,Phòng Giải pháp Tài chính Doanh nghiệp Cấp 2,P. GPTCDN,01CN000058,Ngân hàng Đối tác Chiến lược,3.0,HSC01,1
+01CN000064,Phòng Quản trị Rủi ro Tín dụng Cấp 3,P. QTRRTD,01CN000077,Ngân hàng Đối tác Chiến lược,3.0,HSC01,1
+01CN000013,Bộ phận Chăm sóc Khách hàng Miền Nam,BP CSKH,01CN000077,Ngân hàng Đối tác Chiến lược,3.0,HSC01,1
+01CN000063,Tổ Thẩm định Khách hàng Cấp 4,T. TĐKH,01CN000077,Ngân hàng Đối tác Chiến lược,3.0,HSC01,1
+01CN000087,Ban Khách hàng Chiến lược Khu vực 2,B. KHCL,01CN000064,Ngân hàng Đối tác Chiến lược,4.0,HSC01,1
+01CN000006,Tổ Khách hàng Tổ chức Cấp 4,T. KHTC,01CN000005,Ngân hàng Đối tác Chiến lược,4.0,HNO52,1
+01CN000073,Trung tâm Đối tác Kinh doanh Miền Trung,TT ĐTKD,01CN000005,Ngân hàng Đối tác Chiến lược,4.0,HNO34,1
+01CN000024,Bộ phận Khách hàng Tổ chức Miền Nam,BP KHTC,01CN000005,Ngân hàng Đối tác Chiến lược,4.0,HNO49,1
+01CN000041,Trung tâm Quan hệ Đối tác Chiến lược Khu vực 1,TT QHĐTCL,01CN000005,Ngân hàng Đối tác Chiến lược,4.0,HNO17,1
+01CN000072,Trung tâm Vận hành Sản phẩm Cấp 3,TT VHSP,01CN000005,Ngân hàng Đối tác Chiến lược,4.0,HNO65,1
+01CN000001,Ban Quản lý Chất lượng Dịch vụ,B. QLCLDV,01CN000005,Ngân hàng Đối tác Chiến lược,4.0,HNO63,1
+01CN000012,Bộ phận Khách hàng Vừa và Nhỏ Cấp 4,BP KHN,01CN000005,Ngân hàng Đối tác Chiến lược,4.0,HNO59,1
+01CN000080,Trung tâm Khách hàng Vừa và Nhỏ Cấp 4,TT KHN,01CN000005,Ngân hàng Đối tác Chiến lược,4.0,HNO02,1
+01CN000033,Trung tâm Quản lý Danh mục,TT QLDM,01CN000005,Ngân hàng Đối tác Chiến lược,4.0,HNO01,1
+01CN000034,Phòng Quan hệ Đối tác Chiến lược Cấp 4,P. QHĐTCL,01CN000005,Ngân hàng Đối tác Chiến lược,4.0,HNO20,1
+01CN000085,Phòng Chuyển đổi Số Kinh doanh Khu vực 2,P. CĐSKD,01CN000005,Ngân hàng Đối tác Chiến lược,4.0,HNO44,1
+01CN000019,Bộ phận Quản lý Danh mục,BP QLDM,01CN000005,Ngân hàng Đối tác Chiến lược,4.0,HNO39,1
+01CN000076,Trung tâm Bảo lãnh và Tài trợ Xuất nhập khẩu Cấp 1,TT BLTTXNK,01CN000081,Ngân hàng Đối tác Chiến lược,4.0,HCM10,1
+01CN000002,Trung tâm Khách hàng Vừa và Nhỏ Cấp 3,TT KHN,01CN000081,Ngân hàng Đối tác Chiến lược,4.0,HCM48,1
+01CN000083,Bộ phận Chăm sóc Khách hàng Miền Trung,BP CSKH,01CN000081,Ngân hàng Đối tác Chiến lược,4.0,HCM12,1
+01CN000061,Trung tâm Kênh Phân phối Đối tác Miền Nam,TT KPPĐT,01CN000081,Ngân hàng Đối tác Chiến lược,4.0,HCM29,1
+01CN000060,Bộ phận Quản trị Rủi ro Tín dụng Cấp 4,BP QTRRTD,01CN000081,Ngân hàng Đối tác Chiến lược,4.0,HCM32,1
+01CN000037,Bộ phận Quản lý Hợp đồng Miền Bắc,BP QLHĐ,01CN000081,Ngân hàng Đối tác Chiến lược,4.0,HCM01,1
+01CN000067,Phòng Tư vấn Đầu tư Doanh nghiệp Khu vực 2,P. TVĐTDN,01CN000081,Ngân hàng Đối tác Chiến lược,4.0,HCM19,1
+01CN000069,Tổ Điều phối Hoạt động Kinh doanh Miền Bắc,T. ĐPHĐKD,01CN000081,Ngân hàng Đối tác Chiến lược,4.0,HCM41,1
+01CN000040,Ban Mở rộng Thị trường,B. MRTT,01CN000081,Ngân hàng Đối tác Chiến lược,4.0,HCM17,1
+01CN000010,Phòng Quan hệ Đối tác Chiến lược Cấp 1,P. QHĐTCL,01CN000081,Ngân hàng Đối tác Chiến lược,4.0,TDU01,1
+01CN000074,Ban Nghiên cứu Tiềm năng Thị trường Cấp 1,B. NCTNTT,01CN000081,Ngân hàng Đối tác Chiến lược,4.0,HCM40,1
+01CN000039,Phòng Phát triển Kênh số Cấp 4,P. PTKS,01CN000084,Ngân hàng Đối tác Chiến lược,4.0,HSC01,1
+01CN000070,Phòng Quản lý Danh mục Miền Bắc,P. QLDM,01CN000086,Ngân hàng Đối tác Chiến lược,4.0,BNI01,1
+01CN000079,Ban Chăm sóc Khách hàng Cấp 4,B. CSKH,01CN000086,Ngân hàng Đối tác Chiến lược,4.0,BDU01,1
+01CN000022,Bộ phận Phát triển Kênh số Cấp 2,BP PTKS,01CN000086,Ngân hàng Đối tác Chiến lược,4.0,CTH01,1
+01CN000023,Trung tâm Tăng trưởng Kinh doanh Miền Bắc,TT TTKD,01CN000086,Ngân hàng Đối tác Chiến lược,4.0,DAN01,1
+01CN000003,Trung tâm Vận hành Sản phẩm Cấp 2,TT VHSP,01CN000086,Ngân hàng Đối tác Chiến lược,4.0,DAN03,1
+01CN000020,Bộ phận Quản lý Định phí Khu vực 1,BP QLĐP,01CN000086,Ngân hàng Đối tác Chiến lược,4.0,HPH01,1
+01CN000027,Ban Bảo lãnh và Tài trợ Xuất nhập khẩu Khu vực 2,B. BLTTXNK,01CN000086,Ngân hàng Đối tác Chiến lược,4.0,HPH07,1
+01CN000038,Phòng Quản lý Định phí Cấp 3,P. QLĐP,01CN000086,Ngân hàng Đối tác Chiến lược,4.0,KHO01,1
+01CN000044,Ban Đối tác Kinh doanh Cấp 1,B. ĐTKD,01CN000086,Ngân hàng Đối tác Chiến lược,4.0,QNI01,1
+01CN000031,Ban Kế hoạch và Tổng hợp Cấp 3,B. KHTH,01CN000086,Ngân hàng Đối tác Chiến lược,4.0,BRV04,1
+01CN000059,Trung tâm Khách hàng Chiến lược Khu vực 2,TT KHCL,01CN000086,Ngân hàng Đối tác Chiến lược,4.0,BRV01,1
+01QT000018,Khối Quản trị và Hỗ trợ Vận hành,QT,01MK000001,Khối Quản trị và Hỗ trợ Vận hành,,HSC01,1
+01QT000004,Trung tâm Hành chính Quản trị Cấp 4,TT HCQT,01QT000018,Khối Quản trị và Hỗ trợ Vận hành,,HSC01,1
+01QT000002,Trung tâm Mua sắm và Đấu thầu Miền Nam,TT MSĐT,01QT000004,Khối Quản trị và Hỗ trợ Vận hành,,HSC01,1
+01QT000010,Trung tâm Mua sắm và Đấu thầu Khu vực 2,TT MSĐT,01QT000011,Khối Quản trị và Hỗ trợ Vận hành,,HSC01,1
+01QT000005,Ban Chiến lược và Kế hoạch Miền Trung,B. CLKH,01QT000011,Khối Quản trị và Hỗ trợ Vận hành,,HSC01,1
+01QT000009,Trung tâm Quản lý Rủi ro Vận hành Cấp 4,TT QLRRVH,01QT000011,Khối Quản trị và Hỗ trợ Vận hành,,HSC01,1
+01QT000003,Ban Hành chính Quản trị Miền Trung,B. HCQT,01QT000018,Khối Quản trị và Hỗ trợ Vận hành,,HSC01,1
+01QT000001,Trung tâm Nhân sự và Đào tạo Cấp 3,TT NSĐT,01QT000018,Khối Quản trị và Hỗ trợ Vận hành,,HSC01,1
+01QT000012,Trung tâm Truyền thông Nội bộ Cấp 4,TT TTNB,01QT000001,Khối Quản trị và Hỗ trợ Vận hành,,HSC01,1
+01QT000013,Trung tâm Quản lý Rủi ro Vận hành Miền Nam,TT QLRRVH,01QT000001,Khối Quản trị và Hỗ trợ Vận hành,,HSC01,1
+01QT000023,Trung tâm Quản lý Văn phòng Miền Trung,TT QLVP,01QT000001,Khối Quản trị và Hỗ trợ Vận hành,,HSC01,1
+01QT000011,Trung tâm Nhân sự và Đào tạo Miền Bắc,TT NSĐT,01QT000004,Khối Quản trị và Hỗ trợ Vận hành,,HSC01,1
+01QT000008,Phòng Quản lý Ngân sách Miền Bắc,P. QLNS,01QT000004,Khối Quản trị và Hỗ trợ Vận hành,,HSC01,1
+01QT000022,Trung tâm Quản lý Văn phòng Cấp 1,TT QLVP,01QT000018,Khối Quản trị và Hỗ trợ Vận hành,,HSC01,1
+01QT000007,Phòng Quản lý Tài sản Cấp 3,P. QLTS,01QT000011,Khối Quản trị và Hỗ trợ Vận hành,,HSC01,1
+01QT000015,Phòng Pháp chế và Tuân thủ Miền Trung,P. PCTT,01QT000001,Khối Quản trị và Hỗ trợ Vận hành,,HSC01,1
+01QT000016,Trung tâm Quản lý Cơ sở Vật chất Cấp 1,TT QLCSVC,01QT000015,Khối Quản trị và Hỗ trợ Vận hành,,HSC01,1
+01QT000017,Trung tâm Quản lý Hợp đồng Nội bộ Miền Trung,TT QLHĐNB,01QT000015,Khối Quản trị và Hỗ trợ Vận hành,,HSC01,1
+01QT000024,Phòng Kiểm soát Chi phí,P. KSCP,01QT000001,Khối Quản trị và Hỗ trợ Vận hành,,HSC01,1
+01QT000006,Trung tâm Kiểm soát Chi phí Khu vực 2,TT KSCP,01QT000018,Khối Quản trị và Hỗ trợ Vận hành,,HSC01,1

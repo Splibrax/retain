@@ -1,0 +1,7 @@
+actor_id,actor_name,role,dept_scope_code,note
+A001,Nguyen Van Minh,LM,01CN000028,GD TT KHL (157 HC) - thay E001881 (85.78) - dung cho canh 1-2-3
+A002,Tran Thi Lan,LM,01CN000057,GD P. QLCLDV (134 HC) - node cap trung gian - dung cho canh 4 (chan cheo)
+A003,Duc,HRBP,01CN000025,HRBP Ngan hang Doi tac Chien luoc - thay ca 3 case P1
+A004,Le Van Cuong,HRBP,01QT000018,HRBP Khoi Quan tri va Ho tro Van hanh - khong thay case nao
+A005,Pham Thu Ha,LM,01CN000071,GD T. QHDTCL - node la - test scope 1 don vi
+A999,Test Invalid,LM,KHONG_TON_TAI,Test fail-closed - ma khong ton tai

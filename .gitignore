@@ -1,0 +1,15 @@
+# Dữ liệu THẬT — không bao giờ được commit lên git.
+# Toàn bộ dữ liệu tổ chức thật (dim_dept_hierarchy, dim_department, dim_job, ...)
+# và bảng map tên thật <-> tên giả sống trong _private/. Chỉ ./data/ (synthetic) được commit.
+_private/
+
+# Secrets — không bao giờ được commit lên git.
+.env
+
+# Repo skill mượn từ GreenNode (clone về), không phải sản phẩm của team.
+greennode-agentbase-skills/
+
+__pycache__/
+*.pyc
+*.bak
+.claude/

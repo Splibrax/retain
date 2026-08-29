@@ -1,0 +1,13 @@
+factor,priority,status,action
+salary,P1,draft,"Line manager đặt lịch trao đổi riêng trong 2 tuần: hỏi về mức độ gắn bó và mong muốn phát triển. Không hứa hẹn bất kỳ điều chỉnh lương nào ở buổi này."
+salary,P2,draft,"HRBP dựng phương án điều chỉnh kèm số liệu thị trường và vị trí trong dải lương, đưa vào kỳ review gần nhất thay vì chờ nhận offer bên ngoài rồi mới xử lý."
+salary,P3,draft,"Rà soát toàn đơn vị: bao nhiêu phần trăm nhân sự cùng nhóm chức danh đang dưới P50, báo cáo lãnh đạo khối để xử lý theo nhóm thay vì chữa từng ca."
+kpi,P1,draft,"Line manager làm 1-1 trong 2 tuần để tách bạch ba khả năng: không làm được, không muốn làm, hay chỉ tiêu giao chưa hợp lý."
+kpi,P2,draft,"Thống nhất kế hoạch hỗ trợ 90 ngày có mốc đo cụ thể, HRBP theo dõi; nếu nguyên nhân là phân giao thì điều chỉnh chỉ tiêu."
+kpi,P3,draft,"Xem lại cách giao và phân bổ chỉ tiêu của đơn vị nếu nhiều nhân sự cùng rơi vào nhóm KPI thấp."
+freeze,P1,draft,"HRBP kiểm tra lý do đóng băng lương còn hợp lệ không, trước khi bàn bất cứ phương án nào khác."
+freeze,P2,draft,"Nếu lý do đóng băng đã hết hiệu lực, đưa vào kỳ điều chỉnh gần nhất và thông báo rõ lộ trình cho nhân sự."
+freeze,P3,draft,"Rà soát chính sách đóng băng lương: cơ chế rà lại định kỳ để không ai bị treo quá lâu mà không ai biết."
+seniority,P1,draft,"Line manager đối thoại về lộ trình phát triển và mong muốn nghề nghiệp trong 2 tuần."
+seniority,P2,draft,"Mở rộng phạm vi công việc hoặc xem xét cơ hội luân chuyển nội bộ; tiền thường không phải đòn bẩy ở nhóm này."
+seniority,P3,draft,"Thiết kế lộ trình nghề nghiệp cho nhóm thâm niên đang nằm trong cửa sổ rủi ro."

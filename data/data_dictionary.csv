@@ -1,0 +1,63 @@
+table,column,data_type,description,nullable
+dim_employee,employee_id,int,PK — Mã nhân viên,NOT NULL
+dim_employee,full_name,text,Họ và tên (null = ẩn),NULLABLE
+dim_employee,gender,text,Giới tính: Male / Female,NULLABLE
+dim_employee,marital_status,text,Tình trạng hôn nhân,NULLABLE
+dim_employee,education,text,Trình độ học vấn,NULLABLE
+dim_employee,hire_date,date,Ngày vào làm (HRIS),NULLABLE
+dim_employee,join_date,date,Ngày vào làm (Snapshot),NULLABLE
+dim_employee,official_start_date,date,Ngày chính thức,NULLABLE
+dim_employee,years_of_service,float,Thâm niên tính đến snapshot_date,DERIVED
+dim_employee,tenure_band,text,Nhóm thâm niên,DERIVED
+dim_department,dept_code,text,PK — Mã phòng ban,NOT NULL
+dim_department,dept_name,text,Tên phòng ban,NOT NULL
+dim_department,business_unit,text,Tên khối,NOT NULL
+dim_department,org_level,int,Cấp tổ chức,NULLABLE
+dim_department,region,text,Vùng địa lý,NULLABLE
+dim_department,is_active,int,1=đang hoạt động,NOT NULL
+dim_job,job_code,text,PK — Mã chức danh,NOT NULL
+dim_job,job_name,text,Tên chức danh,NOT NULL
+dim_job,job_family,text,Nhóm nghề,NULLABLE
+dim_job,job_group_code,text,BO/FO/...,NULLABLE
+dim_job,revenue_flag,int,1=tạo doanh thu,NOT NULL
+dim_job,sale_flag,int,1=sales,NOT NULL
+dim_position,position_code,text,PK — Mã vị trí,NOT NULL
+dim_position,position_name,text,Tên vị trí,NOT NULL
+dim_position,band,text,Band chuẩn hóa,NULLABLE
+dim_position,is_manager,int,1=quản lý,NOT NULL
+dim_date,date_key,text,PK — YYYY-MM-DD,NOT NULL
+dim_date,year_month,text,YYYY-MM — dùng filter Power BI,NOT NULL
+dim_date,is_month_end,int,1=ngày cuối tháng,NOT NULL
+fact_workforce_snapshot,snapshot_date,date,Ngày chụp: 2025-12-31,NOT NULL
+fact_workforce_snapshot,employee_id,int,FK → dim_employee,NOT NULL
+fact_workforce_snapshot,band,text,Band chuẩn hóa,NULLABLE
+fact_workforce_snapshot,tenure_band,text,Nhóm thâm niên,DERIVED
+fact_workforce_snapshot,is_manager,int,1=quản lý,DERIVED
+fact_termination,employee_id,int,FK → dim_employee,NOT NULL
+fact_termination,termination_seq,int,Thứ tự nghỉ (re-hire),NOT NULL
+fact_termination,is_latest_termination,int,1=lần nghỉ gần nhất,NOT NULL
+fact_termination,termination_reason_group,text,Voluntary/Involuntary/...,DERIVED
+fact_termination,is_official_employee,int,0=CTV/thực tập,DERIVED
+fact_termination,tenure_months_at_exit,int,Tháng làm việc khi nghỉ,DERIVED
+fact_headcount_plan,year_month,text,FK → dim_date.year_month,NOT NULL
+fact_headcount_plan,dept_code,text,FK → dim_department,NOT NULL
+fact_headcount_plan,planned_hc,int,Headcount kế hoạch,NOT NULL
+fact_rm_kpi,kpi_period,text,PK (composite) — kỳ KPI: 2025-12,NOT NULL
+fact_rm_kpi,employee_id,int,FK → dim_employee (MNV),NOT NULL
+fact_rm_kpi,kpi_total_score,float,Điểm KPI tổng (0–1+),NULLABLE
+fact_rm_kpi,kpi_tier,text,Top ≥90% / Mid 70–89% / Bottom <70%,DERIVED
+fact_rm_kpi,toi_actual,float,TOI thực hiện lũy kế (triệu đồng),NULLABLE
+fact_rm_kpi,toi_pct_ht,float,% hoàn thành TOI so kế hoạch,NULLABLE
+fact_rm_kpi,nfi_actual,float,NFI thực hiện,NULLABLE
+fact_rm_kpi,loan_bq_actual,float,Loan BQ thực hiện,NULLABLE
+fact_rm_kpi,casa_bq_actual,float,CASA BQ thực hiện,NULLABLE
+fact_rm_kpi,new_cust_actual_net,float,KH mới sau trừ rời bỏ,NULLABLE
+fact_rm_kpi,provision_actual,float,Dự phòng thực hiện,NULLABLE
+fact_rm_kpi,npl_penalty,float,Điểm trừ nợ xấu,NULLABLE
+fact_salary_snapshot,salary_month,text,PK (composite) — tháng lương: 2026-01,NOT NULL
+fact_salary_snapshot,position_code,text,FK → dim_position (Pos),NOT NULL
+fact_salary_snapshot,base_salary,int,Lương chức danh (đồng),NULLABLE
+fact_salary_snapshot,business_bonus,int,Thưởng kinh doanh,NULLABLE
+fact_salary_snapshot,total_income_employee,int,Tổng thu nhập NV (trước thuế),DERIVED
+fact_salary_snapshot,employer_si_cost,int,BHXH đơn vị đóng,NULLABLE
+fact_salary_snapshot,total_employer_cost,int,Tổng chi phí sử dụng lao động,DERIVED

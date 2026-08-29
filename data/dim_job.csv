@@ -1,0 +1,407 @@
+job_code,job_name,job_family,job_short_name,job_group_id,job_group_code,job_group_name,job_category,revenue_flag,sale_flag
+MJ030M,Giám đốc Trung tâm Khách hàng Doanh nghiệp lớn (Ngân hàng Đối tác Chiến lược),"Kinh doanh, MKT và Sản phẩm",,JG03,HH,Head Hub,Bussiness,1,1
+MK012M,Giám đốc Quản lý Khách hàng Doanh nghiệp lớn,"Kinh doanh, MKT và Sản phẩm",,JG05,TL,Teamlead,Bussiness,1,1
+MJ019T,Giám đốc Khách hàng Doanh nghiệp lớn Cấp 3,"Kinh doanh, MKT và Sản phẩm",,JG04,RM,RM,Bussiness,1,1
+MJ018T,Giám đốc Khách hàng Doanh nghiệp lớn Cấp 2,"Kinh doanh, MKT và Sản phẩm",,JG04,RM,RM,Bussiness,1,1
+MJ017T,Giám đốc Khách hàng Doanh nghiệp lớn Cấp 1,"Kinh doanh, MKT và Sản phẩm",,JG04,RM,RM,Bussiness,1,1
+MK010S,Chuyên viên cao cấp Hỗ trợ Khách hàng Doanh nghiệp lớn,"Kinh doanh, MKT và Sản phẩm",,JG06,ARM,ARM,Bussiness,1,0
+MK009S,Chuyên viên chính Hỗ trợ Khách hàng Doanh nghiệp lớn,"Kinh doanh, MKT và Sản phẩm",,JG06,ARM,ARM,Bussiness,1,0
+MK010C,Chuyên viên Hỗ trợ Khách hàng Doanh nghiệp lớn,"Kinh doanh, MKT và Sản phẩm",,JG06,ARM,ARM,Bussiness,1,0
+AA052C,Cộng tác viên,"Hành chính, Trang thiết bị & Thư ký",,JG01,BO,Back Office,Bussiness,0,0
+BA013M,Giám đốc Trung tâm Khách hàng Doanh nghiệp (Ngân hàng Đối tác Chiến lược),Ngân hàng thương mại và tiêu dùng,,JG03,HH,Head Hub,Bussiness,1,1
+MJ009M,Giám đốc Trung tâm Khách hàng Doanh nghiệp lớn (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG03,HH,Head Hub,Bussiness,1,1
+BA016M,Giám đốc Siêu Trung tâm Khách hàng Doanh nghiệp (Ngân hàng Đối tác Chiến lược),Ngân hàng thương mại và tiêu dùng,,JG01,BO,Back Office,Bussiness,0,0
+BA015M,Phó Giám đốc Trung tâm Khách hàng Doanh nghiệp (Ngân hàng Đối tác Chiến lược),Ngân hàng thương mại và tiêu dùng,,JG03,HH,Head Hub,Bussiness,1,1
+FD500C,Nhân viên giao nhận Hồ sơ,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+IC004E,Chuyên gia Quản trị Kiến trúc và Giải pháp Công nghệ Dự án Digital Corporation Core Banking,"Công nghệ, viễn thông và kết nối mạng",,JG01,BO,Back Office,Bussiness,0,0
+KF005T,Giám đốc Bán hàng Ngân hàng Giao dịch Cấp 3 (Ngân hàng Đối tác Chiến lược),Thị trường vốn/Ngân hàng đầu tư,,JG01,BO,Back Office,Bussiness,0,0
+KF006T,Giám đốc Bán hàng Ngân hàng Giao dịch Cấp 2 (Ngân hàng Đối tác Chiến lược),Thị trường vốn/Ngân hàng đầu tư,,JG01,BO,Back Office,Bussiness,0,0
+KF007T,Giám đốc Bán hàng Ngân hàng Giao dịch Cấp 1 (Ngân hàng Đối tác Chiến lược),Thị trường vốn/Ngân hàng đầu tư,,JG01,BO,Back Office,Bussiness,0,0
+LD010M,Giám đốc nghiệp vụ Kế Toán Dự án Digital Corporation Core Banking,"Pháp lý, Tuân thủ & Kiểm toán",,JG01,BO,Back Office,Bussiness,0,0
+M00064,Chuyên viên chính Quan hệ Khách hàng Ngành,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+M00107,Giám đốc Quan hệ Khách hàng Doanh nghiệp General Cấp 2 (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG04,RM,RM,Bussiness,1,1
+M00108,Giám đốc Quan hệ Khách hàng Doanh nghiệp General Cấp 1 (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG04,RM,RM,Bussiness,1,1
+M00109,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp General (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG04,RM,RM,Bussiness,1,1
+M00110,Chuyên viên Quan hệ Khách hàng Doanh nghiệp General (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG04,RM,RM,Bussiness,1,1
+BA017M,Phó Giám đốc Siêu Trung tâm Khách hàng Doanh nghiệp (Ngân hàng Đối tác Chiến lược),Ngân hàng thương mại và tiêu dùng,,JG01,BO,Back Office,Bussiness,0,0
+M00159,Giám đốc Kinh doanh Miền Nam (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+M00160,Chuyên gia Quản lý Kinh doanh (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+M00161,Chuyên gia Chất lượng dịch vụ và Kiểm soát tuân thủ (Ngân hàng Đối tác Chiến lược),Quản lý chất lượng,,JG01,BO,Back Office,Bussiness,0,0
+M00162,Chuyên viên Chăm sóc khách hàng Kênh số (Ngân hàng Đối tác Chiến lược),,,JG01,BO,Back Office,Bussiness,0,0
+M00163,Giám đốc Thị trường và Tiềm năng khách hàng (Ngân hàng Đối tác Chiến lược),,,JG01,BO,Back Office,Bussiness,0,0
+M00164,Chuyên gia Thị trường và Tiềm năng khách hàng (Ngân hàng Đối tác Chiến lược),,,JG01,BO,Back Office,Bussiness,0,0
+M00165,Chuyên viên cao cấp Thị trường và Tiềm năng khách hàng (Ngân hàng Đối tác Chiến lược),,,JG01,BO,Back Office,Bussiness,0,0
+M00166,Chuyên viên chính Thị trường và Tiềm năng khách hàng (Ngân hàng Đối tác Chiến lược),,,JG01,BO,Back Office,Bussiness,0,0
+M00167,Chuyên viên Thị trường và Tiềm năng khách hàng (Ngân hàng Đối tác Chiến lược),,,JG01,BO,Back Office,Bussiness,0,0
+M00169,Chuyên viên Vùng Cấp 2 (Ngân hàng Đối tác Chiến lược),,,JG01,BO,Back Office,Bussiness,0,0
+MH030E,Chuyên gia Giải pháp Tín dụng (EB),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MH030M,Giám đốc Trung tâm Giải pháp (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MH030S,Chuyên viên cao cấp Giải pháp Tín dụng (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MH031C,Chuyên viên Giải pháp Tín dụng (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MH031E,Chuyên gia Giải pháp Phi tín dụng (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MH031S,Chuyên viên chính Giải pháp Tín dụng (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MH032E,Chuyên gia Giải pháp Kênh phi vật lý (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MH032M,Giám đốc Giải pháp Tín dụng (EB),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MH033E,Chuyên gia Ban Khách hàng Chiến lược Khu vực 2 (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MH033M,Giám đốc Ban Giải pháp Ngân hàng Giao dịch (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MH034E,Chuyên gia Giải pháp Chuỗi cung ứng,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MH034M,Giám đốc Giải pháp Phi tín dụng (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MH035E,Chuyên gia Giải pháp Bán chéo,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MH036M,Giám đốc Giải pháp Kênh phi vật lý (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MH037M,Giám đốc Ban Khách hàng Chiến lược Khu vực 2 (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MH038M,Giám đốc Giải pháp Chuỗi cung ứng,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MH040S,Chuyên viên cao cấp Giải pháp Phi tín dụng (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MH041M,Giám đốc Giải pháp Bán chéo,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MH043S,Chuyên viên chính Giải pháp Phi tín dụng (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MH044C,Chuyên viên Giải pháp Phi tín dụng (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MH044S,Chuyên viên cao cấp Giải pháp Kênh phi vật lý (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MH047S,Chuyên viên chính Giải pháp Kênh phi vật lý (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MH048C,Chuyên viên Giải pháp Kênh phi vật lý (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MH048S,Chuyên viên cao cấp Ban Khách hàng Chiến lược Khu vực 2 (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MH049C,Chuyên viên Ban Khách hàng Chiến lược Khu vực 2 (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MH050C,Chuyên viên Giải pháp Chuỗi cung ứng,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MH051S,Chuyên viên chính Ban Khách hàng Chiến lược Khu vực 2 (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MH052S,Chuyên viên cao cấp Giải pháp Chuỗi cung ứng,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MH055S,Chuyên viên chính Giải pháp Chuỗi cung ứng,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MH063S,Chuyên viên cao cấp Giải pháp Bán chéo,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MH064S,Chuyên viên chính Giải pháp Bán chéo,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MH065C,Chuyên viên Giải pháp Bán chéo,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ001E,Giám đốc Quan hệ Khách hàng Doanh nghiệp vừa Cấp 3 (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG04,RM,RM,Bussiness,1,1
+MJ001T,Trưởng nhóm Kênh bán thay thế (Ngân hàng Đối tác Chiến lược),,,JG01,BO,Back Office,Bussiness,0,0
+MJ002S,Giám đốc Quan hệ Khách hàng Kinh doanh Cấp 1,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ003C,Chuyên viên Phân khúc Khách hàng Thương mại (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ003M,Giám đốc Ngành (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ004C,Chuyên viên Phân khúc Khách hàng Xây dựng (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ004M,Giám đốc Bán hàng Ngân hàng Giao dịch (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ004S,Chuyên viên Vùng Cấp 1 (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ005M,Giám đốc Bán hàng Miền Ngân hàng Giao dịch (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ006M,Giám đốc Trung tâm Quản lý và Phòng Tăng trưởng Kinh doanh Miền Bắc (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ007S,Chuyên viên chính Bán hàng Ngân hàng Giao dịch (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ008C,Chuyên viên Phát triển Khách hàng Doanh nghiệp (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ008M,Giám đốc Khách hàng Doanh nghiệp lớn Miền (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ009C,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Upper,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG04,RM,RM,Bussiness,1,1
+MJ036M,Giám đốc Trung tâm Khách hàng Doanh nghiệp vừa Miền (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG03,HH,Head Hub,Bussiness,1,1
+MJ010M,Giám đốc Quản lý Quan hệ khách hàng Doanh nghiệp lớn Ngành Miền (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG05,TL,Teamlead,Bussiness,1,1
+MJ010S,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ011M,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG05,TL,Teamlead,Bussiness,1,1
+MJ011S,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ012C,Chuyên viên Phân khúc Khách hàng Sản xuất (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ012M,Giám đốc Phòng Kênh Phân phối Đối tác Cấp 3 (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ012S,Giám đốc Quan hệ Khách hàng Doanh nghiệp siêu nhỏ cấp 1 Miền Bắc,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG04,RM,RM,Bussiness,1,1
+MJ013S,Giám đốc Quan hệ Khách hàng Doanh nghiệp siêu nhỏ cấp 1 Miền Nam,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG04,RM,RM,Bussiness,1,1
+MJ014M,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG05,TL,Teamlead,Bussiness,1,1
+MJ014S,Chuyên viên chính Quan hê Khách hàng Doanh nghiệp Siêu nhỏ Miền Bắc,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ015S,Chuyên viên chính Quan hê Khách hàng Doanh nghiệp Siêu nhỏ Miền Nam,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ016E,Giám đốc Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài Cấp 2 (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG04,RM,RM,Bussiness,1,1
+MJ017E,Giám đốc Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài Cấp 1 (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG04,RM,RM,Bussiness,1,1
+MJ017S,Giám đốc Quan hệ Khách hàng Ngành cấp 1,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ018M,Giám đốc Trung tâm Phân khúc Khách hàng Doanh nghiệp (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ018S,Giám đốc Quan hệ Khách hàng Doanh nghiệp vừa Cấp 2 (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG04,RM,RM,Bussiness,1,1
+MJ019E,Chuyên gia Phân khúc Khách hàng Thương mại (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ019M,Giám đốc Phân khúc Khách hàng Thương mại (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ019S,Chuyên viên cao cấp Phân khúc Khách hàng Thương mại (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ020E,Chuyên gia Phân khúc Khách hàng Sản xuất (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ020S,Chuyên viên chính Phân khúc Khách hàng Thương mại (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ021E,Chuyên gia Phân khúc Khách hàng Xây dựng (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ021M,Giám đốc Phân khúc Khách hàng Sản xuất (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ021S,Chuyên viên cao cấp Phân khúc Khách hàng Sản xuất (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ022M,Giám đốc Phân khúc Khách hàng Xây dựng (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ022S,Chuyên viên chính Phân khúc Khách hàng Sản xuất (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ023E,Chuyên gia Phân khúc Khách hàng Siêu nhỏ,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ023M,Giám đốc Phân khúc Khách hàng Siêu nhỏ,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ023S,Chuyên viên cao cấp Phân khúc Khách hàng Xây dựng (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ024S,Chuyên viên chính Phân khúc Khách hàng Xây dựng (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ025S,Chuyên viên cao cấp Phân khúc Khách hàng Siêu nhỏ,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ026E,Giám đốc Quan hệ khách hàng Doanh nghiệp lớn Ngành Cấp 3 (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG04,RM,RM,Bussiness,1,1
+MJ026M,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp lớn (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG05,TL,Teamlead,Bussiness,1,1
+MJ026S,Chuyên viên chính Phân khúc Khách hàng Siêu nhỏ,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ027E,Giám đốc Quan hệ khách hàng Doanh nghiệp lớn Ngành Cấp 2 (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG04,RM,RM,Bussiness,1,1
+MJ027S,Chuyên viên Phân khúc Khách hàng Siêu nhỏ,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ028E,Chuyên gia Ngành Xây dựng - Vật liệu Xây dựng,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MM016D,Giám đốc Phòng Quản lý Chất lượng Dịch vụ Miền Trung,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG03,HH,Head Hub,Bussiness,1,1
+MJ028S,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ029E,Giám đốc Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài Cấp 3 (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG04,RM,RM,Bussiness,1,1
+MJ029S,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG04,RM,RM,Bussiness,1,1
+MJ030S,Giám đốc Quan hệ Khách hàng Doanh nghiệp vừa Cấp 1 (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG04,RM,RM,Bussiness,1,1
+MJ031S,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp vừa (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG04,RM,RM,Bussiness,1,1
+M00149,Phó Giám đốc Khách hàng Doanh nghiệp Lớn Miền (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ032M,Phó Giám đốc Ngành Xây dựng - Vật liệu xây dựng,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ034M,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp siêu nhỏ,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG05,TL,Teamlead,Bussiness,1,1
+MJ035S,Chuyên viên chính Hỗ trợ Kênh Bán hàng và Phân phối (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ028M,Giám đốc Trung tâm Khách hàng Doanh nghiệp Siêu nhỏ Miền Bắc,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG03,HH,Head Hub,Bussiness,1,1
+MJ037M,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp vừa (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG05,TL,Teamlead,Bussiness,1,1
+MJ043S,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG04,RM,RM,Bussiness,1,1
+MJ044S,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG04,RM,RM,Bussiness,1,1
+MJ065M,Giám đốc Kênh bán thay thế (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ065S,Chuyên viên cao cấp Kênh bán thay thế (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ069S,Chuyên viên chính Kênh bán thay thế (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ070C,Chuyên viên Kênh bán thay thế (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ111M,Giám đốc Kinh doanh Vùng (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ113E,Giám đốc Quan hệ Khách hàng Doanh nghiệp cấp 2,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG04,RM,RM,Bussiness,1,1
+MJ115C,Chuyên viên Quan hệ Khách hàng Doanh nghiệp khởi nghiệp,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG04,RM,RM,Bussiness,1,1
+MJ115S,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp (Ngân hàng Bán lẻ),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG04,RM,RM,Bussiness,1,1
+MJ120S,Chuyên viên chính Quan hệ Khách hàng Kinh doanh,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ121C,Chuyên viên Quan hệ Khách hàng Kinh doanh,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ123S,Giám đốc Quan hệ Khách hàng Doanh nghiệp cấp 1,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG04,RM,RM,Bussiness,1,1
+MJ152M,Giám đốc Kinh doanh Miền,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ155E,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 3,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG04,RM,RM,Bussiness,1,1
+MJ161E,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 3 (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG04,RM,RM,Bussiness,1,1
+MJ162E,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 2 (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG04,RM,RM,Bussiness,1,1
+MJ163S,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 1 (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG04,RM,RM,Bussiness,1,1
+MK001C,Chuyên viên Phòng Tăng trưởng Kinh doanh Miền Bắc (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MK001T,Trưởng nhóm Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG06,ARM,ARM,Bussiness,1,0
+MK003E,"Chuyên gia Giám sát, Thúc đẩy và Nâng cao năng lực bán (Ngân hàng Đối tác Chiến lược)","Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MK006E,Chuyên gia Phát triển chuỗi và Đối tác (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MK008S,Chuyên viên cao cấp Hỗ trợ Quan hệ khách hàng Doanh nghiệp lớn Ngành (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG06,ARM,ARM,Bussiness,1,0
+MK012S,Chuyên viên cao cấp Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG06,ARM,ARM,Bussiness,1,0
+MK013M,"Giám đốc Giám sát, Thúc đẩy và Nâng cao năng lực bán (Ngân hàng Đối tác Chiến lược)","Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MK014S,Chuyên viên cao cấp Hỗ trợ Quan hệ Khách hàng Doanh nghiệp,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG06,ARM,ARM,Bussiness,1,0
+MK015S,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG06,ARM,ARM,Bussiness,1,0
+MK018E,Chuyên gia Phân tích tín dụng Khách hàng Doanh nghiệp lớn Ngành (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MK019E,Chuyên gia Phân tích tín dụng Khách hàng Doanh nghiệp lớn (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MK020S,Chuyên viên chính Hỗ trợ Quan hệ khách hàng Doanh nghiệp lớn Ngành (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG06,ARM,ARM,Bussiness,1,0
+MK021C,Chuyên viên Hỗ trợ Quan hệ khách hàng Doanh nghiệp lớn Ngành (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG06,ARM,ARM,Bussiness,1,0
+MK022M,Giám đốc Quản lý Phát triển chuỗi và Đối tác (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MK023M,Giám đốc Phát triển chuỗi và Đối tác (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MK026C,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp siêu nhỏ,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG06,ARM,ARM,Bussiness,1,0
+MK027C,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp vừa (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG06,ARM,ARM,Bussiness,1,0
+MK031C,Chuyên viên Phát triển chuỗi và Đối tác (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MK032C,"Chuyên viên Giám sát, Thúc đẩy và Nâng cao năng lực bán","Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MK034S,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp vừa (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG06,ARM,ARM,Bussiness,1,0
+MK039M,Phó Giám đốc Quản lý Phát triển chuỗi và Đối tác (EB),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MK044S,Chuyên viên cao cấp Phát triển chuỗi và Đối tác (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MK045S,Chuyên viên chính Phát triển chuỗi và Đối tác (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MK046S,"Chuyên viên cao cấp Giám sát, Thúc đẩy và Nâng cao năng lực bán (Ngân hàng Đối tác Chiến lược)","Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MK049S,"Chuyên viên chính Giám sát, Thúc đẩy và Nâng cao năng lực bán (Ngân hàng Đối tác Chiến lược)","Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MK050S,Chuyên viên Miền Ngân hàng Đối tác Chiến lược,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MK057S,Chuyên viên cao cấp Quản lý Kinh doanh (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MK058S,Chuyên viên chính Quản lý Kinh doanh (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MK059C,Chuyên viên Quản lý Kinh doanh (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MK061C,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG06,ARM,ARM,Bussiness,1,0
+MK083S,Chuyên viên cao cấp Phân tích tín dụng Khách hàng Doanh nghiệp lớn Ngành (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MK085S,Chuyên viên cao cấp Phân tích tín dụng Khách hàng Doanh nghiệp lớn (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MK086M,Giám đốc Quản lý Kinh doanh (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MK087M,Giám đốc Phòng Tăng trưởng Kinh doanh Miền Bắc (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MK088S,Chuyên viên cao cấp Phòng Tăng trưởng Kinh doanh Miền Bắc (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MK089S,Chuyên viên chính Phòng Tăng trưởng Kinh doanh Miền Bắc (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MK090S,Chuyên viên cao cấp Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG06,ARM,ARM,Bussiness,1,0
+MK091S,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG06,ARM,ARM,Bussiness,1,0
+MK092C,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG06,ARM,ARM,Bussiness,1,0
+MK113S,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG06,ARM,ARM,Bussiness,1,0
+MK118C,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG06,ARM,ARM,Bussiness,1,0
+MK187M,Phó Giám đốc Phòng Tăng trưởng Kinh doanh Miền Bắc,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MM002S,Quản trị viên Ngân hàng Đối tác Chiến lược,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MM007D,Phó Tổng Giám đốc Ngân hàng Đối tác Chiến lược,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MJ033M,Giám đốc Trung tâm Khách hàng Doanh nghiệp Siêu nhỏ Miền Nam,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG03,HH,Head Hub,Bussiness,1,1
+MM019C,QTV NHDN,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MM019D,Tổng Giám đốc Ngân hàng Đối tác Chiến lược,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MM020D,Phó Tổng Giám đốc Ngân hàng Đối tác Chiến lược,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+PB001E,Chuyên gia điều phối Dự án Digital Corporate Core Banking,Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB002E,Quản lý cao cấp Dự án Digital Corporation Core Banking,Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB002H,Giám đốc Dự án Salesforce Transformaton,Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB003C,Nhân viên Phê duyệt hạn mức và phê duyệt kích hoạt thẻ,Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB003M,Giám đốc nghiệp vụ Tài trợ thương mại và tài trợ Chuỗi Dự án Digital Corporation Core Banking,Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB005E,Chuyên gia cao cấp điều phối Dự án Digital Corporate Core Banking,Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB006S,Chuyên viên cao cấp Phân tích Nghiệp vụ (LG),Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB006T,Trưởng nhóm Quản lý Chuyển đổi Sales Transformation,Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB009M,Giám đốc Quản lý Dự án,Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB009S,Chuyên viên chính Dự án Digital Corporation Core Banking,Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB010C,Chuyên viên Năng suất bán Dự án Sales Transformation,Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB011C,Chuyên viên Sáng kiến,Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB011E,Chuyên gia cao cấp Quản lý chuyển đổi Sales Transformation,Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB012E,Chuyên gia Năng suất bán Sales Transformation,Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB014E,Trưởng nhóm Sáng kiến Dự án Sales Transformation,Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB014M,Giám đốc Quản lý Chuyển đổi Sales Transformation,Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB015E,Chuyên gia Mô hình bán Dự án Sales Transformation,Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB015S,Chuyên viên cao cấp Quản trị sự thay đổi (LG),Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB018E,Chuyên gia Sáng kiến,Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB020M,Giám đốc Dự án Digital Corporation Core Banking,Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB024M,Giám đốc Chuyển đổi cấp 1,Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB024S,Chuyên viên cao cấp Triển khai chiến dịch (LG),Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB025M,Giám đốc Chuyển đổi cấp 2,Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB028S,Thành viên Dự án Digital Corporation Core Banking,Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB031C,Thành viên Dự án Chuyển đổi,Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB052S,Thành viên Dự án (1-EB),Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB053S,Thành viên Dự án (2-EB),Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB055S,Chuyên viên cao cấp Quản lý năng lực Sales Transformation,Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB056S,Chuyên viên cao cấp Năng suất bán Sales Transformation,Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB057S,Chuyên viên cao cấp Mô hình bán Sales Transformation,Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB058S,Chuyên viên chính Quản lý chuyển đổi Sales Transformation,Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB064S,Chuyên viên cao cấp Sáng kiến,Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB065S,Chuyên viên chính Sáng kiến,Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB066S,Chuyên viên cao cấp Quản lý chuyển đổi Sales Transformation,Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+QA004C,Chuyên viên Chất lượng dịch vụ và Kiểm soát tuân thủ (Ngân hàng Đối tác Chiến lược),Quản lý chất lượng,,JG01,BO,Back Office,Bussiness,0,0
+QA004M,Giám đốc Chất lượng dịch vụ và Kiểm soát tuân thủ (Ngân hàng Đối tác Chiến lược),Quản lý chất lượng,,JG01,BO,Back Office,Bussiness,0,0
+QA015S,Chuyên viên cao cấp Chất lượng dịch vụ và Kiểm soát tuân thủ (Ngân hàng Đối tác Chiến lược),Quản lý chất lượng,,JG01,BO,Back Office,Bussiness,0,0
+QA018S,Chuyên viên chính Chất lượng dịch vụ và Kiểm soát tuân thủ (Ngân hàng Đối tác Chiến lược),Quản lý chất lượng,,JG01,BO,Back Office,Bussiness,0,0
+MK005E,Chuyên gia Phân tích kinh doanh,"Kinh doanh, MKT và Sản phẩm",,JG02,FO,Front Office,Support,1,1
+M00390,Chuyên gia Phát triển giải pháp Ngân hàng mở (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+M00391,Chuyên viên cao cấp Phát triển giải pháp Ngân hàng mở (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+M00392,Chuyên viên chính Phát triển giải pháp Ngân hàng mở (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+M00393,Chuyên viên Phát triển giải pháp Ngân hàng mở (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+M00394,Giám đốc Trung tâm Phân khúc và Giải Pháp (Ngân hàng Đối tác Chiến lược),"Kinh doanh, MKT và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+M00395,Giám đốc Phân khúc (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+M00396,Chuyên gia Phân khúc (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+M00397,Chuyên viên cao cấp Phân khúc (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+M00398,Chuyên viên chính Phân khúc (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+M00399,Chuyên viên Phân khúc (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+M00400,Chuyên gia Phòng Tăng trưởng Kinh doanh Miền Bắc (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+M00467,Chuyên gia cao cấp Phân khúc (Ngân hàng Đối tác Chiến lược),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+MM008C,Quản trị viên,Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+BC015C,Chuyên viên Quản trị Dữ liệu,Ngân hàng thương mại và tiêu dùng,,JG01,BO,Back Office,Bussiness,0,0
+BC022S,Chuyên viên cao cấp Quản trị Dữ liệu,Ngân hàng thương mại và tiêu dùng,,JG01,BO,Back Office,Bussiness,0,0
+M00389,Chuyên gia Quản trị Dữ liệu (Khối Quản trị và Hỗ trợ Vận hành),Ngân hàng thương mại và tiêu dùng,,JG01,BO,Back Office,Bussiness,0,0
+BC023S,Chuyên viên chính Quản trị Dữ liệu,Ngân hàng thương mại và tiêu dùng,,JG01,BO,Back Office,Bussiness,0,0
+FA010C,Chuyên viên Báo cáo quản trị,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA017S,Chuyên viên cao cấp Báo cáo quản trị,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA018S,Chuyên viên chính Báo cáo quản trị,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA042M,Giám đốc Phòng Quản lý Ngân sách Miền Bắc,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC007C,Chuyên viên Quản lý Hiệu suất Khối Chiến lược và Đổi mới sáng tạo (Khối Quản trị và Hỗ trợ Vận hành),Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC051M,Giám đốc Quản lý Hiệu suất Khối Chiến lược và Đổi mới sáng tạo (Khối Quản trị và Hỗ trợ Vận hành),Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC055S,Chuyên viên cao cấp Quản lý Hiệu suất Khối Chiến lược và Đổi mới sáng tạo (Khối Quản trị và Hỗ trợ Vận hành),Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC056S,Chuyên viên chính Quản lý Hiệu suất Khối Chiến lược và Đổi mới sáng tạo (Khối Quản trị và Hỗ trợ Vận hành),Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+M00135,Chuyên gia Quản lý Hiệu suất Khối Chiến lược và Đổi mới sáng tạo (Khối Quản trị và Hỗ trợ Vận hành),Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC022M,Giám đốc Quản lý Hiệu suất Ngân hàng Quản lý Tín dụng (Khối Quản trị và Hỗ trợ Vận hành),Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+M00131,Chuyên gia Quản lý Hiệu suất Ngân hàng Quản lý Tín dụng (Khối Quản trị và Hỗ trợ Vận hành),Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC023S,Chuyên viên cao cấp Quản lý Hiệu suất Ngân hàng Quản lý Tín dụng (Khối Quản trị và Hỗ trợ Vận hành),Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC024S,Chuyên viên chính Quản lý Hiệu suất Ngân hàng Quản lý Tín dụng (Khối Quản trị và Hỗ trợ Vận hành),Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC025C,Chuyên viên Quản lý Hiệu suất Ngân hàng Quản lý Tín dụng (Khối Quản trị và Hỗ trợ Vận hành),Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC026C,Nhân viên Quản lý Hiệu suất Khách hàng chiến lược,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+M00139,Chuyên gia Trung tâm Mua sắm và Đấu thầu Miền Nam Ngân hàng Bán lẻ (Khối Quản trị và Hỗ trợ Vận hành),Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC005C,Chuyên viên Trung tâm Mua sắm và Đấu thầu Miền Nam Ngân hàng Bán lẻ (Khối Quản trị và Hỗ trợ Vận hành),Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC004S,Chuyên viên chính Trung tâm Mua sắm và Đấu thầu Miền Nam Ngân hàng Bán lẻ (Khối Quản trị và Hỗ trợ Vận hành),Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC003S,Chuyên viên cao cấp Trung tâm Mua sắm và Đấu thầu Miền Nam Ngân hàng Bán lẻ (Khối Quản trị và Hỗ trợ Vận hành),Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+M00065,Chuyên gia Kế toán thuế và hậu kiểm,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+M00140,Chuyên gia Quản lý Hiệu suất Ngân hàng Định chế Tài chính (Khối Quản trị và Hỗ trợ Vận hành),Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+M00141,Chuyên gia Quản lý Hiệu suất Ngân hàng Đối tác Chiến lược (Khối Quản trị và Hỗ trợ Vận hành),Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+M00359,Chuyên gia Thanh khoản và Tối ưu hóa Bảng cân đối,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+M00360,Chuyên gia Báo cáo và Phân tích dữ liệu Bảng cân đối,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+M00361,Chuyên viên cao cấp Báo cáo và Phân tích dữ liệu Bảng cân đối,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+M00362,Chuyên viên chính Báo cáo và Phân tích dữ liệu Bảng cân đối,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+M00363,Chuyên viên Báo cáo và Phân tích dữ liệu Bảng cân đối,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+AA008C,Trợ lý Giám đốc Khối Quản trị và Hỗ trợ Vận hành,"Hành chính, Trang thiết bị & Thư ký",,JG01,BO,Back Office,Bussiness,0,0
+AA009C,,"Hành chính, Trang thiết bị & Thư ký",,JG01,BO,Back Office,Bussiness,0,0
+FA013C,Chuyên viên Kế toán chi tiêu,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA014C,Nhân viên Kế toán chi tiêu,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA027C,Chuyên viên Kế toán thuế và hậu kiểm,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA028C,Nhân viên Kế toán thuế và hậu kiểm,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA034C,Chuyên viên Chính sách Kế toán và Tham số,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA035C,Nhân viên Chính sách kế toán,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA040C,Chuyên viên Báo cáo tài chính,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA041C,Nhân viên Báo cáo tài chính,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA046C,Chuyên viên Đối soát,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA047C,Nhân viên Đối soát,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA052C,Chuyên viên Kế toán tổng hợp,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA053C,Nhân viên Kế toán tổng hợp,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA069C,Chuyên viên Báo cáo thống kê,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA001E,Chuyên gia Kế toán tổng hợp,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA004E,Chuyên gia Chính sách Kế toán và Tham số,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA007M,Giám đốc Trung tâm Nhân sự và Đào tạo Cấp 3,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA008M,Giám đốc Kế toán chi tiêu,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA009M,Giám đốc Chính sách Kế toán và Tham số,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA010M,Giám đốc Đối soát,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA022M,Giám đốc Kế toán thuế và hậu kiểm,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA029M,Giám đốc Kế toán tổng hợp,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA054M,Giám đốc Kế toán Chi tiêu và Thuế,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA001S,Kiểm soát viên Kế toán chi tiêu Cấp 2,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA007S,Kiểm soát viên Kế toán thuế và hậu kiểm Cấp 2,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA008S,Kiểm soát viên Báo cáo thống kê và đối soát cấp 2,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA010S,Chuyên viên cao cấp Kế toán chi tiêu,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA011S,Kiểm soát viên Kế toán chi tiêu Cấp 1,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA012S,Chuyên viên chính Kế toán chi tiêu,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA020S,Chuyên viên cao cấp Báo cáo thống kê,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA021S,Chuyên viên chính Báo cáo thống kê,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA024S,Chuyên viên cao cấp Kế toán thuế và hậu kiểm,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA025S,Kiểm soát viên Kế toán thuế và hậu kiểm Cấp 1,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA026S,Chuyên viên chính Kế toán thuế và hậu kiểm,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA031S,Chuyên viên cao cấp Chính sách Kế toán và Tham số,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA032S,Kiểm soát viên Chính sách Kế toán,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA033S,Chuyên viên chính Chính sách Kế toán và Tham số,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA037S,Chuyên viên cao cấp Báo cáo tài chính,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA038S,Kiểm soát viên Báo cáo tài chính,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA039S,Chuyên viên chính Báo cáo tài chính,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA043S,Chuyên viên cao cấp Báo cáo thống kê,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA044S,Kiểm soát viên Báo cáo thống kê và đối soát cấp 1,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA045S,Chuyên viên chính Đối soát,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA048S,Chuyên viên cao cấp Kế toán tổng hợp,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA050S,Chuyên viên chính Kế toán tổng hợp,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA051S,Kiểm soát viên Kế toán tổng hợp,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA009T,Trưởng nhóm Kế toán chi tiêu,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA023T,Trưởng nhóm Kế toán thuế và hậu kiểm,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA030T,Trưởng nhóm Chinh sách Kế toán,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA036T,Trưởng nhóm Báo cáo tài chính,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA042T,Trưởng nhóm Báo cáo thống kê,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA049T,Tổ trưởng Kế toán tổng hợp,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA056T,Tổ trưởng Kế toán chi tiêu Hà Nội,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FA063T,Tổ trưởng Kế toán chi tiêu Hồ Chí Minh,"Công nghệ, viễn thông và kết nối mạng",,JG01,BO,Back Office,Bussiness,0,0
+FC006C,Nhân viên Quản lý Hiệu suất Ngân hàng Bán lẻ,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC010C,Chuyên viên Quản lý Hiệu suất Ngân hàng Định chế Tài chính (Khối Quản trị và Hỗ trợ Vận hành),Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC011C,Nhân viên Quản lý Hiệu suất Ngân hàng Định chế Tài chính,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC015C,Chuyên viên Quản lý Hiệu suất Ngân hàng Đối tác Chiến lược (Khối Quản trị và Hỗ trợ Vận hành),Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC016C,Nhân viên Quản lý Hiệu suất Ngân hàng Đối tác Chiến lược,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC020C,Chuyên viên Quản lý Hiệu suất Ngân hàng Đối tác Chiến lược lớn,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC021C,Nhân viên Quản lý Hiệu suất Ngân hàng Đối tác Chiến lược lớn,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC030C,Chuyên viên Trung tâm Mua sắm và Đấu thầu Miền Nam,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC031C,Nhân viên Trung tâm Mua sắm và Đấu thầu Miền Nam,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC035C,Chuyên viên Thanh khoản và Tối ưu hóa Bảng cân đối,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC036C,Nhân viên Quản trị Bảng cân đối,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC045C,Chuyên viên Quản lý Hiệu suất Thu hồi nợ và Khách hàng chiến lược,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC046C,Nhân viên Quản lý Hiệu suất Thu hồi nợ và Khách hàng chiến lược,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC050C,Chuyên viên Quản lý Hiệu suất Ngân hàng Cộng đồng,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC051C,Nhân viên Quản lý Hiệu suất Ngân hàng Cộng đồng,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC004E,Chuyên gia Trung tâm Mua sắm và Đấu thầu Miền Nam,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC001M,Giám đốc Trung tâm Quản trị tài chính,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC002M,Giám đốc Quản lý Hiệu suất Ngân hàng Bán lẻ,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC003M,Giám đốc Quản lý Hiệu suất Bán hàng,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC006M,Giám đốc Trung tâm Mua sắm và Đấu thầu Miền Nam Ngân hàng Bán lẻ,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC007M,Giám đốc Quản lý Hiệu suất Ngân hàng Định chế Tài chính,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC008M,Giám đốc Quản lý Hiệu suất Kinh doanh,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC009M,Giám đốc Báo cáo tài chính,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC012M,Giám đốc Quản lý Hiệu suất Ngân hàng Đối tác Chiến lược,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC013M,Giám đốc Quản lý Hiệu suất Phân khúc Khách hàng Doanh nghiệp,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC014M,Giám đốc Quản lý Hiệu suất Phân khúc Khách hàng Doanh nghiệp lớn,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC015M,Giám đốc Quản lý Hiệu suất Dịch vụ Ngân hàng Giao dịch,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC017M,Giám đốc Quản lý Hiệu suất Ngân hàng Đối tác Chiến lược lớn,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC027M,Giám đốc Trung tâm Mua sắm và Đấu thầu Miền Nam,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC032M,Giám đốc Quản trị Bảng cân đối,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC042M,Giám đốc Quản lý Hiệu suất Thu hồi nợ và Khách hàng chiến lược,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC047M,Giám đốc Quản lý Hiệu suất Ngân hàng Cộng đồng,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC048M,Giám đốc Báo cáo tài chính (chức năng),Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC008S,Chuyên viên cao cấp Quản lý Hiệu suất Ngân hàng Định chế Tài chính (Khối Quản trị và Hỗ trợ Vận hành),Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC009S,Chuyên viên chính Quản lý Hiệu suất Ngân hàng Định chế Tài chính (Khối Quản trị và Hỗ trợ Vận hành),Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC013S,Chuyên viên cao cấp Quản lý Hiệu suất Ngân hàng Đối tác Chiến lược (Khối Quản trị và Hỗ trợ Vận hành),Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC014S,Chuyên viên chính Quản lý Hiệu suất Ngân hàng Đối tác Chiến lược (Khối Quản trị và Hỗ trợ Vận hành),Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC018S,Chuyên viên cao cấp Quản lý Hiệu suất Ngân hàng Đối tác Chiến lược lớn,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC019S,Chuyên viên chính Quản lý Hiệu suất Ngân hàng Đối tác Chiến lược lớn,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC028S,Chuyên viên cao cấp Trung tâm Mua sắm và Đấu thầu Miền Nam,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC029S,Chuyên viên chính Trung tâm Mua sắm và Đấu thầu Miền Nam,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC033S,Chuyên viên cao cấp Thanh khoản và Tối ưu hóa Bảng cân đối,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC034S,Chuyên viên chính Thanh khoản và Tối ưu hóa Bảng cân đối,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC043S,Chuyên viên cao cấp Quản lý Hiệu suất Thu hồi nợ và Khách hàng chiến lược,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC044S,Chuyên viên chính Quản lý Hiệu suất Thu hồi nợ và Khách hàng chiến lược,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC048S,Chuyên viên cao cấp Quản lý Hiệu suất Ngân hàng Cộng đồng,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FC049S,Chuyên viên chính Quản lý Hiệu suất Ngân hàng Cộng đồng,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FE001C,QTV Quản lý Tài chính,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FE001D,Giám đốc Khối Quản trị và Hỗ trợ Vận hành,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FE002D,Phó Giám đốc Khối Quản trị và Hỗ trợ Vận hành,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+FE003D,Kế toán trưởng MSB,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+MK106M,Giám đốc Phân tích Thông tin Quản trị,"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+PB019M,Giám đốc Quản lý Dự án ERP,Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB059S,Thành viên Dự án,Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB069S,Chuyên viên cao cấp Dự án ERP,Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+PB070S,Chuyên viên chính Dự án ERP,Quản trị Dự án/Chương trình,,JG01,BO,Back Office,Bussiness,0,0
+VE002C,Chuyên viên Quản lý Quan hệ nhà đầu tư,"Quản lý Đầu tư, Tài sản",,JG01,BO,Back Office,Bussiness,0,0
+VE001E,Chuyên gia cao cấp Quản lý Quan hệ Nhà đầu tư,"Quản lý Đầu tư, Tài sản",,JG01,BO,Back Office,Bussiness,0,0
+VE002E,Chuyên gia Quản lý Quan hệ Nhà đầu tư,"Quản lý Đầu tư, Tài sản",,JG01,BO,Back Office,Bussiness,0,0
+VE001M,Giám đốc Quản lý Quan hệ Nhà đầu tư,"Quản lý Đầu tư, Tài sản",,JG01,BO,Back Office,Bussiness,0,0
+VE001S,Chuyên viên cao cấp Quản lý Quan hệ nhà đầu tư,"Quản lý Đầu tư, Tài sản",,JG01,BO,Back Office,Bussiness,0,0
+VE002S,Chuyên viên chính Quản lý Quan hệ nhà đầu tư,"Quản lý Đầu tư, Tài sản",,JG01,BO,Back Office,Bussiness,0,0
+FC037C,Giám đốc Quản lý Hiệu suất Ngân hàng Quản lý Tín dụng,Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+M00381,Chuyên gia Phân tích thông tin quản trị (Khối Quản trị và Hỗ trợ Vận hành),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+M00382,Chuyên viên cao cấp Phân tích thông tin quản trị (Khối Quản trị và Hỗ trợ Vận hành),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+M00383,Chuyên viên chính Phân tích thông tin quản trị (Khối Quản trị và Hỗ trợ Vận hành),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+M00384,Chuyên viên Phân tích thông tin quản trị (Khối Quản trị và Hỗ trợ Vận hành),"Quản lý Kinh doanh, Marketing và Sản phẩm",,JG01,BO,Back Office,Bussiness,0,0
+M00385,Chuyên gia Quản lý Hiệu suất bán hàng (Khối Quản trị và Hỗ trợ Vận hành),Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+M00386,Chuyên viên cao cấp Quản lý Hiệu suất bán hàng (Khối Quản trị và Hỗ trợ Vận hành),Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+M00387,Chuyên viên chính Quản lý Hiệu suất bán hàng (Khối Quản trị và Hỗ trợ Vận hành),Tài chính,,JG01,BO,Back Office,Bussiness,0,0
+M00388,Chuyên viên Quản lý Hiệu suất bán hàng (Khối Quản trị và Hỗ trợ Vận hành),Tài chính,,JG01,BO,Back Office,Bussiness,0,0

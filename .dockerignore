@@ -1,0 +1,8 @@
+_private/
+.env
+.git/
+greennode-agentbase-skills/
+tests/
+__pycache__/
+*.pyc
+*.bak

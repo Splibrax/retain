@@ -1,0 +1,7 @@
+job_group_id,job_group_code,job_group_name,job_category,revenue_flag,sale_flag,critical_role_flag,skill_group
+JG01,BO,Back Office,Bussiness,0,0,0,
+JG02,FO,Front Office,Support,1,1,0,
+JG03,HH,Head Hub,Bussiness,1,1,0,
+JG04,RM,RM,Bussiness,1,1,0,
+JG05,TL,Teamlead,Bussiness,1,1,0,
+JG06,ARM,ARM,Bussiness,1,0,0,

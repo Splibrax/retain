@@ -1,0 +1,1573 @@
+position_code,position_name,job_code,dept_code,reports_to_position_code,band,role_type,location_code,is_manager,status,job_group_code
+1CN00279,Tổng Giám đốc Ngân hàng Đối tác Chiến lược,MM019D,01CN000025,1MK00001,Band 9,,HSC01,1,A,BO
+1CN00321,Quyền Phó Tổng Giám đốc Ngân hàng Đối tác Chiến lược,MM020D,01CN000025,1CN00279,Band 8,,HSC01,1,A,BO
+1CN00155,Giám đốc chuyển đổi Cấp 1,PB024M,01HO000001,1HO00002,Band 6,,HSC01,1,I,BO
+1CN00313,Giám đốc chuyển đổi Cấp 2,PB025M,01HO000001,1CN00279,Band 7,,HSC01,1,I,BO
+1CN00927,Giám đốc Trung tâm Khách hàng Lớn Cấp 2,MJ009M,01CN000028,1CN00279,Band 8,,HNO01,1,A,HH
+1CN00274,Giám đốc Ngành,MJ003M,01CN000088,1CN00927,Band 7,,HNO01,1,I,BO
+1CN00075,Chuyên gia Ngành Xây dựng - Vật liệu Xây dựng,MJ028E,01CN000088,1CN00274,Band 5,,HNO01,0,I,BO
+1CN01122,Giám đốc Quan hệ khách hàng Doanh nghiệp lớn Ngành Cấp 3 Miền Bắc,MJ026E,01CN000047,1CN00407,Band 5,,HNO01,0,I,RM
+1CN00631,Giám đốc Quan hệ khách hàng Doanh nghiệp lớn Ngành Cấp 2 Miền Bắc,MJ027E,01CN000047,1CN00407,Band 5,,HNO01,0,I,RM
+1CN00680,Chuyên viên cao cấp Hỗ trợ Quan hệ khách hàng Doanh nghiệp lớn Ngành Miền Bắc,MK008S,01CN000047,1CN00407,Band 4,,HNO01,0,I,ARM
+1CN00754,Giám đốc Phòng Quản lý Chất lượng Dịch vụ Miền Trung,MM016D,01CN000057,1CN00279,Band 7,,HNO01,1,A,HH
+1CN00284,Giám đốc Kinh doanh Miền Bắc,MJ152M,01CN000057,1CN00754,Band 6,,HNO01,1,I,BO
+1CN00815,Giám đốc Kinh doanh Miền Nam,MJ152M,01CN000057,1CN00754,Band 6,,HCM01,1,I,BO
+1CN00828,Giám đốc Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư Nước ngoài Cấp 3 Miền Bắc,MJ029E,01CN000057,1CN01288,Band 5,,HNO01,0,A,RM
+1CN01331,Giám đốc Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài Cấp 2 Miền Bắc,MJ016E,01CN000057,1CN00681,Band 5,,HNO01,0,A,RM
+1CN00253,Giám đốc Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài Cấp 1 Miền Bắc,MJ017E,01CN000057,1CN00681,Band 4,,HNO01,0,A,RM
+1CN00783,Giao phụ trách Trưởng nhóm Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư Nước ngoài Miền Bắc,MK001T,01CN000057,1CN00754,Band 4,,HNO01,0,A,ARM
+1CN00495,Chuyên viên cao cấp Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài Miền Bắc,MK012S,01CN000057,1CN00783,Band 4,,HNO01,0,A,ARM
+1CN00716,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài Miền Bắc,MK113S,01CN000057,1CN00783,Band 3,,HNO01,0,A,ARM
+1CN01215,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài Miền Bắc,MK118C,01CN000057,1CN00783,Band 2,,HNO01,0,A,ARM
+1CN00043,Giám đốc Phân khúc Khách hàng Doanh nghiệp,MJ018M,01CN000063,1CN00279,Band 7,,HSC01,1,I,BO
+1CN00546,Giám đốc Phân khúc Khách hàng Thương mại,MJ019M,01CN000045,1CN00043,Band 6,,HSC01,1,I,BO
+1CN00632,Chuyên gia Phân khúc Khách hàng Thương mại,MJ019E,01CN000045,1CN00546,Band 5,,HSC01,0,I,BO
+1CN01361,Chuyên viên cao cấp Phân khúc Khách hàng Thương mại,MJ019S,01CN000045,1CN00546,Band 4,,HSC01,0,I,BO
+1CN00236,Chuyên viên chính Phân khúc Khách hàng Thương mại,MJ020S,01CN000045,1CN00546,Band 3,,HSC01,0,I,BO
+1CN00844,Giám đốc Phân khúc Khách hàng Sản xuất,MJ021M,01CN000046,1CN00043,Band 6,,HSC01,1,I,BO
+1CN00117,Chuyên gia Phân khúc Khách hàng Sản xuất,MJ020E,01CN000046,1CN00844,Band 5,,HSC01,0,I,BO
+1CN00399,Chuyên viên cao cấp Phân khúc Khách hàng Sản xuất,MJ021S,01CN000046,1CN00844,Band 4,,HSC01,0,I,BO
+1CN00233,Chuyên viên chính Phân khúc Khách hàng Sản xuất,MJ022S,01CN000046,1CN00844,Band 3,,HSC01,0,I,BO
+1CN00676,Giám đốc Phân khúc Khách hàng Xây dựng,MJ022M,01CN000056,1CN00043,Band 6,,HSC01,1,I,BO
+1CN01174,Chuyên gia Phân khúc Khách hàng Xây dựng,MJ021E,01CN000056,1CN00676,Band 5,,HSC01,0,I,BO
+1CN01136,Chuyên viên cao cấp Phân khúc Khách hàng Xây dựng,MJ023S,01CN000056,1CN00676,Band 4,,HSC01,0,I,BO
+1CN00135,Chuyên viên chính Phân khúc Khách hàng Xây dựng,MJ024S,01CN000056,1CN00676,Band 3,,HSC01,0,I,BO
+1CN00101,Giám đốc Phân khúc Khách hàng Siêu nhỏ,MJ023M,01CN000007,1CN00043,Band 6,,HSC01,1,I,BO
+1CN00655,Chuyên gia Phân khúc Khách hàng Siêu nhỏ,MJ023E,01CN000007,1CN00101,Band 5,,HSC01,0,I,BO
+1CN00140,Chuyên viên cao cấp Phân khúc Khách hàng Siêu nhỏ,MJ025S,01CN000007,1CN00101,Band 4,,HSC01,0,I,BO
+1CN00671,Chuyên viên chính Phân khúc Khách hàng Siêu nhỏ,MJ026S,01CN000007,1CN00101,Band 3,,HSC01,0,I,BO
+1CN00660,Giám đốc Trung tâm Giải pháp,MH030M,01CN000082,1CN00279,Band 7,,HSC01,1,I,BO
+1CN00842,Giám đốc Giải pháp Tín dụng,MH032M,01CN000013,1CN00330,Band 6,,HSC01,1,A,BO
+1CN01326,Chuyên gia Giải pháp Tín dụng (EB),MH030E,01CN000013,1CN00842,Band 5,,HSC01,0,A,BO
+1CN00023,Chuyên viên cao cấp Giải pháp Tín dụng,MH030S,01CN000013,1CN00842,Band 4,,HSC01,0,A,BO
+1CN01102,Chuyên viên chính Giải pháp Tín dụng,MH031S,01CN000013,1CN00842,Band 3,,HSC01,0,A,BO
+1CN01302,Chuyên viên Giải pháp Tín dụng,MH031C,01CN000013,1CN00842,Band 2,,HSC01,0,A,BO
+1CN00584,Giám đốc Ban Giải pháp Ngân hàng Giao dịch,MH033M,01CN000018,1CN00660,Band 7,,HSC01,1,I,BO
+1CN00851,Giám đốc Giải pháp Phi tín dụng,MH034M,01CN000064,1CN00330,Band 6,,HSC01,1,A,BO
+1CN00916,Chuyên gia Giải pháp Phi tín dụng,MH031E,01CN000064,1CN00851,Band 5,,HSC01,0,A,BO
+1CN00156,Chuyên viên cao cấp Giải pháp Phi tín dụng,MH040S,01CN000064,1CN00851,Band 4,,HSC01,0,A,BO
+1CN00905,Chuyên viên chính Giải pháp Phi tín dụng,MH043S,01CN000064,1CN00851,Band 3,,HSC01,0,A,BO
+1CN01034,Chuyên viên Giải pháp Phi tín dụng,MH044C,01CN000064,1CN00851,Band 2,,HSC01,0,A,BO
+1CN00035,Giám đốc Giải pháp Kênh phi vật lý,MH036M,01CN000036,1CN00584,Band 6,,HSC01,1,I,BO
+1CN00307,Chuyên gia Giải pháp Kênh phi vật lý,MH032E,01CN000036,1CN00035,Band 5,,HSC01,0,I,BO
+1CN01281,Chuyên viên cao cấp Giải pháp Kênh phi vật lý,MH044S,01CN000036,1CN00035,Band 4,,HSC01,0,I,BO
+1CN00534,Chuyên viên chính Giải pháp Kênh phi vật lý,MH047S,01CN000036,1CN00035,Band 3,,HSC01,0,I,BO
+1CN00731,Chuyên viên Giải pháp Kênh phi vật lý,MH048C,01CN000036,1CN00035,Band 2,,HSC01,0,I,BO
+1CN00713,Giám đốc Ban Khách hàng Chiến lược Khu vực 2,MH037M,01CN000087,1CN00851,Band 6,,HSC01,1,A,BO
+1CN00600,Chuyên gia Ban Khách hàng Chiến lược Khu vực 2,MH033E,01CN000087,1CN00713,Band 5,,HSC01,0,A,BO
+1CN00414,Chuyên viên cao cấp Ban Khách hàng Chiến lược Khu vực 2,MH048S,01CN000087,1CN00713,Band 4,,HSC01,0,A,BO
+1CN00954,Chuyên viên chính Ban Khách hàng Chiến lược Khu vực 2,MH051S,01CN000087,1CN00713,Band 3,,HSC01,0,A,BO
+1CN00057,Chuyên viên Ban Khách hàng Chiến lược Khu vực 2,MH049C,01CN000087,1CN00713,Band 2,,HSC01,0,A,BO
+1CN01350,Giám đốc Giải pháp Chuỗi cung ứng,MH038M,01CN000016,1CN00584,Band 6,,HSC01,1,I,BO
+1CN00967,Chuyên gia Giải pháp Chuỗi cung ứng,MH034E,01CN000016,1CN01350,Band 5,,HSC01,0,I,BO
+1CN00670,Chuyên viên cao cấp Giải pháp Chuỗi cung ứng,MH052S,01CN000016,1CN01350,Band 4,,HSC01,0,I,BO
+1CN01278,Chuyên viên chính Giải pháp Chuỗi cung ứng,MH055S,01CN000016,1CN01350,Band 3,,HSC01,0,I,BO
+1CN00380,Chuyên viên Giải pháp Chuỗi cung ứng,MH050C,01CN000016,1CN01350,Band 2,,HSC01,0,I,BO
+1CN00246,Giám đốc Bán hàng Ngân hàng Giao dịch,MJ004M,01CN000052,1CN00584,Band 6,,HSC02,1,I,BO
+1CN01147,Giao phụ trách Giám đốc Bán hàng Ngân hàng Giao dịch Miền Bắc,MJ005M,01CN000052,1CN00246,Band 5,,HSC01,0,I,BO
+1CN01056,Giám đốc Bán hàng Ngân hàng Giao dịch Cấp 2 Miền Bắc,KF006T,01CN000052,1CN01147,Band 4,,HSC01,0,I,BO
+1CN00598,Giám đốc Bán hàng Ngân hàng Giao dịch Cấp 1 Miền Bắc,KF007T,01CN000052,1CN01147,Band 4,,HSC01,0,I,BO
+1CN00097,Chuyên viên chính Bán hàng Ngân hàng Giao dịch,MJ007S,01CN000052,1CN01147,Band 3,,HSC01,0,I,BO
+1CN00168,Giám đốc Giải pháp Bán chéo,MH041M,01CN000049,1CN00660,Band 5,,HSC01,1,I,BO
+1CN00733,Chuyên gia Giải pháp Bán chéo,MH035E,01CN000049,1CN00168,Band 5,,HSC01,0,I,BO
+1CN00661,Chuyên viên cao cấp Giải pháp Bán chéo,MH063S,01CN000049,1CN00168,Band 4,,HSC01,0,I,BO
+1CN00260,Chuyên viên chính Giải pháp Bán chéo,MH064S,01CN000049,1CN00168,Band 3,,HSC01,0,I,BO
+1CN00712,Chuyên viên Giải pháp Bán chéo,MH065C,01CN000049,1CN00168,Band 2,,HSC01,0,I,BO
+1CN01080,Giám đốc Quản lý Kinh doanh,MK086M,01CN000004,1CN00279,Band 6,,HSC01,1,A,BO
+1CN00288,Giám đốc Quản lý Kinh doanh,MK086M,01CN000043,1CN01080,Band 5,,HSC01,1,I,BO
+1CN00702,Chuyên viên cao cấp Quản lý Kinh doanh,MK057S,01CN000004,1CN01080,Band 4,,HSC01,0,A,BO
+1CN00834,Chuyên viên chính Quản lý Kinh doanh,MK058S,01CN000004,1CN01080,Band 3,,HSC01,0,A,BO
+1CN01337,Chuyên viên Quản lý Kinh doanh,MK059C,01CN000004,1CN01080,Band 2,,HSC01,0,A,BO
+1CN01324,Giám đốc Phòng Tăng trưởng Kinh doanh Miền Bắc,MK087M,01CN000015,1CN01080,Band 5,,HSC01,1,A,BO
+1CN01377,Chuyên viên cao cấp Phòng Tăng trưởng Kinh doanh Miền Bắc,MK088S,01CN000015,1CN01324,Band 4,,HSC01,0,A,BO
+1CN00706,Chuyên viên chính Phòng Tăng trưởng Kinh doanh Miền Bắc,MK089S,01CN000015,1CN01324,Band 3,,HSC01,0,A,BO
+1CN00188,Chuyên viên Phòng Tăng trưởng Kinh doanh Miền Bắc,MK001C,01CN000015,1CN01324,Band 2,,HSC01,0,A,BO
+1CN00683,Giám đốc Phòng Kênh Phân phối Đối tác Cấp 3,MJ012M,01CN000058,1CN00328,Band 8,,HSC01,1,A,BO
+1CN01229,Giám đốc Kinh doanh Trung tâm Đối tác Kinh doanh Khu vực 2,MJ111M,01CN000005,1CN00683,Band 7,,HSC01,1,A,BO
+1CN00488,Giám đốc Kinh doanh Tổ Điều phối Hoạt động Kinh doanh Cấp 2,MJ111M,01CN000081,1CN00683,Band 7,,HSC02,1,A,BO
+1CN00901,Giám đốc Siêu Trung tâm Khách hàng Doanh nghiệp Sở Giao dịch,BA016M,01CN000017,1CN01351,Band 7,,HNO01,1,I,BO
+1CN01062,Giám đốc Trung tâm Khách hàng Doanh nghiệp Sở Giao dịch,BA013M,01CN000033,1CN01229,Band 6,,HNO01,1,A,HH
+1CN00256,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Sở Giao dịch,MJ011M,01CN000033,1CN01062,Band 5,,HNO01,1,A,TL
+1CN00314,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 3 Sở Giao dịch,MJ155E,01CN000017,1CN00901,,,HNO01,0,I,RM
+1CN00179,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Sở Giao dịch,M00107,01CN000033,1CN01062,Band 4,,HNO01,0,A,RM
+1CN00966,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Sở Giao dịch,M00108,01CN000033,1CN01062,Band 4,,HNO01,0,A,RM
+1CN00532,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Sở Giao dịch,M00109,01CN000033,1CN01062,Band 3,,HNO01,0,A,RM
+1CN01111,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Sở Giao dịch,M00110,01CN000033,1CN01062,Band 2,,HNO01,0,A,RM
+1CN00536,Chuyên viên cao cấp Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Sở Giao dịch,MK014S,01CN000017,1CN00901,,,HNO01,0,I,ARM
+1CN00076,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Sở Giao dịch,MK015S,01CN000033,1CN01062,Band 3,,HNO01,0,A,ARM
+1CN00543,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Sở Giao dịch,MK061C,01CN000033,1CN01062,Band 2,,HNO01,0,A,ARM
+1CN01273,Giám đốc Kênh bán thay thế,MJ065M,01CN000026,1CN00683,Band 5,,HNO20,1,I,BO
+1CN00469,Chuyên viên cao cấp Kênh bán thay thế,MJ065S,01CN000026,1CN00227,Band 4,,HNO20,0,I,BO
+1CN01223,Chuyên viên chính Kênh bán thay thế,MJ069S,01CN000026,1CN00227,Band 3,,HNO20,0,I,BO
+1CN01046,Chuyên viên Kênh bán thay thế,MJ070C,01CN000026,1CN00227,Band 2,,HNO20,0,I,BO
+1CN01277,Giám đốc Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài Cấp 3 miền Nam,MJ029E,01CN000057,1CN00754,Band 5,,HCM01,0,A,RM
+1CN00164,Giám đốc Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài Cấp 2 miền Nam,MJ016E,01CN000057,1CN00119,Band 5,,HCM01,0,A,RM
+1CN01119,Giám đốc Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài Cấp 1 miền Nam,MJ017E,01CN000057,1CN00119,Band 4,,HCM01,0,A,RM
+1CN01061,Trưởng nhóm Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư Nước ngoài Miền Nam,MK001T,01CN000057,1CN00119,Band 4,,HCM01,1,A,ARM
+1CN01382,Chuyên viên cao cấp Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài miền Nam,MK012S,01CN000057,1CN01061,Band 4,,HCM01,0,A,ARM
+1CN01169,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài miền Nam,MK113S,01CN000057,1CN01061,Band 3,,HCM01,0,A,ARM
+1CN01295,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài miền Nam,MK118C,01CN000057,1CN01061,Band 2,,HCM01,0,A,ARM
+1CN00390,Giám đốc Siêu Trung tâm Khách hàng Doanh nghiệp Hồ Chí Minh,BA016M,01CN000021,1CN00806,Band 7,,HCM01,1,I,BO
+1CN00528,Giám đốc Trung tâm Khách hàng Doanh nghiệp Hồ Chí Minh,BA013M,01CN000037,1CN00488,Band 6,,HCM01,1,A,HH
+1CN01094,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Hồ Chí Minh,MJ011M,01CN000037,1CN00528,Band 5,,HCM01,1,A,TL
+1CN00792,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 3 Hồ Chí Minh,MJ155E,01CN000021,1CN00528,,,HNO01,0,I,RM
+1CN00111,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Hồ Chí Minh,MJ113E,01CN000021,1CN00528,,,HNO01,0,I,RM
+1CN00601,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Hồ Chí Minh,MJ123S,01CN000021,1CN00528,,,HCM01,0,I,RM
+1CN00857,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Hồ Chí Minh,M00109,01CN000037,1CN00528,Band 3,,HCM01,0,A,RM
+1CN00935,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Hồ Chí Minh,M00110,01CN000037,1CN00528,Band 2,,HCM01,0,A,RM
+1CN01164,Chuyên viên cao cấp Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Hồ Chí Minh,MK014S,01CN000021,1CN00528,,,HNO01,0,I,ARM
+1CN01082,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Hồ Chí Minh,MK015S,01CN000021,1CN00528,,,HNO01,0,I,ARM
+1CN00178,Chuyên gia cao cấp Ngành Vật liệu Xây dựng,MJ028E,01CN000088,1CN00274,,,HSC01,0,I,BO
+1CN01020,Chuyên viên Hỗ trợ Quan hệ khách hàng Ngành Xây dựng - Vật liệu Xây dựng Miền Nam (Hồ Chí Minh),MK021C,01CN000075,1CN00220,Band 2,,HCM01,0,I,ARM
+1CN00418,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài miền Nam (Hồ Chí Minh),MK113S,01CN000057,1CN00815,Band 3,,HCM01,0,I,ARM
+1CN00740,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài Miền Bắc (Hà Nội),MK118C,01CN000057,1CN00284,,,HNO01,0,I,ARM
+1CN01038,Giám đốc Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài Cấp 1 Miền Bắc (Sở Giao dịch),MJ017E,01CN000057,1CN00284,Band 4,,HNO01,0,A,RM
+1CN00116,Chuyên viên Vùng Cấp 1 Trung tâm Đối tác Kinh doanh Khu vực 2,MJ004S,01CN000005,1CN01229,Band 3,,HSC01,0,A,BO
+1CN00070,Chuyên viên Vùng Cấp 1 Tổ Điều phối Hoạt động Kinh doanh Cấp 2,MJ004S,01CN000081,1CN00488,Band 3,,HSC02,0,A,BO
+1CN00389,Giám đốc Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài Cấp 2 Miền Nam (TP Hồ Chí Minh),MJ016E,01CN000057,1CN00815,Band 5,,HCM01,0,A,RM
+1CN00730,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Sở Giao dịch,MJ113E,01CN000017,1CN00901,,,HNO01,0,I,RM
+1CN00695,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Hoàng Mai (Hoàng Văn Thái),M00108,01CN000072,1CN00830,Band 4,,HNO65,0,A,RM
+1CN01312,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Sở Giao dịch,MJ115S,01CN000017,1CN00901,,,HNO01,0,I,RM
+1CN00871,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Hải Phòng,M00107,01CN000020,1CN00199,Band 4,,HPH01,0,A,RM
+1CN00517,Giám đốc Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Cấp 1 Sở Giao dịch,MJ002S,01CN000033,1CN01062,Band 4,,HNO01,0,I,RM
+1CN00074,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Sở Giao dịch,MJ120S,01CN000033,1CN01062,Band 3,,HNO01,0,I,RM
+1CN01210,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Sở Giao dịch,MJ121C,01CN000033,1CN01062,Band 2,,HNO01,0,I,RM
+1CN01293,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Hồ Chí Minh,M00107,01CN000037,1CN00528,Band 4,,HCM01,0,A,RM
+1CN01194,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Hồ Chí Minh,M00108,01CN000037,1CN00528,Band 4,,HCM01,0,A,RM
+1CN00254,Nhân viên Phê duyệt hạn mức và Phê duyệt kích hoạt thẻ,PB003C,01CN000055,1CN00908,Band 1,,HSC01,0,I,BO
+1CN00493,Giám đốc Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Cấp 1 Hồ Chí Minh,MJ002S,01CN000037,1CN00528,Band 4,,HCM01,0,I,RM
+1CN00252,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Hồ Chí Minh,MJ120S,01CN000037,1CN00528,Band 3,,HCM01,0,I,RM
+1CN00984,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Hồ Chí Minh,MJ121C,01CN000037,1CN00528,Band 2,,HCM01,0,I,RM
+1CN01105,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Sở Giao dịch,MJ115S,01CN000017,1CN00274,,,HNO01,0,I,RM
+1CN00400,Giám đốc Quan hệ Khách hàng Ngành Xây dựng - Vật liệu Xây dựng Miền Bắc (Sở Giao dịch),MJ010M,01CN000047,1CN00492,Band 6,,HNO01,1,I,BO
+1CN00009,Chuyên viên chính Hỗ trợ Quan hệ khách hàng Doanh nghiệp lớn Ngành Miền Bắc,MK020S,01CN000047,1CN00407,Band 3,,HNO01,0,I,ARM
+1CN00768,Chuyên viên chính Hỗ trợ Quan hệ khách hàng Ngành Xây dựng - Vật liệu Xây dựng Miền Nam (Hồ Chí Minh),MK020S,01CN000075,1CN00220,Band 3,,HCM01,0,I,ARM
+1CN00049,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 3 Miền Bắc 5,MJ161E,01CN000017,1CN00290,Band 5,,HNO01,0,A,RM
+1CN00658,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 2 Miền Bắc 5,MJ162E,01CN000017,1CN00290,Band 5,,HNO01,0,A,RM
+1CN00142,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 1 Miền Bắc 5,MJ163S,01CN000017,1CN00290,Band 4,,HNO01,0,A,RM
+1CN01170,Chuyên viên cao cấp Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Bắc 5,MK090S,01CN000017,1CN00290,Band 4,,HNO01,0,A,ARM
+1CN01074,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 3 Miền Nam 6,MJ161E,01CN000021,1CN01328,Band 5,,HCM01,0,A,RM
+1CN00869,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 2 Miền Nam 6,MJ162E,01CN000021,1CN01328,Band 5,,HCM01,0,A,RM
+1CN00929,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 1 Miền Nam 6,MJ163S,01CN000021,1CN01328,Band 4,,HCM01,0,A,RM
+1CN00941,Chuyên viên cao cấp Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Nam 6,MK090S,01CN000021,1CN01328,Band 4,,HCM01,0,A,ARM
+1CN01221,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Hồ Chí Minh,MK015S,01CN000037,1CN00528,Band 3,,HCM01,0,I,ARM
+1CN00407,Giám đốc Quản lý Quan hệ khách hàng Doanh nghiệp lớn Ngành Miền Bắc,MJ010M,01CN000047,1CN00274,Band 6,,HNO01,1,I,TL
+1CN00425,Giám đốc Quan hệ khách hàng Doanh nghiệp lớn Ngành Cấp 3 Miền Nam,MJ026E,01CN000075,1CN00220,Band 5,,HCM01,0,I,RM
+1CN00438,Giám đốc Quan hệ khách hàng Doanh nghiệp lớn Ngành Cấp 2 Miền Nam,MJ027E,01CN000075,1CN00220,Band 5,,HCM01,0,I,RM
+1CN00220,Giám đốc Quản lý Quan hệ khách hàng Doanh nghiệp lớn Ngành Miền Nam,MJ010M,01CN000075,1CN01013,Band 6,,HCM01,1,I,TL
+1CN00261,Chuyên viên chính Hỗ trợ Quan hệ khách hàng Ngành Xây dựng - Vật liệu Xây dựng Miền Bắc,MK020S,01CN000047,1CN00400,Band 3,,HNO01,0,I,ARM
+1CN00452,Chuyên viên chính Hỗ trợ Quan hệ khách hàng Doanh nghiệp lớn Ngành Miền Nam,MK020S,01CN000075,1CN00220,Band 3,,HCM01,0,I,ARM
+1CN01177,Chuyên viên Hỗ trợ Quan hệ khách hàng Doanh nghiệp lớn Ngành Miền Nam,MK021C,01CN000075,1CN00220,Band 2,,HCM01,0,I,ARM
+1CN01199,Giám đốc Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài Cấp 1 miền Nam (Đồng Nai),MJ017E,01CN000057,1CN00754,Band 4,,DNA01,0,A,RM
+1CN01181,Nhân viên Giao nhận hồ sơ Sở giao dịch,FD500C,01CN000033,1CN00901,Band 1,,HNO01,0,I,BO
+1CN00003,Nhân viên Giao nhận hồ sơ Hồ Chí Minh,FD500C,01CN000021,1CN00390,Band 1,,HCM01,0,I,BO
+1CN01120,Giám đốc Bán hàng Ngân hàng Giao dịch Cấp 1 Miền Bắc (Hải Phòng),KF007T,01CN000052,1CN01147,Band 4,,HPH01,0,I,BO
+1CN00912,Giám đốc Bán hàng Ngân hàng Giao dịch Cấp 1 Miền Nam,KF007T,01CN000052,1CN01115,Band 4,,HSC02,0,I,BO
+1CN00393,Phó Giám đốc Hỗ trợ kinh doanh,MK187M,01CN000015,1CN01324,Band 5,,HSC01,1,I,BO
+1CN00270,Chuyên viên Hỗ trợ Miền (Đà Nẵng),MK050S,01CN000058,1CN01052,,,DAN01,0,I,BO
+1CN00582,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 3 Hồ Chí Minh (Bình Dương),MJ155E,01CN000021,1CN00390,,,BDU01,0,I,RM
+1CN00210,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 3 Hồ Chí Minh (Vũng Tàu),MJ155E,01CN000021,1CN00390,,,BRV01,0,I,RM
+1CN00635,Giám đốc Quan hệ Khách hàng Ngành Xây dựng - Vật liệu Xây dựng Cấp 3 Miền Bắc (Sở Giao dịch),MJ026E,01CN000047,1CN00400,Band 5,,HNO01,0,I,BO
+1CN00326,Giám đốc Quan hệ Khách hàng Ngành Xây dựng - Vật liệu Xây dựng Cấp 3 Miền Nam (Hồ Chí Minh),MJ026E,01CN000075,1CN00220,Band 5,,HCM01,0,I,BO
+1CN00468,Giám đốc Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài Cấp 3 Miền Bắc (Hà Nội),MJ029E,01CN000057,1CN00284,,,HNO01,0,I,RM
+1CN01043,Giám đốc Kinh doanh Miền Nam (Hồ Chí Minh),MJ152M,01CN000057,1CN00754,Band 6,,HCM01,1,I,BO
+1CN00765,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Hà Đông (Văn Quán),M00108,01CN000024,1CN00800,Band 4,,HNO49,0,A,RM
+1CN01026,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Hà Đông (Văn Quán),M00109,01CN000024,1CN00800,Band 3,,HNO49,0,A,RM
+1CN00824,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Hà Đông (Văn Quán),MK061C,01CN000024,1CN00800,Band 2,,HNO49,0,A,ARM
+1CN01257,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Hà Đông (Văn Quán),M00110,01CN000024,1CN00800,Band 2,,HNO49,0,A,RM
+1CN00010,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Hoàng Mai (Hoàng Văn Thái),MJ011M,01CN000072,1CN00830,Band 5,,HNO65,1,A,TL
+1CN00668,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Hoàng Mai (Hoàng Văn Thái),M00109,01CN000072,1CN00830,Band 3,,HNO65,0,A,RM
+1CN00082,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Hoàng Mai (Hoàng Văn Thái),MK015S,01CN000072,1CN00830,Band 3,,HNO65,0,A,ARM
+1CN00247,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Hoàng Mai (Hoàng Văn Thái),M00110,01CN000072,1CN00830,Band 2,,HNO65,0,A,RM
+1CN01323,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Thành Công,MJ011M,01CN000034,1CN00454,Band 5,,HNO11,1,A,TL
+1CN00525,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Thành Công,M00109,01CN000034,1CN00454,Band 3,,HNO11,0,A,RM
+1CN00263,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Thành Công,M00110,01CN000034,1CN00454,Band 2,,HNO11,0,A,RM
+1CN00907,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Thành Công,MK061C,01CN000034,1CN00454,Band 2,,HNO11,0,A,ARM
+1CN00031,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Bắc Ninh,MJ011M,01CN000070,1CN00060,Band 5,,BNI01,1,A,TL
+1CN00775,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Bắc Ninh,M00108,01CN000070,1CN00060,Band 4,,BNI01,0,A,RM
+1CN01259,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Bắc Ninh,M00110,01CN000070,1CN00060,Band 2,,BNI01,0,A,RM
+1CN00514,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Bắc Ninh,M00109,01CN000070,1CN00060,Band 3,,BNI01,0,A,RM
+1CN00538,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Cầu Giấy,MJ011M,01CN000006,1CN00405,Band 5,,HNO52,1,A,TL
+1CN00275,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Cầu Giấy,M00108,01CN000006,1CN00405,Band 4,,HNO52,0,A,RM
+1CN00998,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Cầu Giấy,MK015S,01CN000006,1CN00405,Band 3,,HNO52,0,A,ARM
+1CN00868,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Cầu Giấy,M00109,01CN000006,1CN00405,Band 3,,HNO52,0,A,RM
+1CN01376,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Cầu Giấy,M00110,01CN000006,1CN00405,Band 2,,HNO52,0,A,RM
+1CN01135,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Cầu Giấy,MK061C,01CN000006,1CN00405,Band 2,,HNO52,0,A,ARM
+1CN00982,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Đống Đa,MJ011M,01CN000073,1CN01241,Band 5,,HNO34,1,A,TL
+1CN01191,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Đống Đa,M00107,01CN000073,1CN01241,Band 4,,HNO34,0,A,RM
+1CN00392,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Đống Đa,M00108,01CN000073,1CN01241,Band 4,,HNO34,0,A,RM
+1CN01329,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Đống Đa,M00109,01CN000073,1CN01241,Band 3,,HNO34,0,A,RM
+1CN00599,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Đống Đa,M00110,01CN000073,1CN01241,Band 2,,HNO34,0,A,RM
+1CN01025,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Đống Đa,MK061C,01CN000073,1CN01241,Band 2,,HNO34,0,A,ARM
+1CN00245,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Hà Nội,MJ011M,01CN000041,1CN00209,Band 5,,HNO17,1,A,TL
+1CN00148,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Hà Nội,M00108,01CN000041,1CN00209,Band 4,,HNO17,0,A,RM
+1CN01303,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Hà Nội,M00109,01CN000041,1CN00209,Band 3,,HNO17,0,A,RM
+1CN00737,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Hà Nội,MK015S,01CN000041,1CN00209,Band 3,,HNO17,0,A,ARM
+1CN00381,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Hà Nội,M00110,01CN000041,1CN00209,Band 2,,HNO17,0,A,RM
+1CN00406,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Hà Nội,MK061C,01CN000041,1CN00209,Band 2,,HNO17,0,A,ARM
+1CN01338,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Hải Phòng,M00108,01CN000020,1CN00199,Band 4,,HPH01,0,A,RM
+1CN00570,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Hải Phòng,MK015S,01CN000020,1CN00199,Band 3,,HPH01,0,A,ARM
+1CN00527,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Hải Phòng,M00109,01CN000020,1CN00199,Band 3,,HPH01,0,A,RM
+1CN00559,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Hải Phòng,MK061C,01CN000020,1CN00199,Band 2,,HPH01,0,A,ARM
+1CN00473,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Hải Phòng,M00110,01CN000020,1CN00199,Band 2,,HPH01,0,A,RM
+1CN00533,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Long Biên,MJ011M,01CN000001,1CN00764,Band 5,,HNO63,1,A,TL
+1CN01383,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Long Biên,M00108,01CN000001,1CN00764,Band 4,,HNO63,0,A,RM
+1CN00684,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Long Biên,M00109,01CN000001,1CN00764,Band 3,,HNO63,0,A,RM
+1CN01051,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Long Biên,MK061C,01CN000001,1CN00764,Band 2,,HNO63,0,A,ARM
+1CN00879,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Long Biên,M00110,01CN000001,1CN00764,Band 2,,HNO63,0,A,RM
+1CN01092,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Quảng Ninh,M00108,01CN000044,1CN01243,Band 4,,QNI01,0,A,RM
+1CN00016,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Quảng Ninh,MK061C,01CN000044,1CN01243,Band 2,,QNI01,0,A,ARM
+1CN00550,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Quảng Ninh,M00110,01CN000044,1CN01243,Band 2,,QNI01,0,A,RM
+1CN00605,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Thanh Xuân,M00108,01CN000085,1CN00486,Band 4,,HNO44,0,A,RM
+1CN00191,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Thanh Xuân,MJ011M,01CN000085,1CN00486,Band 5,,HNO44,1,A,TL
+1CN00801,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Thanh Xuân,M00109,01CN000085,1CN00486,Band 3,,HNO44,0,A,RM
+1CN00171,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Thanh Xuân,M00110,01CN000085,1CN00486,Band 2,,HNO44,0,A,RM
+1CN01037,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Thanh Xuân,MK061C,01CN000085,1CN00486,Band 2,,HNO44,0,A,ARM
+1CN00862,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Bến Thành,M00108,01CN000076,1CN00767,Band 4,,HCM04,0,A,RM
+1CN00886,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Bến Thành,MJ011M,01CN000076,1CN00767,Band 5,,HCM04,1,A,TL
+1CN01219,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Bến Thành (Thị Nghè),MK015S,01CN000076,1CN00767,Band 3,,HCM04,0,A,ARM
+1CN00302,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Bến Thành,M00109,01CN000076,1CN00767,Band 3,,HCM04,0,A,RM
+1CN01112,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Bến Thành,M00110,01CN000076,1CN00767,Band 2,,HCM04,0,A,RM
+1CN01054,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Bến Thành,MK061C,01CN000076,1CN00767,Band 2,,HCM04,0,A,ARM
+1CN01314,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Gò Vấp (Nguyễn Oanh),M00108,01CN000060,1CN01255,Band 4,,HCM32,0,A,RM
+1CN01291,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Gò Vấp (Nguyễn Oanh),M00109,01CN000060,1CN01255,Band 3,,HCM32,0,A,RM
+1CN00656,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Gò Vấp (Nguyễn Oanh),MK061C,01CN000060,1CN01255,Band 2,,HCM32,0,A,ARM
+1CN00187,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Gò Vấp (Nguyễn Oanh),M00110,01CN000060,1CN01255,Band 2,,HCM32,0,A,RM
+1CN00945,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Bình Dương,M00107,01CN000079,1CN00295,Band 4,,BDU01,0,A,RM
+1CN00433,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Bình Dương,M00108,01CN000079,1CN00295,Band 4,,BDU01,0,A,RM
+1CN01341,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Bình Dương,M00109,01CN000079,1CN00295,Band 3,,BDU01,0,A,RM
+1CN01086,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Bình Dương,MK061C,01CN000079,1CN00295,Band 2,,BDU01,0,A,ARM
+1CN00639,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Bình Dương,M00110,01CN000079,1CN00295,Band 2,,BDU01,0,A,RM
+1CN01271,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Cần Thơ,M00108,01CN000022,1CN00645,Band 4,,CTH01,0,A,RM
+1CN00555,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Cần Thơ,M00109,01CN000022,1CN00645,Band 3,,CTH01,0,A,RM
+1CN00820,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Cần Thơ,MK015S,01CN000022,1CN00645,Band 3,,CTH01,0,A,ARM
+1CN01081,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Cần Thơ,MK061C,01CN000022,1CN00645,Band 2,,CTH01,0,A,ARM
+1CN00056,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Cộng Hòa,MJ011M,01CN000083,1CN00735,Band 5,,HCM12,1,A,TL
+1CN00833,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Cộng Hòa,M00108,01CN000083,1CN00735,Band 4,,HCM12,0,A,RM
+1CN00509,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Cộng Hòa,M00109,01CN000083,1CN00735,Band 3,,HCM12,0,A,RM
+1CN00080,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Cộng Hòa,M00110,01CN000083,1CN00735,Band 2,,HCM12,0,A,RM
+1CN00364,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Cộng Hòa,MK061C,01CN000083,1CN00735,Band 2,,HCM12,0,A,ARM
+1CN00579,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Đô Thành,M00108,01CN000061,1CN00277,Band 4,,HCM29,0,A,RM
+1CN01117,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Đô Thành,MJ011M,01CN000061,1CN00277,Band 5,,HCM29,1,A,TL
+1CN00961,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Đô Thành,M00110,01CN000061,1CN00277,Band 2,,HCM29,0,A,RM
+1CN00421,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Đô Thành,MK061C,01CN000061,1CN00277,Band 2,,HCM29,0,A,ARM
+1CN00870,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Hồ Chí Minh,MK061C,01CN000037,1CN00528,Band 2,,HCM01,0,A,ARM
+1CN01279,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Sài Gòn,MK015S,01CN000067,1CN01319,Band 3,,HCM19,0,A,ARM
+1CN00957,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Sài Gòn,M00109,01CN000067,1CN01319,Band 3,,HCM19,0,A,RM
+1CN00999,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Sài Gòn,MK061C,01CN000067,1CN01319,Band 2,,HCM19,0,A,ARM
+1CN01327,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Sài Gòn,M00110,01CN000067,1CN01319,Band 2,,HCM19,0,A,RM
+1CN01027,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Tân Bình,M00108,01CN000069,1CN01114,Band 4,,HCM41,0,A,RM
+1CN00888,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Tân Bình,M00109,01CN000069,1CN01114,Band 3,,HCM41,0,A,RM
+1CN01369,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Tân Bình,MK015S,01CN000069,1CN01114,Band 3,,HCM41,0,A,ARM
+1CN00322,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Tân Bình,MK061C,01CN000069,1CN01114,Band 2,,HCM41,0,A,ARM
+1CN01137,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Tân Bình,M00110,01CN000069,1CN01114,Band 2,,HCM41,0,A,RM
+1CN01183,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Vũng Tàu,MJ011M,01CN000059,1CN00027,Band 5,,BRV01,1,A,TL
+1CN00773,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Vũng Tàu,M00108,01CN000059,1CN00027,Band 4,,BRV01,0,A,RM
+1CN00444,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Vũng Tàu,M00109,01CN000059,1CN00027,Band 3,,BRV01,0,A,RM
+1CN00774,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Vũng Tàu,MK015S,01CN000059,1CN00027,Band 3,,BRV01,0,A,ARM
+1CN01005,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Hải Châu,M00107,01CN000003,1CN00017,Band 4,,DAN03,0,A,RM
+1CN00349,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Hải Châu,M00109,01CN000003,1CN00017,Band 3,,DAN03,0,A,RM
+1CN00323,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Hải Châu,MK015S,01CN000003,1CN00017,Band 3,,DAN03,0,A,ARM
+1CN01098,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Hải Châu,M00110,01CN000003,1CN00017,Band 2,,DAN03,0,A,RM
+1CN01263,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Đà Nẵng,M00107,01CN000023,1CN00959,Band 4,,DAN01,0,A,RM
+1CN00991,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Đà Nẵng,M00108,01CN000023,1CN00959,Band 4,,DAN01,0,A,RM
+1CN00143,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Đà Nẵng,MK015S,01CN000023,1CN00959,Band 3,,DAN01,0,A,ARM
+1CN00537,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Đà Nẵng,M00109,01CN000023,1CN00959,Band 3,,DAN01,0,A,RM
+1CN00832,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Đà Nẵng,M00110,01CN000023,1CN00959,Band 2,,DAN01,0,A,RM
+1CN01214,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Đà Nẵng,MK061C,01CN000023,1CN00959,Band 2,,DAN01,0,A,ARM
+1CN00007,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Khánh Hòa,M00108,01CN000038,1CN00244,Band 4,,KHO01,0,A,RM
+1CN00030,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Khánh Hòa,M00109,01CN000038,1CN00244,Band 3,,KHO01,0,A,RM
+1CN00653,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Khánh Hòa,MK061C,01CN000038,1CN00244,Band 2,,KHO01,0,A,ARM
+1CN00562,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Khánh Hòa,M00110,01CN000038,1CN00244,Band 2,,KHO01,0,A,RM
+1CN00767,Giám đốc Trung tâm Khách hàng Doanh nghiệp Bến Thành,BA013M,01CN000076,1CN00488,Band 6,,HCM04,1,A,HH
+1CN01255,Giám đốc Trung tâm Khách hàng Doanh nghiệp Gò Vấp (Nguyễn Oanh),BA013M,01CN000060,1CN00488,Band 6,,HCM32,1,A,HH
+1CN00800,Giám đốc Trung tâm Khách hàng Doanh nghiệp Hà Đông (Văn Quán),BA013M,01CN000024,1CN01229,Band 6,,HNO49,1,A,HH
+1CN00017,Giám đốc Trung tâm Khách hàng Doanh nghiệp Hải Châu,BA013M,01CN000003,1CN00367,Band 6,,DAN03,1,A,HH
+1CN01351,Giám đốc Khách hàng Doanh nghiệp lớn 2 Miền Bắc,MJ008M,01CN000028,1CN00927,Band 7,,HNO01,1,A,BO
+1CN00454,Giám đốc Trung tâm Khách hàng Doanh nghiệp Thành Công,BA013M,01CN000034,1CN01229,Band 6,,HNO11,1,A,HH
+1CN00295,Giám đốc Trung tâm Khách hàng Doanh nghiệp Bình Dương,BA013M,01CN000079,1CN00367,Band 6,,BDU01,1,A,HH
+1CN00645,Giám đốc Trung tâm Khách hàng Doanh nghiệp Cần Thơ,BA013M,01CN000022,1CN00367,Band 6,,CTH01,1,A,HH
+1CN00405,Giám đốc Trung tâm Khách hàng Doanh nghiệp Cầu Giấy,BA013M,01CN000006,1CN01229,Band 6,,HNO52,1,A,HH
+1CN00735,Giám đốc Trung tâm Khách hàng Doanh nghiệp Cộng Hòa,BA013M,01CN000083,1CN00488,Band 6,,HCM12,1,A,HH
+1CN00959,Giám đốc Trung tâm Khách hàng Doanh nghiệp Đà Nẵng,BA013M,01CN000023,1CN00367,Band 6,,DAN01,1,A,HH
+1CN00277,Giao phụ trách Giám đốc Trung tâm Khách hàng Doanh nghiệp Đô Thành,BA013M,01CN000061,1CN00488,Band 5,,HCM29,1,A,HH
+1CN00209,Giám đốc Trung tâm Khách hàng Doanh nghiệp Hà Nội,BA013M,01CN000041,1CN01229,Band 6,,HNO17,1,A,HH
+1CN00199,Giám đốc Trung tâm Khách hàng Doanh nghiệp Hải Phòng,BA013M,01CN000020,1CN00367,Band 6,,HPH01,1,A,HH
+1CN00244,Giám đốc Trung tâm Khách hàng Doanh nghiệp Khánh Hòa,BA013M,01CN000038,1CN00367,Band 6,,KHO01,1,A,HH
+1CN00764,Giám đốc Trung tâm Khách hàng Doanh nghiệp Long Biên,BA013M,01CN000001,1CN01229,Band 6,,HNO63,1,A,HH
+1CN01243,Giám đốc Trung tâm Khách hàng Doanh nghiệp Quảng Ninh,BA013M,01CN000044,1CN00367,Band 6,,QNI01,1,A,HH
+1CN01319,Giám đốc Trung tâm Khách hàng Doanh nghiệp Sài Gòn,BA013M,01CN000067,1CN00488,Band 6,,HCM19,1,A,HH
+1CN01114,Giám đốc Trung tâm Khách hàng Doanh nghiệp Tân Bình,BA013M,01CN000069,1CN00488,Band 6,,HCM41,1,A,HH
+1CN00486,Giám đốc Trung tâm Khách hàng Doanh nghiệp Thanh Xuân,BA013M,01CN000085,1CN01229,Band 6,,HNO44,1,A,HH
+1CN00027,Giám đốc Trung tâm Khách hàng Doanh nghiệp Vũng Tàu,BA013M,01CN000059,1CN00367,Band 6,,BRV01,1,A,HH
+1CN01241,Giám đốc Trung tâm Khách hàng Doanh nghiệp Đống Đa,BA013M,01CN000073,1CN01229,Band 6,,HNO34,1,A,HH
+1CN00339,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Hà Đông (Văn Quán),MJ120S,01CN000024,1CN00800,Band 3,,HNO49,0,I,RM
+1CN00340,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Hoàng Mai (Hoàng Văn Thái),MJ120S,01CN000072,1CN00830,Band 3,,HNO65,0,I,RM
+1CN01380,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Bắc Ninh,MJ121C,01CN000070,1CN00060,Band 2,,BNI01,0,I,RM
+1CN01247,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Cầu Giấy,MJ120S,01CN000006,1CN00405,Band 3,,HNO52,0,I,RM
+1CN00944,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Hà Nội,MJ120S,01CN000041,1CN00209,Band 3,,HNO17,0,I,RM
+1CN00472,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Hải Phòng,MJ121C,01CN000020,1CN00199,Band 2,,HPH01,0,I,RM
+1CN00026,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Gò Vấp (Nguyễn Oanh),MJ121C,01CN000060,1CN01255,Band 2,,HCM32,0,I,RM
+1CN00642,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Sài Gòn,MJ120S,01CN000067,1CN01319,Band 3,,HCM19,0,I,RM
+1CN01187,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Hải Châu,MJ120S,01CN000003,1CN00017,Band 3,,DAN03,0,I,RM
+1CN00894,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Hải Châu,MJ121C,01CN000003,1CN00017,Band 2,,DAN03,0,I,RM
+1CN00013,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Đà Nẵng,MJ120S,01CN000023,1CN00959,Band 3,,DAN01,0,I,RM
+1CN00215,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Đà Nẵng,MJ121C,01CN000023,1CN00959,Band 2,,DAN01,0,I,RM
+1CN00819,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Khánh Hòa,MJ121C,01CN000038,1CN00244,Band 2,,KHO01,0,I,RM
+1CN00560,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Hà Đông (Văn Quán),MJ121C,01CN000024,1CN00800,Band 2,,HNO49,0,I,RM
+1CN00786,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Hoàng Mai (Hoàng Văn Thái),MJ121C,01CN000072,1CN00830,Band 2,,HNO65,0,I,RM
+1CN00432,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Tây Hồ (Thụy Khuê),MJ120S,01CN000034,1CN00454,Band 3,,HNO20,0,I,RM
+1CN01238,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Tây Hồ (Thụy Khuê),MJ121C,01CN000034,1CN00454,Band 2,,HNO20,0,I,RM
+1CN00200,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Cầu Giấy,MJ121C,01CN000006,1CN00405,Band 2,,HNO52,0,I,RM
+1CN01128,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Đống Đa,MJ121C,01CN000073,1CN01241,Band 2,,HNO34,0,I,RM
+1CN00287,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Hà Nội,MJ121C,01CN000041,1CN00209,Band 2,,HNO17,0,I,RM
+1CN00196,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Long Biên,MJ121C,01CN000001,1CN00764,Band 2,,HNO63,0,I,RM
+1CN00892,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Thanh Xuân,MJ120S,01CN000085,1CN00486,Band 3,,HNO44,0,I,RM
+1CN00216,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Thanh Xuân,MJ121C,01CN000085,1CN00486,Band 2,,HNO44,0,I,RM
+1CN00651,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Bến Thành (Thị Nghè),MJ120S,01CN000076,1CN00767,Band 3,,HCM10,0,I,RM
+1CN01317,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Bến Thành (Thị Nghè),MJ121C,01CN000076,1CN00767,Band 2,,HCM10,0,I,RM
+1CN00587,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Gò Vấp,MJ120S,01CN000060,1CN01255,Band 3,,HCM32,0,I,RM
+1CN00208,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Bình Dương,MJ121C,01CN000079,1CN00295,Band 2,,BDU01,0,I,RM
+1CN00062,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Cần Thơ,MJ120S,01CN000022,1CN00645,Band 3,,CTH01,0,I,RM
+1CN01306,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Cộng Hòa,MJ121C,01CN000083,1CN00735,Band 2,,HCM12,0,I,RM
+1CN00455,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Đô Thành,MJ121C,01CN000061,1CN00277,Band 2,,HCM29,0,I,RM
+1CN00556,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Sài Gòn,MJ121C,01CN000067,1CN01319,Band 2,,HCM19,0,I,RM
+1CN00986,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Tân Bình,MJ120S,01CN000069,1CN01114,Band 3,,HCM41,0,I,RM
+1CN00616,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Tân Bình,MJ121C,01CN000069,1CN01114,Band 2,,HCM41,0,I,RM
+1CN00937,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Vũng Tàu,MJ120S,01CN000059,1CN00027,Band 3,,BRV01,0,I,RM
+1CN01163,Chuyên viên hỗ trợ Quan hệ Khách hàng Doanh nghiệp Bắc Ninh,MK061C,01CN000070,1CN00060,Band 2,,BNI01,0,A,ARM
+1CN00963,Giám đốc Trung tâm Khách hàng Doanh nghiệp Hà Đông,BA013M,01CN000024,1CN01229,,,HNO49,0,I,HH
+1CN00830,Giám đốc Trung tâm Khách hàng Doanh nghiệp Hoàng Mai (Hoàng Văn Thái),BA013M,01CN000072,1CN01229,Band 6,,HNO65,1,A,HH
+1CN00466,Giám đốc Trung tâm Khách hàng Doanh nghiệp Tây Hồ,BA013M,01CN000034,1CN01229,,,HNO20,0,I,HH
+1CN00060,Giám đốc Trung tâm Khách hàng Doanh nghiệp Bắc Ninh,BA013M,01CN000070,1CN00367,Band 6,,BNI01,1,A,HH
+1CN01044,Giám đốc Trung tâm Khách hàng Doanh nghiệp Bến Thành,BA013M,01CN000076,1CN00488,,,HCM10,0,I,HH
+1CN00014,Giám đốc Trung tâm Khách hàng Doanh nghiệp Gò Vấp,BA013M,01CN000060,1CN00488,,,HCM32,0,I,HH
+1CN00592,Giám đốc Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài Cấp 2 Miền Bắc (Sở Giao dịch),MJ016E,01CN000057,1CN00284,Band 5,,HNO01,0,A,RM
+1CN00243,Giám đốc Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài Cấp 3 Miền Nam (TP Hồ Chí Minh),MJ029E,01CN000057,1CN00815,Band 5,,HCM01,0,I,RM
+1CN00176,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Sở giao dịch (Hải Phòng),MJ113E,01CN000033,1CN01062,Band 4,,HPH01,0,I,RM
+1CN00079,Trưởng nhóm Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài Miền Bắc (Sở Giao dịch),MK001T,01CN000057,1CN00284,Band 4,,HNO01,1,I,ARM
+1CN00571,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Sở giao dịch (Hải Phòng),MK015S,01CN000033,1CN01062,Band 3,,HPH01,0,I,ARM
+1CN00445,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Sở giao dịch (Quảng Ninh),MK015S,01CN000033,1CN01062,Band 3,,QNI01,0,I,ARM
+1CN00161,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Hồ Chí Minh (Vũng Tàu),MK015S,01CN000037,1CN00528,Band 3,,BRV01,0,I,ARM
+1CN00175,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Sở giao dịch (Bắc Giang),MK061C,01CN000033,1CN01062,Band 2,,BGI01,0,I,ARM
+1CN00906,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Hồ Chí Minh (Bình Dương),MK061C,01CN000037,1CN00528,Band 2,,BDU01,0,I,ARM
+1CN00860,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Hồ Chí Minh (Cần Thơ),MK061C,01CN000037,1CN00528,Band 2,,CTH01,0,I,ARM
+1CN00817,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Sở giao dịch (Quảng Ninh),MJ123S,01CN000033,1CN01062,Band 4,,QNI01,0,I,RM
+1CN00797,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Sở giao dịch (Bắc Giang),MJ113E,01CN000033,1CN01062,Band 4,,BGI01,0,I,RM
+1CN00995,Chuyên viên Kênh bán thay thế Tp. Hồ Chí Minh,MJ070C,01CN000026,1CN00707,Band 2,,HSC02,0,I,BO
+1CN01366,Chuyên viên chính Kênh bán thay thế Tp. Hồ Chí Minh,MJ069S,01CN000026,1CN00707,Band 3,,HSC02,0,I,BO
+1CN00729,Chuyên viên cao cấp Phân khúc Khách hàng Sản xuất Tp. Hồ Chí Minh,MJ021S,01CN000046,1CN00844,Band 4,,HSC02,0,I,BO
+1CN00756,Chuyên viên chính Phân khúc Khách hàng Sản xuất Tp. Hồ Chí Minh,MJ022S,01CN000046,1CN00844,Band 3,,HSC02,0,I,BO
+1CN01197,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 2 Sở giao dịch (Bắc Giang),MJ162E,01CN000017,1CN00901,Band 5,,BGI01,0,I,RM
+1CN00311,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 2 Miền Bắc 2 (Quảng Ninh),MJ162E,01CN000071,1CN01158,Band 5,,QNI01,0,A,RM
+1CN00568,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 1 Sở Giao dịch (Quảng Ninh),MJ163S,01CN000017,1CN00213,Band 4,,QNI01,0,I,RM
+1CN00173,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 3 Hồ Chí Minh (Vũng Tàu),MJ161E,01CN000021,1CN00390,Band 5,,BRV01,0,I,RM
+1CN00965,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 3 Hồ Chí Minh (Bình Dương),MJ161E,01CN000021,1CN00390,Band 5,,BDU01,0,I,RM
+1CN01052,Giám đốc Kinh doanh Miền (Địa bàn cấp 2),MJ111M,01CN000035,1CN00683,Band 6,,DAN01,1,I,BO
+1CN00061,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Gò Vấp (Nguyễn Oanh),MJ120S,01CN000060,1CN01255,Band 3,,HCM32,0,I,RM
+1CN01115,Giao phụ trách Giám đốc Bán hàng Ngân hàng Giao dịch Miền Nam,MJ005M,01CN000052,1CN00246,Band 5,,HSC02,0,I,BO
+1CN00938,Giám đốc Bán hàng Ngân hàng Giao dịch Cấp 2 Miền Nam,KF006T,01CN000052,1CN01115,Band 4,,HSC02,0,I,BO
+1CN00720,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Vũng Tàu,MK061C,01CN000059,1CN00027,Band 2,,BRV01,0,I,ARM
+1CN00806,Giám đốc Khách hàng Doanh nghiệp lớn 2 Miền Nam,MJ008M,01CN000028,1CN00927,Band 7,,HCM01,1,A,BO
+1CN00174,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Quảng Ninh,MJ120S,01CN000044,1CN01243,Band 3,,QNI01,0,I,RM
+1CN00386,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Nam 6,MK091S,01CN000021,1CN01328,Band 3,,HCM01,0,A,ARM
+1CN00320,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Bắc 5,MK091S,01CN000017,1CN00290,Band 3,,HNO01,0,A,ARM
+1CN01209,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Bắc 5,MK092C,01CN000017,1CN00290,Band 2,,HNO01,0,A,ARM
+1CN00908,Giám đốc Dự án Digital Corporation Core Banking,PB020M,01CN000055,1CN00279,Band 7,,HSC01,1,I,BO
+1CN00448,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Đô Thành,M00109,01CN000061,1CN00277,Band 3,,HCM29,0,A,RM
+1CN01266,Chuyên viên Phân khúc Khách hàng Siêu nhỏ,MJ027S,01CN000007,1CN00101,Band 2,,HSC01,0,I,BO
+1CN00633,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Nam,MK092C,01CN000021,1CN01013,Band 2,,HCM01,0,A,ARM
+1CN00291,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Hà Đông (Văn Quán),MJ011M,01CN000024,1CN00800,Band 5,,HNO49,1,A,TL
+1CN00204,Chuyên viên cao cấp Dự án Digital Corporation Core Banking,PB028S,01CN000055,1CN00908,Band 4,,HSC01,0,I,BO
+1CN00333,Giám đốc Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài Cấp 1 Hải Dương,MJ017E,01CN000057,1CN00754,Band 4,,HDU01,0,A,RM
+1CN01378,Giám đốc Trung tâm Khách hàng Doanh nghiệp Nam Thăng Long (Times City),BA013M,01CN000080,1CN01229,Band 6,,HNO02,1,A,HH
+1CN01059,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Nam Thăng Long (Times City),MJ011M,01CN000080,1CN01378,Band 5,,HNO02,1,A,TL
+1CN00763,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Nam Thăng Long (Times City),M00108,01CN000080,1CN01378,Band 4,,HNO02,0,A,RM
+1CN01072,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Nam Thăng Long (Times City),M00109,01CN000080,1CN01378,Band 3,,HNO02,0,A,RM
+1CN00451,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Nam Thăng Long (Times City),MJ120S,01CN000080,1CN01378,Band 3,,HNO02,0,I,RM
+1CN00988,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Nam Thăng Long (Times City),MJ121C,01CN000080,1CN01378,Band 2,,HNO02,0,I,RM
+1CN00865,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Nam Thăng Long (Times City),M00110,01CN000080,1CN01378,Band 2,,HNO02,0,A,RM
+1CN01321,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Nam Thăng Long (Times City),MK015S,01CN000080,1CN01378,Band 3,,HNO02,0,A,ARM
+1CN01220,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Nam Thăng Long (Times City),MK061C,01CN000080,1CN01378,Band 2,,HNO02,0,A,ARM
+1CN01251,Giao phụ trách Giám đốc Trung tâm Khách hàng Doanh nghiệp Trần Hưng Đạo,BA013M,01CN000074,1CN00488,Band 5,,HCM40,1,A,HH
+1CN00273,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Trần Hưng Đạo,MJ011M,01CN000074,1CN01251,Band 5,,HCM40,1,A,TL
+1CN00808,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Trần Hưng Đạo,M00108,01CN000074,1CN01251,Band 4,,HCM40,0,A,RM
+1CN00855,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Trần Hưng Đạo,M00109,01CN000074,1CN01251,Band 3,,HCM40,0,A,RM
+1CN01106,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Trần Hưng Đạo,MJ120S,01CN000074,1CN01251,Band 3,,HCM27,0,I,RM
+1CN01002,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Trần Hưng Đạo,MJ121C,01CN000074,1CN01251,Band 2,,HCM27,0,I,RM
+1CN00374,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Trần Hưng Đạo,M00110,01CN000074,1CN01251,Band 2,,HCM40,0,A,RM
+1CN00184,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Trần Hưng Đạo,MK015S,01CN000074,1CN01251,Band 3,,HCM40,0,A,ARM
+1CN00018,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Trần Hưng Đạo,MK061C,01CN000074,1CN01251,Band 2,,HCM40,0,A,ARM
+1CN00769,Quyền Giám đốc Trung tâm Khách hàng Doanh nghiệp Tân Thuận,BA013M,01CN000040,1CN00488,Band 6,,HCM17,1,A,HH
+1CN00969,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Tân Thuận,MJ011M,01CN000040,1CN00769,Band 5,,HCM17,1,A,TL
+1CN00459,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Tân Thuận,M00108,01CN000040,1CN00769,Band 4,,HCM17,0,A,RM
+1CN00578,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Tân Thuận,M00109,01CN000040,1CN00769,Band 3,,HCM17,0,A,RM
+1CN00739,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Tân Thuận,MJ120S,01CN000040,1CN00769,Band 3,,HCM34,0,I,RM
+1CN00124,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Tân Thuận,MJ121C,01CN000040,1CN00769,Band 2,,HCM34,0,I,RM
+1CN00573,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Tân Thuận,M00110,01CN000040,1CN00769,Band 2,,HCM17,0,A,RM
+1CN00342,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Tân Thuận,MK015S,01CN000040,1CN00769,Band 3,,HCM17,0,A,ARM
+1CN00464,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Tân Thuận,MK061C,01CN000040,1CN00769,Band 2,,HCM17,0,A,ARM
+1CN00099,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Vũng tàu,MK091S,01CN000021,1CN00390,Band 3,,BRV01,0,I,ARM
+1CN00515,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Cần Thơ,MK092C,01CN000021,1CN00390,Band 2,,CTH01,0,I,ARM
+1CN00978,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Long Biên,MJ120S,01CN000001,1CN00764,Band 3,,HNO63,0,I,RM
+1CN01030,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Đống Đa,MJ120S,01CN000073,1CN01241,Band 3,,HNO34,0,I,RM
+1CN00103,Quản trị viên Ngân hàng Đối tác Chiến lược,MM008C,01CN000025,1CN01378,Band 2,,HSC01,0,A,BO
+1CN01276,Quản trị viên Ngân hàng Đối tác Chiến lược,MM008C,01CN000025,1CN00830,Band 3,,HSC01,0,A,BO
+1CN00090,Chuyên gia Quản lý Kinh doanh,M00160,01CN000004,1CN01080,Band 5,,HSC01,0,A,BO
+1CN00152,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 2 Sở giao dịch (Hải Phòng),MJ162E,01CN000017,1CN00901,Band 5,,HPH01,0,I,RM
+1CN01108,Chuyên viên chính Bán hàng Ngân hàng Giao dịch Miền Nam,MJ007S,01CN000052,1CN01115,Band 3,,HSC02,0,I,BO
+1CN00384,Chuyên viên Vùng Cấp 1 Phòng Giải pháp Tài chính Doanh nghiệp Cấp 2,MJ004S,01CN000086,1CN00367,Band 3,,HSC01,0,A,BO
+1CN00388,Chuyên viên chính Dự án Digital Corporation Core Banking,PB009S,01CN000055,1CN00908,Band 3,,HSC01,0,I,BO
+1CN00185,Chuyên gia Điều phối Dự án Digital Corporation Core Banking,PB001E,01CN000055,1CN00908,Band 5,,HSC01,0,I,BO
+1CN00250,Quản lý cao cấp Dự án Digital Corporation Core Banking,PB002E,01CN000055,1CN00908,Band 6,,HSC01,1,I,BO
+1CN00290,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp lớn Miền Bắc 5,MJ026M,01CN000017,1CN01351,Band 6,,HNO01,1,A,TL
+1CN01328,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp lớn Miền Nam 6,MJ026M,01CN000021,1CN00806,Band 6,,HCM01,1,A,TL
+1CN00276,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Quảng Ninh,M00109,01CN000044,1CN01243,Band 3,,QNI01,0,A,RM
+1CN00351,Chuyên viên cao cấp Hỗ trợ Quan hệ khách hàng Doanh nghiệp lớn Ngành Miền Nam,MK008S,01CN000075,1CN00220,Band 4,,HCM01,0,I,ARM
+1CN00107,Thành viên Dự án Chuyển đổi,PB031C,01HO000001,1HO00002,Band 6,,HSC01,1,I,BO
+1CN00065,Quản trị viên Ngân hàng Đối tác Chiến lược Hồ Chí Minh,MM008C,01CN000025,1CN00516,Band 2,,HSC02,0,A,BO
+1CN00823,Thành viên Dự án chuyển đổi (EB),PB031C,01HO000001,1PL00001,Band 3,,HSC01,0,I,BO
+1CN00239,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Sài Gòn,MJ011M,01CN000067,1CN01319,Band 5,,HCM19,1,A,TL
+1CN01161,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Sở giao dịch (Hải Phòng),MK091S,01CN000017,1CN00901,Band 3,,HPH01,0,I,ARM
+1CN00067,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Sở giao dịch (Quảng Ninh),MK091S,01CN000017,1CN00213,Band 3,,QNI01,0,I,ARM
+1CN00643,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Sở Giao dịch (Bắc Giang),MK092C,01CN000017,1CN00901,Band 2,,BGI01,0,I,ARM
+1CN01252,Chuyên viên Vùng Cấp 2 Trung tâm Đối tác Kinh doanh Khu vực 2,M00169,01CN000005,1CN01229,Band 4,,HSC01,0,A,BO
+1CN00301,Chuyên viên Vùng Cấp 2 Tổ Điều phối Hoạt động Kinh doanh Cấp 2,M00169,01CN000081,1CN00488,Band 4,,HSC02,0,A,BO
+1CN00770,Chuyên viên Vùng Cấp 2 Phòng Giải pháp Tài chính Doanh nghiệp Cấp 2,M00169,01CN000086,1CN00367,Band 4,,HSC01,0,A,BO
+1CN00696,Chuyên viên Chăm sóc khách hàng Kênh số,M00162,01CN000026,1CN00227,Band 2,,HSC01,0,I,BO
+1CN00952,Chuyên gia Chất lượng dịch vụ và Kiểm soát tuân thủ,M00161,01CN000004,1CN01080,Band 5,,HSC01,0,A,BO
+1CN00864,Giám đốc Thị trường và Tiềm năng khách hàng,M00163,01CN000039,1CN00683,Band 5,,HSC01,1,A,BO
+1CN00669,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Bắc 2 (Cẩm Phả),MK091S,01CN000071,1CN01158,Band 3,,QNI07,0,A,ARM
+1CN00648,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Hoàng Mai (Hoàng Văn Thái),MK061C,01CN000072,1CN00830,Band 2,,HNO65,0,A,ARM
+1CN00492,Phó Giám đốc Ngành Xây dựng - Vật liệu Xây dựng miền Bắc,MJ032M,01CN000047,1CN00274,Band 7,,HNO01,1,I,BO
+1CN01084,Phó Giám đốc Ngành Xây dựng - Vật liệu Xây dựng miền Nam,MJ032M,01CN000075,1CN00274,Band 7,,HCM01,1,I,BO
+1CN01121,Thành viên dự án chuyển đổi (NHGD),PB031C,01HO000001,1HO00002,Band 4,,HSC01,0,I,BO
+1CN00182,Giám đốc nghiệp vụ Tài trợ thương mại và tài trợ Chuỗi Dự án Digital Corporation Core Banking,PB003M,01CN000055,1CN00908,Band 5,,HSC01,1,I,BO
+1CN01246,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Hà Đông (Văn Quán),MK015S,01CN000024,1CN00800,Band 3,,HNO49,0,A,ARM
+1CN00657,Cộng tác viên Trung tâm Khách hàng Doanh nghiệp Tân Thuận,AA052C,01CN000040,1CN00769,K,,HCM17,0,A,BO
+1CN01107,Chuyên gia cao cấp Dự án Digital Corporation Core Banking,PB005E,01CN000055,1CN00908,Band 6,,HSC01,0,I,BO
+1CN01228,Cộng tác viên Trung tâm Khách hàng Doanh nghiệp Quảng Ninh,AA052C,01CN000044,1CN01243,K,,QNI01,0,A,BO
+1CN01185,Cộng tác viên Kênh bán thay thế Hà Nội,AA052C,01CN000026,1CN01273,K,,HNO20,0,I,BO
+1CN00909,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Quảng Ninh,MJ011M,01CN000044,1CN01243,Band 5,,QNI01,1,A,TL
+1CN00692,Cộng tác viên Siêu Trung tâm Khách hàng Doanh nghiệp Hồ Chí Minh,AA052C,01CN000021,1CN00390,K,,HCM01,0,I,BO
+1CN00113,Cộng tác viên Quản lý và Hỗ trợ kinh doanh,AA052C,01CN000015,1CN01080,K,,HSC01,0,I,BO
+1CN00443,Cộng tác viên Kênh bán thay thế Hồ Chí Minh,AA052C,01CN000026,1CN01273,K,,HSC02,0,I,BO
+1CN01124,Cộng tác viên Trung tâm Khách hàng Doanh nghiệp Hoàng Mai (Hoàng Văn Thái),AA052C,01CN000072,1CN00830,K,,HNO65,0,A,BO
+1CN00335,Cộng tác viên Trung tâm Khách hàng Doanh nghiệp Vốn đầu tư Nước ngoài Miền Bắc,AA052C,01CN000057,1CN00783,K,,HNO01,0,A,BO
+1CN00296,Cộng tác viên Hỗ trợ Trung tâm Khách hàng Doanh nghiệp Vốn đầu tư Nước ngoài Miền Nam,AA052C,01CN000057,1CN01061,K,,HCM01,0,A,BO
+1CN00530,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Sở giao dịch (Cẩm Phả),MK091S,01CN000033,1CN00901,Band 2,,QNI07,0,I,ARM
+1CN01093,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Đà Nẵng,MJ011M,01CN000023,1CN00959,Band 5,,DAN01,1,A,TL
+1CN01175,Chuyên viên chính hỗ trợ Kênh Bán hàng và Phân phối,MJ035S,01CN000058,1CN00683,Band 3,,HSC01,0,A,BO
+1CN00416,Thành viên Dự án Chuyển đổi,PB031C,01HO000001,1HO00001,Band 4,,HSC01,0,I,BO
+1CN00398,Thành viên dự án chuyển đổi (EB),PB031C,01HO000001,1PL00001,Band 5,,HSC01,0,I,BO
+1CN00368,Chuyên viên cao cấp Kênh bán thay thế Tp. Hồ Chí Minh,MJ065S,01CN000026,1CN00707,Band 4,,HSC02,0,I,BO
+1CN00629,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Long Biên,MK015S,01CN000001,1CN00764,Band 3,,HNO63,0,A,ARM
+1CN00373,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Bình Dương,MK015S,01CN000079,1CN00295,Band 3,,BDU01,0,A,ARM
+1CN00280,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Cần Thơ,M00107,01CN000022,1CN00645,Band 4,,CTH01,0,A,RM
+1CN00654,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Tân Bình,MJ011M,01CN000069,1CN01114,Band 5,,HCM41,1,A,TL
+1CN00498,Giám đốc nghiệp vụ Kế Toán Dự án Digital Corporation Core Banking,LD010M,01CN000055,1CN00908,Band 5,,HSC01,1,I,BO
+1CN01262,Chuyên gia Quản trị Kiến trúc và Giải pháp Công nghệ Dự án Digital Corporation Core Banking,IC004E,01CN000055,1CN00908,Band 5,,HSC01,0,I,BO
+1CN00334,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Cầu Giấy,M00107,01CN000006,1CN00405,Band 4,,HNO52,0,A,RM
+1CN00785,Chuyên viên quan hệ khách hàng doanh nghiệp khởi nghiệp Sở Giao dịch,MJ115C,01CN000033,1CN01062,K,,HNO01,0,I,RM
+1CN00201,Chuyên viên quan hệ khách hàng doanh nghiệp khởi nghiệp Hồ Chí Minh,MJ115C,01CN000037,1CN00528,K,,HCM01,0,I,RM
+1CN00502,Chuyên viên quan hệ khách hàng doanh nghiệp khởi nghiệp Hoàng Mai (Hoàng Văn Thái),MJ115C,01CN000072,1CN00830,K,,HNO65,0,I,RM
+1CN00259,Chuyên viên quan hệ khách hàng doanh nghiệp khởi nghiệp Hải Phòng,MJ115C,01CN000020,1CN00199,K,,HPH01,0,I,RM
+1CN00674,Chuyên viên quan hệ khách hàng doanh nghiệp khởi nghiệp Hà Đông (Văn Quán),MJ115C,01CN000024,1CN00800,K,,HNO49,0,I,RM
+1CN00705,Chuyên viên quan hệ khách hàng doanh nghiệp khởi nghiệp Tây Hồ (Thụy Khuê),MJ115C,01CN000034,1CN00454,K,,HNO20,0,I,RM
+1CN00281,Chuyên viên quan hệ khách hàng doanh nghiệp khởi nghiệp Bắc Ninh,MJ115C,01CN000070,1CN00060,K,,BNI01,0,I,RM
+1CN00032,Chuyên viên quan hệ khách hàng doanh nghiệp khởi nghiệp Cầu Giấy,MJ115C,01CN000006,1CN00405,K,,HNO52,0,I,RM
+1CN00884,Chuyên viên quan hệ khách hàng doanh nghiệp khởi nghiệp Đống Đa,MJ115C,01CN000073,1CN01241,K,,HNO34,0,I,RM
+1CN01360,Chuyên viên quan hệ khách hàng doanh nghiệp khởi nghiệp Hà Nội,MJ115C,01CN000041,1CN00209,K,,HNO17,0,I,RM
+1CN00189,Chuyên viên quan hệ khách hàng doanh nghiệp khởi nghiệp Long Biên,MJ115C,01CN000001,1CN00764,K,,HNO63,0,I,RM
+1CN00853,Chuyên viên quan hệ khách hàng doanh nghiệp khởi nghiệp Quảng Ninh,MJ115C,01CN000044,1CN01243,K,,QNI01,0,I,RM
+1CN00346,Chuyên viên quan hệ khách hàng doanh nghiệp khởi nghiệp Thanh Xuân,MJ115C,01CN000085,1CN00486,K,,HNO44,0,I,RM
+1CN00719,Chuyên viên quan hệ khách hàng doanh nghiệp khởi nghiệp Bến Thành (Thị Nghè),MJ115C,01CN000076,1CN00767,K,,HCM10,0,I,RM
+1CN01287,Chuyên viên quan hệ khách hàng doanh nghiệp khởi nghiệp Gò Vấp (Nguyễn Oanh),MJ115C,01CN000060,1CN01255,K,,HCM32,0,I,RM
+1CN00365,Chuyên viên quan hệ khách hàng doanh nghiệp khởi nghiệp Bình Dương,MJ115C,01CN000079,1CN00295,K,,BDU01,0,I,RM
+1CN00540,Chuyên viên quan hệ khách hàng doanh nghiệp khởi nghiệp Cần Thơ,MJ115C,01CN000022,1CN00645,K,,CTH01,0,I,RM
+1CN00649,Chuyên viên quan hệ khách hàng doanh nghiệp khởi nghiệp Cộng Hòa,MJ115C,01CN000083,1CN00735,K,,HCM12,0,I,RM
+1CN00257,Chuyên viên quan hệ khách hàng doanh nghiệp khởi nghiệp Đô Thành,MJ115C,01CN000061,1CN00277,K,,HCM29,0,I,RM
+1CN01282,Chuyên viên quan hệ khách hàng doanh nghiệp khởi nghiệp Sài Gòn,MJ115C,01CN000067,1CN01319,K,,HCM19,0,I,RM
+1CN00033,Chuyên viên quan hệ khách hàng doanh nghiệp khởi nghiệp Tân Bình,MJ115C,01CN000069,1CN01114,K,,HCM41,0,I,RM
+1CN00223,Chuyên viên quan hệ khách hàng doanh nghiệp khởi nghiệp Vũng Tàu,MJ115C,01CN000059,1CN00027,K,,BRV01,0,I,RM
+1CN00106,Chuyên viên quan hệ khách hàng doanh nghiệp khởi nghiệp Hải Châu,MJ115C,01CN000003,1CN00017,K,,DAN03,0,I,RM
+1CN00641,Chuyên viên quan hệ khách hàng doanh nghiệp khởi nghiệp Đà Nẵng,MJ115C,01CN000023,1CN00959,K,,DAN01,0,I,RM
+1CN01384,Chuyên viên quan hệ khách hàng doanh nghiệp khởi nghiệp Khánh Hòa,MJ115C,01CN000038,1CN00244,K,,KHO01,0,I,RM
+1CN00608,Chuyên viên quan hệ khách hàng doanh nghiệp khởi nghiệp Nam Thăng Long (Times City),MJ115C,01CN000080,1CN01378,K,,HNO02,0,I,RM
+1CN00497,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Trần Hưng Đạo,M00107,01CN000074,1CN01251,Band 4,,HCM40,0,A,RM
+1CN00356,Chuyên viên quan hệ khách hàng doanh nghiệp khởi nghiệp Tân Thuận,MJ115C,01CN000040,1CN00769,K,,HCM34,0,I,RM
+1CN01352,Chuyên viên quan hệ khách hàng doanh nghiệp khởi nghiệp Trần Hưng Đạo,MJ115C,01CN000074,1CN01251,K,,HCM27,0,I,RM
+1CN00790,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Thành Công,M00108,01CN000034,1CN00454,Band 4,,HNO11,0,A,RM
+1CN01176,Giám đốc Quan hệ Khách hàng doanh nghiệp Cấp 2 Đô Thành,M00107,01CN000061,1CN00277,Band 4,,HCM29,0,A,RM
+1CN00972,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Sài Gòn,M00108,01CN000067,1CN01319,Band 4,,HCM19,0,A,RM
+1CN01045,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Khánh Hòa,M00107,01CN000038,1CN00244,Band 4,,KHO01,0,A,RM
+1CN00305,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Bắc Ninh,M00107,01CN000070,1CN00060,Band 4,,BNI01,1,A,RM
+1CN01242,Cộng tác viên Trung tâm Khách hàng doanh nghiệp Sài Gòn,AA052C,01CN000067,1CN01319,K,,HCM19,0,A,BO
+1CN00248,Cộng tác viên Giải pháp thanh toán và quản lý tiền tệ,AA052C,01CN000064,1CN00851,K,,HSC01,0,I,BO
+1CN01374,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Vũng Tàu,MJ121C,01CN000059,1CN00027,Band 2,,BRV01,0,I,RM
+1CN01316,Cộng tác viên Giải pháp Chuỗi cung ứng,AA052C,01CN000016,1CN01350,K,,HSC01,0,I,BO
+1CN01249,Cộng tác viên Trung tâm Phân khúc Khách hàng Doanh nghiệp,AA052C,01CN000063,1CN00043,K,,HSC01,0,I,BO
+1CN00659,Chuyên viên Phân khúc Khách hàng Thương mại,MJ003C,01CN000045,1CN00546,Band 2,,HSC01,0,I,BO
+1CN00595,Chuyên viên Phân khúc Khách hàng Xây dựng,MJ004C,01CN000056,1CN00676,Band 2,,HSC01,0,I,BO
+1CN00328,Quyền Phó Tổng Giám đốc Ngân hàng Đối tác Chiến lược,MM020D,01CN000025,1CN00279,Band 8,,HSC01,1,A,BO
+1CN01226,Giám đốc Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Cấp 1 Vũng Tàu,MJ002S,01CN000059,1CN00027,Band 4,,BRV01,0,I,RM
+1CN00363,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 2 Trần Hưng Đạo,M00107,01CN000074,1CN01251,Band 4,,HCM40,1,I,RM
+1CN01083,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Bình Dương,MJ120S,01CN000079,1CN00295,Band 3,,BDU01,0,I,RM
+1CN00306,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Bình Dương,MJ011M,01CN000079,1CN00295,Band 5,,BDU01,1,A,TL
+1CN00681,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài,MJ014M,01CN000057,1CN00754,Band 6,,HNO01,1,A,TL
+1CN00213,Giao phụ trách Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp lớn Miền Bắc 1,MJ026M,01CN000032,1CN01351,Band 5,,HNO01,0,A,TL
+1CN00576,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 3 Miền Bắc 1,MJ161E,01CN000032,1CN00213,Band 5,,HNO01,0,A,RM
+1CN00727,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 2 Miền Bắc 1,MJ162E,01CN000032,1CN00213,Band 5,,HNO01,0,A,RM
+1CN00895,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 1 Miền Bắc 1,MJ163S,01CN000032,1CN00213,Band 4,,HNO01,0,A,RM
+1CN00718,Chuyên viên cao cấp Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Bắc 1,MK090S,01CN000032,1CN00213,Band 4,,HNO01,0,A,ARM
+1CN00646,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Bắc 1,MK091S,01CN000032,1CN00213,Band 3,,HNO01,0,A,ARM
+1CN00627,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Bắc 1,MK092C,01CN000032,1CN00213,Band 2,,HNO01,0,A,ARM
+1CN01158,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp lớn Miền Bắc 2,MJ026M,01CN000071,1CN01351,Band 6,,HNO01,1,A,TL
+1CN00268,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 3 Miền Bắc 2,MJ161E,01CN000071,1CN01158,Band 5,,HNO01,0,A,RM
+1CN00267,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 2 Miền Bắc 2,MJ162E,01CN000071,1CN01158,Band 5,,HNO01,0,A,RM
+1CN00724,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 1 Miền Bắc 2,MJ163S,01CN000071,1CN01158,Band 4,,HNO01,0,A,RM
+1CN00918,Chuyên viên cao cấp Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Bắc 2,MK090S,01CN000071,1CN01158,Band 4,,HNO01,0,A,ARM
+1CN01222,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Bắc 2,MK091S,01CN000071,1CN01158,Band 3,,HNO01,0,A,ARM
+1CN01343,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Bắc 2,MK092C,01CN000071,1CN01158,Band 2,,HNO01,0,A,ARM
+1CN00110,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp lớn Miền Nam 1,MJ026M,01CN000053,1CN00806,Band 6,,HCM01,1,A,TL
+1CN00913,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 3 Miền Nam 1,MJ161E,01CN000053,1CN00110,Band 5,,HCM01,0,A,RM
+1CN00866,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 2 Miền Nam 1,MJ162E,01CN000053,1CN00110,Band 5,,HCM01,0,A,RM
+1CN01364,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 1 Miền Nam 1,MJ163S,01CN000053,1CN00110,Band 4,,HCM01,0,A,RM
+1CN00005,Chuyên viên cao cấp Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Nam 1,MK090S,01CN000053,1CN00110,Band 4,,HCM01,0,A,ARM
+1CN00779,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Nam 1,MK091S,01CN000053,1CN00110,Band 3,,HCM01,0,A,ARM
+1CN00962,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Nam 1,MK092C,01CN000053,1CN00110,Band 2,,HCM01,0,A,ARM
+1CN00293,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp lớn Miền Nam 2,MJ026M,01CN000048,1CN00806,Band 6,,HCM01,1,A,TL
+1CN01244,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 3 Miền Nam 2,MJ161E,01CN000048,1CN00293,Band 5,,HCM01,0,A,RM
+1CN00069,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 2 Miền Nam 2,MJ162E,01CN000048,1CN00293,Band 5,,HCM01,0,A,RM
+1CN00852,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 1 Miền Nam 2,MJ163S,01CN000048,1CN00293,Band 4,,HCM01,0,A,RM
+1CN00104,Chuyên viên cao cấp Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Nam 2,MK090S,01CN000048,1CN00293,Band 4,,HCM01,0,A,ARM
+1CN01296,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Nam 2,MK091S,01CN000048,1CN00293,Band 3,,HCM01,0,A,ARM
+1CN00299,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Nam 2,MK092C,01CN000048,1CN00293,Band 2,,HCM01,0,A,ARM
+1CN00002,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Đô Thành,MK015S,01CN000061,1CN00277,Band 3,,HCM29,0,A,ARM
+1CN00749,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Đống Đa,MK015S,01CN000073,1CN01241,Band 3,,HNO34,0,A,ARM
+1CN00387,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Bến Thành,M00107,01CN000076,1CN00767,Band 4,,HCM04,0,A,RM
+1CN00227,Trưởng nhóm Kênh bán thay thế Miền Bắc,MJ001T,01CN000026,1CN01273,Band 4,,HNO20,1,I,BO
+1CN00707,Trưởng nhóm Kênh bán thay thế Miền Nam,MJ001T,01CN000026,1CN01273,Band 4,,HSC02,1,I,BO
+1CN00231,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Miền Nam,MJ121C,01CN000011,1CN01103,Band 2,,HCM41,0,I,RM
+1CN00891,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp siêu nhỏ Miền Nam,MJ034M,01CN000011,1CN01103,Band 5,,HCM41,1,I,TL
+1CN01099,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Miền Bắc,MJ121C,01CN000066,1CN00638,Band 2,,HNO20,0,I,RM
+1CN00831,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp siêu nhỏ Miền Bắc,MJ034M,01CN000066,1CN00638,Band 5,,HNO20,1,I,TL
+1CN01110,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Hà Nội,M00107,01CN000041,1CN00209,Band 4,,HNO17,0,A,RM
+1CN00939,Cộng tác viên Trung tâm Khách hàng Doanh nghiệp Trần Hưng Đạo,AA052C,01CN000074,1CN01251,K,,HCM40,0,A,BO
+1CN00391,Giám đốc Bán hàng Ngân hàng Giao dịch Cấp 3 Miền Bắc,KF005T,01CN000052,1CN00246,Band 5,,HSC01,0,I,BO
+1CN01088,Chuyên viên quan hệ khách hàng doanh nghiệp khởi nghiệp Miền Nam,MJ115C,01CN000011,1CN00891,K,,HCM41,0,I,RM
+1CN00325,Chuyên viên quan hệ khách hàng doanh nghiệp khởi nghiệp Miền Bắc,MJ115C,01CN000066,1CN00831,K,,HNO20,0,I,RM
+1CN00981,Giám đốc Quản lý Quan hệ khách hàng Doanh nghiệp lớn Ngành Miền Nam 2,MJ010M,01CN000075,1CN00274,Band 6,,HCM01,1,I,TL
+1CN00119,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài Hồ Chí Minh,MJ014M,01CN000057,1CN00754,Band 6,,HCM01,1,A,TL
+1CN00513,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Quảng Ninh,MJ121C,01CN000044,1CN01243,Band 2,,QNI01,0,I,RM
+1CN00675,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Thành Công,M00107,01CN000034,1CN00454,Band 4,,HNO11,0,A,RM
+1CN01087,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Nam Thăng Long (Times City),M00107,01CN000080,1CN01378,Band 4,,HNO02,0,A,RM
+1CN00165,Cộng tác viên Trung tâm Khách hàng Doanh nghiệp siêu nhỏ Miền Nam,AA052C,01CN000011,1CN01103,K,,HCM41,0,I,BO
+1CN00372,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Cần Thơ,MJ121C,01CN000022,1CN00645,Band 2,,CTH01,0,I,RM
+1CN01260,Chuyên viên cao cấp Giải pháp Chuỗi cung ứng Hồ Chí Minh,MH052S,01CN000016,1CN01350,Band 4,,HSC02,0,I,BO
+1CN00266,Giám đốc Bán hàng Ngân hàng Giao dịch Cấp 1 Miền Nam (Hải Châu),KF007T,01CN000052,1CN01115,Band 4,,DAN03,0,I,BO
+1CN01010,Giám đốc Quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Cấp 1 Miền Bắc,MJ002S,01CN000066,1CN00831,Band 4,,HNO20,0,I,RM
+1CN01379,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Hải Châu,MJ011M,01CN000003,1CN00017,Band 5,,DAN03,1,A,TL
+1CN00856,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Hoàng Mai (Hoàng Văn Thái),M00107,01CN000072,1CN00830,Band 4,,HNO65,0,A,RM
+1CN00478,Giám đốc Bán hàng Ngân hàng Giao dịch Cấp 3 Miền Nam,KF005T,01CN000052,1CN01115,Band 5,,HSC02,0,I,BO
+1CN00638,Giám đốc Trung tâm Khách hàng Doanh nghiệp Siêu nhỏ Miền Bắc,MJ028M,01CN000066,1CN01229,Band 6,,HNO20,1,I,HH
+1CN01103,Giám đốc Trung tâm Khách hàng Doanh nghiệp Siêu nhỏ Miền Nam,MJ033M,01CN000011,1CN00488,Band 6,,HCM41,1,I,HH
+1CN00479,Giám đốc Quan hệ Khách hàng Doanh nghiệp siêu nhỏ cấp 1 Miền Bắc,MJ012S,01CN000066,1CN00638,Band 4,,HNO20,0,I,RM
+1CN00736,Giám đốc Quan hệ Khách hàng Doanh nghiệp siêu nhỏ cấp 1 Miền Nam,MJ013S,01CN000011,1CN01103,Band 4,,HCM41,0,I,RM
+1CN00665,Chuyên viên chính Quan hê Khách hàng Doanh nghiệp Siêu nhỏ Miền Bắc,MJ014S,01CN000066,1CN00638,Band 3,,HNO20,0,I,BO
+1CN00883,Chuyên viên chính Quan hê Khách hàng Doanh nghiệp Siêu nhỏ Miền Nam,MJ015S,01CN000011,1CN01103,Band 3,,HCM41,0,I,BO
+1CN00084,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Gò Vấp (Nguyễn Oanh),MJ011M,01CN000060,1CN01255,Band 5,,HCM32,1,A,TL
+1CN00297,Giao phụ trách Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Cần Thơ,MJ011M,01CN000022,1CN00645,Band 4,,CTH01,0,I,TL
+1CN00994,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Hải Châu,M00108,01CN000003,1CN00017,Band 4,,DAN03,0,A,RM
+1CN00222,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp lớn Miền Bắc 3,MJ026M,01CN000054,1CN01351,Band 6,,HNO01,1,A,TL
+1CN00221,Chuyên viên chính Hỗ trợ Quan hệ khách hàng Doanh nghiệp lớn Ngành Miền Nam 2,MK020S,01CN000075,1CN00981,Band 3,,HCM01,0,I,ARM
+1CN01345,Chuyên viên Hỗ trợ Quan hệ khách hàng Doanh nghiệp lớn Ngành Miền Nam 2,MK021C,01CN000075,1CN00981,Band 2,,HCM01,0,I,ARM
+1CN00953,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 3 Miền Bắc 3,MJ161E,01CN000054,1CN00222,Band 5,,HNO01,0,A,RM
+1CN00029,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 2 Miền Bắc 3,MJ162E,01CN000054,1CN00222,Band 5,,HNO01,0,A,RM
+1CN00760,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 1 Miền Bắc 3,MJ163S,01CN000054,1CN00222,Band 4,,HNO01,0,A,RM
+1CN01188,Chuyên viên cao cấp Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Bắc 3,MK090S,01CN000054,1CN00222,Band 4,,HNO01,0,A,ARM
+1CN00159,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Bắc 3,MK091S,01CN000054,1CN00222,Band 3,,HNO01,0,A,ARM
+1CN01012,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Bắc 3,MK092C,01CN000054,1CN00222,Band 2,,HNO01,0,A,ARM
+1CN00798,Giám đốc Phòng Tăng trưởng Kinh doanh Miền Bắc 1,MK087M,01CN000015,1CN01080,Band 5,,HSC01,1,I,BO
+1CN01298,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Tân Thuận,M00107,01CN000040,1CN00769,Band 4,,HCM17,0,A,RM
+1CN00123,Cộng tác viên Giải pháp Chuỗi cung ứng Hồ Chí Minh,AA052C,01CN000016,1CN01350,K,,HSC02,0,I,BO
+1CN01288,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài Sở Giao dịch 1,MJ014M,01CN000057,1CN00754,Band 6,,HNO01,1,A,TL
+1CN00465,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài Hồ Chí Minh 1,MJ014M,01CN000057,1CN00754,Band 6,,HCM01,1,A,TL
+1CN00516,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp lớn Miền Nam 3,MJ026M,01CN000029,1CN00806,Band 6,,HCM01,1,A,TL
+1CN01133,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 3 Miền Nam 3,MJ161E,01CN000029,1CN00516,Band 5,,HCM01,0,A,RM
+1CN00596,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 2 Miền Nam 3,MJ162E,01CN000029,1CN00516,Band 5,,HCM01,0,A,RM
+1CN00424,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 1 Miền Nam 3,MJ163S,01CN000029,1CN00516,Band 4,,HCM01,0,A,RM
+1CN00413,Chuyên viên cao cấp Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Nam 3,MK090S,01CN000029,1CN00516,Band 4,,HCM01,0,A,ARM
+1CN00045,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Nam 3,MK091S,01CN000029,1CN00516,Band 3,,HCM01,0,A,ARM
+1CN00234,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Nam 3,MK092C,01CN000029,1CN00516,Band 2,,HCM01,0,A,ARM
+1CN00499,Chuyên viên Phân khúc Khách hàng Sản xuất,MJ012C,01CN000046,1CN00844,Band 2,,HSC01,0,I,BO
+1CN00102,Giám đốc Quan hệ Khách hàng Ngành Xây dựng - Vật liệu Xây dựng Cấp 1 Miền Nam,MJ017S,01CN000075,1CN00220,Band 4,,HCM01,0,I,BO
+1CN00130,Chuyên viên Hỗ trợ Quan hệ khách hàng Doanh nghiệp lớn Ngành Miền Bắc,MK021C,01CN000047,1CN00407,Band 2,,HNO01,0,I,ARM
+1CN01270,Giao phụ trách Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp lớn Miền Bắc 4,MJ026M,01CN000050,1CN01351,Band 5,,HNO01,0,A,TL
+1CN01100,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 3 Miền Bắc 4,MJ161E,01CN000050,1CN01270,Band 5,,HNO01,0,A,RM
+1CN00772,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 2 Miền Bắc 4,MJ162E,01CN000050,1CN01270,Band 5,,HNO01,0,A,RM
+1CN00673,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 1 Miền Bắc 4,MJ163S,01CN000050,1CN01270,Band 4,,HNO01,0,A,RM
+1CN01362,Chuyên viên cao cấp Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Bắc 4,MK090S,01CN000050,1CN01270,Band 4,,HNO01,0,A,ARM
+1CN00811,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Bắc 4,MK091S,01CN000050,1CN01270,Band 3,,HNO01,0,A,ARM
+1CN00789,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Bắc 4,MK092C,01CN000050,1CN01270,Band 2,,HNO01,0,A,ARM
+1CN01205,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp lớn Miền Nam 4,MJ026M,01CN000065,1CN00806,Band 6,,HCM01,1,A,TL
+1CN00748,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 3 Miền Nam 4,MJ161E,01CN000065,1CN01205,Band 5,,HCM01,0,A,RM
+1CN00369,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 2 Miền Nam 4,MJ162E,01CN000065,1CN01205,Band 5,,HCM01,0,A,RM
+1CN00840,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 1 Miền Nam 4,MJ163S,01CN000065,1CN01205,Band 4,,HCM01,0,A,RM
+1CN00435,Chuyên viên cao cấp Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Nam 4,MK090S,01CN000065,1CN01205,Band 4,,HCM01,0,A,ARM
+1CN00813,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Nam 4,MK091S,01CN000065,1CN01205,Band 3,,HCM01,0,A,ARM
+1CN00558,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Nam 4,MK092C,01CN000065,1CN01205,Band 2,,HCM01,0,A,ARM
+1CN00818,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Vũng Tàu,MK092C,01CN000021,1CN00390,Band 2,,HCM01,0,I,ARM
+1CN00269,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp lớn Miền Nam 5,MJ026M,01CN000009,1CN00806,Band 6,,HCM01,1,A,TL
+1CN00964,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 3 Miền Nam 5,MJ161E,01CN000009,1CN00269,Band 5,,HCM01,0,A,RM
+1CN00667,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 2 Miền Nam 5,MJ162E,01CN000009,1CN00269,Band 5,,HCM01,0,A,RM
+1CN00232,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 1 Miền Nam 5,MJ163S,01CN000009,1CN00269,Band 4,,HCM01,0,A,RM
+1CN00193,Chuyên viên cao cấp Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Nam 5,MK090S,01CN000009,1CN00269,Band 4,,HCM01,0,A,ARM
+1CN00746,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Nam 5,MK091S,01CN000009,1CN00269,Band 3,,HCM01,0,A,ARM
+1CN00575,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Nam 5,MK092C,01CN000009,1CN00269,Band 2,,HCM01,0,A,ARM
+1CN00255,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Gò Vấp (Nguyễn Oanh),MK015S,01CN000060,1CN01255,Band 3,,HCM32,0,A,ARM
+1CN00880,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Cộng Hòa,MK015S,01CN000083,1CN00735,Band 3,,HCM12,0,A,ARM
+1CN01140,Chuyên viên hỗ trợ quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Miền Bắc,MK026C,01CN000066,1CN00638,Band 2,,HNO20,0,I,ARM
+1CN00755,Chuyên viên hỗ trợ quan hệ Khách hàng Doanh nghiệp Siêu nhỏ Miền Nam,MK026C,01CN000011,1CN01103,Band 2,,HCM41,0,I,ARM
+1CN00371,Giám đốc Quan hệ khách hàng Doanh nghiệp lớn Ngành Cấp 2 Miền Nam 2,MJ027E,01CN000075,1CN00981,Band 5,,HCM01,0,I,RM
+1CN00915,Chuyên viên cao cấp Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Hồ Chí Minh 3 (Vũng Tàu),MK090S,01CN000021,1CN00516,Band 4,,BRV01,0,I,ARM
+1CN01047,Giám đốc Trung tâm Khách hàng Doanh nghiệp Vừa Miền Bắc,MJ036M,01CN000062,1CN01229,Band 6,,HNO17,1,A,HH
+1CN00440,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Vừa Miền Bắc,MJ037M,01CN000062,1CN01047,Band 5,,HNO17,1,A,TL
+1CN00251,Giám đốc Quan hệ Khách hàng Doanh nghiệp Vừa Cấp 3 Miền Bắc,MJ001E,01CN000062,1CN01047,Band 5,,HNO17,0,A,RM
+1CN01261,Giám đốc Quan hệ Khách hàng Doanh nghiệp Vừa Cấp 2 Miền Bắc,MJ018S,01CN000062,1CN01047,Band 4,,HNO17,0,A,RM
+1CN00771,Giám đốc Quan hệ Khách hàng Doanh nghiệp Vừa Cấp 1 Miền Bắc,MJ030S,01CN000062,1CN01047,Band 4,,HNO17,0,A,RM
+1CN00319,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Vừa Miền Bắc,MJ031S,01CN000062,1CN01047,Band 3,,HNO17,0,A,RM
+1CN00198,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Vừa Miền Bắc,MK034S,01CN000062,1CN01047,Band 3,,HNO17,0,A,ARM
+1CN01024,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Vừa Miền Bắc,MK027C,01CN000062,1CN01047,Band 2,,HNO17,0,A,ARM
+1CN00625,"Giám đốc Giám sát, Thúc đẩy và Nâng cao năng lực bán",MK013M,01CN000084,1CN00683,Band 6,,HSC01,1,A,BO
+1CN00845,"Chuyên gia Giám sát, Thúc đẩy và Nâng cao năng lực bán",MK003E,01CN000084,1CN00625,Band 5,,HSC01,0,A,BO
+1CN00566,"Chuyên gia Giám sát, Thúc đẩy và Nâng cao năng lực bán Hồ Chí Minh",MK003E,01CN000084,1CN00625,Band 5,,HSC02,0,A,BO
+1CN00700,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Vũng Tàu,M00110,01CN000059,1CN00027,Band 2,,BRV01,0,A,RM
+1CN00505,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Cần Thơ,M00110,01CN000022,1CN00645,Band 2,,CTH01,0,A,RM
+1CN01196,Giám đốc Quản lý Phát triển chuỗi và Đối tác (EB),MK022M,01CN000078,1CN00927,Band 7,,HSC01,1,A,BO
+1CN00086,Giám đốc Phát triển chuỗi và Đối tác (EB),MK023M,01CN000078,1CN01196,Band 5,,HSC01,1,A,BO
+1CN00471,Chuyên gia Phát triển chuỗi và Đối tác (EB),MK006E,01CN000078,1CN01196,Band 5,,HSC01,0,A,BO
+1CN00139,Chuyên viên cao cấp Phát triển chuỗi và Đối tác (EB),MK044S,01CN000078,1CN01196,Band 4,,HSC01,0,A,BO
+1CN00861,Chuyên viên chính Phát triển chuỗi và Đối tác (EB),MK045S,01CN000078,1CN01196,Band 3,,HSC01,0,A,BO
+1CN00723,Chuyên viên Phát triển chuỗi và Đối tác (EB),MK031C,01CN000078,1CN01196,Band 2,,HSC01,0,A,BO
+1CN00776,Giám đốc Phát triển chuỗi và Đối tác (EB) Miền Nam,MK023M,01CN000078,1CN01196,Band 5,,HSC02,1,A,BO
+1CN00630,Chuyên gia Phát triển chuỗi và Đối tác (EB) Miền Nam,MK006E,01CN000078,1CN01196,Band 5,,HSC02,0,A,BO
+1CN01146,Chuyên viên cao cấp Phát triển chuỗi và Đối tác (EB) Miền Nam,MK044S,01CN000078,1CN01196,Band 4,,HSC02,0,A,BO
+1CN01290,Chuyên viên chính Phát triển chuỗi và Đối tác (EB) Miền Nam,MK045S,01CN000078,1CN01196,Band 3,,HSC02,0,A,BO
+1CN01156,Chuyên viên Phát triển chuỗi và Đối tác (EB) Miền Nam,MK031C,01CN000078,1CN01196,Band 2,,HSC02,0,A,BO
+1CN00588,Giám đốc Chất lượng dịch vụ và Kiểm soát tuân thủ,QA004M,01CN000051,1CN01080,Band 5,,HSC01,1,I,BO
+1CN00722,Chuyên viên cao cấp Chất lượng dịch vụ và Kiểm soát tuân thủ,QA015S,01CN000004,1CN01080,Band 4,,HSC01,0,A,BO
+1CN00094,Chuyên viên chính Chất lượng dịch vụ và Kiểm soát tuân thủ,QA018S,01CN000004,1CN01080,Band 3,,HSC01,0,A,BO
+1CN00021,Chuyên viên Chất lượng dịch vụ và Kiểm soát tuân thủ,QA004C,01CN000004,1CN01080,Band 2,,HSC01,0,A,BO
+1CN00762,Quyền Giám đốc Tổ Khách hàng Vừa và Nhỏ,MJ036M,01CN000008,1CN00488,Band 6,,HCM29,1,A,HH
+1CN01109,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp vừa Miền Nam,MJ037M,01CN000008,1CN00762,Band 5,,HCM29,1,A,TL
+1CN01131,Giám đốc Quan hệ Khách hàng Doanh nghiệp vừa Cấp 3 Miền Nam,MJ001E,01CN000008,1CN00762,Band 5,,HCM29,0,A,RM
+1CN01123,Giám đốc Quan hệ Khách hàng Doanh nghiệp vừa Cấp 2 Miền Nam,MJ018S,01CN000008,1CN00762,Band 4,,HCM29,0,A,RM
+1CN01095,Giám đốc Quan hệ Khách hàng Doanh nghiệp vừa Cấp 1 Miền Nam,MJ030S,01CN000008,1CN00762,Band 4,,HCM29,0,A,RM
+1CN01129,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp vừa Miền Nam,MJ031S,01CN000008,1CN00762,Band 3,,HCM29,0,A,RM
+1CN00327,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp vừa Miền Nam,MK034S,01CN000008,1CN00762,Band 3,,HCM29,0,A,ARM
+1CN01007,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp vừa Miền Nam,MK027C,01CN000008,1CN00762,Band 2,,HCM29,0,A,ARM
+1CN00777,"Chuyên viên cao cấp Giám sát, Thúc đẩy và Nâng cao năng lực bán",MK046S,01CN000084,1CN00625,Band 4,,HSC01,0,A,BO
+1CN01254,"Chuyên viên chính Giám sát, Thúc đẩy và Nâng cao năng lực bán",MK049S,01CN000084,1CN00625,Band 3,,HSC01,0,A,BO
+1CN00872,"Chuyên viên Giám sát, Thúc đẩy và Nâng cao năng lực bán",MK032C,01CN000084,1CN00625,Band 2,,HSC01,0,I,BO
+1CN00971,"Chuyên viên cao cấp Giám sát, Thúc đẩy và Nâng cao năng lực bán Hồ Chí Minh",MK046S,01CN000084,1CN00625,Band 4,,HSC02,0,I,BO
+1CN00482,Giám đốc Dự án Sales Transformation,PB002H,01CN000014,1CN00328,Band 8,,HSC01,1,I,BO
+1CN01211,Giám đốc Quản lý Dự án Sales Transformation,PB009M,01CN000014,1CN00482,Band 6,,HSC01,1,I,BO
+1CN01236,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Cộng Hòa,M00107,01CN000083,1CN00735,Band 4,,HCM12,0,A,RM
+1CN01299,Cộng tác viên Phân khúc Khách hàng Xây dựng,AA052C,01CN000056,1CN00676,K,,HSC01,0,I,BO
+1CN00787,Phó Giám đốc Quản lý Phát triển chuỗi và Đối tác (EB),MK039M,01CN000078,1CN01196,Band 6,,HSC01,1,I,BO
+1CN00591,Cộng tác viên Phát triển chuỗi và Đối tác (EB),AA052C,01CN000078,1CN01196,K,,HSC01,0,A,BO
+1CN00940,Cộng tác viên Phân khúc Khách hàng Sản xuất,AA052C,01CN000046,1CN00844,K,,HSC01,0,I,BO
+1CN00357,Cộng tác viên Phân khúc Khách hàng Thương mại,AA052C,01CN000045,1CN00546,K,,HSC01,0,I,BO
+1CN01165,Cộng tác viên Trung tâm Khách hàng Doanh nghiệp Hà Nội,AA052C,01CN000041,1CN00209,K,,HNO17,0,A,BO
+1CN00352,Chuyên gia Phân tích tín dụng Khách hàng Doanh nghiệp lớn Ngành Miền Bắc,MK018E,01CN000047,1CN00407,Band 5,,HNO01,0,I,BO
+1CN00483,Chuyên viên cao cấp Phân tích tín dụng Khách hàng Doanh nghiệp lớn Ngành Miền Bắc,MK083S,01CN000047,1CN00407,Band 4,,HNO01,0,I,BO
+1CN00240,Chuyên gia Phân tích tín dụng Khách hàng Doanh nghiệp lớn Miền Bắc,MK019E,01CN000028,1CN01351,Band 5,,HNO01,0,A,BO
+1CN00955,Chuyên viên cao cấp Phân tích tín dụng Khách hàng Doanh nghiệp lớn Miền Bắc,MK085S,01CN000028,1CN01351,Band 4,,HNO01,0,A,BO
+1CN00258,Chuyên gia Phân tích tín dụng Khách hàng Doanh nghiệp lớn Miền Nam,MK019E,01CN000053,1CN00806,Band 5,,HCM01,0,A,BO
+1CN00504,Chuyên viên cao cấp Phân tích tín dụng Khách hàng Doanh nghiệp lớn Miền Nam,MK085S,01CN000028,1CN00806,Band 4,,HCM01,0,A,BO
+1CN01091,Chuyên gia Phân tích tín dụng Khách hàng Doanh nghiệp lớn Ngành Miền Nam,MK018E,01CN000075,1CN00220,Band 5,,HCM01,0,I,BO
+1CN00547,Chuyên viên cao cấp Phân tích tín dụng Khách hàng Doanh nghiệp lớn Ngành Miền Nam,MK083S,01CN000075,1CN00220,Band 4,,HCM01,0,I,BO
+1CN00180,Giám đốc Dự án Lead Generation,PB002H,01CN000030,1CN00328,Band 8,,HSC01,1,I,BO
+1CN00542,Giám đốc Quản lý Dự án Lead Generation,PB009M,01CN000030,1CN00180,Band 6,,HSC01,1,I,BO
+1CN01006,Thành viên Dự án Lead Generation 1,PB052S,01CN000030,1CN00542,Band 4,,HSC01,0,I,BO
+1CN00583,Thành viên Dự án Lead Generation 2,PB053S,01CN000030,1CN00542,Band 3,,HSC01,0,I,BO
+1CN00294,Chuyên viên cao cấp Phân tích Nghiệp vụ (LG),PB006S,01CN000030,1CN00542,Band 4,,HSC01,0,I,BO
+1CN01386,Chuyên viên cao cấp Quản trị sự thay đổi (LG),PB015S,01CN000030,1CN00542,Band 4,,HSC01,0,I,BO
+1CN01154,Chuyên viên cao cấp Triển khai chiến dịch (LG),PB024S,01CN000030,1CN00542,Band 4,,HSC01,0,I,BO
+1CN00926,Trưởng nhóm Quản lý Chuyển đổi (ST),PB006T,01CN000014,1CN01211,Band 5,,HSC01,1,I,BO
+1CN01096,Chuyên viên cao cấp Quản lý năng lực (ST),PB055S,01CN000014,1CN01211,Band 4,,HSC01,0,I,BO
+1CN00083,Chuyên viên cao cấp Năng suất bán (ST),PB056S,01CN000014,1CN01211,Band 4,,HSC01,0,I,BO
+1CN00051,Chuyên viên cao cấp Mô hình bán (ST),PB057S,01CN000014,1CN01211,Band 4,,HSC01,0,I,BO
+1CN00947,Chuyên viên chính Quản lý chuyển đổi Sales Transformation,PB058S,01CN000014,1CN00607,Band 3,,HSC01,0,I,BO
+1CN00450,Giám đốc Bán hàng Ngân hàng Giao dịch Cấp 2 Miền Nam (Hải Châu),KF006T,01CN000052,1CN01115,Band 4,,DAN03,0,I,BO
+1CN01250,Giám đốc Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài Cấp 2 miền Nam (Đồng Nai),MJ016E,01CN000057,1CN00754,Band 5,,DNA01,0,A,RM
+1CN00922,Chuyên gia cao cấp Quản lý chuyển đổi Sales Transformation,PB011E,01CN000014,1CN00607,Band 6,,HSC01,0,I,BO
+1CN00921,Chuyên gia Năng suất bán (ST),PB012E,01CN000014,1CN01211,Band 5,,HSC01,0,I,BO
+1CN01269,Cộng tác viên Trung tâm Khách hàng Doanh nghiệp Bến Thành,AA052C,01CN000076,1CN00767,K,,HCM04,0,A,BO
+1CN00795,Cộng tác viên Trung tâm Khách hàng Doanh nghiệp Nam Thăng Long (Times City),AA052C,01CN000080,1CN01378,K,,HNO02,0,A,BO
+1CN00919,Trưởng nhóm Sáng kiến Dự án Sales Transformation,PB014E,01CN000014,1CN01211,Band 6,,HSC01,0,I,BO
+1CN00475,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài Sở Giao dịch 2,MJ014M,01CN000057,1CN00754,Band 6,,HNO01,1,A,TL
+1CN00553,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài Sở Giao dịch 3,MJ014M,01CN000057,1CN00754,Band 6,,HNO01,1,A,TL
+1CN00711,Chuyên gia Mô hình bán Dự án Sales Transformation,PB015E,01CN000014,1CN01211,Band 5,,HSC01,0,I,BO
+1CN01138,Chuyên viên Năng suất bán Dự án Sales Transformation,PB010C,01CN000014,1CN00482,Band 2,,HSC01,0,I,BO
+1CN00316,Giám đốc Quan hệ khách hàng Doanh nghiệp lớn Ngành Cấp 3 Miền Nam 2,MJ026E,01CN000075,1CN00981,Band 5,,HCM01,0,I,RM
+1CN01385,Cộng tác viên Trung tâm Khách hàng Doanh nghiệp Bắc Ninh,AA052C,01CN000070,1CN00060,K,,BNI01,0,I,BO
+1CN01224,Giám đốc Trung tâm Khách hàng Doanh nghiệp Hồng Bàng,BA013M,01CN000027,1CN00367,Band 6,,HPH07,1,A,HH
+1CN00593,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Hồng Bàng,M00107,01CN000027,1CN01224,Band 4,,HPH07,0,A,RM
+1CN00489,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Hồng Bàng,M00108,01CN000027,1CN01224,Band 4,,HPH07,0,A,RM
+1CN01239,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Hồng Bàng,MK015S,01CN000027,1CN01224,Band 3,,HPH07,0,A,ARM
+1CN00430,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Hồng Bàng,MK061C,01CN000027,1CN01224,Band 2,,HPH07,0,A,ARM
+1CN00896,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Hồng Bàng,M00109,01CN000027,1CN01224,Band 3,,HPH07,0,A,RM
+1CN01274,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Hồng Bàng,M00110,01CN000027,1CN01224,Band 2,,HPH07,0,A,RM
+1CN00120,Chuyên gia Sáng kiến Dự án Sales Transformation,PB018E,01CN000014,1CN01211,Band 5,,HSC01,0,I,BO
+1CN00821,Chuyên viên cao cấp Sáng kiến Dự án Sales Transformation,PB064S,01CN000014,1CN01211,Band 4,,HSC01,0,I,BO
+1CN00867,Chuyên gia cao cấp Quản lý chuyển đổi Sales Transformation Hồ Chí Minh,PB011E,01CN000014,1CN00607,Band 6,,HSC02,0,I,BO
+1CN00564,Nguyên Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp lớn Sở giao dịch 3,MJ026M,01CN000017,1CN00901,Band 6,,HNO01,1,I,TL
+1CN00457,Chuyên gia Sáng kiến Dự án Sales Transformation Hồ Chí Minh,PB018E,01CN000014,1CN01211,Band 5,,HSC02,0,I,BO
+1CN00073,Chuyên viên cao cấp Sáng kiến Dự án Sales Transformation Hồ Chí Minh,PB064S,01CN000014,1CN01211,Band 4,,HSC02,0,I,BO
+1CN00973,Chuyên viên chính Sáng kiến Dự án Sales Transformation,PB065S,01CN000014,1CN01211,Band 3,,HSC01,0,I,BO
+1CN00822,Chuyên viên Sáng kiến Dự án Sales Transformation,PB011C,01CN000014,1CN01211,Band 2,,HSC01,0,I,BO
+1CN00230,Chuyên viên chính Sáng kiến Dự án Sales Transformation Hồ Chí Minh,PB065S,01CN000014,1CN01211,Band 3,,HSC02,0,I,BO
+1CN00028,Chuyên viên Sáng kiến Dự án Sales Transformation Hồ Chí Minh,PB011C,01CN000014,1CN01211,Band 2,,HSC02,0,I,BO
+1CN00431,Chuyên viên chính Quản lý chuyển đổi Sales Transformation Hồ Chí Minh,PB058S,01CN000014,1CN00607,Band 3,,HSC02,0,I,BO
+1CN00607,Giám đốc Quản lý Chuyển đổi Sales Transformation,PB014M,01CN000014,1CN01211,Band 5,,HSC02,1,I,BO
+1CN00506,Cộng tác viên Dự án Sales Transformation,AA052C,01CN000014,1CN01211,K,,HSC01,0,I,BO
+1CN00206,Chuyên viên cao cấp Quản lý chuyển đổi Sales Transformation,PB066S,01CN000014,1CN00607,Band 4,,HSC01,0,I,BO
+1CN01031,Trưởng nhóm Quản lý Chuyển đổi Sales Transformation Miền Nam,PB006T,01CN000014,1CN00607,Band 5,,HSC02,1,I,BO
+1CN00524,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài 2,MJ014M,01CN000057,1CN00754,Band 6,,HNO01,1,A,TL
+1CN01232,Giám đốc Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài Cấp 2 Miền Bắc 1,MJ016E,01CN000057,1CN01288,Band 5,,HNO01,0,A,RM
+1CN00726,Giám đốc Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài Cấp 1 Miền Bắc 1,MJ017E,01CN000057,1CN01288,Band 4,,HNO01,0,A,RM
+1CN00203,Giám đốc Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài Cấp 2 Miền Bắc 2,MJ016E,01CN000057,1CN00524,Band 5,,HNO01,0,A,RM
+1CN00115,Giám đốc Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư Nước ngoài Cấp 1 Miền Bắc 2,MJ017E,01CN000057,1CN00553,Band 4,,HNO01,0,A,RM
+1CN01008,Giám đốc Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài Cấp 2 Miền Bắc 3,MJ016E,01CN000057,1CN00553,Band 5,,HNO01,0,A,RM
+1CN00286,Giám đốc Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư Nước ngoài Cấp 1 Miền Bắc 3,MJ017E,01CN000057,1CN00553,Band 4,,HNO01,0,A,RM
+1CN00511,Giám đốc Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài Cấp 2 miền Nam 1,MJ016E,01CN000057,1CN00465,Band 5,,HCM01,0,A,RM
+1CN00887,Giám đốc Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài Cấp 1 miền Nam 1,MJ017E,01CN000057,1CN00465,Band 4,,HCM01,0,A,RM
+1CN00456,Giám đốc Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư Nước ngoài Cấp 1 Miền Nam (Hồ Chí Minh),MJ017E,01CN000057,1CN00119,Band 4,,HCM01,0,A,RM
+1CN00467,Chuyên viên cao cấp Quản lý chuyển đổi Sales Transformation Hồ Chí Minh,PB066S,01CN000014,1CN00607,Band 4,,HSC02,0,I,BO
+1CN01289,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Hà Đông (Văn Quán),M00107,01CN000024,1CN00800,Band 4,,HNO49,0,A,RM
+1CN01076,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Long Biên,M00107,01CN000001,1CN00764,Band 4,,HNO63,0,A,RM
+1CN00331,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Quảng Ninh,M00107,01CN000044,1CN01243,Band 4,,QNI01,0,A,RM
+1CN00122,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Thanh Xuân,M00107,01CN000085,1CN00486,Band 4,,HNO44,0,A,RM
+1CN00359,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Gò Vấp (Nguyễn Oanh),M00107,01CN000060,1CN01255,Band 4,,HCM32,0,A,RM
+1CN00411,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Sài Gòn,M00107,01CN000067,1CN01319,Band 4,,HCM19,0,A,RM
+1CN00059,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Tân Bình,M00107,01CN000069,1CN01114,Band 4,,HCM41,0,A,RM
+1CN00744,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Vũng Tàu,M00107,01CN000059,1CN00027,Band 4,,BRV01,0,A,RM
+1CN01057,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper Sở Giao dịch,MJ044S,01CN000033,1CN01062,Band 3,,HNO01,0,A,RM
+1CN00619,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper Hồ Chí Minh,MJ044S,01CN000037,1CN00528,Band 3,,HCM01,0,A,RM
+1CN00829,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper Hà Đông (Văn Quán),MJ044S,01CN000024,1CN00800,Band 3,,HNO49,0,A,RM
+1CN00190,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper Hoàng Mai (Hoàng Văn Thái),MJ044S,01CN000072,1CN00830,Band 3,,HNO65,0,A,RM
+1CN00804,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper Thành Công,MJ044S,01CN000034,1CN00454,Band 3,,HNO11,0,A,RM
+1CN00889,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper Bắc Ninh,MJ044S,01CN000070,1CN00060,Band 3,,BNI01,0,A,RM
+1CN00401,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper Cầu Giấy,MJ044S,01CN000006,1CN00405,Band 3,,HNO52,0,A,RM
+1CN00936,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper Đống Đa,MJ044S,01CN000073,1CN01241,Band 3,,HNO34,0,A,RM
+1CN01280,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper Hà Nội,MJ044S,01CN000041,1CN00209,Band 3,,HNO17,0,A,RM
+1CN00001,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper Hải Phòng,MJ044S,01CN000020,1CN00199,Band 3,,HPH01,0,A,RM
+1CN01256,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper Long Biên,MJ044S,01CN000001,1CN00764,Band 3,,HNO63,0,A,RM
+1CN00858,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper Thanh Xuân,MJ044S,01CN000085,1CN00486,Band 3,,HNO44,0,A,RM
+1CN01359,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper Bến Thành,MJ044S,01CN000076,1CN00767,Band 3,,HCM04,0,A,RM
+1CN00437,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper Gò Vấp (Nguyễn Oanh),MJ044S,01CN000060,1CN01255,Band 3,,HCM32,0,A,RM
+1CN00186,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper Bình Dương,MJ044S,01CN000079,1CN00295,Band 3,,BDU01,0,A,RM
+1CN00404,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper Cần Thơ,MJ044S,01CN000022,1CN00645,Band 3,,CTH01,0,A,RM
+1CN00758,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper Cộng Hòa,MJ044S,01CN000083,1CN00735,Band 3,,HCM12,0,A,RM
+1CN00052,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper Sài Gòn,MJ044S,01CN000067,1CN01319,Band 3,,HCM19,0,A,RM
+1CN00563,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper Tân Bình,MJ044S,01CN000069,1CN01114,Band 3,,HCM41,0,A,RM
+1CN00949,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper Vũng Tàu,MJ044S,01CN000059,1CN00027,Band 3,,BRV01,0,A,RM
+1CN01017,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper Hải Châu,MJ044S,01CN000003,1CN00017,Band 3,,DAN03,0,A,RM
+1CN00167,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper Đà Nẵng,MJ044S,01CN000023,1CN00959,Band 3,,DAN01,0,A,RM
+1CN00979,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper Khánh Hòa,MJ044S,01CN000038,1CN00244,Band 3,,KHO01,0,A,RM
+1CN00788,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper Đô Thành,MJ044S,01CN000061,1CN00277,Band 3,,HCM29,0,A,RM
+1CN00741,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper Nam Thăng Long (Times City),MJ044S,01CN000080,1CN01378,Band 3,,HNO02,0,A,RM
+1CN00077,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper Trần Hưng Đạo,MJ044S,01CN000074,1CN01251,Band 3,,HCM40,0,A,RM
+1CN01235,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper Tân Thuận,MJ044S,01CN000040,1CN00769,Band 3,,HCM17,0,A,RM
+1CN00839,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper Quảng Ninh,MJ044S,01CN000044,1CN01243,Band 3,,QNI01,0,A,RM
+1CN00039,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper Hồng Bàng,MJ044S,01CN000027,1CN01224,Band 3,,HPH07,0,A,RM
+1CN00585,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 Sở Giao dịch,MJ029S,01CN000033,1CN01062,Band 4,,HNO01,0,A,RM
+1CN00312,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 Hồ Chí Minh,MJ029S,01CN000037,1CN00528,Band 4,,HCM01,0,A,RM
+1CN00634,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 Hà Đông (Văn Quán),MJ029S,01CN000024,1CN00800,Band 4,,HNO49,0,A,RM
+1CN01063,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 Hoàng Mai (Hoàng Văn Thái),MJ029S,01CN000072,1CN00830,Band 4,,HNO65,0,A,RM
+1CN01028,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 Thành Công,MJ029S,01CN000034,1CN00454,Band 4,,HNO11,0,A,RM
+1CN01050,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 Bắc Ninh,MJ029S,01CN000070,1CN00060,Band 4,,BNI01,0,A,RM
+1CN00548,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 Cầu Giấy,MJ029S,01CN000006,1CN00405,Band 4,,HNO52,0,A,RM
+1CN01157,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 Đống Đa,MJ029S,01CN000073,1CN01241,Band 4,,HNO34,0,A,RM
+1CN01358,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 Hà Nội,MJ029S,01CN000041,1CN00209,Band 4,,HNO17,0,A,RM
+1CN01153,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 Hải Phòng,MJ029S,01CN000020,1CN00199,Band 4,,HPH01,0,A,RM
+1CN00911,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 Long Biên,MJ029S,01CN000001,1CN00764,Band 4,,HNO63,0,A,RM
+1CN01189,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 Thanh Xuân,MJ029S,01CN000085,1CN00486,Band 4,,HNO44,0,A,RM
+1CN00347,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 Bến Thành,MJ029S,01CN000076,1CN00767,Band 4,,HCM04,0,A,RM
+1CN00902,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 Gò Vấp (Nguyễn Oanh),MJ029S,01CN000060,1CN01255,Band 4,,HCM32,0,A,RM
+1CN00956,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 Bình Dương,MJ029S,01CN000079,1CN00295,Band 4,,BDU01,0,A,RM
+1CN00318,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 Cần Thơ,MJ029S,01CN000022,1CN00645,Band 4,,CTH01,0,A,RM
+1CN00108,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 Cộng Hòa,MJ029S,01CN000083,1CN00735,Band 4,,HCM12,0,A,RM
+1CN01033,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 Sài Gòn,MJ029S,01CN000067,1CN01319,Band 4,,HCM19,0,A,RM
+1CN00238,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 Tân Bình,MJ029S,01CN000069,1CN01114,Band 4,,HCM41,0,A,RM
+1CN01018,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 Vũng Tàu,MJ029S,01CN000059,1CN00027,Band 4,,BRV01,0,A,RM
+1CN01305,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 Hải Châu,MJ029S,01CN000003,1CN00017,Band 4,,DAN03,0,A,RM
+1CN01171,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 Đà Nẵng,MJ029S,01CN000023,1CN00959,Band 4,,DAN01,0,A,RM
+1CN00977,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 Khánh Hòa,MJ029S,01CN000038,1CN00244,Band 4,,KHO01,0,A,RM
+1CN01011,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 Đô Thành,MJ029S,01CN000061,1CN00277,Band 4,,HCM29,0,A,RM
+1CN01032,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 Nam Thăng Long (Times City),MJ029S,01CN000080,1CN01378,Band 4,,HNO02,0,A,RM
+1CN00151,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 Trần Hưng Đạo,MJ029S,01CN000074,1CN01251,Band 4,,HCM40,0,A,RM
+1CN00480,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 Tân Thuận,MJ029S,01CN000040,1CN00769,Band 4,,HCM17,0,A,RM
+1CN00561,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 Quảng Ninh,MJ029S,01CN000044,1CN01243,Band 4,,QNI01,0,A,RM
+1CN00784,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 Hồng Bàng,MJ029S,01CN000027,1CN01224,Band 4,,HPH07,0,A,RM
+1CN01173,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 Sở Giao dịch,MJ043S,01CN000033,1CN01062,Band 4,,HNO01,0,A,RM
+1CN00950,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 Hồ Chí Minh,MJ043S,01CN000037,1CN00528,Band 4,,HCM01,0,A,RM
+1CN00663,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 Hà Đông (Văn Quán),MJ043S,01CN000024,1CN00800,Band 4,,HNO49,0,A,RM
+1CN00603,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 Hoàng Mai (Hoàng Văn Thái),MJ043S,01CN000072,1CN00830,Band 4,,HNO65,0,A,RM
+1CN00419,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 Thành Công,MJ043S,01CN000034,1CN00454,Band 4,,HNO11,0,A,RM
+1CN00212,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 Bắc Ninh,MJ043S,01CN000070,1CN00060,Band 4,,BNI01,0,A,RM
+1CN00644,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 Cầu Giấy,MJ043S,01CN000006,1CN00405,Band 4,,HNO52,0,A,RM
+1CN01066,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 Đống Đa,MJ043S,01CN000073,1CN01241,Band 4,,HNO34,0,A,RM
+1CN00096,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 Hà Nội,MJ043S,01CN000041,1CN00209,Band 4,,HNO17,0,A,RM
+1CN00780,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 Hải Phòng,MJ043S,01CN000020,1CN00199,Band 4,,HPH01,0,A,RM
+1CN01075,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 Long Biên,MJ043S,01CN000001,1CN00764,Band 4,,HNO63,0,A,RM
+1CN01310,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 Thanh Xuân,MJ043S,01CN000085,1CN00486,Band 4,,HNO44,0,A,RM
+1CN00205,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 Bến Thành,MJ043S,01CN000076,1CN00767,Band 4,,HCM04,0,A,RM
+1CN01373,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 Gò Vấp (Nguyễn Oanh),MJ043S,01CN000060,1CN01255,Band 4,,HCM32,0,A,RM
+1CN00283,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 Bình Dương,MJ043S,01CN000079,1CN00295,Band 4,,BDU01,0,A,RM
+1CN00046,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 Cần Thơ,MJ043S,01CN000022,1CN00645,Band 4,,CTH01,0,A,RM
+1CN00996,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 Cộng Hòa,MJ043S,01CN000083,1CN00735,Band 4,,HCM12,0,A,RM
+1CN01347,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 Sài Gòn,MJ043S,01CN000067,1CN01319,Band 4,,HCM19,0,A,RM
+1CN00849,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 Tân Bình,MJ043S,01CN000069,1CN01114,Band 4,,HCM41,0,A,RM
+1CN00262,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 Vũng Tàu,MJ043S,01CN000059,1CN00027,Band 4,,BRV01,0,A,RM
+1CN00093,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 Hải Châu,MJ043S,01CN000003,1CN00017,Band 4,,DAN03,0,A,RM
+1CN00385,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 Đà Nẵng,MJ043S,01CN000023,1CN00959,Band 4,,DAN01,0,A,RM
+1CN00041,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 Khánh Hòa,MJ043S,01CN000038,1CN00244,Band 4,,KHO01,0,A,RM
+1CN00226,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 Đô Thành,MJ043S,01CN000061,1CN00277,Band 4,,HCM29,0,A,RM
+1CN00461,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 Nam Thăng Long (Times City),MJ043S,01CN000080,1CN01378,Band 4,,HNO02,0,A,RM
+1CN00329,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 Trần Hưng Đạo,MJ043S,01CN000074,1CN01251,Band 4,,HCM40,0,A,RM
+1CN00878,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 Tân Thuận,MJ043S,01CN000040,1CN00769,Band 4,,HCM17,0,A,RM
+1CN00933,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 Quảng Ninh,MJ043S,01CN000044,1CN01243,Band 4,,QNI01,0,A,RM
+1CN00224,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 Hồng Bàng,MJ043S,01CN000027,1CN01224,Band 4,,HPH07,0,A,RM
+1CN00951,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 Sở Giao dịch,MJ010S,01CN000033,1CN01062,Band 4,,HNO01,0,A,BO
+1CN00531,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 Hồ Chí Minh,MJ010S,01CN000037,1CN00528,Band 4,,HCM01,0,A,BO
+1CN01179,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 Hà Đông (Văn Quán),MJ010S,01CN000024,1CN00800,Band 4,,HNO49,0,A,BO
+1CN00162,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 Hoàng Mai (Hoàng Văn Thái),MJ010S,01CN000072,1CN00830,Band 4,,HNO65,0,A,BO
+1CN01230,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 Thành Công,MJ010S,01CN000034,1CN00454,Band 4,,HNO11,0,A,BO
+1CN00055,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 Bắc Ninh,MJ010S,01CN000070,1CN00060,Band 4,,BNI01,0,A,BO
+1CN00903,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 Cầu Giấy,MJ010S,01CN000006,1CN00405,Band 4,,HNO52,0,A,BO
+1CN01335,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 Đống Đa,MJ010S,01CN000073,1CN01241,Band 4,,HNO34,0,A,BO
+1CN01342,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 Hà Nội,MJ010S,01CN000041,1CN00209,Band 4,,HNO17,0,A,BO
+1CN01332,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 Hải Phòng,MJ010S,01CN000020,1CN00199,Band 4,,HPH01,0,A,BO
+1CN00153,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 Long Biên,MJ010S,01CN000001,1CN00764,Band 4,,HNO63,0,A,BO
+1CN01009,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 Thanh Xuân,MJ010S,01CN000085,1CN00486,Band 4,,HNO44,0,A,BO
+1CN00157,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 Bến Thành,MJ010S,01CN000076,1CN00767,Band 4,,HCM04,0,A,BO
+1CN00410,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 Gò Vấp (Nguyễn Oanh),MJ010S,01CN000060,1CN01255,Band 4,,HCM32,0,A,BO
+1CN00298,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 Bình Dương,MJ010S,01CN000079,1CN00295,Band 4,,BDU01,0,A,BO
+1CN00360,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 Cần Thơ,MJ010S,01CN000022,1CN00645,Band 4,,CTH01,0,A,BO
+1CN01178,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 Cộng Hòa,MJ010S,01CN000083,1CN00735,Band 4,,HCM12,0,A,BO
+1CN00038,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 Sài Gòn,MJ010S,01CN000067,1CN01319,Band 4,,HCM19,0,A,BO
+1CN00066,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 Tân Bình,MJ010S,01CN000069,1CN01114,Band 4,,HCM41,0,A,BO
+1CN01041,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 Vũng Tàu,MJ010S,01CN000059,1CN00027,Band 4,,BRV01,0,A,BO
+1CN01206,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 Hải Châu,MJ010S,01CN000003,1CN00017,Band 4,,DAN03,0,A,BO
+1CN00229,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 Đà Nẵng,MJ010S,01CN000023,1CN00959,Band 4,,DAN01,0,A,BO
+1CN00557,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 Khánh Hòa,MJ010S,01CN000038,1CN00244,Band 4,,KHO01,0,A,BO
+1CN00552,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 Đô Thành,MJ010S,01CN000061,1CN00277,Band 4,,HCM29,0,A,BO
+1CN01284,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 Nam Thăng Long (Times City),MJ010S,01CN000080,1CN01378,Band 4,,HNO02,0,A,BO
+1CN00163,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 Trần Hưng Đạo,MJ010S,01CN000074,1CN01251,Band 4,,HCM40,0,A,BO
+1CN01339,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 Tân Thuận,MJ010S,01CN000040,1CN00769,Band 4,,HCM17,0,A,BO
+1CN01049,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 Quảng Ninh,MJ010S,01CN000044,1CN01243,Band 4,,QNI01,0,A,BO
+1CN00942,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 Hồng Bàng,MJ010S,01CN000027,1CN01224,Band 4,,HPH07,0,A,BO
+1CN01201,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 Sở Giao dịch,MJ011S,01CN000033,1CN01062,Band 4,,HNO01,0,A,BO
+1CN00087,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 Hồ Chí Minh,MJ011S,01CN000037,1CN00528,Band 4,,HCM01,0,A,BO
+1CN00738,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 Hà Đông (Văn Quán),MJ011S,01CN000024,1CN00800,Band 4,,HNO49,0,A,BO
+1CN01283,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 Hoàng Mai (Hoàng Văn Thái),MJ011S,01CN000072,1CN00830,Band 4,,HNO65,0,A,BO
+1CN00317,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 Thành Công,MJ011S,01CN000034,1CN00454,Band 4,,HNO11,0,A,BO
+1CN01272,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 Bắc Ninh,MJ011S,01CN000070,1CN00060,Band 4,,BNI01,0,A,BO
+1CN00876,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 Cầu Giấy,MJ011S,01CN000006,1CN00405,Band 4,,HNO52,0,A,BO
+1CN00460,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 Đống Đa,MJ011S,01CN000073,1CN01241,Band 4,,HNO34,0,A,BO
+1CN01142,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 Hà Nội,MJ011S,01CN000041,1CN00209,Band 4,,HNO17,0,A,BO
+1CN00948,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 Hải Phòng,MJ011S,01CN000020,1CN00199,Band 4,,HPH01,0,A,BO
+1CN01308,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 Long Biên,MJ011S,01CN000001,1CN00764,Band 4,,HNO63,0,A,BO
+1CN00826,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 Thanh Xuân,MJ011S,01CN000085,1CN00486,Band 4,,HNO44,0,A,BO
+1CN00518,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 Bến Thành,MJ011S,01CN000076,1CN00767,Band 4,,HCM04,0,A,BO
+1CN01004,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 Gò Vấp (Nguyễn Oanh),MJ011S,01CN000060,1CN01255,Band 4,,HCM32,0,A,BO
+1CN00589,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 Bình Dương,MJ011S,01CN000079,1CN00295,Band 4,,BDU01,0,A,BO
+1CN01193,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 Cần Thơ,MJ011S,01CN000022,1CN00645,Band 4,,CTH01,0,A,BO
+1CN00395,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 Cộng Hòa,MJ011S,01CN000083,1CN00735,Band 4,,HCM12,0,A,BO
+1CN00044,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 Sài Gòn,MJ011S,01CN000067,1CN01319,Band 4,,HCM19,0,A,BO
+1CN00743,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 Tân Bình,MJ011S,01CN000069,1CN01114,Band 4,,HCM41,0,A,BO
+1CN00615,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 Vũng Tàu,MJ011S,01CN000059,1CN00027,Band 4,,BRV01,0,A,BO
+1CN01065,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 Hải Châu,MJ011S,01CN000003,1CN00017,Band 4,,DAN03,0,A,BO
+1CN01192,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 Đà Nẵng,MJ011S,01CN000023,1CN00959,Band 4,,DAN01,0,A,BO
+1CN01292,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 Khánh Hòa,MJ011S,01CN000038,1CN00244,Band 4,,KHO01,0,A,BO
+1CN00477,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 Đô Thành,MJ011S,01CN000061,1CN00277,Band 4,,HCM29,0,A,BO
+1CN00491,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 Nam Thăng Long (Times City),MJ011S,01CN000080,1CN01378,Band 4,,HNO02,0,A,BO
+1CN00019,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 Trần Hưng Đạo,MJ011S,01CN000074,1CN01251,Band 4,,HCM40,0,A,BO
+1CN00734,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 Tân Thuận,MJ011S,01CN000040,1CN00769,Band 4,,HCM17,0,A,BO
+1CN01363,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 Quảng Ninh,MJ011S,01CN000044,1CN01243,Band 4,,QNI01,0,A,BO
+1CN01113,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 Hồng Bàng,MJ011S,01CN000027,1CN01224,Band 4,,HPH07,0,A,BO
+1CN00050,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp Sở Giao dịch,MJ028S,01CN000033,1CN01062,Band 3,,HNO01,0,A,BO
+1CN01184,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp Hồ Chí Minh,MJ028S,01CN000037,1CN00528,Band 3,,HCM01,0,A,BO
+1CN00688,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp Hà Đông (Văn Quán),MJ028S,01CN000024,1CN00800,Band 3,,HNO49,0,A,BO
+1CN00976,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp Hoàng Mai (Hoàng Văn Thái),MJ028S,01CN000072,1CN00830,Band 3,,HNO65,0,A,BO
+1CN01318,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp Thành Công,MJ028S,01CN000034,1CN00454,Band 3,,HNO11,0,A,BO
+1CN00037,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp Bắc Ninh,MJ028S,01CN000070,1CN00060,Band 3,,BNI01,0,A,BO
+1CN00170,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp Cầu Giấy,MJ028S,01CN000006,1CN00405,Band 3,,HNO52,0,A,BO
+1CN01141,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp Đống Đa,MJ028S,01CN000073,1CN01241,Band 3,,HNO34,0,A,BO
+1CN00703,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp Hà Nội,MJ028S,01CN000041,1CN00209,Band 3,,HNO17,0,A,BO
+1CN01167,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp Hải Phòng,MJ028S,01CN000020,1CN00199,Band 3,,HPH01,0,A,BO
+1CN00485,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp Long Biên,MJ028S,01CN000001,1CN00764,Band 3,,HNO63,0,A,BO
+1CN01195,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp Thanh Xuân,MJ028S,01CN000085,1CN00486,Band 3,,HNO44,0,A,BO
+1CN00428,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp Bến Thành,MJ028S,01CN000076,1CN00767,Band 3,,HCM04,0,A,BO
+1CN00121,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp Gò Vấp (Nguyễn Oanh),MJ028S,01CN000060,1CN01255,Band 3,,HCM32,0,A,BO
+1CN00315,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp Bình Dương,MJ028S,01CN000079,1CN00295,Band 3,,BDU01,0,A,BO
+1CN00195,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp Cần Thơ,MJ028S,01CN000022,1CN00645,Band 3,,CTH01,0,A,BO
+1CN01309,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp Cộng Hòa,MJ028S,01CN000083,1CN00735,Band 3,,HCM12,0,A,BO
+1CN01036,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp Sài Gòn,MJ028S,01CN000067,1CN01319,Band 3,,HCM19,0,A,BO
+1CN01381,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp Tân Bình,MJ028S,01CN000069,1CN01114,Band 3,,HCM41,0,A,BO
+1CN01022,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp Vũng Tàu,MJ028S,01CN000059,1CN00027,Band 3,,BRV01,0,A,BO
+1CN00338,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp Hải Châu,MJ028S,01CN000003,1CN00017,Band 3,,DAN03,0,A,BO
+1CN01168,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp Đà Nẵng,MJ028S,01CN000023,1CN00959,Band 3,,DAN01,0,A,BO
+1CN01354,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp Khánh Hòa,MJ028S,01CN000038,1CN00244,Band 3,,KHO01,0,A,BO
+1CN00751,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp Đô Thành,MJ028S,01CN000061,1CN00277,Band 3,,HCM29,0,A,BO
+1CN01077,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp Nam Thăng Long (Times City),MJ028S,01CN000080,1CN01378,Band 3,,HNO02,0,A,BO
+1CN00271,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp Trần Hưng Đạo,MJ028S,01CN000074,1CN01251,Band 3,,HCM40,0,A,BO
+1CN00507,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp Tân Thuận,MJ028S,01CN000040,1CN00769,Band 3,,HCM17,0,A,BO
+1CN01237,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp Quảng Ninh,MJ028S,01CN000044,1CN01243,Band 3,,QNI01,0,A,BO
+1CN01172,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp Hồng Bàng,MJ028S,01CN000027,1CN01224,Band 3,,HPH07,0,A,BO
+1CN01207,Chuyên viên Phát triển Khách hàng Doanh nghiệp Sở Giao dịch,MJ008C,01CN000033,1CN01062,Band 2,,HNO01,0,A,BO
+1CN00925,Chuyên viên Phát triển Khách hàng Doanh nghiệp Hồ Chí Minh,MJ008C,01CN000037,1CN00528,Band 2,,HCM01,0,A,BO
+1CN00526,Chuyên viên Phát triển Khách hàng Doanh nghiệp Hà Đông (Văn Quán),MJ008C,01CN000024,1CN00800,Band 2,,HNO49,0,A,BO
+1CN00289,Chuyên viên Phát triển Khách hàng Doanh nghiệp Hoàng Mai (Hoàng Văn Thái),MJ008C,01CN000072,1CN00830,Band 2,,HNO65,0,A,BO
+1CN00217,Chuyên viên Phát triển Khách hàng Doanh nghiệp Thành Công,MJ008C,01CN000034,1CN00454,Band 2,,HNO11,0,A,BO
+1CN00125,Chuyên viên Phát triển Khách hàng Doanh nghiệp Bắc Ninh,MJ008C,01CN000070,1CN00060,Band 2,,BNI01,0,A,BO
+1CN01330,Chuyên viên Phát triển Khách hàng Doanh nghiệp Cầu Giấy,MJ008C,01CN000006,1CN00405,Band 2,,HNO52,0,A,BO
+1CN00610,Chuyên viên Phát triển Khách hàng Doanh nghiệp Đống Đa,MJ008C,01CN000073,1CN01241,Band 2,,HNO34,0,A,BO
+1CN01130,Chuyên viên Phát triển Khách hàng Doanh nghiệp Hà Nội,MJ008C,01CN000041,1CN00209,Band 2,,HNO17,0,A,BO
+1CN00827,Chuyên viên Phát triển Khách hàng Doanh nghiệp Hải Phòng,MJ008C,01CN000020,1CN00199,Band 2,,HPH01,0,A,BO
+1CN00863,Chuyên viên Phát triển Khách hàng Doanh nghiệp Long Biên,MJ008C,01CN000001,1CN00764,Band 2,,HNO63,0,A,BO
+1CN00983,Chuyên viên Phát triển Khách hàng Doanh nghiệp Thanh Xuân,MJ008C,01CN000085,1CN00486,Band 2,,HNO44,0,A,BO
+1CN00192,Chuyên viên Phát triển Khách hàng Doanh nghiệp Bến Thành,MJ008C,01CN000076,1CN00767,Band 2,,HCM04,0,A,BO
+1CN00980,Chuyên viên Phát triển Khách hàng Doanh nghiệp Gò Vấp (Nguyễn Oanh),MJ008C,01CN000060,1CN01255,Band 2,,HCM32,0,A,BO
+1CN01053,Chuyên viên Phát triển Khách hàng Doanh nghiệp Bình Dương,MJ008C,01CN000079,1CN00295,Band 2,,BDU01,0,A,BO
+1CN01067,Chuyên viên Phát triển Khách hàng Doanh nghiệp Cần Thơ,MJ008C,01CN000022,1CN00645,Band 2,,CTH01,0,A,BO
+1CN00137,Chuyên viên Phát triển Khách hàng Doanh nghiệp Cộng Hòa,MJ008C,01CN000083,1CN00735,Band 2,,HCM12,0,A,BO
+1CN00415,Chuyên viên Phát triển Khách hàng Doanh nghiệp Sài Gòn,MJ008C,01CN000067,1CN01319,Band 2,,HCM19,0,A,BO
+1CN00893,Chuyên viên Phát triển Khách hàng Doanh nghiệp Tân Bình,MJ008C,01CN000069,1CN01114,Band 2,,HCM41,0,A,BO
+1CN00098,Chuyên viên Phát triển Khách hàng Doanh nghiệp Vũng Tàu,MJ008C,01CN000059,1CN00027,Band 2,,BRV01,0,A,BO
+1CN00063,Chuyên viên Phát triển Khách hàng Doanh nghiệp Hải Châu,MJ008C,01CN000003,1CN00017,Band 2,,DAN03,0,A,BO
+1CN00812,Chuyên viên Phát triển Khách hàng Doanh nghiệp Đà Nẵng,MJ008C,01CN000023,1CN00959,Band 2,,DAN01,0,A,BO
+1CN00020,Chuyên viên Phát triển Khách hàng Doanh nghiệp Khánh Hòa,MJ008C,01CN000038,1CN00244,Band 2,,KHO01,0,A,BO
+1CN00732,Chuyên viên Phát triển Khách hàng Doanh nghiệp Đô Thành,MJ008C,01CN000061,1CN00277,Band 2,,HCM29,0,A,BO
+1CN00569,Chuyên viên Phát triển Khách hàng Doanh nghiệp Nam Thăng Long (Times City),MJ008C,01CN000080,1CN01378,Band 2,,HNO02,0,A,BO
+1CN01216,Chuyên viên Phát triển Khách hàng Doanh nghiệp Trần Hưng Đạo,MJ008C,01CN000074,1CN01251,Band 2,,HCM40,0,A,BO
+1CN00636,Chuyên viên Phát triển Khách hàng Doanh nghiệp Tân Thuận,MJ008C,01CN000040,1CN00769,Band 2,,HCM17,0,A,BO
+1CN00420,Chuyên viên Phát triển Khách hàng Doanh nghiệp Quảng Ninh,MJ008C,01CN000044,1CN01243,Band 2,,QNI01,0,A,BO
+1CN00544,Chuyên viên Phát triển Khách hàng Doanh nghiệp Hồng Bàng,MJ008C,01CN000027,1CN01224,Band 2,,HPH07,0,A,BO
+1CN00449,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 2 Hà Đông (Văn Quán),M00107,01CN000024,1CN00800,Band 4,,HNO49,0,I,RM
+1CN00541,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 1 Hà Đông (Văn Quán),M00108,01CN000024,1CN00800,Band 4,,HNO49,0,I,RM
+1CN00447,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Hà Đông (Văn Quán),M00109,01CN000024,1CN00800,Band 3,,HNO49,0,I,RM
+1CN00993,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Hà Đông (Văn Quán),M00110,01CN000024,1CN00800,Band 2,,HNO49,0,I,RM
+1CN01182,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 2 Hoàng Mai (Hoàng Văn Thái),M00107,01CN000072,1CN00830,Band 4,,HNO65,1,I,RM
+1CN00874,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 1 Hoàng Mai (Hoàng Văn Thái),M00108,01CN000072,1CN00830,Band 4,,HNO65,0,I,RM
+1CN00825,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Hoàng Mai (Hoàng Văn Thái),M00109,01CN000072,1CN00830,Band 3,,HNO65,0,I,RM
+1CN00129,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Hoàng Mai (Hoàng Văn Thái),M00110,01CN000072,1CN00830,Band 2,,HNO65,0,I,RM
+1CN00214,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 2 Tây Hồ (Thụy Khuê),M00107,01CN000034,1CN00454,Band 4,,HNO20,0,I,RM
+1CN00850,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 1 Tây Hồ (Thụy Khuê),M00108,01CN000034,1CN00454,Band 4,,HNO20,0,I,RM
+1CN00814,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Tây Hồ (Thụy Khuê),M00109,01CN000034,1CN00454,Band 3,,HNO20,0,I,RM
+1CN00225,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Tây Hồ (Thụy Khuê),M00110,01CN000034,1CN00454,Band 2,,HNO20,0,I,RM
+1CN00085,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 2 Bắc Ninh,M00107,01CN000070,1CN00060,Band 4,,BNI01,1,I,RM
+1CN00847,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 1 Bắc Ninh,M00108,01CN000070,1CN00060,Band 4,,BNI01,0,I,RM
+1CN00341,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Bắc Ninh,M00109,01CN000070,1CN00060,Band 3,,BNI01,0,I,RM
+1CN00717,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Bắc Ninh,M00110,01CN000070,1CN00060,Band 2,,BNI01,0,I,RM
+1CN00011,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 2 Cầu Giấy,M00107,01CN000006,1CN00405,Band 4,,HNO52,0,I,RM
+1CN00355,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 1 Cầu Giấy,M00108,01CN000006,1CN00405,Band 4,,HNO52,0,I,RM
+1CN01203,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cầu Giấy,M00109,01CN000006,1CN00405,Band 3,,HNO52,0,I,RM
+1CN00677,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cầu Giấy,M00110,01CN000006,1CN00405,Band 2,,HNO52,0,I,RM
+1CN00710,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 2 Đống Đa,M00107,01CN000073,1CN01241,Band 4,,HNO34,0,I,RM
+1CN00241,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 1 Đống Đa,M00108,01CN000073,1CN01241,Band 4,,HNO34,0,I,RM
+1CN00794,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Đống Đa,M00109,01CN000073,1CN01241,Band 3,,HNO34,0,I,RM
+1CN00343,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Đống Đa,M00110,01CN000073,1CN01241,Band 2,,HNO34,0,I,RM
+1CN00946,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 2 Hà Nội,M00107,01CN000041,1CN00209,Band 4,,HNO17,0,I,RM
+1CN01152,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 1 Hà Nội,M00108,01CN000041,1CN00209,Band 4,,HNO17,0,I,RM
+1CN01234,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Hà Nội,M00109,01CN000041,1CN00209,Band 3,,HNO17,0,I,RM
+1CN00958,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Hà Nội,M00110,01CN000041,1CN00209,Band 2,,HNO17,0,I,RM
+1CN00882,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 2 Hải Phòng,M00107,01CN000020,1CN00199,Band 4,,HPH01,0,I,RM
+1CN00960,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 1 Hải Phòng,M00108,01CN000020,1CN00199,Band 4,,HPH01,0,I,RM
+1CN00091,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Hải Phòng,M00109,01CN000020,1CN00199,Band 3,,HPH01,0,I,RM
+1CN00990,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Hải Phòng,M00110,01CN000020,1CN00199,Band 2,,HPH01,0,I,RM
+1CN00782,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 2 Long Biên,M00107,01CN000001,1CN00764,Band 4,,HNO63,0,I,RM
+1CN00336,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 1 Long Biên,M00108,01CN000001,1CN00764,Band 4,,HNO63,0,I,RM
+1CN00611,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Long Biên,M00109,01CN000001,1CN00764,Band 3,,HNO63,0,I,RM
+1CN01064,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Long Biên,M00110,01CN000001,1CN00764,Band 2,,HNO63,0,I,RM
+1CN00529,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 2 Quảng Ninh,M00107,01CN000044,1CN01243,Band 4,,QNI01,0,I,RM
+1CN00141,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 1 Quảng Ninh,M00108,01CN000044,1CN01243,Band 4,,QNI01,0,I,RM
+1CN00997,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Quảng Ninh,M00109,01CN000044,1CN01243,Band 3,,QNI01,0,I,RM
+1CN00219,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Quảng Ninh,M00110,01CN000044,1CN01243,Band 2,,QNI01,0,I,RM
+1CN00285,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 2 Thanh Xuân,M00107,01CN000085,1CN00486,Band 4,,HNO44,0,I,RM
+1CN00923,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 1 Thanh Xuân,M00108,01CN000085,1CN00486,Band 4,,HNO44,0,I,RM
+1CN00837,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Thanh Xuân,M00109,01CN000085,1CN00486,Band 3,,HNO44,0,I,RM
+1CN00078,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Thanh Xuân,M00110,01CN000085,1CN00486,Band 2,,HNO44,0,I,RM
+1CN01258,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 2 Bến Thành,M00107,01CN000076,1CN00767,Band 4,,HCM04,0,I,RM
+1CN00081,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 1 Bến Thành,M00108,01CN000076,1CN00767,Band 4,,HCM04,0,I,RM
+1CN00859,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Bến Thành,M00109,01CN000076,1CN00767,Band 3,,HCM04,0,I,RM
+1CN00757,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Bến Thành,M00110,01CN000076,1CN00767,Band 2,,HCM04,0,I,RM
+1CN01016,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 2 Gò Vấp (Nguyễn Oanh),M00107,01CN000060,1CN01255,Band 4,,HCM32,0,I,RM
+1CN00752,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 1 Gò Vấp (Nguyễn Oanh),M00108,01CN000060,1CN01255,Band 4,,HCM32,0,I,RM
+1CN01208,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Gò Vấp (Nguyễn Oanh),M00109,01CN000060,1CN01255,Band 3,,HCM32,0,I,RM
+1CN00126,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Gò Vấp (Nguyễn Oanh),M00110,01CN000060,1CN01255,Band 2,,HCM32,0,I,RM
+1CN01021,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 2 Bình Dương,M00107,01CN000079,1CN00295,Band 4,,BDU01,0,I,RM
+1CN00383,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 1 Bình Dương,M00108,01CN000079,1CN00295,Band 4,,BDU01,0,I,RM
+1CN01145,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Bình Dương,M00109,01CN000079,1CN00295,Band 3,,BDU01,0,I,RM
+1CN00693,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Bình Dương,M00110,01CN000079,1CN00295,Band 2,,BDU01,0,I,RM
+1CN00623,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 2 Cần Thơ,M00107,01CN000022,1CN00645,Band 4,,CTH01,0,I,RM
+1CN00088,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 1 Cần Thơ,M00108,01CN000022,1CN00645,Band 4,,CTH01,0,I,RM
+1CN01101,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cần Thơ,M00109,01CN000022,1CN00645,Band 3,,CTH01,0,I,RM
+1CN01313,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cần Thơ,M00110,01CN000022,1CN00645,Band 2,,CTH01,0,I,RM
+1CN00324,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 2 Cộng Hòa,M00107,01CN000083,1CN00735,Band 4,,HCM12,0,I,RM
+1CN00310,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 1 Cộng Hòa,M00108,01CN000083,1CN00735,Band 4,,HCM12,0,I,RM
+1CN01370,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cộng Hòa,M00109,01CN000083,1CN00735,Band 3,,HCM12,0,I,RM
+1CN00361,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cộng Hòa,M00110,01CN000083,1CN00735,Band 2,,HCM12,0,I,RM
+1CN00242,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 2 Đô Thành,M00107,01CN000061,1CN00277,Band 4,,HCM29,0,I,RM
+1CN00920,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 1 Đô Thành,M00108,01CN000061,1CN00277,Band 4,,HCM29,0,I,RM
+1CN01155,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Đô Thành,M00109,01CN000061,1CN00277,Band 3,,HCM29,0,I,RM
+1CN00803,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Đô Thành,M00110,01CN000061,1CN00277,Band 2,,HCM29,0,I,RM
+1CN01264,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 2 Sài Gòn,M00107,01CN000067,1CN01319,Band 4,,HCM19,0,I,RM
+1CN00048,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 1 Sài Gòn,M00108,01CN000067,1CN01319,Band 4,,HCM19,0,I,RM
+1CN00112,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Sài Gòn,M00109,01CN000067,1CN01319,Band 3,,HCM19,0,I,RM
+1CN00197,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Sài Gòn,M00110,01CN000067,1CN01319,Band 2,,HCM19,0,I,RM
+1CN00609,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 2 Tân Bình,M00107,01CN000069,1CN01114,Band 4,,HCM41,0,I,RM
+1CN01231,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 1 Tân Bình,M00108,01CN000069,1CN01114,Band 4,,HCM41,0,I,RM
+1CN00487,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Tân Bình,M00109,01CN000069,1CN01114,Band 3,,HCM41,0,I,RM
+1CN00626,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Tân Bình,M00110,01CN000069,1CN01114,Band 2,,HCM41,0,I,RM
+1CN01300,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 2 Vũng Tàu,M00107,01CN000059,1CN00027,Band 4,,BRV01,0,I,RM
+1CN01023,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 1 Vũng Tàu,M00108,01CN000059,1CN00027,Band 4,,BRV01,0,I,RM
+1CN00520,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Vũng Tàu,M00109,01CN000059,1CN00027,Band 3,,BRV01,0,I,RM
+1CN00228,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Vũng Tàu,M00110,01CN000059,1CN00027,Band 2,,BRV01,0,I,RM
+1CN01001,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 2 Hải Châu,M00107,01CN000003,1CN00017,Band 4,,DAN03,0,I,RM
+1CN00708,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 1 Hải Châu,M00108,01CN000003,1CN00017,Band 4,,DAN03,0,I,RM
+1CN01055,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Hải Châu,M00109,01CN000003,1CN00017,Band 3,,DAN03,0,I,RM
+1CN01333,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Hải Châu,M00110,01CN000003,1CN00017,Band 2,,DAN03,0,I,RM
+1CN01014,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 2 Đà Nẵng,M00107,01CN000023,1CN00959,Band 4,,DAN01,0,I,RM
+1CN00397,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 1 Đà Nẵng,M00108,01CN000023,1CN00959,Band 4,,DAN01,0,I,RM
+1CN01268,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Đà Nẵng,M00109,01CN000023,1CN00959,Band 3,,DAN01,0,I,RM
+1CN00127,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Đà Nẵng,M00110,01CN000023,1CN00959,Band 2,,DAN01,0,I,RM
+1CN00158,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 2 Khánh Hòa,M00107,01CN000038,1CN00244,Band 4,,KHO01,0,I,RM
+1CN00689,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 1 Khánh Hòa,M00108,01CN000038,1CN00244,Band 4,,KHO01,0,I,RM
+1CN00265,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Khánh Hòa,M00109,01CN000038,1CN00244,Band 3,,KHO01,0,I,RM
+1CN00042,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Khánh Hòa,M00110,01CN000038,1CN00244,Band 2,,KHO01,0,I,RM
+1CN01315,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 2 Nam Thăng Long (Times City),M00107,01CN000080,1CN01378,Band 4,,HNO02,0,I,RM
+1CN00282,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 1 Nam Thăng Long (Times City),M00108,01CN000080,1CN01378,Band 4,,HNO02,0,I,RM
+1CN01267,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Nam Thăng Long (Times City),M00109,01CN000080,1CN01378,Band 3,,HNO02,0,I,RM
+1CN00992,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Nam Thăng Long (Times City),M00110,01CN000080,1CN01378,Band 2,,HNO02,0,I,RM
+1CN00924,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 1 Trần Hưng Đạo,M00108,01CN000074,1CN01251,Band 4,,HCM40,0,I,RM
+1CN00522,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Trần Hưng Đạo,M00109,01CN000074,1CN01251,Band 3,,HCM40,0,I,RM
+1CN01357,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Trần Hưng Đạo,M00110,01CN000074,1CN01251,Band 2,,HCM40,0,I,RM
+1CN01336,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 2 Tân Thuận,M00107,01CN000040,1CN00769,Band 4,,HCM34,1,I,RM
+1CN01035,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 1 Tân Thuận,M00108,01CN000040,1CN00769,Band 4,,HCM34,0,I,RM
+1CN00714,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Tân Thuận,M00109,01CN000040,1CN00769,Band 3,,HCM34,0,I,RM
+1CN00968,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Tân Thuận,M00110,01CN000040,1CN00769,Band 2,,HCM34,0,I,RM
+1CN00679,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 2 Sở Giao dịch,M00107,01CN000033,1CN01062,Band 4,,HNO01,0,I,RM
+1CN01039,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 1 Sở Giao dịch,M00108,01CN000033,1CN01062,Band 4,,HNO01,0,I,RM
+1CN01150,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Sở Giao dịch,M00109,01CN000033,1CN01062,Band 3,,HNO01,0,I,RM
+1CN00034,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Sở Giao dịch,M00110,01CN000033,1CN01062,Band 2,,HNO01,0,I,RM
+1CN00436,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 2 Hồ Chí Minh,M00107,01CN000037,1CN00528,Band 4,,HCM01,0,I,RM
+1CN01060,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 1 Hồ Chí Minh,M00108,01CN000037,1CN00528,Band 4,,HCM01,0,I,RM
+1CN00697,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Hồ Chí Minh,M00109,01CN000037,1CN00528,Band 3,,HCM01,0,I,RM
+1CN00802,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Hồ Chí Minh,M00110,01CN000037,1CN00528,Band 2,,HCM01,0,I,RM
+1CN00095,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 2 Hồng Bàng,M00107,01CN000027,1CN01224,Band 4,,HPH07,0,I,RM
+1CN00796,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 1 Hồng Bàng,M00108,01CN000027,1CN01224,Band 4,,HPH07,0,I,RM
+1CN00409,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Hồng Bàng,M00109,01CN000027,1CN01224,Band 3,,HPH07,0,I,RM
+1CN00898,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Hồng Bàng,M00110,01CN000027,1CN01224,Band 2,,HPH07,0,I,RM
+1CN01202,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 2 Hà Đông (Văn Quán),M00107,01CN000024,1CN00800,Band 4,,HNO49,0,I,RM
+1CN00194,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 1 Hà Đông (Văn Quán),M00108,01CN000024,1CN00800,Band 4,,HNO49,0,I,RM
+1CN00970,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Hà Đông (Văn Quán),M00109,01CN000024,1CN00800,Band 3,,HNO49,0,I,RM
+1CN00064,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Hà Đông (Văn Quán),M00110,01CN000024,1CN00800,Band 2,,HNO49,0,I,RM
+1CN00617,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 2 Hoàng Mai (Hoàng Văn Thái),M00107,01CN000072,1CN00830,Band 4,,HNO65,1,I,RM
+1CN00725,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 1 Hoàng Mai (Hoàng Văn Thái),M00108,01CN000072,1CN00830,Band 4,,HNO65,0,I,RM
+1CN00521,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Hoàng Mai (Hoàng Văn Thái),M00109,01CN000072,1CN00830,Band 3,,HNO65,0,I,RM
+1CN00742,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Hoàng Mai (Hoàng Văn Thái),M00110,01CN000072,1CN00830,Band 2,,HNO65,0,I,RM
+1CN00624,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 2 Tây Hồ (Thụy Khuê),M00107,01CN000034,1CN00454,Band 4,,HNO20,0,I,RM
+1CN00183,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 1 Tây Hồ (Thụy Khuê),M00108,01CN000034,1CN00454,Band 4,,HNO20,0,I,RM
+1CN00022,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Tây Hồ (Thụy Khuê),M00109,01CN000034,1CN00454,Band 3,,HNO20,0,I,RM
+1CN00793,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Tây Hồ (Thụy Khuê),M00110,01CN000034,1CN00454,Band 2,,HNO20,0,I,RM
+1CN00904,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 2 Bắc Ninh,M00107,01CN000070,1CN00060,Band 4,,BNI01,1,I,RM
+1CN00928,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 1 Bắc Ninh,M00108,01CN000070,1CN00060,Band 4,,BNI01,0,I,RM
+1CN00647,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Bắc Ninh,M00109,01CN000070,1CN00060,Band 3,,BNI01,0,I,RM
+1CN01348,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Bắc Ninh,M00110,01CN000070,1CN00060,Band 2,,BNI01,0,I,RM
+1CN00105,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 2 Cầu Giấy,M00107,01CN000006,1CN00405,Band 4,,HNO52,0,I,RM
+1CN01320,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 1 Cầu Giấy,M00108,01CN000006,1CN00405,Band 4,,HNO52,0,I,RM
+1CN00494,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cầu Giấy,M00109,01CN000006,1CN00405,Band 3,,HNO52,0,I,RM
+1CN00843,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cầu Giấy,M00110,01CN000006,1CN00405,Band 2,,HNO52,0,I,RM
+1CN00417,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 2 Đống Đa,M00107,01CN000073,1CN01241,Band 4,,HNO34,0,I,RM
+1CN00092,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 1 Đống Đa,M00108,01CN000073,1CN01241,Band 4,,HNO34,0,I,RM
+1CN00580,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Đống Đa,M00109,01CN000073,1CN01241,Band 3,,HNO34,0,A,RM
+1CN00554,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Đống Đa,M00110,01CN000073,1CN01241,Band 2,,HNO34,0,I,RM
+1CN00047,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 2 Hà Nội,M00107,01CN000041,1CN00209,Band 4,,HNO17,0,I,RM
+1CN01090,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 1 Hà Nội,M00108,01CN000041,1CN00209,Band 4,,HNO17,0,I,RM
+1CN00490,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Hà Nội,M00109,01CN000041,1CN00209,Band 3,,HNO17,0,I,RM
+1CN00989,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Hà Nội,M00110,01CN000041,1CN00209,Band 2,,HNO17,0,I,RM
+1CN00523,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 2 Hải Phòng,M00107,01CN000020,1CN00199,Band 4,,HPH01,0,I,RM
+1CN01285,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 1 Hải Phòng,M00108,01CN000020,1CN00199,Band 4,,HPH01,0,I,RM
+1CN00008,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Hải Phòng,M00109,01CN000020,1CN00199,Band 3,,HPH01,0,I,RM
+1CN00396,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Hải Phòng,M00110,01CN000020,1CN00199,Band 2,,HPH01,0,I,RM
+1CN00622,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 2 Long Biên,M00107,01CN000001,1CN00764,Band 4,,HNO63,0,I,RM
+1CN01367,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 1 Long Biên,M00108,01CN000001,1CN00764,Band 4,,HNO63,0,I,RM
+1CN01125,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Long Biên,M00109,01CN000001,1CN00764,Band 3,,HNO63,0,I,RM
+1CN00934,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Long Biên,M00110,01CN000001,1CN00764,Band 2,,HNO63,0,I,RM
+1CN00519,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 2 Quảng Ninh,M00107,01CN000044,1CN01243,Band 4,,QNI01,0,I,RM
+1CN00810,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 1 Quảng Ninh,M00108,01CN000044,1CN01243,Band 4,,QNI01,0,I,RM
+1CN01139,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Quảng Ninh,M00109,01CN000044,1CN01243,Band 3,,QNI01,0,I,RM
+1CN00873,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Quảng Ninh,M00110,01CN000044,1CN01243,Band 2,,QNI01,0,I,RM
+1CN01132,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 2 Thanh Xuân,M00107,01CN000085,1CN00486,Band 4,,HNO44,0,I,RM
+1CN00394,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 1 Thanh Xuân,M00108,01CN000085,1CN00486,Band 4,,HNO44,0,I,RM
+1CN00278,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Thanh Xuân,M00109,01CN000085,1CN00486,Band 3,,HNO44,0,I,RM
+1CN00846,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Thanh Xuân,M00110,01CN000085,1CN00486,Band 2,,HNO44,0,I,RM
+1CN00439,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 2 Bến Thành,M00107,01CN000076,1CN00767,Band 4,,HCM04,0,I,RM
+1CN00577,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 1 Bến Thành,M00108,01CN000076,1CN00767,Band 4,,HCM04,0,I,RM
+1CN01325,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Bến Thành,M00109,01CN000076,1CN00767,Band 3,,HCM04,0,I,RM
+1CN00761,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Bến Thành,M00110,01CN000076,1CN00767,Band 2,,HCM04,0,I,RM
+1CN00147,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 2 Gò Vấp (Nguyễn Oanh),M00107,01CN000060,1CN01255,Band 4,,HCM32,0,I,RM
+1CN01344,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 1 Gò Vấp (Nguyễn Oanh),M00108,01CN000060,1CN01255,Band 4,,HCM32,0,I,RM
+1CN00300,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Gò Vấp (Nguyễn Oanh),M00109,01CN000060,1CN01255,Band 3,,HCM32,0,I,RM
+1CN00620,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Gò Vấp (Nguyễn Oanh),M00110,01CN000060,1CN01255,Band 2,,HCM32,0,I,RM
+1CN01212,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 2 Bình Dương,M00107,01CN000079,1CN00295,Band 4,,BDU01,0,I,RM
+1CN00474,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 1 Bình Dương,M00108,01CN000079,1CN00295,Band 4,,BDU01,0,I,RM
+1CN00606,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Bình Dương,M00109,01CN000079,1CN00295,Band 3,,BDU01,0,I,RM
+1CN00594,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Bình Dương,M00110,01CN000079,1CN00295,Band 2,,BDU01,0,I,RM
+1CN01371,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 2 Cần Thơ,M00107,01CN000022,1CN00645,Band 4,,CTH01,0,I,RM
+1CN00136,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 1 Cần Thơ,M00108,01CN000022,1CN00645,Band 4,,CTH01,0,I,RM
+1CN00930,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cần Thơ,M00109,01CN000022,1CN00645,Band 3,,CTH01,0,I,RM
+1CN01118,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cần Thơ,M00110,01CN000022,1CN00645,Band 2,,CTH01,0,I,RM
+1CN00350,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 2 Cộng Hòa,M00107,01CN000083,1CN00735,Band 4,,HCM12,0,I,RM
+1CN01356,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 1 Cộng Hòa,M00108,01CN000083,1CN00735,Band 4,,HCM12,0,I,RM
+1CN00572,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cộng Hòa,M00109,01CN000083,1CN00735,Band 3,,HCM12,0,I,RM
+1CN00423,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cộng Hòa,M00110,01CN000083,1CN00735,Band 2,,HCM12,0,I,RM
+1CN00728,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 2 Đô Thành,M00107,01CN000061,1CN00277,Band 4,,HCM29,0,I,RM
+1CN00358,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 1 Đô Thành,M00108,01CN000061,1CN00277,Band 4,,HCM29,0,I,RM
+1CN01198,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Đô Thành,M00109,01CN000061,1CN00277,Band 3,,HCM29,0,I,RM
+1CN00100,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Đô Thành,M00110,01CN000061,1CN00277,Band 2,,HCM29,0,I,RM
+1CN01097,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 2 Sài Gòn,M00107,01CN000067,1CN01319,Band 4,,HCM19,0,I,RM
+1CN00747,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 1 Sài Gòn,M00108,01CN000067,1CN01319,Band 4,,HCM19,0,I,RM
+1CN00650,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Sài Gòn,M00109,01CN000067,1CN01319,Band 3,,HCM19,0,I,RM
+1CN00375,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Sài Gòn,M00110,01CN000067,1CN01319,Band 2,,HCM19,0,I,RM
+1CN00574,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 2 Tân Bình,M00107,01CN000069,1CN01114,Band 4,,HCM41,0,I,RM
+1CN00975,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 1 Tân Bình,M00108,01CN000069,1CN01114,Band 4,,HCM41,0,I,RM
+1CN00412,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Tân Bình,M00109,01CN000069,1CN01114,Band 3,,HCM41,0,A,RM
+1CN01134,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Tân Bình,M00110,01CN000069,1CN01114,Band 2,,HCM41,0,I,RM
+1CN00012,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 2 Vũng Tàu,M00107,01CN000059,1CN00027,Band 4,,BRV01,0,I,RM
+1CN00549,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 1 Vũng Tàu,M00108,01CN000059,1CN00027,Band 4,,BRV01,0,I,RM
+1CN00169,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Vũng Tàu,M00109,01CN000059,1CN00027,Band 3,,BRV01,0,I,RM
+1CN00512,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Vũng Tàu,M00110,01CN000059,1CN00027,Band 2,,BRV01,0,I,RM
+1CN01073,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 2 Hải Châu,M00107,01CN000003,1CN00017,Band 4,,DAN03,0,I,RM
+1CN00441,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 1 Hải Châu,M00108,01CN000003,1CN00017,Band 4,,DAN03,0,I,RM
+1CN00442,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Hải Châu,M00109,01CN000003,1CN00017,Band 3,,DAN03,0,I,RM
+1CN00024,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Hải Châu,M00110,01CN000003,1CN00017,Band 2,,DAN03,0,I,RM
+1CN00446,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 2 Đà Nẵng,M00107,01CN000023,1CN00959,Band 4,,DAN01,0,I,RM
+1CN01003,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 1 Đà Nẵng,M00108,01CN000023,1CN00959,Band 4,,DAN01,0,I,RM
+1CN00698,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Đà Nẵng,M00109,01CN000023,1CN00959,Band 3,,DAN01,0,I,RM
+1CN00149,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Đà Nẵng,M00110,01CN000023,1CN00959,Band 2,,DAN01,0,I,RM
+1CN00332,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 2 Khánh Hòa,M00107,01CN000038,1CN00244,Band 4,,KHO01,0,I,RM
+1CN00453,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 1 Khánh Hòa,M00108,01CN000038,1CN00244,Band 4,,KHO01,0,I,RM
+1CN00463,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Khánh Hòa,M00109,01CN000038,1CN00244,Band 3,,KHO01,0,I,RM
+1CN00138,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Khánh Hòa,M00110,01CN000038,1CN00244,Band 2,,KHO01,0,I,RM
+1CN00370,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 2 Nam Thăng Long (Times City),M00107,01CN000080,1CN01378,Band 4,,HNO02,0,I,RM
+1CN01375,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 1 Nam Thăng Long (Times City),M00108,01CN000080,1CN01378,Band 4,,HNO02,0,I,RM
+1CN00628,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Nam Thăng Long (Times City),M00109,01CN000080,1CN01378,Band 3,,HNO02,0,I,RM
+1CN00053,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Nam Thăng Long (Times City),M00110,01CN000080,1CN01378,Band 2,,HNO02,0,I,RM
+1CN00458,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 2 Trần Hưng Đạo,M00107,01CN000074,1CN01251,Band 4,,HCM40,0,I,RM
+1CN00166,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 1 Trần Hưng Đạo,M00108,01CN000074,1CN01251,Band 4,,HCM40,0,I,RM
+1CN01213,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Trần Hưng Đạo,M00109,01CN000074,1CN01251,Band 3,,HCM40,0,I,RM
+1CN00133,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Trần Hưng Đạo,M00110,01CN000074,1CN01251,Band 2,,HCM40,0,I,RM
+1CN01151,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 2 Tân Thuận,M00107,01CN000040,1CN00769,Band 4,,HCM34,1,I,RM
+1CN00750,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 1 Tân Thuận,M00108,01CN000040,1CN00769,Band 4,,HCM34,0,I,RM
+1CN01040,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Tân Thuận,M00109,01CN000040,1CN00769,Band 3,,HCM34,0,I,RM
+1CN01294,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Tân Thuận,M00110,01CN000040,1CN00769,Band 2,,HCM34,0,I,RM
+1CN01190,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 2 Sở Giao dịch,M00107,01CN000033,1CN01062,Band 4,,HNO01,0,I,RM
+1CN00637,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 1 Sở Giao dịch,M00108,01CN000033,1CN01062,Band 4,,HNO01,0,I,RM
+1CN00682,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Sở Giao dịch,M00109,01CN000033,1CN01062,Band 3,,HNO01,0,I,RM
+1CN00899,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Sở Giao dịch,M00110,01CN000033,1CN01062,Band 2,,HNO01,0,I,RM
+1CN00917,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 2 Hồ Chí Minh,M00107,01CN000037,1CN00528,Band 4,,HCM01,0,I,RM
+1CN00353,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 1 Hồ Chí Minh,M00108,01CN000037,1CN00528,Band 4,,HCM01,0,I,RM
+1CN01143,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Hồ Chí Minh,M00109,01CN000037,1CN00528,Band 3,,HCM01,0,I,RM
+1CN00503,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Hồ Chí Minh,M00110,01CN000037,1CN00528,Band 2,,HCM01,0,I,RM
+1CN00249,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 2 Hồng Bàng,M00107,01CN000027,1CN01224,Band 4,,HPH07,0,I,RM
+1CN00612,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 1 Hồng Bàng,M00108,01CN000027,1CN01224,Band 4,,HPH07,0,I,RM
+1CN00004,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Hồng Bàng,M00109,01CN000027,1CN01224,Band 3,,HPH07,0,I,RM
+1CN00715,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Hồng Bàng,M00110,01CN000027,1CN01224,Band 2,,HPH07,0,I,RM
+1CN00145,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Upper Thanh Xuân,MJ009C,01CN000085,1CN00486,Band 2,,HNO44,0,I,RM
+1CN01297,Cộng tác viên Ban Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài Miền Nam 1,AA052C,01CN000057,1CN01288,K,,HCM01,0,I,BO
+1CN00753,Giám đốc Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư nước ngoài Cấp 1 Miền Bắc (Sở Giao dịch),MJ017E,01CN000057,1CN00754,Band 4,,HNO01,0,A,RM
+1CN00089,Chuyên viên chính Quan hệ khách hàng Doanh nghiệp lớn Ngành Miền Bắc,M00064,01CN000047,1CN00407,Band 3,,HNO01,0,I,RM
+1CN00704,Chuyên gia Phân khúc Khách hàng Xây dựng Miền Nam,MJ021E,01CN000056,1CN00676,Band 5,,HSC02,0,I,BO
+1CN01227,Cộng tác viên Trung tâm Khách hàng Doanh nghiệp Đống Đa,AA052C,01CN000073,1CN01241,K,,HNO34,0,A,BO
+1CN00640,Phó Giám đốc Khách hàng Doanh nghiệp lớn 2 Miền Nam,M00149,01CN000028,1CN00806,Band 6,,HCM01,1,A,BO
+1CN00985,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Quảng Ninh,MK015S,01CN000044,1CN01243,Band 3,,QNI01,0,A,ARM
+1CN01013,Giám đốc Kinh doanh Miền Nam,M00159,01CN000025,1CN00279,Band 8,,HSC02,1,A,BO
+1CN00128,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Khánh Hòa,MJ011M,01CN000038,1CN00244,Band 5,,KHO01,1,A,TL
+1CN00367,Giám đốc Kinh doanh Phòng Giải pháp Tài chính Doanh nghiệp Cấp 2,MJ111M,01CN000086,1CN00683,Band 7,,HSC01,1,A,BO
+1CN00745,Cộng tác viên Trung tâm Khách hàng Doanh nghiệp Sở Giao dịch,AA052C,01CN000033,1CN01062,K,,HNO01,0,A,BO
+1CN00604,Phó Giám đốc Trung tâm Khách hàng Doanh nghiệp Đống Đa,BA015M,01CN000073,1CN01241,Band 6,,HNO34,1,A,HH
+1CN00694,Chuyên gia Thị trường và Tiềm năng khách hàng,M00164,01CN000039,1CN00864,Band 5,,HSC01,0,A,BO
+1CN00685,Chuyên viên cao cấp Thị trường và Tiềm năng khách hàng,M00165,01CN000039,1CN00864,Band 4,,HSC01,0,A,BO
+1CN00376,Chuyên viên chính Thị trường và Tiềm năng khách hàng,M00166,01CN000039,1CN00864,Band 3,,HSC01,0,A,BO
+1CN00481,Chuyên viên Thị trường và Tiềm năng khách hàng,M00167,01CN000039,1CN00864,Band 2,,HSC01,0,A,BO
+1CN01058,Cộng tác viên Trung tâm Khách hàng Doanh nghiệp Cầu Giấy,AA052C,01CN000006,1CN00405,K,,HNO52,0,A,BO
+1CN01355,Cộng tác viên Trung tâm Khách hàng Doanh nghiệp Khánh Hòa,AA052C,01CN000038,1CN00244,K,,KHO01,0,A,BO
+1CN00132,Cộng tác viên Trung tâm Khách hàng Doanh nghiệp Thanh Xuân,AA052C,01CN000085,1CN00486,K,,HNO44,0,A,BO
+1CN00146,Chuyên gia Giải pháp Tín dụng (EB) Vũng Tàu,MH030E,01CN000013,1CN00842,Band 5,,BRV01,0,I,BO
+1CN01349,Giám đốc Trung tâm Khách hàng Doanh nghiệp Tây Vũng Tàu,BA013M,01CN000031,1CN00367,Band 6,,BRV04,1,A,HH
+1CN00337,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Tây Vũng Tàu,MJ011M,01CN000031,1CN01349,Band 5,,BRV04,1,A,TL
+1CN00691,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 Tây Vũng Tàu,MJ010S,01CN000031,1CN01349,Band 4,,BRV04,0,A,BO
+1CN00470,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 Tây Vũng Tàu,MJ011S,01CN000031,1CN01349,Band 4,,BRV04,0,A,BO
+1CN00791,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp Tây Vũng Tàu,MJ028S,01CN000031,1CN01349,Band 3,,BRV04,0,A,BO
+1CN01286,Chuyên viên Phát triển Khách hàng Doanh nghiệp Tây Vũng Tàu,MJ008C,01CN000031,1CN01349,Band 2,,BRV04,0,A,BO
+1CN00890,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 2 Tây Vũng Tàu,M00107,01CN000031,1CN01349,Band 4,,BRV04,1,I,RM
+1CN01248,Giám đốc Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Cấp 1 Tây Vũng Tàu,M00108,01CN000031,1CN01349,Band 4,,BRV04,0,I,RM
+1CN00877,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Tây Vũng Tàu,M00109,01CN000031,1CN01349,Band 3,,BRV04,0,I,RM
+1CN00272,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Phi tín dụng Tây Vũng Tàu,M00110,01CN000031,1CN01349,Band 2,,BRV04,0,I,RM
+1CN01304,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 2 Tây Vũng Tàu,M00107,01CN000031,1CN01349,Band 4,,BRV04,1,I,RM
+1CN01089,Giám đốc Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Cấp 1 Tây Vũng Tàu,M00108,01CN000031,1CN01349,Band 4,,BRV04,0,I,RM
+1CN01166,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Tây Vũng Tàu,M00109,01CN000031,1CN01349,Band 3,,BRV04,0,I,RM
+1CN01180,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Thiên hướng Phi tín dụng Tây Vũng Tàu,M00110,01CN000031,1CN01349,Band 2,,BRV04,0,I,RM
+1CN00662,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 Tây Vũng Tàu,MJ029S,01CN000031,1CN01349,Band 4,,BRV04,0,A,RM
+1CN01200,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 Tây Vũng Tàu,MJ043S,01CN000031,1CN01349,Band 4,,BRV04,0,A,RM
+1CN00040,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper Tây Vũng Tàu,MJ044S,01CN000031,1CN01349,Band 3,,BRV04,0,A,RM
+1CN01265,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Tây Vũng Tàu,MK015S,01CN000031,1CN01349,Band 3,,BRV04,0,A,ARM
+1CN00586,Chuyên viên hỗ trợ Quan hệ Khách hàng Doanh nghiệp Tây Vũng Tàu,MK061C,01CN000031,1CN01349,Band 2,,BRV04,0,A,ARM
+1CN00687,Cộng tác viên Trung tâm Khách hàng Doanh nghiệp Tây Vũng Tàu,AA052C,01CN000031,1CN01349,K,,BRV04,0,A,BO
+1CN00545,Cộng tác viên Trung tâm Khách hàng Doanh nghiệp Đà Nẵng,AA052C,01CN000023,1CN00959,K,,DAN01,0,A,BO
+1CN00807,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Tây Vũng Tàu,M00107,01CN000031,1CN01349,Band 4,,BRV04,0,A,RM
+1CN00836,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Tây Vũng Tàu,M00108,01CN000031,1CN01349,Band 4,,BRV04,0,A,RM
+1CN01144,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Tây Vũng Tàu,M00109,01CN000031,1CN01349,Band 3,,BRV04,0,A,RM
+1CN00701,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Tây Vũng Tàu,M00110,01CN000031,1CN01349,Band 2,,BRV04,0,A,RM
+1CN00690,Cộng tác viên Siêu Trung tâm Khách hàng Doanh nghiệp Sở Giao dịch,AA052C,01CN000017,1CN00901,K,,HNO01,0,I,BO
+1CN00154,Giám đốc Trung tâm Khách hàng Doanh nghiệp Mỹ Đình,BA013M,01CN000012,1CN01229,Band 6,,HNO59,1,A,HH
+1CN00382,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Mỹ Đình,MJ011M,01CN000012,1CN00154,Band 5,,HNO59,1,A,TL
+1CN01070,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 Mỹ Đình,MJ010S,01CN000012,1CN00154,Band 4,,HNO59,0,A,BO
+1CN00597,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 Mỹ Đình,MJ011S,01CN000012,1CN00154,Band 4,,HNO59,0,A,BO
+1CN00672,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp Mỹ Đình,MJ028S,01CN000012,1CN00154,Band 3,,HNO59,0,A,BO
+1CN01353,Chuyên viên Phát triển Khách hàng Doanh nghiệp Mỹ Đình,MJ008C,01CN000012,1CN00154,Band 2,,HNO59,0,A,BO
+1CN00974,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Mỹ Đình,M00107,01CN000012,1CN00154,Band 4,,HNO59,0,A,RM
+1CN00354,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Mỹ Đình,M00108,01CN000012,1CN00154,Band 4,,HNO59,0,A,RM
+1CN01162,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Mỹ Đình,M00109,01CN000012,1CN00154,Band 3,,HNO59,0,A,RM
+1CN00172,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Mỹ Đình,M00110,01CN000012,1CN00154,Band 2,,HNO59,0,A,RM
+1CN00987,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 Mỹ Đình,MJ029S,01CN000012,1CN00154,Band 4,,HNO59,0,A,RM
+1CN00177,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 Mỹ Đình,MJ043S,01CN000012,1CN00154,Band 4,,HNO59,0,A,RM
+1CN00581,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper Mỹ Đình,MJ044S,01CN000012,1CN00154,Band 3,,HNO59,0,A,RM
+1CN00211,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Mỹ Đình,MK015S,01CN000012,1CN00154,Band 3,,HNO59,0,A,ARM
+1CN00759,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Mỹ Đình,MK061C,01CN000012,1CN00154,Band 2,,HNO59,0,A,ARM
+1CN00434,Quyền Giám đốc Trung tâm Khách hàng Doanh nghiệp Chợ Lớn,BA013M,01CN000002,1CN00488,Band 6,,HCM48,1,A,HH
+1CN00778,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Chợ Lớn,MJ011M,01CN000002,1CN00434,Band 5,,HCM48,1,A,TL
+1CN00235,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 Chợ Lớn,MJ010S,01CN000002,1CN00434,Band 4,,HCM48,0,A,BO
+1CN01015,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 Chợ Lớn,MJ011S,01CN000002,1CN00434,Band 4,,HCM48,0,A,BO
+1CN01148,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp Chợ Lớn,MJ028S,01CN000002,1CN00434,Band 3,,HCM48,0,A,BO
+1CN00071,Chuyên viên Phát triển Khách hàng Doanh nghiệp Chợ Lớn,MJ008C,01CN000002,1CN00434,Band 2,,HCM48,0,A,BO
+1CN00664,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Chợ Lớn,M00107,01CN000002,1CN00434,Band 4,,HCM48,0,A,RM
+1CN00932,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Chợ Lớn,M00108,01CN000002,1CN00434,Band 4,,HCM48,0,A,RM
+1CN00109,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Chợ Lớn,M00109,01CN000002,1CN00434,Band 3,,HCM48,0,A,RM
+1CN00202,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Chợ Lớn,M00110,01CN000002,1CN00434,Band 2,,HCM48,0,A,RM
+1CN00403,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 Chợ Lớn,MJ029S,01CN000002,1CN00434,Band 4,,HCM48,0,A,RM
+1CN00072,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 Chợ Lớn,MJ043S,01CN000002,1CN00434,Band 4,,HCM48,0,A,RM
+1CN01071,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper Chợ Lớn,MJ044S,01CN000002,1CN00434,Band 3,,HCM48,0,A,RM
+1CN00402,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Chợ Lớn,MK015S,01CN000002,1CN00434,Band 3,,HCM48,0,A,ARM
+1CN01340,Chuyên viên hỗ trợ Quan hệ Khách hàng Doanh nghiệp Chợ Lớn,MK061C,01CN000002,1CN00434,Band 2,,HCM48,0,A,ARM
+1CN00881,Cộng tác viên Trung tâm Khách hàng Doanh nghiệp Thành Công,AA052C,01CN000034,1CN00454,K,,HNO20,0,I,BO
+1CN00841,Cộng tác viên Trung tâm Khách hàng Doanh nghiệp Long Biên,AA052C,01CN000001,1CN00764,K,,HNO63,0,A,BO
+1CN00484,Cộng tác viên Trung tâm Khách hàng Doanh nghiệp Hà Đông (Văn Quán),AA052C,01CN000024,1CN00800,K,,HNO49,0,A,BO
+1CN00379,Cộng tác viên Trung tâm Khách hàng Doanh nghiệp Vũng Tàu,AA052C,01CN000059,1CN00027,K,,BRV01,0,I,BO
+1CN01346,Cộng tác viên Trung tâm Khách hàng Doanh nghiệp Tân Bình,AA052C,01CN000069,1CN01114,K,,HCM41,0,A,BO
+1CN00914,Cộng tác viên Trung tâm Khách hàng Doanh nghiệp Hồ Chí Minh,AA052C,01CN000037,1CN00528,K,,HCM01,0,A,BO
+1CN01334,Cộng tác viên Trung tâm Khách hàng Doanh nghiệp Hải Châu,AA052C,01CN000003,1CN00017,K,,DAN03,0,I,BO
+1CN00378,Cộng tác viên Trung tâm Khách hàng Doanh nghiệp Gò Vấp (Nguyễn Oanh),AA052C,01CN000060,1CN01255,K,,HCM32,0,A,BO
+1CN00344,Cộng tác viên Trung tâm Khách hàng Doanh nghiệp Đô Thành,AA052C,01CN000061,1CN00277,K,,HCM29,0,A,BO
+1CN01301,Cộng tác viên Trung tâm Khách hàng Doanh nghiệp Cộng Hòa,AA052C,01CN000083,1CN00735,K,,HCM12,0,A,BO
+1CN00614,Cộng tác viên Trung tâm Khách hàng Doanh nghiệp Cần Thơ,AA052C,01CN000022,1CN00645,K,,CTH01,0,A,BO
+1CN00875,Cộng tác viên Trung tâm Khách hàng Doanh nghiệp Bình Dương,AA052C,01CN000079,1CN00295,K,,BDU01,0,A,BO
+1CN01068,Giám đốc Quan hệ Khách hàng Doanh nghiệp Vốn đầu tư Nước ngoài Cấp 2 Hồ Chí Minh,MJ016E,01CN000057,1CN00119,Band 5,,HCM01,0,A,RM
+1CN01322,"Cộng tác viên Giám sát, Thúc đẩy và Nâng cao năng lực bán Miền Bắc",AA052C,01CN000084,1CN00625,K,,HSC01,0,I,BO
+1CN00058,"Cộng tác viên Giám sát, Thúc đẩy và Nâng cao năng lực bán Miền Nam",AA052C,01CN000084,1CN00625,K,,HSC02,0,I,BO
+1CN01104,Cộng tác viên Trung tâm Khách hàng Doanh nghiệp Mỹ Đình,AA052C,01CN000012,1CN00154,K,,HNO59,0,A,BO
+1CN00303,Quyền Giám đốc Trung tâm Khách hàng Doanh nghiệp Thủ Đức,BA013M,01CN000010,1CN00488,Band 6,,TDU01,1,A,HH
+1CN00508,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Thủ Đức,MJ011M,01CN000010,1CN00303,Band 5,,TDU01,1,A,TL
+1CN00500,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 Thủ Đức,MJ010S,01CN000010,1CN00303,Band 4,,TDU01,0,A,BO
+1CN00565,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 Thủ Đức,MJ011S,01CN000010,1CN00303,Band 4,,TDU01,0,A,BO
+1CN00567,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp Thủ Đức,MJ028S,01CN000010,1CN00303,Band 3,,TDU01,0,A,BO
+1CN00535,Chuyên viên Phát triển Khách hàng Doanh nghiệp Thủ Đức,MJ008C,01CN000010,1CN00303,Band 2,,TDU01,0,A,BO
+1CN00621,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Thủ Đức,M00107,01CN000010,1CN00303,Band 4,,TDU01,0,A,RM
+1CN00943,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Thủ Đức,M00108,01CN000010,1CN00303,Band 4,,TDU01,0,A,RM
+1CN00426,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Thủ Đức,M00109,01CN000010,1CN00303,Band 3,,TDU01,0,A,RM
+1CN01368,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Thủ Đức,M00110,01CN000010,1CN00303,Band 2,,TDU01,0,A,RM
+1CN00781,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 Thủ Đức,MJ029S,01CN000010,1CN00303,Band 4,,TDU01,0,A,RM
+1CN01085,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 Thủ Đức,MJ043S,01CN000010,1CN00303,Band 4,,TDU01,0,A,RM
+1CN00848,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper Thủ Đức,MJ044S,01CN000010,1CN00303,Band 3,,TDU01,0,A,RM
+1CN00309,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Thủ Đức,MK015S,01CN000010,1CN00303,Band 3,,TDU01,0,A,ARM
+1CN00114,Chuyên viên hỗ trợ Quan hệ Khách hàng Doanh nghiệp Thủ Đức,MK061C,01CN000010,1CN00303,Band 2,,TDU01,0,A,ARM
+1CN00699,Cộng tác viên Trung tâm Khách hàng Doanh nghiệp Thủ Đức,AA052C,01CN000010,1CN00303,K,,TDU01,0,A,BO
+1CN00805,Cộng tác viên Trung tâm Khách hàng Doanh nghiệp Chợ Lớn,AA052C,01CN000002,1CN00434,K,,HCM48,0,A,BO
+1CN00809,Chuyên gia Phát triển giải pháp Ngân hàng mở,M00390,01CN000057,1CN00754,Band 5,,HSC01,0,A,BO
+1CN00408,Chuyên viên cao cấp Phát triển giải pháp Ngân hàng mở,M00391,01CN000057,1CN00754,Band 4,,HSC01,0,A,BO
+1CN00590,Chuyên viên chính Phát triển giải pháp Ngân hàng mở,M00392,01CN000057,1CN00754,Band 3,,HSC01,0,A,BO
+1CN01078,Chuyên viên Phát triển giải pháp Ngân hàng mở,M00393,01CN000057,1CN00754,Band 2,,HSC01,0,A,BO
+1CN00330,Giám đốc Phòng Thẩm định Khách hàng Khu vực 2,M00394,01CN000077,1CN00328,Band 7,,HSC01,1,A,BO
+1CN00885,Giám đốc Phân khúc,M00395,01CN000063,1CN00330,Band 6,,HSC01,1,A,BO
+1CN00207,Chuyên gia Phân khúc,M00396,01CN000063,1CN00885,Band 5,,HSC01,0,A,BO
+1CN01311,Chuyên viên cao cấp Phân khúc,M00397,01CN000063,1CN00885,Band 4,,HSC01,0,A,BO
+1CN01048,Chuyên viên chính Phân khúc,M00398,01CN000063,1CN00885,Band 3,,HSC01,0,A,BO
+1CN00897,Chuyên viên Phân khúc,M00399,01CN000063,1CN00885,Band 2,,HSC01,0,A,BO
+1CN00602,Giám đốc Ban Quản lý Danh mục,MJ030M,01CN000068,1CN00321,Band 7,,HSC01,1,A,HH
+1CN01000,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp lớn 1.1,MJ026M,01CN000068,1CN00602,Band 6,,HSC01,1,A,TL
+1CN00015,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn 1.1 Cấp 3,MJ161E,01CN000068,1CN01000,Band 5,,HSC01,0,A,RM
+1CN00551,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn 1.1 Cấp 2,MJ162E,01CN000068,1CN01000,Band 5,,HSC01,0,A,RM
+1CN00237,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn 1.1 Cấp 1,MJ163S,01CN000068,1CN01000,Band 4,,HSC01,0,A,RM
+1CN00652,Chuyên viên cao cấp Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn 1.1,MK090S,01CN000068,1CN01000,Band 4,,HSC01,0,A,ARM
+1CN00910,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn 1.1,MK091S,01CN000068,1CN01000,Band 3,,HSC01,0,A,ARM
+1CN00264,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn 1.1,MK092C,01CN000068,1CN01000,Band 2,,HSC01,0,A,ARM
+1CN01069,Chuyên gia Phòng Tăng trưởng Kinh doanh Miền Bắc,M00400,01CN000015,1CN01324,Band 5,,HSC01,0,A,BO
+1CN00304,Chuyên gia cao cấp Phân khúc,M00467,01CN000063,1CN00885,Band 6,,HSC01,0,A,BO
+1CN00362,Phó Giám đốc Trung tâm Khách hàng Doanh nghiệp Hồ Chí Minh,BA015M,01CN000037,1CN00528,Band 6,,HCM01,1,A,HH
+1CN01233,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 3 Hồ Chí Minh,MJ155E,01CN000037,1CN00528,Band 5,,HCM01,0,A,RM
+1CN00539,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Hồ Chí Minh 1,M00107,01CN000037,1CN00362,Band 4,,HCM01,0,A,RM
+1CN00377,Chuyên viên cao cấp Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Hồ Chí Minh 1,MK014S,01CN000037,1CN00362,Band 4,,HCM01,0,A,ARM
+1CN00366,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Hồ Chí Minh 1,MK061C,01CN000037,1CN00362,Band 2,,HCM01,0,A,ARM
+1CN00678,Giám đốc Quan hệ Khách hàng doanh nghiệp Cấp 3 Đô Thành,MJ155E,01CN000061,1CN00277,Band 5,,HCM29,0,A,RM
+1CN01307,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Nam,MK092C,01CN000021,1CN01328,Band 2,,HCM01,0,A,ARM
+1CN01149,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp lớn Miền Bắc 6,MJ026M,01CN000042,1CN01351,Band 6,,HNO01,1,A,TL
+1CN01127,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 3 Miền Bắc 6,MJ161E,01CN000042,1CN01149,Band 5,,HNO01,0,A,RM
+1CN00613,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 2 Miền Bắc 6,MJ162E,01CN000042,1CN01149,Band 5,,HNO01,0,A,RM
+1CN00006,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn Cấp 1 Miền Bắc 6,MJ163S,01CN000042,1CN01149,Band 4,,HNO01,0,A,RM
+1CN01225,Chuyên viên cao cấp Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Bắc 6,MK090S,01CN000042,1CN01149,Band 4,,HNO01,0,A,ARM
+1CN01186,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Bắc 6,MK091S,01CN000042,1CN01149,Band 3,,HNO01,0,A,ARM
+1CN00429,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Bắc 6,MK092C,01CN000042,1CN01149,Band 2,,HNO01,0,A,ARM
+1CN01019,Cộng tác viên Thị trường và Tiềm năng khách hàng,AA052C,01CN000039,1CN00864,K,,HSC01,0,A,BO
+1CN00931,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Cần Thơ,MJ011M,01CN000022,1CN00645,Band 5,,CTH01,1,A,TL
+1CN00134,Giao phụ trách Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Hà Nội,MJ011M,01CN000041,1CN00209,Band 4,,HNO17,0,A,TL
+1CN01217,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp lớn 1.2,MJ026M,01CN000068,1CN00602,Band 5,,HSC01,1,A,TL
+1CN00686,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn 1.2 Cấp 3,MJ161E,01CN000068,1CN01217,Band 5,,HSC01,0,A,RM
+1CN00721,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn 1.2 Cấp 2,MJ162E,01CN000068,1CN01217,Band 5,,HSC01,0,A,RM
+1CN00348,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn 1.2 Cấp 1,MJ163S,01CN000068,1CN01217,Band 4,,HSC01,0,A,RM
+1CN00427,Chuyên viên cao cấp Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn 1.2,MK090S,01CN000068,1CN01217,Band 4,,HSC01,0,A,ARM
+1CN00838,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn 1.2,MK091S,01CN000068,1CN01217,Band 3,,HSC01,0,A,ARM
+1CN01159,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn 1.2,MK092C,01CN000068,1CN01217,Band 2,,HSC01,0,A,ARM
+1CN00068,Cộng tác viên Khách hàng Doanh nghiệp lớn Miền Nam 3,AA052C,01CN000029,1CN00516,K,,HCM01,0,A,BO
+1CN00709,Cộng tác viên Twings Tổ Khách hàng Tổ chức Cấp 4,AA052C,01CN000006,1CN00405,,,,0,A,BO
+1CN01204,Cộng tác viên Twings Trung tâm Đối tác Kinh doanh Miền Trung,AA052C,01CN000073,1CN01241,K,,HNO34,0,A,BO
+1CN00150,Cộng tác viên Twings Bộ phận Khách hàng Tổ chức Miền Nam,AA052C,01CN000024,1CN00800,K,,HNO49,0,A,BO
+1CN01116,Cộng tác viên Twings Trung tâm Quan hệ Đối tác Chiến lược Khu vực 1,AA052C,01CN000041,1CN00209,K,,HNO17,0,A,BO
+1CN00054,Cộng tác viên Twings Ban Quản lý Chất lượng Dịch vụ,AA052C,01CN000001,1CN00764,K,,HNO63,0,A,BO
+1CN00036,Cộng tác viên Twings Trung tâm Khách hàng Vừa và Nhỏ Cấp 4,AA052C,01CN000080,1CN01378,K,,HNO02,0,A,BO
+1CN01275,Cộng tác viên Twings Trung tâm Khách hàng Doanh nghiệp Vừa và Nhỏ Thành Công,AA052C,01CN000034,1CN00454,K,,HNO11,0,A,BO
+1CN00308,Cộng tác viên Twings Phòng Chuyển đổi Số Kinh doanh Khu vực 2,AA052C,01CN000085,1CN00486,K,,HNO44,0,A,BO
+1CN01042,Giao phụ trách Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Cộng Hòa,MJ011M,01CN000083,1CN00735,Band 4,,HCM12,0,I,TL
+1CN01160,Giao phụ trách Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Hồ Chí Minh,MJ011M,01CN000037,1CN00528,Band 4,,HCM01,0,I,TL
+1CN00345,Giao phụ trách Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Hải Châu,MJ011M,01CN000003,1CN00017,Band 4,,DAN03,0,A,TL
+1CN00900,Giao phụ trách Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Thủ Đức,MJ011M,01CN000010,1CN00303,Band 4,,TDU01,0,A,TL
+1CN00118,Cộng tác viên Quan hệ Khách hàng Doanh nghiệp vừa Miền Nam,AA052C,01CN000008,1CN00762,K,,HCM29,0,A,RM
+1CN00501,Cộng tác viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn Miền Nam 2,AA052C,01CN000048,1CN00293,K,,HCM01,0,A,ARM
+1CN00816,Cộng tác viên Twings Trung tâm Quản lý Danh mục,AA052C,01CN000033,1CN01062,K,,HNO01,0,A,BO
+1CN00218,Cộng tác viên Twings Trung tâm Khách hàng Doanh nghiệp Vừa Miền Bắc,AA052C,01CN000062,1CN01047,K,,HNO17,0,A,BO
+1CN00476,"Chuyên viên cao cấp Giám sát, Thúc đẩy và Nâng cao Năng lực bán Hải Phòng",MK046S,01CN000084,1CN00625,Band 4,,HPH01,0,A,BO
+1CN00422,Phó Giám đốc Trung tâm Khách hàng Doanh nghiệp Hồng Bàng,BA015M,01CN000027,1CN01224,Band 6,,HPH07,1,A,HH
+1CN01245,Giám đốc Trung tâm Khách hàng Doanh nghiệp Vạn Phúc,BA013M,01CN000019,1CN01229,Band 6,,HNO39,1,A,HH
+1CN01240,Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Vạn Phúc,MJ011M,01CN000019,1CN01245,Band 5,,HNO39,1,A,TL
+1CN00131,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 2 Vạn Phúc,MJ010S,01CN000019,1CN01245,Band 4,,HNO39,0,A,BO
+1CN00618,Giám đốc Phát triển Khách hàng Doanh nghiệp Cấp 1 Vạn Phúc,MJ011S,01CN000019,1CN01245,Band 4,,HNO39,0,A,BO
+1CN00496,Chuyên viên chính Phát triển Khách hàng Doanh nghiệp Vạn Phúc,MJ028S,01CN000019,1CN01245,Band 3,,HNO39,0,A,BO
+1CN01253,Chuyên viên Phát triển Khách hàng Doanh nghiệp Vạn Phúc,MJ008C,01CN000019,1CN01245,Band 2,,HNO39,0,A,BO
+1CN00181,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 2 Vạn Phúc,M00107,01CN000019,1CN01245,Band 4,,HNO39,0,A,RM
+1CN00025,Giám đốc Quan hệ Khách hàng Doanh nghiệp Cấp 1 Vạn Phúc,M00108,01CN000019,1CN01245,Band 4,,HNO39,0,A,RM
+1CN00160,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Vạn Phúc,M00109,01CN000019,1CN01245,Band 3,,HNO39,0,A,RM
+1CN01079,Chuyên viên Quan hệ Khách hàng Doanh nghiệp Vạn Phúc,M00110,01CN000019,1CN01245,Band 2,,HNO39,0,A,RM
+1CN01218,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 2 Vạn Phúc,MJ029S,01CN000019,1CN01245,Band 4,,HNO39,0,A,RM
+1CN00510,Giám đốc Quan hệ Khách hàng Doanh nghiệp Upper Cấp 1 Vạn Phúc,MJ043S,01CN000019,1CN01245,Band 4,,HNO39,0,A,RM
+1CN01126,Chuyên viên chính Quan hệ Khách hàng Doanh nghiệp Upper Vạn Phúc,MJ044S,01CN000019,1CN01245,Band 3,,HNO39,0,A,RM
+1CN00854,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Vạn Phúc,MK015S,01CN000019,1CN01245,Band 3,,HNO39,0,A,ARM
+1CN00799,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp Vạn Phúc,MK061C,01CN000019,1CN01245,Band 2,,HNO39,0,A,ARM
+1CN01365,Quản trị viên Ngân hàng Đối tác Chiến lược Hồ Chí Minh,MM008C,01CN000025,1CN00516,Band 3,,HSC02,0,A,BO
+1CN00835,Giao phụ trách Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp Vạn Phúc,MJ011M,01CN000019,1CN01245,Band 4,,HNO39,0,A,TL
+1CN00766,Giao phụ trách Giám đốc Quản lý Quan hệ Khách hàng Doanh nghiệp lớn 1.3,MJ026M,01CN000068,1CN00602,Band 5,,HSC01,1,A,TL
+1CN00462,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn 1.3 Cấp 3,MJ161E,01CN000068,1CN00766,Band 5,,HSC01,0,A,RM
+1CN01029,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn 1.3 Cấp 2,MJ162E,01CN000068,1CN00766,Band 5,,HSC01,0,A,RM
+1CN01372,Giám đốc Quan hệ Khách hàng Doanh nghiệp lớn 1.3 Cấp 1,MJ163S,01CN000068,1CN00766,Band 4,,HSC01,0,A,RM
+1CN00144,Chuyên viên cao cấp Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn 1.3,MK090S,01CN000068,1CN00766,Band 4,,HSC01,0,A,ARM
+1CN00666,Chuyên viên chính Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn 1.3,MK091S,01CN000068,1CN00766,Band 3,,HSC01,0,A,ARM
+1CN00292,Chuyên viên Hỗ trợ Quan hệ Khách hàng Doanh nghiệp lớn 1.3,MK092C,01CN000068,1CN00766,Band 2,,HSC01,0,A,ARM
+1QT00045,Giám đốc Khối Quản trị và Hỗ trợ Vận hành,FE001D,01QT000018,1MK00001,Band 9,,HSC01,1,A,BO
+1QT00109,Nhân viên Kế toán thuế và hậu kiểm,FA028C,01QT000023,1QT00141,Band 1,,HSC01,0,I,BO
+1QT00177,Giám đốc Kế toán tổng hợp,FA029M,01QT000012,1QT00049,Band 6,,HSC01,1,I,BO
+1QT00016,Trưởng nhóm Chính sách Kế toán,FA030T,01QT000012,1QT00177,Band 4,,HSC01,1,I,BO
+1QT00042,Phó Giám đốc Khối Quản trị và Hỗ trợ Vận hành,FE002D,01QT000018,1QT00045,Band 8,,HSC01,1,A,BO
+1QT00101,Phụ trách Kế toán MSB,FE003D,01QT000018,1QT00045,Band 8,,HSC01,1,A,BO
+1QT00009,Giám đốc Trung tâm Quản trị tài chính,FC001M,01QT000004,1QT00045,Band 7,,HSC01,1,A,BO
+1QT00137,Chuyên viên cao cấp Trung tâm Mua sắm và Đấu thầu Miền Nam Ngân hàng Bán lẻ,FC003S,01QT000010,1QT00165,Band 4,,HSC01,0,A,BO
+1QT00149,Chuyên viên chính Trung tâm Mua sắm và Đấu thầu Miền Nam Ngân hàng Bán lẻ,FC004S,01QT000010,1QT00165,Band 3,,HSC01,0,A,BO
+1QT00154,Chuyên viên Trung tâm Mua sắm và Đấu thầu Miền Nam Ngân hàng Bán lẻ,FC005C,01QT000010,1QT00165,Band 2,,HSC01,0,A,BO
+1QT00052,Giám đốc Quản lý Hiệu suất Ngân hàng Định chế Tài chính,FC007M,01QT000009,1QT00142,Band 6,,HSC01,1,A,BO
+1QT00103,Chuyên viên chính Quản lý Hiệu suất Ngân hàng Định chế Tài chính,FC009S,01QT000009,1QT00052,Band 3,,HSC01,0,A,BO
+1QT00164,Chuyên viên Quản lý Hiệu suất Ngân hàng Định chế Tài chính,FC010C,01QT000009,1QT00052,Band 2,,HSC01,0,A,BO
+1QT00130,NV QLHS Ngân hàng ĐCTC,FC011C,01QT000009,1QT00052,Band 1,,HSC01,0,I,BO
+1QT00091,Chuyên viên cao cấp Quản lý Hiệu suất Ngân hàng Đối tác Chiến lược,FC013S,01QT000005,1QT00138,Band 4,,HSC01,0,A,BO
+1QT00133,Chuyên viên Quản lý Hiệu suất Ngân hàng Đối tác Chiến lược,FC015C,01QT000005,1QT00138,Band 2,,HSC01,0,A,BO
+1QT00065,NV QLHS NHDN,FC016C,01QT000005,1QT00138,Band 1,,HSC01,0,I,BO
+1QT00061,CVCC QLHS NHDNL,FC018S,01QT000025,1QT00161,Band 4,,HSC01,0,I,BO
+1QT00011,CVC QLHS NHDNL,FC019S,01QT000025,1QT00161,Band 3,,HSC01,0,I,BO
+1QT00134,CV QLHS NHDNL,FC020C,01QT000025,1QT00161,Band 2,,HSC01,0,I,BO
+1QT00175,Giám đốc Quản lý Hiệu suất Ngân hàng Bán lẻ,FC002M,01QT000010,1QT00142,Band 6,,HSC01,1,A,BO
+1QT00090,NV QLHS Ngân hàng Bán lẻ,FC006C,01QT000010,1QT00175,Band 1,,HSC01,0,I,BO
+1QT00152,Chuyên viên cao cấp Quản lý Hiệu suất Ngân hàng Định chế Tài chính,FC008S,01QT000009,1QT00052,Band 4,,HSC01,0,A,BO
+1QT00138,Quyền Giám đốc Quản lý Hiệu suất Ngân hàng Đối tác Chiến lược,FC012M,01QT000005,1QT00142,Band 5,,HSC01,1,A,BO
+1QT00161,GĐ QLHS NHDNL,FC017M,01QT000025,1QT00009,M4,,HSC01,0,I,BO
+1QT00174,Chuyên viên cao cấp Chính sách Kế toán và Tham số,FA031S,01QT000012,1QT00157,Band 4,,HSC01,0,A,BO
+1QT00143,NV QLHS NHDNL,FC021C,01QT000025,1QT00161,Band 1,,HSC01,0,I,BO
+1QT00170,Chuyên viên cao cấp Trung tâm Mua sắm và Đấu thầu Miền Nam,FC028S,01QT000002,1QT00041,Band 4,,HSC01,0,A,BO
+1QT00063,Chuyên viên Thanh khoản và Tối ưu hóa Bảng cân đối,FC035C,01QT000003,1QT00060,Band 2,,HSC01,0,A,BO
+1QT00022,Chuyên viên chính Kế toán chi tiêu,FA012S,01QT000013,1QT00181,Band 3,,HSC01,0,A,BO
+1QT00084,Chuyên viên chính Kế toán Chi tiêu Tp. Hồ Chí Minh,FA012S,01QT000026,1QT00014,Band 3,,HSC02,0,I,BO
+1QT00180,Chuyên gia Kế toán Tổng hợp,FA001E,01QT000012,1QT00049,Band 5,,HSC01,0,I,BO
+1QT00153,Chuyên viên chính Trung tâm Mua sắm và Đấu thầu Miền Nam,FC029S,01QT000002,1QT00041,Band 3,,HSC01,0,A,BO
+1QT00080,Nhân viên Quản trị Bảng cân đối,FC036C,01QT000003,1QT00060,Band 1,,HSC01,0,I,BO
+1QT00070,Chuyên viên Kế toán chi tiêu,FA013C,01QT000013,1QT00181,Band 2,,HSC01,0,A,BO
+1QT00074,Chuyên viên Kế toán Chi tiêu Tp. Hồ Chí Minh,FA013C,01QT000026,1QT00014,Band 2,,HSC02,0,I,BO
+1QT00037,Cộng tác viên Kế toán chi tiêu,AA052C,01QT000013,1QT00181,K,,HSC01,0,A,BO
+1QT00093,Chuyên viên Trung tâm Mua sắm và Đấu thầu Miền Nam,FC030C,01QT000002,1QT00041,Band 2,,HSC01,0,A,BO
+1QT00049,Giám đốc Trung tâm Nhân sự và Đào tạo Cấp 3,FA007M,01QT000001,1QT00045,Band 7,,HSC01,1,A,BO
+1QT00096,Nhân viên Kế toán chi tiêu,FA014C,01QT000013,1QT00181,Band 1,,HSC01,0,A,BO
+1QT00129,Nhân viên Kế toán Chi tiêu Tp. Hồ Chí Minh,FA014C,01QT000026,1QT00014,Band 1,,HSC02,0,I,BO
+1QT00023,Cộng tác viên Quản lý Hiệu suất Ngân hàng Đối tác Chiến lược,AA052C,01QT000005,1QT00138,K,,HSC01,0,I,BO
+1QT00160,NV QL Tài chính và Kế hoạch,FC031C,01QT000002,1QT00041,Band 1,,HSC01,0,I,BO
+1QT00181,Giám đốc Kế toán chi tiêu,FA008M,01QT000013,1QT00049,Band 6,,HSC01,1,A,BO
+1QT00014,CG Kế toán Chi tiêu,FA008M,01QT000013,1QT00049,Band 5,,HSC02,0,I,BO
+1QT00141,Giám đốc Kế toán thuế và hậu kiểm,FA022M,01QT000023,1QT00049,Band 6,,HSC01,1,A,BO
+1QT00095,Cộng tác viên Quản lý Hiệu suất Ngân hàng Định chế Tài chính,AA052C,01QT000009,1QT00052,K,,HSC01,0,I,BO
+1QT00060,Giám đốc Quản trị Bảng cân đối,FC032M,01QT000003,1QT00045,Band 7,,HSC01,1,A,BO
+1QT00108,Trưởng nhóm Kế toán chi tiêu,FA009T,01QT000013,1QT00181,Band 4,,HSC01,1,A,BO
+1QT00113,Trưởng nhóm Kế toán Chi tiêu Tp. Hồ Chí Minh,FA009T,01QT000026,1QT00014,Band 4,,HSC02,1,I,BO
+1QT00136,Trưởng nhóm Kế toán thuế và hậu kiểm,FA023T,01QT000023,1QT00141,Band 4,,HSC01,1,A,BO
+1QT00145,Kiểm soát viên Kế toán chi tiêu Cấp 2,FA001S,01QT000013,1QT00181,Band 4,,HSC01,0,A,BO
+1QT00033,Chuyên viên cao cấp Thanh khoản và Tối ưu hóa Bảng cân đối,FC033S,01QT000003,1QT00060,Band 4,,HSC01,0,A,BO
+1QT00076,Chuyên viên cao cấp Kế toán chi tiêu,FA010S,01QT000013,1QT00181,Band 4,,HSC01,0,A,BO
+1QT00147,Chuyên viên cao cấp Kế toán Chi tiêu Tp. Hồ Chí Minh,FA010S,01QT000026,1QT00014,Band 4,,HSC02,0,I,BO
+1QT00057,Chuyên viên cao cấp Kế toán thuế và hậu kiểm,FA024S,01QT000023,1QT00141,Band 4,,HSC01,0,A,BO
+1QT00041,Giám đốc Trung tâm Mua sắm và Đấu thầu Miền Nam,FC027M,01QT000002,1QT00009,Band 6,,HSC01,1,A,BO
+1QT00114,Chuyên viên chính Thanh khoản và Tối ưu hóa Bảng cân đối,FC034S,01QT000003,1QT00060,Band 3,,HSC01,0,A,BO
+1QT00067,Kiểm soát viên Kế toán chi tiêu Cấp 1,FA011S,01QT000013,1QT00181,Band 3,,HSC01,0,A,BO
+1QT00086,Kiểm soát viên Kế toán Chi tiêu Cấp 1 Tp. Hồ Chí Minh,FA011S,01QT000026,1QT00014,Band 3,,HSC02,0,I,BO
+1QT00068,Kiểm soát viên Kế toán thuế và hậu kiểm Cấp 1,FA025S,01QT000023,1QT00141,Band 3,,HSC01,0,A,BO
+1QT00111,Chuyên viên Kế toán thuế và hậu kiểm,FA027C,01QT000023,1QT00141,Band 2,,HSC01,0,A,BO
+1QT00168,Giám đốc Kế toán Chi tiêu Tp. Hồ Chí Minh,FA008M,01QT000026,1QT00017,Band 5,,HSC02,0,I,BO
+1QT00102,TT Kế toán chi tiêu Tp. HCM,FA063T,01VN000001,,Band 4,,MSB01,0,I,BO
+1QT00078,Chuyên viên cao cấp Kế toán Chi tiêu Tp. Hồ Chí Minh,FA017S,01QT000014,,Band 4,,HSC02,0,I,BO
+1QT00165,Giám đốc Trung tâm Mua sắm và Đấu thầu Miền Nam Ngân hàng Bán lẻ,FC006M,01QT000010,1QT00175,Band 6,,HSC01,1,A,BO
+1QT00039,Giám đốc Phân tích Thông tin Quản trị,MK106M,01QT000010,1QT00175,Band 5,,HSC01,1,A,BO
+1QT00056,Giám đốc Quản lý Hiệu suất bán hàng,FC003M,01QT000010,1QT00175,Band 5,,HSC01,1,A,BO
+1QT00183,Giám đốc Quản lý Hiệu suất phân khúc khách hàng Doanh nghiệp,FC013M,01QT000005,1QT00138,Band 5,,HSC01,1,A,BO
+1QT00007,Chuyên viên chính Quản lý Hiệu suất Ngân hàng Đối tác Chiến lược,FC014S,01QT000005,1QT00138,Band 3,,HSC01,0,A,BO
+1QT00019,Chuyên viên chính Kế toán thuế và hậu kiểm,FA026S,01QT000023,1QT00141,Band 3,,HSC01,0,A,BO
+1QT00027,KSV Chính sách Kế toán,FA032S,01QT000012,1QT00016,Band 3,,HSC01,0,I,BO
+1QT00040,Chuyên viên chính Chính sách Kế toán và Tham số,FA033S,01QT000012,1QT00157,Band 3,,HSC01,0,A,BO
+1QT00001,Chuyên viên Chính sách Kế toán và Tham số,FA034C,01QT000012,1QT00157,Band 2,,HSC01,0,A,BO
+1QT00006,Nhân viên Chính sách kế toán,FA035C,01QT000012,1QT00177,Band 1,,HSC01,0,I,BO
+1QT00069,Trưởng nhóm Báo cáo tài chính,FA036T,01QT000012,1QT00177,Band 4,,HSC01,1,I,BO
+1QT00081,Chuyên viên cao cấp Báo cáo tài chính (VAS),FA037S,01QT000017,1QT00167,Band 4,,HSC01,0,A,BO
+1QT00053,KSV Báo cáo tài chính,FA038S,01QT000012,1QT00177,Band 3,,HSC01,0,I,BO
+1QT00105,Chuyên viên chính Báo cáo tài chính (VAS),FA039S,01QT000017,1QT00167,Band 3,,HSC01,0,A,BO
+1QT00178,Chuyên viên Báo cáo tài chính (VAS),FA040C,01QT000017,1QT00167,Band 2,,HSC01,0,A,BO
+1QT00026,Nhân viên Báo cáo tài chính,FA041C,01QT000012,1QT00177,Band 1,,HSC01,0,I,BO
+1QT00024,Trưởng nhóm Báo cáo thống kê và Đối soát,FA042T,01QT000012,1QT00177,Band 4,,HSC01,1,I,BO
+1QT00015,CVCC BCTK và Đối soát,FA043S,01QT000012,1QT00177,Band 4,,HSC01,0,I,BO
+1QT00035,Kiểm soát viên Đối soát Cấp 1,FA044S,01QT000024,1QT00162,Band 3,,HSC01,0,A,BO
+1QT00031,Chuyên viên chính Đối soát,FA045S,01QT000024,1QT00162,Band 3,,HSC01,0,A,BO
+1QT00186,Chuyên viên Đối soát,FA046C,01QT000024,1QT00162,Band 2,,HSC01,0,A,BO
+1QT00005,Nhân viên Đối soát,FA047C,01QT000024,1QT00162,Band 1,,HSC01,0,A,BO
+1QT00083,Giám đốc Quản lý Hiệu suất Ngân hàng Quản lý Tín dụng,FC022M,01QT000005,1QT00142,Band 6,,HSC01,1,A,BO
+1QT00003,Chuyên viên cao cấp Quản lý Hiệu suất Ngân hàng Quản lý Tín dụng,FC023S,01QT000005,1QT00083,Band 4,,HSC01,0,A,BO
+1QT00025,Chuyên viên chính Quản lý Hiệu suất Ngân hàng Quản lý Tín dụng,FC024S,01QT000005,1QT00083,Band 3,,HSC01,0,A,BO
+1QT00032,Chuyên viên Quản lý Hiệu suất Ngân hàng Quản lý Tín dụng,FC025C,01QT000005,1QT00083,Band 2,,HSC01,0,A,BO
+1QT00128,Nhân viên Quản lý Hiệu suất Khách hàng chiến lược,FC026C,01QT000020,1QT00083,Band 1,,HSC01,0,I,BO
+1QT00110,Giám đốc Quản lý Hiệu suất Thu hồi nợ và Khách hàng chiến lược,FC042M,01QT000019,,,,HSC01,0,I,BO
+1QT00132,Chuyên viên cao cấp Quản lý Hiệu suất Thu hồi nợ và Khách hàng chiến lược,FC043S,01QT000019,,,,HSC01,0,I,BO
+1QT00013,Chuyên viên chính Quản lý Hiệu suất Thu hồi nợ và Khách hàng chiến lược,FC044S,01QT000019,,,,HSC01,0,I,BO
+1QT00171,Chuyên viên Quản lý Hiệu suất Thu hồi nợ và Khách hàng chiến lược,FC045C,01QT000019,,,,HSC01,0,I,BO
+1QT00082,Nhân viên Quản lý Hiệu suất Thu hồi nợ và Khách hàng chiến lược,FC046C,01QT000019,,,,HSC01,0,I,BO
+1QT00058,Giám đốc Quản lý Hiệu suất Ngân hàng Cộng đồng,FC047M,01QT000021,1QT00009,M4,,HSC01,0,I,BO
+1QT00112,Chuyên viên cao cấp Quản lý Hiệu suất Ngân hàng Cộng đồng,FC048S,01QT000021,,Band 4,,HSC01,0,I,BO
+1QT00156,CVC QLHS NHCĐ,FC049S,01QT000021,,Band 3,,HSC01,0,I,BO
+1QT00010,CV QLHS NHCĐ,FC050C,01QT000021,,Band 2,,HSC01,0,I,BO
+1QT00064,Nhân viên Quản lý Hiệu suất Ngân hàng Cộng đồng,FC051C,01QT000021,,Band 1,,HSC01,0,I,BO
+1QT00038,Chuyên viên cao cấp Kế toán tổng hợp,FA048S,01QT000012,1QT00177,Band 4,,HSC01,0,I,BO
+1QT00135,Tổ trưởng Kế toán tổng hợp,FA049T,01QT000012,1QT00177,Band 4,,HSC01,0,I,BO
+1QT00089,CVC Kế toán tổng hợp,FA050S,01QT000012,1QT00177,Band 3,,HSC01,0,I,BO
+1QT00099,Kiểm soát viên Kế toán tổng hợp,FA051S,01QT000012,1QT00177,Band 3,,HSC01,0,I,BO
+1QT00004,CV Kế toán tổng hợp,FA052C,01QT000012,1QT00177,Band 2,,HSC01,0,I,BO
+1QT00172,Nhân viên Kế toán tổng hợp,FA053C,01QT000012,1QT00177,Band 1,,HSC01,0,I,BO
+1QT00017,GĐ Kế toán Chi tiêu và Thuế,FA054M,01QT000014,1QT00049,M4,,HSC01,0,I,BO
+1QT00030,Giám đốc Kế toán Chi tiêu Hà Nội,FA008M,01QT000014,,Band 5,,HSC01,0,I,BO
+1QT00122,TT Kế toán chi tiêu Hà Nội,FA056T,01QT000013,,Band 4,,HSC01,0,I,BO
+1QT00179,Kiểm soát viên Kế toán Chi tiêu Cấp 2 Tp. Hồ Chí Minh,FA001S,01QT000026,1QT00014,Band 4,,HSC02,0,I,BO
+1QT00048,Giám đốc Quản lý Hiệu suất phân khúc khách hàng Doanh nghiệp lớn,FC014M,01QT000005,1QT00138,Band 5,,HSC01,1,A,BO
+1QT00073,Giám đốc Quản lý Hiệu suất Dịch vụ Ngân hàng Giao dịch,FC015M,01QT000005,1QT00138,M4,,HSC01,0,I,BO
+1QT00142,Giám đốc Quản lý Hiệu suất Kinh doanh,FC008M,01QT000011,1QT00009,Band 7,,HSC01,1,A,BO
+1QT00123,Giám đốc Phòng Quản lý Ngân sách Miền Bắc,FA042M,01QT000008,1QT00009,Band 6,,HSC01,1,A,BO
+1QT00125,Trợ lý Giám đốc Khối Quản trị và Hỗ trợ Vận hành,AA008C,01QT000018,1QT00045,Band 4,,HSC01,0,I,BO
+1QT00036,Trợ lý Giám đốc Khối Quản trị và Hỗ trợ Vận hành,AA009C,01QT000018,1QT00045,Band 3,,HSC01,0,I,BO
+1QT00092,Giám đốc Quản lý Quan hệ nhà đầu tư,VE001M,01QT000022,1QT00045,Band 7,,HSC01,1,A,BO
+1QT00104,Chuyên viên cao cấp Quản trị Dữ liệu,BC022S,01QT000008,1QT00123,Band 4,,HSC01,0,A,BO
+1QT00018,Chuyên viên chính Quản trị Dữ liệu,BC023S,01QT000008,1QT00123,Band 3,,HSC01,0,A,BO
+1QT00173,Chuyên viên Quản trị Dữ liệu,BC015C,01QT000008,1QT00123,Band 2,,HSC01,0,A,BO
+1QT00020,Chuyên viên cao cấp Báo cáo quản trị,FA017S,01QT000008,1QT00123,Band 4,,HSC01,0,A,BO
+1QT00021,Chuyên viên chính Báo cáo quản trị,FA018S,01QT000008,1QT00123,Band 3,,HSC01,0,A,BO
+1QT00169,Chuyên viên Báo cáo quản trị,FA010C,01QT000008,1QT00123,Band 2,,HSC01,0,A,BO
+1QT00140,Chuyên gia cao cấp Quản lý Quan hệ Nhà đầu tư,VE001E,01QT000022,1QT00092,Band 6,,HSC01,0,A,BO
+1QT00182,Chuyên gia Quản lý Quan hệ Nhà đầu tư,VE002E,01QT000022,1QT00092,Band 5,,HSC01,0,A,BO
+1QT00079,Chuyên viên cao cấp Quản lý Quan hệ nhà đầu tư,VE001S,01QT000022,1QT00092,Band 4,,HSC01,0,A,BO
+1QT00100,Chuyên viên chính Quản lý Quan hệ nhà đầu tư,VE002S,01QT000022,1QT00092,Band 3,,HSC01,0,A,BO
+1QT00118,Chuyên gia Thanh khoản và Tối ưu hóa Bảng cân đối,M00359,01QT000003,1QT00060,Band 5,,HSC01,0,A,BO
+1QT00184,Kiểm soát viên Đối soát Cấp 2,FA008S,01QT000024,1QT00162,Band 4,,HSC01,0,A,BO
+1QT00077,Kiểm soát viên Kế toán thuế và hậu kiểm Cấp 2,FA007S,01QT000023,1QT00141,Band 4,,HSC01,0,A,BO
+1QT00071,Chuyên viên Quản lý Quan hệ nhà đầu tư (QTV),VE002C,01QT000022,1QT00092,Band 2,,HSC01,0,I,BO
+1QT00157,Giao phụ trách Chính sách Kế toán và Tham số,FA009M,01QT000012,1QT00049,Band 5,,HSC01,0,A,BO
+1QT00008,Chuyên gia Chính sách Kế toán và Tham số,FA004E,01QT000012,1QT00157,Band 5,,HSC01,0,A,BO
+1QT00167,Giám đốc Báo cáo tài chính (VAS),FC048M,01QT000017,1QT00051,Band 5,,HSC01,1,A,BO
+1QT00012,Chuyên viên chính Báo cáo thống kê,FA020S,01QT000017,1QT00167,Band 4,,HSC01,0,A,BO
+1QT00098,Chuyên viên Báo cáo thống kê,FA021S,01QT000017,1QT00167,Band 3,,HSC01,0,A,BO
+1QT00075,Nhân viên Báo cáo thống kê,FA069C,01QT000017,1QT00167,Band 2,,HSC01,0,A,BO
+1QT00054,Chuyên viên Báo cáo Tài chính (IFRS),FA040C,01QT000016,1QT00126,Band 2,,HSC01,0,A,BO
+1QT00162,Giám đốc Đối soát,FA010M,01QT000024,1QT00049,Band 6,,HSC01,1,A,BO
+1QT00051,Giám đốc Báo cáo tài chính,FC009M,01QT000015,1QT00049,Band 6,,HSC01,1,A,BO
+1QT00155,Cộng tác viên Quản lý Hiệu suất Khối Chiến lược và Đổi mới sáng tạo,AA052C,01QT000007,1QT00050,K,,HSC01,0,A,BO
+1QT00029,Chuyên viên cao cấp Dự án ERP,PB069S,01QT000006,1QT00097,Band 4,,HSC01,0,A,BO
+1QT00144,Chuyên viên chính Dự án ERP,PB070S,01QT000006,1QT00097,Band 3,,HSC01,0,A,BO
+1QT00120,Chuyên gia Kế toán thuế và hậu kiểm,M00065,01QT000023,1QT00141,Band 5,,HSC01,0,A,BO
+1QT00094,Chuyên viên cao cấp Dự án ERP 2,PB069S,01QT000006,1QT00101,Band 4,,HSC01,0,A,BO
+1QT00043,Chuyên gia Trung tâm Mua sắm và Đấu thầu Miền Nam Ngân hàng Bán lẻ,M00139,01QT000010,1QT00165,Band 5,,HSC01,0,A,BO
+1QT00127,Chuyên gia Quản lý Hiệu suất Ngân hàng Đối tác Chiến lược,M00141,01QT000005,1QT00138,Band 5,,HSC01,0,A,BO
+1QT00148,Chuyên gia Quản lý Hiệu suất Ngân hàng Định chế Tài chính,M00140,01QT000009,1QT00052,Band 5,,HSC01,0,A,BO
+1QT00066,Chuyên gia Quản lý Hiệu suất Ngân hàng Quản lý Tín dụng,M00131,01QT000005,1QT00083,Band 5,,HSC01,0,A,BO
+1QT00107,Chuyên gia Quản lý Hiệu suất Khối Chiến lược và Đổi mới sáng tạo,M00135,01QT000007,1QT00050,Band 5,,HSC01,0,A,BO
+1QT00085,Cộng tác viên Trung tâm Mua sắm và Đấu thầu Miền Nam,AA052C,01QT000002,1QT00041,K,,HSC01,0,A,BO
+1QT00072,Thành viên Dự án ERP,PB059S,01QT000006,1QT00101,Band 6,,HSC01,1,A,BO
+1QT00047,Chuyên gia Báo cáo và Phân tích dữ liệu Bảng cân đối,M00360,01QT000003,1QT00060,Band 5,,HSC01,0,A,BO
+1QT00159,Chuyên viên cao cấp Báo cáo và Phân tích dữ liệu Bảng cân đối,M00361,01QT000003,1QT00060,Band 4,,HSC01,0,A,BO
+1QT00055,Chuyên viên chính Báo cáo và Phân tích dữ liệu Bảng cân đối,M00362,01QT000003,1QT00060,Band 3,,HSC01,0,A,BO
+1QT00139,Chuyên viên Báo cáo và Phân tích dữ liệu Bảng cân đối,M00363,01QT000003,1QT00060,Band 2,,HSC01,0,A,BO
+1QT00106,Chuyên gia Phân tích thông tin quản trị,M00381,01QT000010,1QT00039,Band 5,,HSC01,0,A,BO
+1QT00028,Chuyên viên cao cấp Phân tích thông tin quản trị,M00382,01QT000010,1QT00039,Band 4,,HSC01,0,A,BO
+1QT00163,Chuyên viên chính Phân tích thông tin quản trị,M00383,01QT000010,1QT00039,Band 3,,HSC01,0,A,BO
+1QT00062,Chuyên viên Phân tích thông tin quản trị,M00384,01QT000010,1QT00039,Band 2,,HSC01,0,A,BO
+1QT00185,Chuyên gia Quản lý Hiệu suất bán hàng,M00385,01QT000010,1QT00056,Band 5,,HSC01,0,A,BO
+1QT00166,Chuyên viên cao cấp Quản lý Hiệu suất bán hàng,M00386,01QT000010,1QT00056,Band 4,,HSC01,0,A,BO
+1QT00176,Chuyên viên chính Quản lý Hiệu suất bán hàng,M00387,01QT000010,1QT00056,Band 3,,HSC01,0,A,BO
+1QT00088,Chuyên viên Quản lý Hiệu suất bán hàng,M00388,01QT000010,1QT00056,Band 2,,HSC01,0,A,BO
+1QT00146,Chuyên gia Quản trị Dữ liệu,M00389,01QT000008,1QT00123,Band 5,,HSC01,0,A,BO
+1QT00097,Giao phụ trách Quản lý Dự án ERP,PB019M,01QT000006,1QT00101,Band 4,,HSC01,0,A,BO
+1QT00115,Quản trị viên Khối Quản trị và Hỗ trợ Vận hành,FE001C,01QT000018,1QT00045,Band 2,,HSC01,0,I,BO
+1QT00150,Quản trị viên Khối Quản trị và Hỗ trợ Vận hành,MM008C,01QT000018,1QT00060,Band 2,,HSC01,0,A,BO
+1QT00034,Quản trị viên Khối Quản trị và Hỗ trợ Vận hành,MM008C,01QT000018,1QT00042,Band 3,,HSC01,0,A,BO
+1QT00002,Quản trị viên Khối Quản trị và Hỗ trợ Vận hành Hồ Chí Minh,MM008C,01QT000018,1QT00045,Band 2,,HSC02,0,A,BO
+1QT00116,Quản trị viên Khối Quản trị và Hỗ trợ Vận hành Hồ Chí Minh,MM008C,01QT000018,1QT00045,Band 3,,HSC02,0,A,BO
+1QT00121,Cộng tác viên Quản lý Hiệu suất Ngân hàng Định chế Tài chính,AA052C,01QT000004,1QT00052,K,,HSC01,0,I,BO
+1QT00044,Cộng tác viên Quản trị Dữ liệu,AA052C,01QT000008,1QT00123,K,,HSC01,0,A,BO
+1QT00126,Giám đốc Báo cáo tài chính (IFRS),FC048M,01QT000016,1QT00051,Band 5,,HSC01,1,A,BO
+1QT00151,Chuyên viên cao cấp Báo cáo Tài chính (IFRS),FA037S,01QT000016,1QT00126,Band 4,,HSC01,0,A,BO
+1QT00087,Chuyên viên chính Báo cáo Tài chính (IFRS),FA039S,01QT000016,1QT00126,Band 3,,HSC01,0,A,BO
+1QT00059,Chuyên gia Trung tâm Mua sắm và Đấu thầu Miền Nam,FC004E,01QT000002,1QT00041,Band 5,,HSC01,0,A,BO
+1QT00158,Cộng tác viên Quản lý Hiệu suất Ngân hàng Bán lẻ,AA052C,01QT000010,1QT00175,K,,HSC01,0,A,BO
+1QT00117,Giám đốc Quản lý Dự án ERP,PB019M,01QT000006,1QT00101,Band 5,,HSC01,1,A,BO
+1QT00050,Giám đốc Quản lý Hiệu suất Khối Chiến lược và Đổi mới sáng tạo,FC051M,01QT000007,1QT00142,Band 6,,HSC01,1,A,BO
+1QT00119,Chuyên viên cao cấp Quản lý Hiệu suất Khối Chiến lược và Đổi mới sáng tạo,FC055S,01QT000007,1QT00050,Band 4,,HSC01,0,A,BO
+1QT00124,Chuyên viên chính Quản lý Hiệu suất Khối Chiến lược và Đổi mới sáng tạo,FC056S,01QT000007,1QT00050,Band 3,,HSC01,0,A,BO
+1QT00131,Chuyên viên Quản lý Hiệu suất Khối Chiến lược và Đổi mới sáng tạo,FC007C,01QT000007,1QT00050,Band 2,,HSC01,0,A,BO
+1QT00046,Nguyên Giám đốc Kế toán thuế và hậu kiểm,FA022M,01QT000023,1QT00141,Band 6,,HSC01,1,I,BO
