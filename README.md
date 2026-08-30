@@ -49,22 +49,40 @@ curl -X POST "<endpoint>/chat" \
 
 | Actor | Vai | Phạm vi | Thấy gì |
 |---|---|---|---|
-| `A001` | Line manager | 14 đơn vị · 147 nhân sự | 4 người cần lưu ý, trong đó `E001881` mức Cao |
-| `A002` | Line manager | 1 đơn vị · 67 nhân sự | 2 người; **không** thấy `E001881` của A001 |
-| `A003` | HRBP | 66 đơn vị · 1.125 nhân sự | Toàn khối |
-| `A004` | HRBP | 20 đơn vị · 160 nhân sự | Khối còn lại |
+| `A001` | Line manager | 14 đơn vị · 149 nhân sự | 7 người cần lưu ý, **2 mức Cao** — hai ca đối lập nằm cùng team |
+| `A002` | Line manager | 1 đơn vị · 67 nhân sự | 5 người; **không** thấy ai của A001 |
+| `A003` | HRBP | 66 đơn vị · 1.127 nhân sự | Toàn khối — 36 người cần lưu ý |
+| `A004` | HRBP | 20 đơn vị | Khối còn lại, không có ca nào mức Cao |
+| `A005` | Line manager | 1 đơn vị (node lá) | Kiểm tra scope nhỏ nhất |
 | `A999` | — | mã không tồn tại | Không thấy gì (kiểm tra fail-closed) |
 
-### Bốn tình huống nên thử
+### Năm tình huống nên thử
 
 ```
-1. Phát hiện   A001  "Team mình tháng này có ai đang có dấu hiệu muốn đi không?"
-2. Giải thích  A001  "Sao bạn E001881 lại bị chấm cao thế?"
-3. Thử phương án A001 "Nếu kéo lương bạn ấy về đúng mức thị trường thì rủi ro còn bao nhiêu?"
-4. Chặn        A002  "Sao bạn E001881 bên phòng anh Minh lại bị chấm cao thế?"
+1. Phát hiện     A001  "Team mình tháng này có ai đang có dấu hiệu muốn đi không?"
+2. Giải thích    A001  "Sao bạn E001889 lại bị chấm cao thế?"
+3. Thử phương án A001  "Nếu kéo lương bạn ấy về đúng mức thị trường thì rủi ro còn bao nhiêu?"
+4. Đòn bẩy khác  A001  "Thế nếu cho bạn ấy đổi vai thì sao?"
+5. Chặn          A002  "Sao bạn E001881 bên phòng anh Minh lại bị chấm cao thế?"
 ```
 
-Tình huống 4 phải bị **từ chối**: không lộ tên, không lộ điểm, không xác nhận người đó tồn tại.
+**Tình huống 3 là điểm đáng xem nhất.** `E001889` đang được trả **cao hơn P50 thị trường 9,3%**,
+nên phương án tăng lương về P50 làm điểm rủi ro **không đổi một chút nào** — và hệ thống nói thẳng
+điều đó thay vì đưa ra một con số nghe có vẻ hợp lý. Tình huống 4 cho thấy đòn bẩy thật:
+đổi vai giảm 24,30 điểm, không tốn ngân sách lương.
+
+Đối chiếu với `E001881` cùng team, cùng mức Cao, nhưng thiếu lương 48%:
+
+```
+                        đưa lương về P50      đổi vai / thăng cấp
+E001881  67,01 Cao          −36,00                  −3,47
+E001889  68,26 Cao            0,00                 −24,30
+```
+
+Cùng một quản lý, cùng một mức rủi ro, hai đòn bẩy ngược nhau. Đây là thứ một bảng xếp hạng
+không nói được, và là lý do sản phẩm này không thay được bằng một câu SQL.
+
+Tình huống 5 phải bị **từ chối**: không lộ tên, không lộ điểm, không xác nhận người đó tồn tại.
 
 ---
 
@@ -72,17 +90,29 @@ Tình huống 4 phải bị **từ chối**: không lộ tên, không lộ đi�
 
 **Detect → Explain → Act → Simulate.**
 
-Trong 1.285 nhân sự tại kỳ gần nhất, mô hình thu hẹp còn **33 người cần để mắt** (5 mức Cao,
-28 mức Trung bình) — 2,6%. Người quản lý không phải đọc dashboard, chỉ hỏi một câu.
+Trong 1.285 nhân sự đủ điều kiện tại kỳ gần nhất, mô hình thu hẹp còn **42 người cần lưu ý**
+(2 mức Cao, 40 mức Trung bình) — **3,3%**. Với một cán bộ quản lý cụ thể thì là 7 người trên 149.
+Không phải đọc dashboard, chỉ hỏi một câu.
 
-Điểm rủi ro dựa trên **4 yếu tố có trọng số**:
+Điểm rủi ro dựa trên **5 yếu tố có trọng số**:
 
 | Yếu tố | Trọng số | Nguồn |
 |---|---|---|
-| Khoảng cách lương so với P50 thị trường | 40% | `fact_salary_snapshot` × `dim_market_benchmark` |
-| Điểm KPI | 30% | `fact_rm_kpi` |
+| Khoảng cách lương so với P50 thị trường | 20% | `fact_salary_snapshot` × `dim_market_benchmark` |
+| Điểm KPI | 25% | `fact_rm_kpi` |
+| Thời gian chưa đổi vai / thăng cấp | 25% | `fact_workforce_snapshot` |
 | Thời gian đóng băng lương | 20% | `fact_salary_snapshot` |
 | Cửa sổ rủi ro theo thâm niên | 10% | `fact_workforce_snapshot` |
+
+**Hai bất biến của bộ trọng số**, kiểm được bằng máy và có bài test canh riêng:
+
+- Yếu tố nặng nhất là 25, hai yếu tố nặng nhất cộng lại là 50 — **đều dưới ngưỡng mức Cao (66)**.
+  Không yếu tố đơn lẻ nào, không cặp nào, đủ để gắn cờ một người. Phải có **ít nhất ba yếu tố cùng xấu**.
+- Người **không thiếu lương** vẫn phải lên được mức Cao. Bản trước đặt lương 40% khiến điều này
+  bất khả thi về số học (trần 60 < 66) — "mức Cao" khi đó chỉ là cách gọi khác của "thiếu lương nặng".
+  Số đo: trước 0 người bằng/trên P50 bị gắn cờ, nay **5 người**, trong đó 1 ở mức Cao.
+
+Luận giải đầy đủ từng trọng số, kèm các yếu tố đã cân nhắc rồi loại: [`TRONG_SO.md`](TRONG_SO.md).
 
 **Quy tắc loại trừ cứng:** nhân sự có ≥2 thư cảnh cáo trong 12 tháng bị loại khỏi danh sách
 giữ chân, bất kể điểm cao thế nào.
@@ -102,6 +132,10 @@ Người hỏi → xác thực danh tính → resolve phạm vi dữ liệu → 
 **1. Agent đọc điểm đã tính, không tự tính.**
 `flight_risk_score.py` chạy độc lập, deterministic, có kiểm thử. LLM chỉ đọc kết quả.
 Tính điểm phải kiểm toán được — chạy lại phải ra đúng số cũ.
+
+Trọng số và công thức nằm ở **đúng một chỗ**: `agent/scoring.py`. Cả engine chấm điểm, bộ sinh
+dữ liệu lẫn agent đều import từ đó, và có bài test canh việc chúng dùng **cùng một object** chứ
+không phải hai bản giống nhau. Hiệu chỉnh mô hình là sửa một dòng, không phải sửa agent.
 
 **2. Phân quyền nằm ở tầng dữ liệu, không ở lời dặn LLM.**
 Schema tool đưa cho LLM **không có tham số phạm vi** — nó không có ô nào để đòi dữ liệu đơn vị khác.
@@ -157,13 +191,14 @@ còn Teams thì có — đó là ràng buộc tổ chức, không phải ràng b
 ## Cấu trúc thư mục
 
 - **`agent/`** — `scope.py` (phân quyền) · `store.py` (đọc dữ liệu) · `tools.py` (4 tool) ·
-  `registry.py` (khai báo tool cho LLM) · `prompt.py` · `guard.py` (hậu kiểm) · `llm.py` · `runtime.py` ·
+  `scoring.py` (**trọng số — nguồn sự thật duy nhất**) · `registry.py` (khai báo tool cho LLM) ·
+  `prompt.py` · `guard.py` (hậu kiểm) · `llm.py` · `runtime.py` ·
   `digest.py` + `digest_email.py` (bản tin định kỳ)
-- **`tests/`** — 46 bài kiểm thử, gồm bộ canh lỗ hổng phân quyền ở **cả hai kênh**
+- **`tests/`** — 58 bài kiểm thử, gồm bộ canh lỗ hổng phân quyền ở **cả hai kênh**
 - **`data/`** — dữ liệu synthetic + `dim_actor.csv` (tài khoản demo) + `playbook.csv` (P1/P2/P3)
 - **`_private/`** — dữ liệu tổ chức thật, **bị `.gitignore` chặn hoàn toàn, không bao giờ commit**
 - `main.py` · `Dockerfile` · `run_local.py` · `demo_smoke.py` · `check_env.py`
-- `BLUEPRINT.md` — spec kỹ thuật đầy đủ · `DEPLOY_CHECKLIST.md` — quy trình deploy
+- `BLUEPRINT.md` — spec kỹ thuật · `TRONG_SO.md` — luận giải trọng số · `DEPLOY_CHECKLIST.md` — quy trình deploy · `demo_numbers.py` — in số liệu cho demo
 
 ---
 
@@ -172,7 +207,7 @@ còn Teams thì có — đó là ràng buộc tổ chức, không phải ràng b
 ```bash
 pip install -r requirements.txt
 
-python -m pytest tests/ -q     # 46 passed
+python -m pytest tests/ -q     # 58 passed
 python demo_smoke.py           # 4 cảnh demo, không cần LLM
 python run_local.py --scenario # chạy qua cả đường ống, dùng MockLLM
 ```
@@ -206,9 +241,14 @@ docker run -d -p 8080:8080 --env-file .env retain
 | Thành phần | Chi phí |
 |---|---|
 | Chấm điểm hàng loạt | **0 token** — chạy local bằng Python/SQL, không gọi LLM |
-| Mỗi truy vấn hỏi–đáp | **~4.600 token** (≈4.100 vào + 500 ra), đo thật trong hội thoại nhiều lượt |
-| Trường hợp xấu (guard bắt viết lại) | ~7.000 token |
+| Truy vấn một tool (liệt kê, giải thích) | **~4.600 token** (≈4.100 vào + 500 ra) |
+| Truy vấn hai tool (mô phỏng rồi giải thích) | **~7.000 token** (6.379 vào + 669 ra) — đo trên bản đang chạy |
+| Guard bắt viết lại | cộng thêm ~2.500 token cho lượt viết lại |
 | Bản tin định kỳ | **0 token** cho toàn bộ số liệu; ~1.200 token nếu bật đoạn nhận xét, 1 lần/người/kỳ |
+
+Con số hai tool cao gấp rưỡi vì kết quả tool đi vào prompt hai lần. Agent **tự quyết** gọi thêm tool
+thứ hai khi câu trả lời đầu chưa đủ dùng — ví dụ mô phỏng cho ra "không thay đổi" thì nó tự giải
+thích tiếp yếu tố nào mới đang gây rủi ro. Đắt hơn, và đáng.
 | Hạ tầng | `runtime-s2-general-2x4` (2 CPU / 4 GB), min=max=1 bản chạy |
 
 Agent **không nhồi bảng dữ liệu vào prompt** — nó đọc điểm đã tính và chỉ gửi phần tối thiểu.
