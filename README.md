@@ -116,11 +116,50 @@ Mô hình không có khả năng kỹ thuật để suy luận trên chúng.
 
 ---
 
+## Hai kênh, một lõi
+
+Chatbot là mô hình **kéo**: người dùng phải nhớ ra là có nó, mở ra, nghĩ câu hỏi. Cán bộ quản lý
+trực tiếp có động lực làm việc đó — họ hỏi về người của chính mình. Lãnh đạo cấp khối thì không.
+Muốn chạm tới tầng đó, thông tin phải **tự tìm đến họ**, ở nơi họ vốn đã đọc.
+
+| Kênh | Cho ai | Hình thức |
+|---|---|---|
+| Hỏi đáp `POST /chat` | Cán bộ quản lý, HRBP | Kéo — hỏi về người cụ thể, thử phương án |
+| Bản tin định kỳ `send_digest.py` | Lãnh đạo cấp khối | Đẩy — email hàng kỳ, số tổng hợp cấp đơn vị |
+
+Ba ràng buộc của bản tin, cố ý:
+
+1. **Không nêu tên ai.** Email bị chuyển tiếp, in ra, chiếu lên màn hình họp. Bản tin chỉ có số
+   tổng hợp cấp đơn vị. Muốn biết ai thì mở RetAIn — ở đó phạm vi bị giới hạn theo tài khoản
+   và mọi truy vấn đều được ghi nhật ký.
+2. **Đi qua đúng `resolve_scope()` như kênh chat.** Đổi kênh không được phép đổi quyền. Có bài
+   kiểm thử canh riêng việc này: không đơn vị nào lọt vào bản tin mà nằm ngoài phạm vi.
+3. **Toàn bộ số tính tại chỗ, 0 token.** Model chỉ được mời viết một đoạn nhận xét 2–3 câu,
+   và đoạn đó vẫn phải qua `guard` như mọi câu trả lời khác. Guard trượt thì **bỏ hẳn đoạn văn**,
+   bản tin vẫn đầy đủ số liệu. Thà cụt còn hơn sai.
+
+```bash
+python send_digest.py --actor A003                 # xuất HTML, mở bằng trình duyệt
+python send_digest.py --all --out out/             # dựng cho mọi tài khoản
+python send_digest.py --actor A003 --narrative     # kèm đoạn nhận xét do model viết
+python send_digest.py --actor A003 --send hrbp@example.com   # gửi thật, cần SMTP_*
+```
+
+Xem trước ngay trên trình duyệt, không cần hộp thư: `GET <endpoint>/digest?actor=A003`
+
+Về việc **tích hợp vào Teams hay cổng nội bộ**: lõi `agent/` không biết HTTP là gì — nó nhận
+(danh tính, câu hỏi) và trả (câu trả lời, metadata). Web, email, Teams đều chỉ là lớp vỏ.
+Bản dự thi cố ý dừng ở web và email vì hai kênh này không phụ thuộc phê duyệt hạ tầng nội bộ,
+còn Teams thì có — đó là ràng buộc tổ chức, không phải ràng buộc kỹ thuật.
+
+---
+
 ## Cấu trúc thư mục
 
 - **`agent/`** — `scope.py` (phân quyền) · `store.py` (đọc dữ liệu) · `tools.py` (4 tool) ·
-  `registry.py` (khai báo tool cho LLM) · `prompt.py` · `guard.py` (hậu kiểm) · `llm.py` · `runtime.py`
-- **`tests/`** — 31 bài kiểm thử, gồm bộ canh lỗ hổng phân quyền
+  `registry.py` (khai báo tool cho LLM) · `prompt.py` · `guard.py` (hậu kiểm) · `llm.py` · `runtime.py` ·
+  `digest.py` + `digest_email.py` (bản tin định kỳ)
+- **`tests/`** — 46 bài kiểm thử, gồm bộ canh lỗ hổng phân quyền ở **cả hai kênh**
 - **`data/`** — dữ liệu synthetic + `dim_actor.csv` (tài khoản demo) + `playbook.csv` (P1/P2/P3)
 - **`_private/`** — dữ liệu tổ chức thật, **bị `.gitignore` chặn hoàn toàn, không bao giờ commit**
 - `main.py` · `Dockerfile` · `run_local.py` · `demo_smoke.py` · `check_env.py`
@@ -133,7 +172,7 @@ Mô hình không có khả năng kỹ thuật để suy luận trên chúng.
 ```bash
 pip install -r requirements.txt
 
-python -m pytest tests/ -q     # 31 passed
+python -m pytest tests/ -q     # 46 passed
 python demo_smoke.py           # 4 cảnh demo, không cần LLM
 python run_local.py --scenario # chạy qua cả đường ống, dùng MockLLM
 ```
@@ -169,6 +208,7 @@ docker run -d -p 8080:8080 --env-file .env retain
 | Chấm điểm hàng loạt | **0 token** — chạy local bằng Python/SQL, không gọi LLM |
 | Mỗi truy vấn hỏi–đáp | **~4.600 token** (≈4.100 vào + 500 ra), đo thật trong hội thoại nhiều lượt |
 | Trường hợp xấu (guard bắt viết lại) | ~7.000 token |
+| Bản tin định kỳ | **0 token** cho toàn bộ số liệu; ~1.200 token nếu bật đoạn nhận xét, 1 lần/người/kỳ |
 | Hạ tầng | `runtime-s2-general-2x4` (2 CPU / 4 GB), min=max=1 bản chạy |
 
 Agent **không nhồi bảng dữ liệu vào prompt** — nó đọc điểm đã tính và chỉ gửi phần tối thiểu.

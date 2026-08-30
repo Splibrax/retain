@@ -15,10 +15,10 @@ Chạy local:  python main.py           (mặc định mock, không cần model)
 import os
 
 from fastapi import FastAPI, Header, HTTPException
-from fastapi.responses import JSONResponse
+from fastapi.responses import HTMLResponse, JSONResponse
 from pydantic import BaseModel
 
-from agent import runtime
+from agent import digest, digest_email, runtime
 from agent.llm import make_llm
 
 # MẶC ĐỊNH LÀ MODEL THẬT. Trước đây mặc định là mock, và đó là quả mìn:
@@ -74,6 +74,34 @@ def chat(body: ChatIn, x_actor_id: str = Header(default=None)):
     if not x_actor_id:
         raise HTTPException(status_code=401, detail="Thiếu X-Actor-Id")
     return runtime.answer(llm(), x_actor_id, body.message, body.history)
+
+
+@app.get("/digest", response_class=HTMLResponse)
+def digest_preview(actor: str = "", narrative: int = 0,
+                   x_actor_id: str = Header(default=None)):
+    """
+    Xem trước bản tin ngay trên trình duyệt — để demo không phải mở hộp thư.
+
+    Bản tin thật do send_digest.py chạy theo lịch gửi đi; endpoint này chỉ dựng
+    lại đúng nội dung đó. Cùng một hàm build_digest, cùng một resolve_scope:
+    đổi kênh KHÔNG được phép đổi quyền.
+
+    Danh tính nhận qua header như /chat, hoặc qua ?actor= để bấm được từ thanh
+    địa chỉ lúc demo — cả hai đều là danh tính tự khai, đúng như mô hình của bản POC.
+    """
+    aid = x_actor_id or actor
+    if not aid:
+        raise HTTPException(status_code=401, detail="Thiếu X-Actor-Id hoặc ?actor=")
+    payload = digest.build_digest(aid)
+    text = None
+    if narrative and not payload.get("error"):
+        n = digest.narrative(llm(), payload)
+        text = n.get("text")          # guard trượt → None → bản tin ra không có đoạn nhận xét
+    return HTMLResponse(
+        content=digest_email.render_html(payload, text,
+                                         app_url=os.environ.get("RETAIN_APP_URL", "")),
+        media_type="text/html; charset=utf-8",
+    )
 
 
 if __name__ == "__main__":
