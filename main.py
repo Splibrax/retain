@@ -14,8 +14,10 @@ Chạy local:  python main.py           (mặc định mock, không cần model)
 """
 import os
 
+from pathlib import Path
+
 from fastapi import FastAPI, Header, HTTPException
-from fastapi.responses import HTMLResponse, JSONResponse
+from fastapi.responses import FileResponse, HTMLResponse, JSONResponse
 from pydantic import BaseModel
 
 from agent import digest, digest_email, runtime
@@ -54,6 +56,38 @@ def llm():
 class ChatIn(BaseModel):
     message: str
     history: list | None = None
+
+
+UI_FILE = Path(__file__).parent / "ui" / "index.html"
+
+
+@app.get("/", include_in_schema=False)
+def home():
+    """
+    Giao diện hội thoại, do CHÍNH agent phục vụ.
+
+    Đặt ở đây thay vì mở file HTML trên máy là có lý do kỹ thuật, không phải cho gọn:
+    trang và API cùng một nguồn (same-origin) nên trình duyệt không chặn. Mở file
+    bằng nhấp đúp rồi gọi sang endpoint là gọi chéo nguồn — trình duyệt gửi yêu cầu
+    kiểm tra trước, server không có CORS nên từ chối, và giao diện trắng trơn không
+    báo gì. Kiểu lỗi phát hiện lúc đang demo là hỏng cả buổi.
+
+    Hệ quả tiện lợi: chạy ở máy (localhost:8080) hay trên mây đều dùng
+    location.origin, không phải sửa gì khi deploy.
+    """
+    if not UI_FILE.exists():
+        raise HTTPException(status_code=404, detail="Chưa có ui/index.html trong image")
+    return FileResponse(
+        UI_FILE,
+        media_type="text/html; charset=utf-8",
+        # CẤM LƯU ĐỆM.
+        #
+        # Không có dòng này thì sau khi deploy bản mới, trình duyệt vẫn dựng lại
+        # trang cũ đã lưu sẵn — code mới nằm trong container mà màn hình vẫn hành
+        # xử như bản cũ. Mất rất nhiều thời gian để nhận ra, vì mọi thứ phía máy
+        # chủ đều đúng. Trang này nhẹ và chỉ vài người dùng, không cần lưu đệm.
+        headers={"Cache-Control": "no-store, must-revalidate"},
+    )
 
 
 @app.get("/health")

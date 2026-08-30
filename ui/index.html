@@ -1,0 +1,769 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RetAIn — Trợ lý giữ người</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --msb-red:#E4002B;
+  --msb-red-deep:#A8001F;
+  --msb-red-wash:#FCEDEF;
+  --ink:#14161A;
+  --ink-2:#565C66;
+  --ink-3:#8A9099;
+  --ground:#F6F3F1;
+  --surface:#FFFFFF;
+  --line:#E5DFDB;
+  --line-2:#EFEAE6;
+  --panel:#171A20;
+  --panel-2:#20242D;
+  --panel-line:#2E3541;
+  --panel-ink:#E7E4E0;
+  --panel-ink-2:#98A1AE;
+  --good:#1F7A5C;
+  --warn:#B26A00;
+  --crit:#C0392B;
+  --user-bubble:#EAE5E1;
+  --shadow:0 1px 2px rgba(20,22,26,.05), 0 8px 24px rgba(20,22,26,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --msb-red:#FF3355;
+    --msb-red-deep:#FF6178;
+    --msb-red-wash:#2A161B;
+    --ink:#ECE8E5;
+    --ink-2:#A7ADB6;
+    --ink-3:#7D848E;
+    --ground:#101216;
+    --surface:#181B21;
+    --line:#2A2F38;
+    --line-2:#232830;
+    --panel:#1D222B;
+    --panel-2:#252B36;
+    --panel-line:#353D4A;
+    --panel-ink:#E7E4E0;
+    --panel-ink-2:#9AA3B0;
+    --good:#4FB894;
+    --warn:#E0973B;
+    --crit:#F0705E;
+    --user-bubble:#252A33;
+    --shadow:0 1px 2px rgba(0,0,0,.35), 0 10px 28px rgba(0,0,0,.35);
+  }
+}
+:root[data-theme="dark"]{
+  --msb-red:#FF3355;
+  --msb-red-deep:#FF6178;
+  --msb-red-wash:#2A161B;
+  --ink:#ECE8E5;
+  --ink-2:#A7ADB6;
+  --ink-3:#7D848E;
+  --ground:#101216;
+  --surface:#181B21;
+  --line:#2A2F38;
+  --line-2:#232830;
+  --panel:#1D222B;
+  --panel-2:#252B36;
+  --panel-line:#353D4A;
+  --panel-ink:#E7E4E0;
+  --panel-ink-2:#9AA3B0;
+  --good:#4FB894;
+  --warn:#E0973B;
+  --crit:#F0705E;
+  --user-bubble:#252A33;
+  --shadow:0 1px 2px rgba(0,0,0,.35), 0 10px 28px rgba(0,0,0,.35);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--ink);
+  font-family:"IBM Plex Sans","Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:15px;
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,.disp{font-family:"Be Vietnam Pro","IBM Plex Sans",system-ui,sans-serif;}
+.mono{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;}
+
+.wrap{max-width:1320px;margin:0 auto;padding:0 20px 56px}
+
+/* ── top bar ─────────────────────────────── */
+.topbar{
+  display:flex;align-items:center;gap:16px;flex-wrap:wrap;
+  padding:18px 0 16px;border-bottom:1px solid var(--line);
+  margin-bottom:22px;
+}
+.brand{display:flex;align-items:center;gap:11px;margin-right:auto}
+.mark{
+  width:34px;height:34px;border-radius:9px;flex:none;
+  background:linear-gradient(145deg,var(--msb-red),var(--msb-red-deep));
+  display:grid;place-items:center;
+  color:#fff;font-family:"Be Vietnam Pro",sans-serif;font-weight:700;font-size:15px;
+  letter-spacing:.02em;
+}
+.brand-txt{display:flex;flex-direction:column;line-height:1.15}
+.brand-name{font-family:"Be Vietnam Pro",sans-serif;font-weight:700;font-size:18px;letter-spacing:-.01em}
+.brand-sub{font-size:11.5px;color:var(--ink-3);letter-spacing:.04em;text-transform:uppercase}
+
+.actorbar{display:flex;align-items:center;gap:8px}
+.actorbar .lbl{font-size:11.5px;color:var(--ink-3);text-transform:uppercase;letter-spacing:.06em;margin-right:2px}
+.actorbtn{
+  font-family:"IBM Plex Sans",sans-serif;font-size:13px;
+  display:flex;align-items:center;gap:8px;
+  padding:7px 13px 7px 9px;border-radius:999px;
+  border:1px solid var(--line);background:var(--surface);color:var(--ink-2);
+  cursor:pointer;transition:border-color .15s,color .15s,background .15s;
+}
+.actorbtn:hover{border-color:var(--ink-3);color:var(--ink)}
+.actorbtn .code{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:12px}
+.actorbtn[aria-pressed="true"]{
+  border-color:var(--msb-red);color:var(--msb-red);background:var(--msb-red-wash);font-weight:500;
+}
+.actorbtn:focus-visible,.chip:focus-visible,.themebtn:focus-visible{outline:2px solid var(--msb-red);outline-offset:2px}
+.themebtn{
+  border:1px solid var(--line);background:var(--surface);color:var(--ink-2);
+  width:34px;height:34px;border-radius:9px;cursor:pointer;font-size:14px;line-height:1;
+}
+
+/* ── layout ──────────────────────────────── */
+.cols{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:20px;align-items:start}
+@media (max-width:940px){.cols{grid-template-columns:minmax(0,1fr)}}
+
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}
+
+/* ── chat ────────────────────────────────── */
+.chat{display:flex;flex-direction:column;min-height:640px}
+.chat-head{
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+  padding:14px 18px;border-bottom:1px solid var(--line-2);
+}
+.who{display:flex;align-items:center;gap:9px}
+.avatar{
+  width:30px;height:30px;border-radius:50%;flex:none;display:grid;place-items:center;
+  background:var(--user-bubble);color:var(--ink-2);
+  font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;
+}
+.who-name{font-weight:600;font-size:14px}
+.who-role{font-size:12.5px;color:var(--ink-3)}
+.scopetag{
+  margin-left:auto;font-family:"IBM Plex Mono",monospace;font-size:11.5px;
+  color:var(--ink-2);background:var(--ground);border:1px solid var(--line-2);
+  padding:4px 9px;border-radius:7px;font-variant-numeric:tabular-nums;
+}
+
+.thread{padding:20px 18px;display:flex;flex-direction:column;gap:20px;flex:1}
+.msg{display:flex;flex-direction:column;gap:6px;max-width:100%}
+.msg.u{align-items:flex-end}
+.msg .tag{font-size:11px;color:var(--ink-3);letter-spacing:.05em;text-transform:uppercase}
+.bubble-u{
+  background:var(--user-bubble);border-radius:14px 14px 4px 14px;
+  padding:10px 14px;max-width:78%;
+}
+.bubble-a{
+  border-left:2px solid var(--msb-red);padding:2px 0 2px 16px;width:100%;
+}
+.bubble-a p{margin:0 0 9px}
+.bubble-a p:last-child{margin-bottom:0}
+.lede{font-weight:500}
+
+.rows{display:flex;flex-direction:column;gap:2px;margin:10px 0 12px}
+.row{
+  display:grid;grid-template-columns:22px minmax(0,1fr) auto;gap:10px;align-items:baseline;
+  padding:8px 10px;border-radius:9px;background:var(--ground);
+}
+.row .n{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--ink-3)}
+.row .nm{font-weight:600;font-size:14px}
+.row .eid{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3);margin-left:6px}
+.row .rsn{font-size:13px;color:var(--ink-2);grid-column:2;line-height:1.45}
+.row .sc{
+  font-family:"IBM Plex Mono",monospace;font-size:13px;font-variant-numeric:tabular-nums;
+  text-align:right;white-space:nowrap;
+}
+.band{
+  display:inline-block;font-family:"Be Vietnam Pro",sans-serif;font-size:10.5px;font-weight:600;
+  letter-spacing:.04em;padding:2px 7px;border-radius:5px;margin-left:8px;vertical-align:1px;
+}
+.band.hi{background:rgba(192,57,43,.12);color:var(--crit)}
+.band.md{background:rgba(178,106,0,.13);color:var(--warn)}
+.band.lo{background:rgba(31,122,92,.13);color:var(--good)}
+
+.tblwrap{overflow-x:auto;margin:10px 0 12px;border:1px solid var(--line-2);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:520px}
+th{
+  text-align:left;font-family:"Be Vietnam Pro",sans-serif;font-weight:600;font-size:11px;
+  letter-spacing:.05em;text-transform:uppercase;color:var(--ink-3);
+  padding:9px 12px;background:var(--ground);border-bottom:1px solid var(--line-2);
+}
+td{padding:9px 12px;border-bottom:1px solid var(--line-2);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td.num{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+
+.simbox{
+  display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+  margin:12px 0;padding:14px 16px;border-radius:11px;
+  background:var(--ground);border:1px solid var(--line-2);
+}
+.simleg{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-3);display:block;margin-bottom:2px}
+.simnum{font-family:"IBM Plex Mono",monospace;font-size:26px;font-weight:500;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.simarrow{color:var(--ink-3);font-size:20px}
+.simdelta{color:var(--good);font-weight:600;font-family:"IBM Plex Mono",monospace;font-size:15px}
+
+.plays{display:flex;flex-direction:column;gap:8px;margin:11px 0 12px}
+.play{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px;align-items:start}
+.pkey{
+  font-family:"Be Vietnam Pro",sans-serif;font-weight:700;font-size:12px;letter-spacing:.02em;
+  padding:4px 9px;border-radius:6px;background:var(--msb-red-wash);color:var(--msb-red);white-space:nowrap;
+}
+.pwhen{display:block;font-size:11px;color:var(--ink-3);font-weight:500;letter-spacing:0;text-transform:none;margin-top:1px}
+
+.callout{
+  margin:12px 0;padding:11px 14px;border-radius:10px;font-size:13.5px;
+  background:var(--msb-red-wash);border:1px solid rgba(228,0,43,.22);color:var(--ink);
+}
+.callout strong{color:var(--msb-red)}
+.note{font-size:12.5px;color:var(--ink-3);font-style:italic}
+.src{
+  font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3);
+  padding-top:9px;margin-top:11px;border-top:1px solid var(--line-2);
+}
+
+/* composer */
+.composer{padding:14px 18px 18px;border-top:1px solid var(--line-2)}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:12px}
+.chip{
+  font-family:"IBM Plex Sans",sans-serif;font-size:12.5px;text-align:left;
+  padding:7px 12px;border-radius:999px;cursor:pointer;
+  border:1px dashed var(--line);background:transparent;color:var(--ink-2);
+  transition:border-color .15s,color .15s,background .15s;
+}
+.chip:hover:not(:disabled){border-color:var(--msb-red);color:var(--msb-red);border-style:solid;background:var(--msb-red-wash)}
+.chip:disabled{opacity:.35;cursor:default;text-decoration:line-through}
+.chips-hint{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-3);margin-bottom:8px}
+.inputrow{
+  display:flex;align-items:center;gap:10px;padding:9px 10px 9px 15px;
+  border:1px solid var(--line);border-radius:11px;background:var(--ground);
+}
+.fakeinput{flex:1;color:var(--ink-3);font-size:14px}
+.sendbtn{
+  border:0;border-radius:8px;background:var(--msb-red);color:#fff;
+  font-family:"Be Vietnam Pro",sans-serif;font-weight:600;font-size:13px;
+  padding:8px 16px;cursor:default;
+}
+
+/* ── machinery panel ─────────────────────── */
+.panel{
+  background:var(--panel);border:1px solid var(--panel-line);border-radius:14px;
+  color:var(--panel-ink);position:sticky;top:16px;overflow:hidden;box-shadow:var(--shadow);
+}
+@media (max-width:940px){.panel{position:static}}
+.panel-head{padding:15px 17px 13px;border-bottom:1px solid var(--panel-line)}
+.panel-title{font-family:"Be Vietnam Pro",sans-serif;font-weight:600;font-size:14px;margin:0}
+.panel-sub{font-size:12px;color:var(--panel-ink-2);margin:3px 0 0;line-height:1.45}
+.panel-body{padding:6px 17px 17px}
+
+.pgroup{padding:13px 0;border-bottom:1px solid var(--panel-line)}
+.pgroup:last-child{border-bottom:0}
+.plabel{
+  font-family:"Be Vietnam Pro",sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--panel-ink-2);margin-bottom:8px;
+}
+.kv{display:flex;justify-content:space-between;gap:14px;padding:3px 0;font-size:13px}
+.kv .k{color:var(--panel-ink-2)}
+.kv .v{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;text-align:right}
+.big{
+  font-family:"IBM Plex Mono",monospace;font-size:15px;font-weight:500;
+  background:var(--panel-2);border:1px solid var(--panel-line);border-radius:8px;
+  padding:9px 11px;word-break:break-all;
+}
+.big .args{display:block;color:var(--panel-ink-2);font-size:12px;margin-top:3px}
+
+.verdict{display:flex;align-items:center;gap:9px;font-family:"Be Vietnam Pro",sans-serif;font-weight:600;font-size:14px}
+.dot{width:9px;height:9px;border-radius:50%;flex:none}
+.dot.ok{background:#4FB894;box-shadow:0 0 0 4px rgba(79,184,148,.16)}
+.dot.blk{background:#F0705E;box-shadow:0 0 0 4px rgba(240,112,94,.16)}
+.vdesc{font-family:"IBM Plex Sans",sans-serif;font-weight:400;font-size:12.5px;color:var(--panel-ink-2);margin-top:6px;line-height:1.5}
+
+.steps{display:flex;flex-direction:column;gap:0;counter-reset:s}
+.step{
+  display:grid;grid-template-columns:20px minmax(0,1fr);gap:9px;align-items:baseline;
+  font-size:12.5px;color:var(--panel-ink-2);padding:4px 0;
+  animation:fadein .32s ease both;
+}
+.step .i{
+  font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:#4FB894;
+}
+.step.hl{color:var(--panel-ink)}
+.step.blk .i{color:#F0705E}
+@keyframes fadein{from{opacity:0;transform:translateY(3px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.step{animation:none}}
+
+.footnote{
+  margin-top:22px;padding:14px 16px;border-radius:11px;
+  background:var(--surface);border:1px dashed var(--line);
+  font-size:12.5px;color:var(--ink-2);line-height:1.6;
+}
+.footnote b{color:var(--ink)}
+.swatches{display:flex;gap:6px;margin-top:9px;flex-wrap:wrap}
+.sw{
+  font-family:"IBM Plex Mono",monospace;font-size:10.5px;padding:3px 8px;border-radius:5px;
+  border:1px solid var(--line);color:var(--ink-2);display:flex;align-items:center;gap:6px;
+}
+.sw i{width:9px;height:9px;border-radius:2px;display:block}
+</style>
+<style>
+/* ── bổ sung cho bản chạy thật ───────────────────────────── */
+.inputrow{cursor:text}
+.inputrow:focus-within{border-color:var(--msb-red);background:var(--surface)}
+#q{
+  flex:1;border:0;outline:0;background:transparent;color:var(--ink);
+  font-family:"IBM Plex Sans",sans-serif;font-size:14px;resize:none;
+  line-height:1.5;max-height:120px;min-height:22px;padding:0;
+}
+#q::placeholder{color:var(--ink-3)}
+.sendbtn{cursor:pointer;transition:opacity .15s}
+.sendbtn:hover:not(:disabled){opacity:.88}
+.sendbtn:disabled{opacity:.4;cursor:not-allowed}
+
+.thinking{display:flex;align-items:center;gap:10px;color:var(--ink-3);font-size:13.5px}
+.dots{display:inline-flex;gap:4px}
+.dots i{
+  width:6px;height:6px;border-radius:50%;background:var(--msb-red);display:block;
+  animation:blink 1.2s infinite ease-in-out;
+}
+.dots i:nth-child(2){animation-delay:.18s}
+.dots i:nth-child(3){animation-delay:.36s}
+@keyframes blink{0%,80%,100%{opacity:.25}40%{opacity:1}}
+@media (prefers-reduced-motion:reduce){.dots i{animation:none;opacity:.6}}
+.elapsed{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-size:12px}
+
+.errbox{
+  border-left:2px solid var(--crit);padding:2px 0 2px 16px;
+  color:var(--ink);font-size:14px;
+}
+.errbox b{color:var(--crit)}
+.errbox code{
+  font-family:"IBM Plex Mono",monospace;font-size:12px;background:var(--ground);
+  padding:2px 6px;border-radius:4px;display:inline-block;margin-top:6px;
+}
+
+/* markdown do model trả về */
+.bubble-a ul,.bubble-a ol{margin:8px 0 10px;padding-left:22px}
+.bubble-a li{margin:3px 0}
+.bubble-a code{
+  font-family:"IBM Plex Mono",monospace;font-size:12.5px;
+  background:var(--ground);padding:1px 5px;border-radius:4px;
+}
+.bubble-a h3{font-size:15px;margin:12px 0 6px}
+.bubble-a strong{font-weight:600}
+
+.warnbar{
+  margin-top:10px;padding:9px 12px;border-radius:8px;font-size:12.5px;
+  background:rgba(178,106,0,.1);border:1px solid rgba(178,106,0,.28);color:var(--ink);
+}
+.epline{
+  font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--ink-3);
+  word-break:break-all;margin-top:6px;
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <div class="topbar">
+    <div class="brand">
+      <div class="mark">R</div>
+      <div class="brand-txt">
+        <span class="brand-name">RetAIn</span>
+        <span class="brand-sub">Trợ lý giữ người · MSB</span>
+      </div>
+    </div>
+
+    <div class="actorbar">
+      <span class="lbl">Đang đăng nhập</span>
+      <button class="actorbtn" data-actor="A001" aria-pressed="true"><span class="code">A001</span> Cán bộ quản lý</button>
+      <button class="actorbtn" data-actor="A002" aria-pressed="false"><span class="code">A002</span> Cán bộ quản lý</button>
+      <button class="actorbtn" data-actor="A003" aria-pressed="false"><span class="code">A003</span> HRBP</button>
+      <button class="themebtn" id="theme" title="Đổi nền sáng/tối" aria-label="Đổi nền sáng/tối">◐</button>
+    </div>
+  </div>
+
+  <div class="cols">
+
+    <section class="card chat">
+      <div class="chat-head">
+        <div class="who">
+          <div class="avatar" id="av">A1</div>
+          <div>
+            <div class="who-name" id="whoName">A001</div>
+            <div class="who-role" id="whoRole">Cán bộ quản lý</div>
+          </div>
+        </div>
+        <div class="scopetag" id="scopeTag">chưa hỏi</div>
+      </div>
+
+      <div class="thread" id="thread"></div>
+
+      <div class="composer">
+        <div class="chips-hint">Câu gợi ý — bấm để điền vào ô nhập</div>
+        <div class="chips" id="chips"></div>
+        <div class="inputrow" id="inputrow">
+          <textarea id="q" rows="1" placeholder="Hỏi RetAIn… (Enter để gửi, Shift+Enter xuống dòng)"></textarea>
+          <button class="sendbtn" id="send">Gửi</button>
+        </div>
+      </div>
+    </section>
+
+    <aside class="panel">
+      <div class="panel-head">
+        <h2 class="panel-title">Bên trong máy</h2>
+        <p class="panel-sub">Mỗi câu trả lời đều để lộ đường đi của nó: ai hỏi, thấy được gì, gọi tool nào, số đã kiểm chưa.</p>
+      </div>
+      <div class="panel-body" id="panel"></div>
+    </aside>
+  </div>
+
+  <div class="footnote">
+    <b>Dữ liệu trong bản demo là dữ liệu giả 100%.</b>
+    Nhân sự, tên, lương, KPI đều do script sinh ra. Danh tính người hỏi ở bản demo truyền qua header
+    <code>X-Actor-Id</code> (tự khai); bản triển khai thật lấy danh tính từ token do cổng xác thực cấp.
+    <div class="epline" id="epline"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  // Giao diện được chính agent phục vụ, nên cùng nguồn với API — không có chuyện
+  // gọi chéo nguồn. Mở ở máy (localhost:8080) hay trên mây đều chạy y hệt.
+  var EP = location.origin;
+  document.getElementById('epline').textContent = 'Endpoint: ' + EP;
+
+  var ACTORS = {
+    A001:{ini:'A1', label:'Cán bộ quản lý', chips:[
+      'Team mình tháng này có ai đang có dấu hiệu muốn đi không?',
+      'Sao bạn E001889 lại bị chấm cao thế?',
+      'Nếu kéo lương bạn ấy về đúng mức thị trường thì rủi ro còn bao nhiêu?',
+      'Thế nếu cho bạn ấy đổi vai thì sao?',
+      'Vậy tôi nên làm gì với bạn ấy?'
+    ]},
+    A002:{ini:'A2', label:'Cán bộ quản lý', chips:[
+      'Team mình tháng này có ai đang có dấu hiệu muốn đi không?',
+      'Sao bạn E001881 bên team anh Minh lại bị chấm cao thế?'
+    ]},
+    A003:{ini:'A3', label:'HRBP', chips:[
+      'Toàn khối tháng này có bao nhiêu người cần lưu ý?',
+      'Ai đang ở mức Cao?',
+      'So sánh giúp tôi hai người E001881 và E001889 khác nhau chỗ nào?'
+    ]}
+  };
+
+  var cur = 'A001';
+  var busy = false;
+
+  // MỖI TÀI KHOẢN GIỮ MỘT PHIÊN RIÊNG, không xoá khi chuyển qua lại.
+  //
+  // Bản đầu xoá sạch màn hình mỗi lần đổi tài khoản — ý định là không cho ngữ
+  // cảnh của A001 rò sang A002. Nhưng ngữ cảnh gửi lên máy chủ vốn đã tách theo
+  // từng tài khoản rồi (hist riêng, header X-Actor-Id riêng), nên xoá màn hình
+  // chẳng bảo vệ thêm gì — chỉ làm mất công gõ lại khi quay về.
+  //
+  // Trên sân khấu điều này còn quan trọng hơn: bấm A002 cho thấy bị chặn rồi bấm
+  // về A001 mà thấy nguyên cuộc hội thoại cũ là hai phiên song song, mạnh hơn hẳn
+  // một màn hình trắng.
+  var sessions = {
+    A001:{nodes:[], hist:[], last:null},
+    A002:{nodes:[], hist:[], last:null},
+    A003:{nodes:[], hist:[], last:null}
+  };
+  function S(){ return sessions[cur]; }
+
+  function push(html){
+    S().nodes.push(html);
+    thread.insertAdjacentHTML('beforeend', html);
+    thread.lastElementChild.scrollIntoView({behavior:'smooth', block:'nearest'});
+  }
+
+  var thread = document.getElementById('thread');
+  var panel  = document.getElementById('panel');
+  var chips  = document.getElementById('chips');
+  var qbox   = document.getElementById('q');
+  var sendBtn= document.getElementById('send');
+
+  // ── nền sáng/tối ──
+  document.getElementById('theme').addEventListener('click', function(){
+    var cur = document.documentElement.getAttribute('data-theme');
+    var dark = cur ? cur === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', dark ? 'light' : 'dark');
+  });
+
+  // ── Markdown → HTML ───────────────────────────────────────────────────────
+  // Model trả lời bằng Markdown (bảng, in đậm, gạch đầu dòng). Tự viết bộ dịch
+  // tối giản thay vì kéo thư viện ngoài: bớt một thứ có thể tải hỏng lúc demo.
+  // ESCAPE TRƯỚC MỌI THỨ — nội dung do model sinh, không bao giờ chèn thẳng.
+  function esc(s){
+    return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+  function inline(s){
+    return esc(s)
+      .replace(/`([^`]+)`/g, '<code>$1</code>')
+      .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+      .replace(/(^|[^*])\*([^*\n]+)\*/g, '$1<em>$2</em>');
+  }
+  function isTableRow(l){ return /^\s*\|.*\|\s*$/.test(l); }
+  function isDivider(l){ return /^\s*\|[\s:|-]+\|\s*$/.test(l); }
+  function cells(l){
+    return l.trim().replace(/^\||\|$/g,'').split('|').map(function(c){ return c.trim(); });
+  }
+
+  function md(src){
+    var lines = (src || '').replace(/\r/g,'').split('\n');
+    var out = [], i = 0;
+    while (i < lines.length){
+      var l = lines[i];
+
+      if (isTableRow(l) && i+1 < lines.length && isDivider(lines[i+1])){
+        var head = cells(l), rows = [];
+        i += 2;
+        while (i < lines.length && isTableRow(lines[i])){ rows.push(cells(lines[i])); i++; }
+        var h = head.map(function(c){ return '<th>' + inline(c) + '</th>'; }).join('');
+        var b = rows.map(function(r){
+          return '<tr>' + r.map(function(c, ci){
+            var num = /^[\d.,+\-−%/]+$/.test(c.replace(/\*/g,'').trim()) && ci > 0;
+            return '<td' + (num ? ' class="num"' : '') + '>' + inline(c) + '</td>';
+          }).join('') + '</tr>';
+        }).join('');
+        out.push('<div class="tblwrap"><table><thead><tr>' + h + '</tr></thead><tbody>' + b + '</tbody></table></div>');
+        continue;
+      }
+
+      if (/^\s*[-*]\s+/.test(l)){
+        var items = [];
+        while (i < lines.length && /^\s*[-*]\s+/.test(lines[i])){
+          items.push('<li>' + inline(lines[i].replace(/^\s*[-*]\s+/,'')) + '</li>'); i++;
+        }
+        out.push('<ul>' + items.join('') + '</ul>');
+        continue;
+      }
+
+      if (/^\s*\d+[.)]\s+/.test(l)){
+        var oi = [];
+        while (i < lines.length && /^\s*\d+[.)]\s+/.test(lines[i])){
+          oi.push('<li>' + inline(lines[i].replace(/^\s*\d+[.)]\s+/,'')) + '</li>'); i++;
+        }
+        out.push('<ol>' + oi.join('') + '</ol>');
+        continue;
+      }
+
+      if (/^\s*#{1,6}\s+/.test(l)){
+        out.push('<h3>' + inline(l.replace(/^\s*#{1,6}\s+/,'')) + '</h3>'); i++; continue;
+      }
+
+      if (l.trim() === ''){ i++; continue; }
+
+      var para = [];
+      while (i < lines.length && lines[i].trim() !== '' && !isTableRow(lines[i])
+             && !/^\s*[-*]\s+/.test(lines[i]) && !/^\s*\d+[.)]\s+/.test(lines[i])
+             && !/^\s*#{1,6}\s+/.test(lines[i])){
+        para.push(lines[i]); i++;
+      }
+      out.push('<p>' + para.map(inline).join('<br>') + '</p>');
+    }
+    return out.join('');
+  }
+
+  // ── panel bên phải ────────────────────────────────────────────────────────
+  function kv(k, v){
+    return '<div class="kv"><span class="k">' + k + '</span><span class="v">' + v + '</span></div>';
+  }
+
+  function renderPanel(d){
+    if (!d){
+      panel.innerHTML = '<div class="pgroup"><div class="plabel">Trạng thái</div>'
+        + '<div class="vdesc">Chưa có câu hỏi nào. Hỏi một câu bên trái để xem agent chạy.</div></div>';
+      return;
+    }
+    var g = d.guard_report || {};
+    var ok = g.ok !== false;
+    var blocked = (d.tool_calls || []).length === 0 && /ngoài phạm vi/i.test(d.answer || '');
+
+    var tools = (d.tool_calls || []).map(function(t){
+      var dropped = (t.dropped_params && t.dropped_params.length)
+        ? '<span class="args" style="color:#F0705E">tham số bị loại: ' + t.dropped_params.join(', ') + '</span>' : '';
+      return '<div class="big" style="margin-bottom:6px">' + t.name
+           + '<span class="args">' + JSON.stringify(t.arguments || {}) + '</span>' + dropped + '</div>';
+    }).join('') || '<div class="big">— không gọi tool nào —</div>';
+
+    var u = d.usage || {};
+    var steps = [
+      ['1','Xác thực danh tính ' + (d.actor || cur)],
+      ['2','Resolve phạm vi → ' + (d.scope_size != null ? d.scope_size : '?') + ' mã đơn vị'],
+      ['3','Model chọn tool'],
+      ['4', blocked ? '<b>Ngoài phạm vi → từ chối</b>' : 'Tool truy vấn <b>đã lọc sẵn</b>'],
+      ['5','Model diễn đạt'],
+      ['6', d.retried ? '<b>Hậu kiểm trượt → bắt viết lại</b>' : 'Hậu kiểm số'],
+      ['7','Ghi audit log']
+    ].map(function(s, idx){
+      var bad = (idx === 3 && blocked) || (idx === 5 && d.retried);
+      return '<div class="step' + (bad ? ' blk' : '') + '"><span class="i">'
+           + (bad ? '!' : '✓') + '</span><span>' + s[1] + '</span></div>';
+    }).join('');
+
+    var retryNote = d.retried
+      ? '<div class="vdesc" style="color:#E0973B">Bản nháp đầu chứa số không truy được về kết quả tool. '
+        + 'Hệ thống bắt model viết lại trước khi trả ra ngoài.</div>' : '';
+
+    panel.innerHTML =
+      '<div class="pgroup"><div class="plabel">Danh tính đã xác thực</div>'
+        + kv('Tài khoản', d.actor || cur)
+        + kv('Vai trò', d.role || '—')
+        + kv('Đơn vị thấy được', d.scope_size != null ? d.scope_size : '—')
+      + '</div>'
+      + '<div class="pgroup"><div class="plabel">Tool đã gọi</div>' + tools + '</div>'
+      + '<div class="pgroup"><div class="plabel">Chốt chặn</div>'
+        + '<div class="verdict"><span class="dot ' + (ok ? 'ok' : 'blk') + '"></span>'
+        + (ok ? 'Hậu kiểm số: ĐẠT' : 'Hậu kiểm số: HỎNG') + '</div>'
+        + '<div class="vdesc">'
+          + (ok ? 'Mọi con số trong câu trả lời đều truy được về kết quả tool.'
+                : 'Số chưa truy được: ' + (g.unverified_numbers || []).join(', '))
+        + '</div>' + retryNote
+      + '</div>'
+      + '<div class="pgroup"><div class="plabel">Đường đi của câu trả lời</div>'
+        + '<div class="steps">' + steps + '</div></div>'
+      + '<div class="pgroup"><div class="plabel">Nhật ký &amp; chi phí</div>'
+        + kv('Mã truy vấn', (d.audit_ids || []).join(', ') || '—')
+        + kv('Token vào', u.prompt != null ? u.prompt.toLocaleString('vi-VN') : '—')
+        + kv('Token ra', u.completion != null ? u.completion.toLocaleString('vi-VN') : '—')
+        + kv('Thời gian', d._secs != null ? d._secs.toFixed(1) + ' giây' : '—')
+        + kv('Chấm điểm', '0 token')
+      + '</div>';
+  }
+
+  // ── gửi câu hỏi ───────────────────────────────────────────────────────────
+  function addUser(text){
+    push('<div class="msg u"><span class="tag">' + cur + '</span><div class="bubble-u">'
+       + text.replace(/&/g,'&amp;').replace(/</g,'&lt;') + '</div></div>');
+  }
+
+  function addThinking(){
+    var el = document.createElement('div');
+    el.className = 'msg a'; el.id = 'thinking';
+    el.innerHTML = '<span class="tag">RetAIn</span><div class="thinking">'
+      + '<span class="dots"><i></i><i></i><i></i></span>'
+      + '<span>đang tra dữ liệu và soạn câu trả lời</span>'
+      + '<span class="elapsed" id="elapsed">0,0 giây</span></div>';
+    thread.appendChild(el);
+    el.scrollIntoView({behavior:'smooth', block:'nearest'});
+    var t0 = Date.now();
+    return setInterval(function(){
+      var e = document.getElementById('elapsed');
+      if (e) e.textContent = ((Date.now()-t0)/1000).toFixed(1).replace('.',',') + ' giây';
+    }, 100);
+  }
+
+  async function ask(text){
+    if (busy || !text.trim()) return;
+    busy = true; sendBtn.disabled = true;
+    addUser(text);
+    qbox.value = ''; qbox.style.height = 'auto';
+    var timer = addThinking();
+    var t0 = performance.now();
+
+    try {
+      var res = await fetch(EP + '/chat', {
+        method: 'POST',
+        headers: {'Content-Type':'application/json', 'X-Actor-Id': cur},
+        body: JSON.stringify({message: text, history: S().hist.slice(-4)})
+      });
+      var secs = (performance.now() - t0) / 1000;
+      clearInterval(timer);
+      var el = document.getElementById('thinking'); if (el) el.remove();
+
+      if (!res.ok){
+        var detail = '';
+        try { detail = (await res.json()).detail || ''; } catch(e){ detail = await res.text(); }
+        showError('Máy chủ trả lỗi ' + res.status, detail);
+        return;
+      }
+
+      var d = await res.json();
+      d._secs = secs;
+      push('<div class="msg a"><span class="tag">RetAIn</span><div class="bubble-a">'
+         + md(d.answer) + '</div></div>');
+      S().hist.push({role:'user', content:text});
+      S().hist.push({role:'assistant', content:d.answer});
+      S().last = d;
+      renderPanel(d);
+      document.getElementById('scopeTag').textContent =
+        (d.scope_size != null ? d.scope_size + ' đơn vị' : 'chưa hỏi');
+      document.getElementById('whoRole').textContent =
+        d.role === 'HRBP' ? 'HRBP' : (d.role === 'LM' ? 'Cán bộ quản lý' : (d.role || ''));
+      thread.lastElementChild.scrollIntoView({behavior:'smooth', block:'nearest'});
+    } catch (err) {
+      clearInterval(timer);
+      var e2 = document.getElementById('thinking'); if (e2) e2.remove();
+      showError('Không gọi được máy chủ', String(err && err.message || err)
+        + ' — kiểm tra mạng, hoặc runtime có đang ACTIVE không.');
+    } finally {
+      busy = false; sendBtn.disabled = false; qbox.focus();
+    }
+  }
+
+  function showError(title, detail){
+    push('<div class="msg a"><span class="tag">RetAIn</span><div class="errbox"><b>' + title + '</b>'
+       + (detail ? '<br><code>' + String(detail).slice(0,300)
+           .replace(/&/g,'&amp;').replace(/</g,'&lt;') + '</code>' : '') + '</div></div>');
+  }
+
+  // ── chuyển tài khoản ──────────────────────────────────────────────────────
+  function setActor(k){
+    cur = k;
+    var a = ACTORS[k];
+    document.getElementById('av').textContent = a.ini;
+    document.getElementById('whoName').textContent = k;
+    document.getElementById('whoRole').textContent = a.label;
+    document.getElementById('scopeTag').textContent = 'chưa hỏi';
+    document.querySelectorAll('.actorbtn').forEach(function(b){
+      b.setAttribute('aria-pressed', b.dataset.actor === k ? 'true' : 'false');
+    });
+    // Dựng lại phiên đã có thay vì xoá trắng
+    thread.innerHTML = S().nodes.join('');
+    renderPanel(S().last);
+    if (S().last && S().last.scope_size != null){
+      document.getElementById('scopeTag').textContent = S().last.scope_size + ' đơn vị';
+    }
+    chips.innerHTML = '';
+    a.chips.forEach(function(c){
+      var b = document.createElement('button');
+      b.className = 'chip'; b.textContent = c;
+      b.addEventListener('click', function(){ qbox.value = c; qbox.focus(); autosize(); });
+      chips.appendChild(b);
+    });
+    qbox.focus();
+  }
+
+  document.querySelectorAll('.actorbtn').forEach(function(b){
+    b.addEventListener('click', function(){ setActor(b.dataset.actor); });
+  });
+
+  function autosize(){
+    qbox.style.height = 'auto';
+    qbox.style.height = Math.min(qbox.scrollHeight, 120) + 'px';
+  }
+  qbox.addEventListener('input', autosize);
+  qbox.addEventListener('keydown', function(e){
+    if (e.key === 'Enter' && !e.shiftKey){ e.preventDefault(); ask(qbox.value); }
+  });
+  sendBtn.addEventListener('click', function(){ ask(qbox.value); });
+  document.getElementById('inputrow').addEventListener('click', function(){ qbox.focus(); });
+
+  setActor('A001');
+})();
+</script>
+
+</body>
+</html>

@@ -8,6 +8,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY agent/ ./agent/
 COPY data/ ./data/
+COPY ui/ ./ui/
 COPY main.py .
 
 EXPOSE 8080
