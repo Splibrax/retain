@@ -44,11 +44,22 @@ def test_guard_bat_so_bia():
 
 
 def test_guard_khong_bao_nham_so_that():
+    """
+    Câu trả lời DỰNG TỪ CHÍNH SỐ CỦA TOOL thì guard phải cho qua.
+
+    Bản trước ghi cứng "85,78 / 50,7% / KPI 12,1" — đúng vào ngày viết, và đỏ
+    ngay lần đầu ai đó chỉnh trọng số hay sinh lại dữ liệu. Một bài test hỏng vì
+    dữ liệu đổi sẽ dạy người ta thói quen bỏ qua màu đỏ. Giờ câu văn được dựng
+    từ payload, nên nó kiểm đúng thứ cần kiểm: guard không báo nhầm số thật.
+    """
     a = tools.build_actor("A001")
     res = [tools.explain_employee_risk(a, "E001881")]
-    txt = ("E001881 — 85,78/100, mức High. Lương thấp hơn P50 thị trường 50,7%, "
-           "KPI 12,1/100, đóng băng lương 24 tháng.")
-    assert guard.verify(txt, res)["ok"] is True
+    p = res[0]
+    dong = [f"{p['employee_id']} — {p['score']}/100, mức {p['band_vi']}."]
+    for f in p["factors"]:
+        dong.append(f"{f['factor_vi']}: mức {f['risk_value']}. {f['reason']}")
+    rep = guard.verify(" ".join(dong), res)
+    assert rep["ok"] is True, rep
 
 
 def test_guard_bat_hua_hen_nhung_bo_qua_phu_dinh():

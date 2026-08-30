@@ -12,11 +12,14 @@ import time
 import uuid
 from dataclasses import dataclass, field
 
-from . import store
+from . import scoring, store
 from .scope import resolve_scope
 
-# Trọng số gốc của engine (flight_risk_score.py). Giữ đồng bộ tuyệt đối.
-WEIGHTS = {"salary": 0.40, "kpi": 0.30, "freeze": 0.20, "seniority": 0.10}
+# Trọng số và công thức KHÔNG còn được chép lại ở đây. Trước đây file này giữ một
+# "bản sao chính xác" của engine — và bản sao thì luôn có ngày lệch khỏi bản gốc.
+# Giờ dùng chung agent/scoring.py với flight_risk_score.py và generate_facts.py.
+WEIGHTS = scoring.WEIGHTS
+BAND_VI = scoring.BAND_VI
 
 MAX_LIST = 20          # BLUEPRINT §6 T1 — hard cap, LLM xin nhiều hơn cũng không cho
 AUDIT_LOG: list[dict] = []
@@ -120,46 +123,37 @@ def list_team_risk(actor: Actor, as_of: str = "latest",
     }
 
 
-def _components(gap, kpi, freeze, seniority_flag) -> dict:
-    """Bản sao chính xác compute_risk_components() của engine."""
-    c = {}
-    if gap is not None:
-        c["salary"] = min(1.0, max(0.0, -gap) / 0.6)
-    if freeze is not None:
-        c["freeze"] = min(1.0, max(0.0, freeze) / 24)
-    if kpi is not None:
-        c["kpi"] = min(1.0, max(0.0, (70 - kpi) / 60))
-    if seniority_flag is not None:
-        c["seniority"] = 1.0 if seniority_flag else 0.3
-    return c
+def _comps_of(r) -> dict:
+    """
+    Quy đổi một dòng dữ liệu về các yếu tố rủi ro.
+
+    months_since_last_move có thể KHÔNG tồn tại nếu dữ liệu được sinh bằng bản
+    engine cũ — khi đó yếu tố 'promo' vắng mặt và trọng số được chia lại cho bốn
+    yếu tố còn lại, đúng cơ chế xử lý thiếu dữ liệu. Agent vẫn chạy, không sập.
+    """
+    return scoring.components(
+        gap_pct=r["salary_gap_to_p50_pct"],
+        kpi_score=r["kpi_score"],
+        freeze_months=r["pay_freeze_months"],
+        seniority_flag=r["seniority_risk_window_flag"],
+        months_since_move=r.get("months_since_last_move"),
+    )
 
 
 def _score(comps: dict):
-    avail = sum(WEIGHTS[k] for k in comps)
-    if avail == 0:
-        return None, {}
-    w = {k: WEIGHTS[k] / avail for k in comps}
-    return round(100 * sum(w[k] * comps[k] for k in comps), 2), w
-
-
-BAND_VI = {"High": "Cao", "Medium": "Trung bình", "Low": "Thấp", "": ""}
+    return scoring.renormalize(comps)
 
 
 def _band(score):
-    if score is None:
-        return ""
-    return "High" if score >= 66 else ("Medium" if score >= 33 else "Low")
+    return scoring.band(score)
 
 
 def _top_factor_reason(r) -> str:
-    """Yếu tố đóng góp lớn nhất = component × trọng số thực dùng."""
-    comps = _components(r["salary_gap_to_p50_pct"], r["kpi_score"],
-                        r["pay_freeze_months"], r["seniority_risk_window_flag"])
+    """Yếu tố đóng góp lớn nhất = mức rủi ro × trọng số thực dùng."""
+    comps = _comps_of(r)
     _, w = _score(comps)
-    if not comps:
-        return ""
-    top = max(comps, key=lambda k: comps[k] * w.get(k, 0))
-    return r.get(f"reason_{top}", "")
+    top = scoring.top_factor(comps, w)
+    return r.get(f"reason_{top}", "") if top else ""
 
 
 # ─────────────────────────────────────────────────────────────── T2 ─────────
@@ -169,15 +163,15 @@ def explain_employee_risk(actor: Actor, employee_id: str, as_of: str = "latest")
     if r is None or r["dept_code"] not in actor.scope:
         return _deny(actor, "explain_employee_risk", employee_id)
 
-    comps = _components(r["salary_gap_to_p50_pct"], r["kpi_score"],
-                        r["pay_freeze_months"], r["seniority_risk_window_flag"])
+    comps = _comps_of(r)
     _, w = _score(comps)
     factors = [{
         "factor": k,
+        "factor_vi": scoring.FACTOR_VI[k],
         "risk_value": round(comps[k], 4),
         "weight_used": round(w[k], 4),
         "reason": r.get(f"reason_{k}", ""),
-    } for k in ("salary", "kpi", "freeze", "seniority") if k in comps]
+    } for k in scoring.FACTOR_ORDER if k in comps]
 
     return {
         "employee_id": employee_id,
@@ -215,10 +209,9 @@ def suggest_actions(actor: Actor, employee_id: str, as_of: str = "latest") -> di
             "audit_id": _audit(actor, "suggest_actions", employee_id, 0, True, "EXCLUDED"),
         }
 
-    comps = _components(r["salary_gap_to_p50_pct"], r["kpi_score"],
-                        r["pay_freeze_months"], r["seniority_risk_window_flag"])
+    comps = _comps_of(r)
     _, w = _score(comps)
-    top = max(comps, key=lambda k: comps[k] * w.get(k, 0)) if comps else None
+    top = scoring.top_factor(comps, w)
 
     pb = store.load_playbook()
     plays = pb.get(top, {})
@@ -265,6 +258,8 @@ def simulate_intervention(actor: Actor, employee_id: str, scenario: str,
 
     gap, kpi = r["salary_gap_to_p50_pct"], r["kpi_score"]
     freeze, sen = r["pay_freeze_months"], r["seniority_risk_window_flag"]
+    move = r.get("months_since_last_move")
+    salary_lever = None      # to_p50: đòn bẩy lương còn dùng được hay đã cạn
 
     if scenario == "raise_pct":
         if value is None:
@@ -283,8 +278,22 @@ def simulate_intervention(actor: Actor, employee_id: str, scenario: str,
     elif scenario == "to_p50":
         if gap is None:
             raise ScenarioError("Thiếu dữ liệu lương, không mô phỏng được")
-        gap, freeze = 0.0, 0
-        label = "Đưa lương về đúng P50 thị trường"
+        if gap >= 0:
+            # Người này đã ở trên P50 — KHÔNG có khoảng cách nào để đóng.
+            #
+            # Bản trước đặt thẳng gap = 0, nghĩa là mô phỏng GIẢM lương người ta
+            # về đúng trung vị rồi gọi đó là phương án giữ chân. Điểm vẫn giảm
+            # (vì chuỗi đóng băng bị phá) nên nhìn qua tưởng hợp lý. Đó là loại
+            # lỗi mà hội đồng bắt được là hỏng cả bài.
+            #
+            # Không có hành động lương nào xảy ra ⇒ chuỗi đóng băng cũng không
+            # được phá ⇒ điểm không đổi. Đúng bản chất: đòn bẩy này đã cạn.
+            salary_lever = False
+            label = "Đưa lương về P50 — không áp dụng được, người này đã ở trên P50"
+        else:
+            gap, freeze = 0.0, 0
+            salary_lever = True
+            label = "Đưa lương về đúng P50 thị trường"
 
     elif scenario == "kpi_recovery":
         if value is None:
@@ -294,15 +303,23 @@ def simulate_intervention(actor: Actor, employee_id: str, scenario: str,
         kpi = float(value)
         label = f"KPI phục hồi lên {value:.0f}/100"
 
+    elif scenario == "promotion":
+        # Đổi vai / thăng cấp: đồng hồ "chưa được đổi vai" về 0.
+        # Đây là phương án KHÔNG tốn ngân sách lương, và với người đã được trả
+        # trên P50 thì thường là phương án duy nhất còn tác dụng.
+        if move is None:
+            raise ScenarioError("Thiếu dữ liệu lịch sử đổi vai, không mô phỏng được")
+        move = 0
+        label = "Đổi vai / thăng cấp trong kỳ tới"
+
     else:
         raise ScenarioError(f"Kịch bản không hợp lệ: {scenario}")
 
-    new_comps = _components(gap, kpi, freeze, sen)
+    new_comps = scoring.components(gap, kpi, freeze, sen, move)
     new_score, _ = _score(new_comps)
     old_score = r["flight_risk_score"]
 
-    old_comps = _components(r["salary_gap_to_p50_pct"], r["kpi_score"],
-                            r["pay_freeze_months"], r["seniority_risk_window_flag"])
+    old_comps = _comps_of(r)
     _, ow = _score(old_comps)
     contrib = {}
     for k in old_comps:
@@ -325,6 +342,9 @@ def simulate_intervention(actor: Actor, employee_id: str, scenario: str,
         "band_after": _band(new_score),
         "band_after_vi": BAND_VI.get(_band(new_score), ""),
         "delta_by_factor": contrib,
+        # Với to_p50: False nghĩa là người này đã ở trên P50, tiền không còn là
+        # đòn bẩy — đây chính là con số HRBP cần trước khi duyệt ngân sách giữ người.
+        "salary_lever_available": salary_lever,
         "cost_mil_vnd": estimate_cost(actor, employee_id, scenario, value),
         "is_deterministic": True,
         # BLUEPRINT §8 R9 — nhãn cứng, không phụ thuộc LLM tự nhớ

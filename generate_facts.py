@@ -12,13 +12,72 @@ Output (./data/):
   fact_termination.csv
 """
 import csv
+import os
 import random
-from faker import Faker
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from agent import scoring   # noqa: E402  — trọng số/công thức dùng chung với engine
 
 SEED = 42
 random.seed(SEED)
-Faker.seed(SEED)
-fake = Faker('vi_VN')
+
+# RNG RIÊNG cho yếu tố thăng tiến — KHÔNG dùng random toàn cục.
+#
+# Lý do rất cụ thể: mỗi lần gọi random.* là chuỗi số ngẫu nhiên toàn cục tiến một
+# bước. Thêm một lời gọi vào vòng lặp sinh nhân sự sẽ làm LỆCH mọi lời gọi phía
+# sau — tên, đơn vị, lương, KPI, ngày nghỉ việc của toàn bộ dân số đổi hết, dù
+# seed vẫn là 42. Hệ quả thật: E001881 rơi sang đơn vị khác, và các tài khoản
+# demo trong dim_actor.csv không còn nhìn thấy anh ta nữa.
+#
+# Dùng một RNG tách riêng thì chuỗi cũ giữ nguyên từng byte: dữ liệu cũ không đổi,
+# chỉ có thêm một cột mới.
+promo_rng = random.Random(SEED + 1000)
+
+# ── Sinh tên người Việt ─────────────────────────────────────────────────────
+#
+# Trước đây dùng faker locale vi_VN. Nó sai hai chuyện, và cả hai đều lộ ngay
+# trên màn hình demo:
+#   1. Kèm kính ngữ vào chính cái tên: "Ông Trung Dương", "Quý cô Lâm Dương",
+#      "Bác Quang Hoàng". Kính ngữ là cách xưng hô, không phải một phần của tên,
+#      và không bao giờ nằm trong trường full_name của HRIS.
+#   2. Sai thứ tự: "Anh Hoàng Nguyễn" — đó là tên đọc theo lối phương Tây.
+#      Tiếng Việt là HỌ + ĐỆM + TÊN: "Nguyễn Hoàng Anh".
+#
+# Hội đồng người Việt nhìn danh sách nhân sự ngân hàng mà thấy "Quý cô Lâm Dương"
+# thì sẽ nghi ngờ toàn bộ phần dữ liệu, dù mô hình có đúng đến đâu.
+#
+# RNG riêng, cùng lý do như promo_rng: không làm lệch chuỗi ngẫu nhiên chung.
+name_rng = random.Random(SEED + 2000)
+
+HO = ('Nguyễn Trần Lê Phạm Hoàng Huỳnh Phan Vũ Võ Đặng Bùi Đỗ Hồ Ngô Dương Lý '
+      'Đinh Trịnh Đoàn Lương Mai Tô Chu Lâm Cao Hà Kiều Thái Vương Đào').split()
+
+DEM_NAM = ('Văn Hữu Đức Minh Quang Xuân Thanh Công Tuấn Bá Hoàng Trung Anh Đình '
+           'Ngọc Việt Duy Gia Trọng Chí Mạnh Khắc Tất Thế Nhật').split()
+DEM_NU = ('Thị Thanh Ngọc Thu Minh Hà Kim Diệu Phương Hồng Mai Bích Hải Lan Thuỳ '
+          'Khánh Quỳnh Yến Như Bảo Tuyết Xuân Hoài Kiều').split()
+
+TEN_NAM = ('An Bình Cường Dũng Duy Đạt Đức Hải Hùng Huy Khánh Khoa Lâm Long Minh '
+           'Nam Nghĩa Phong Phúc Quân Quang Sơn Thắng Thành Thịnh Tiến Toàn Trung '
+           'Tuấn Vinh Việt Vũ Bảo Đăng Kiên Nhật Sang Tài Tùng Trí Hiếu Cảnh Lộc '
+           'Hoà Khang Nguyên Phát Tân Thái Trường').split()
+TEN_NU = ('Anh Ánh Bích Chi Dung Duyên Giang Hà Hạnh Hằng Hiền Hoa Hoài Hồng Huệ '
+          'Hương Lan Linh Loan Mai My Nga Ngân Ngọc Nhung Oanh Phương Quyên Tâm '
+          'Thảo Thu Thuỷ Trang Trâm Tú Uyên Vân Vy Yến Diệp Khuê Ly Nhi Thanh '
+          'Trinh Tuyết Xuân Châu Kim Lệ').split()
+
+
+def vietnamese_name(gender: str) -> str:
+    """HỌ + ĐỆM + TÊN. Không kính ngữ, không đảo thứ tự."""
+    ho = name_rng.choice(HO)
+    if gender == 'M':
+        dem, ten = name_rng.choice(DEM_NAM), name_rng.choice(TEN_NAM)
+    else:
+        dem, ten = name_rng.choice(DEM_NU), name_rng.choice(TEN_NU)
+    if name_rng.random() < 0.12:        # một số người không có tên đệm
+        return f'{ho} {ten}'
+    return f'{ho} {dem} {ten}'
 
 DATA_DIR = 'data'
 
@@ -137,12 +196,9 @@ def sample_position():
 
 
 def make_name_gender():
+    # gender vẫn lấy từ RNG CHUNG (giữ nguyên chuỗi cũ); tên lấy từ name_rng
     gender = random.choice(['M', 'F'])
-    try:
-        name = fake.name_male() if gender == 'M' else fake.name_female()
-    except AttributeError:
-        name = fake.name()
-    return name, gender
+    return vietnamese_name(gender), gender
 
 
 def new_employee(hire_idx, tag=''):
@@ -179,6 +235,11 @@ for _ in range(SEED_SIZE):
     emp['initial_compa'] = min(1.25, max(0.65, random.gauss(0.95, 0.10)))
     emp['kpi_base'] = min(100, max(10, random.gauss(65, 12)))
     emp['warn_prob_month'] = 0.0025
+    # Xác suất đổi vai/thăng cấp mỗi tháng, khác nhau theo người: một phần dân số
+    # rơi vào 0 — tức là nhóm ở nguyên một vai trò suốt kỳ quan sát. Chính nhóm này
+    # là thứ mô hình cũ hoàn toàn mù.
+    emp['promo_prob_month'] = max(0.0, promo_rng.gauss(0.018, 0.012))
+    emp['forced_move_tenure'] = None
     employees.append(emp)
 
 # --- 4b. new hires over the 60-month window, growing headcount ------------
@@ -193,6 +254,8 @@ for t_off in range(0, 60):
         emp['initial_compa'] = min(1.25, max(0.65, random.gauss(0.95, 0.10)))
         emp['kpi_base'] = min(100, max(10, random.gauss(65, 12)))
         emp['warn_prob_month'] = 0.0025
+        emp['promo_prob_month'] = max(0.0, promo_rng.gauss(0.018, 0.012))
+        emp['forced_move_tenure'] = None
         employees.append(emp)
 
 print(f'generic population generated: {len(employees)} employees')
@@ -201,27 +264,78 @@ print(f'generic population generated: {len(employees)} employees')
 CASE_HIRE_IDX = START_IDX  # hired 2021-01 -> full 59-month tenure by Dec-2025
 TENURE_AT_END = END_IDX - CASE_HIRE_IDX  # 59
 
+# THỨ TỰ TRONG DANH SÁCH NÀY LÀ HỢP ĐỒNG: employee_id được cấp theo thứ tự,
+# nên chỉ được THÊM VÀO CUỐI. Chèn vào giữa là đổi hết mã của các ca phía sau,
+# và mọi tài liệu/kịch bản demo đang trỏ vào mã cũ sẽ trỏ nhầm người.
 case_defs = [
-    # (tag, compa, kpi_base, freeze_target_months, warnings_in_trailing_12m)
-    ('P1_high_risk_1', 0.60, 20, 24, 0),
-    ('P1_high_risk_2', 0.62, 22, 20, 0),
-    ('P1_high_risk_3', 0.58, 18, 18, 0),
-    ('P2_medium_1', 0.88, 58, 6, 0),
-    ('P2_medium_2', 0.90, 62, 7, 0),
-    ('P2_medium_3', 0.75, 45, 9, 0),
-    ('EXCLUDE_warnings_1', 0.55, 15, 15, 2),
-    ('EXCLUDE_warnings_2', 0.52, 12, 13, 3),
+    # (tag, compa, kpi_base, freeze_target_months, warnings_12m, move_tenure, force_dept)
+    #  kpi_base của ca có force_dept được GHIM (xem kpi_fixed bên dưới)
+    #  move_tenure = tháng thâm niên tại lần đổi vai gần nhất; None = chưa từng đổi vai
+    #  force_dept  = ép vào một đơn vị cụ thể; None = bốc ngẫu nhiên như cũ
+    ('P1_high_risk_1', 0.60, 20, 24, 0, 30, None),
+    ('P1_high_risk_2', 0.62, 22, 20, 0, 24, None),
+    ('P1_high_risk_3', 0.58, 18, 18, 0, 36, None),
+    ('P2_medium_1', 0.88, 58, 6, 0, 40, None),
+    ('P2_medium_2', 0.90, 62, 7, 0, 44, None),
+    ('P2_medium_3', 0.75, 45, 9, 0, 36, None),
+    ('EXCLUDE_warnings_1', 0.55, 15, 15, 2, 30, None),
+    ('EXCLUDE_warnings_2', 0.52, 12, 13, 3, 28, None),
+
+    # ── Hai ca "tiền không phải đòn bẩy" ───────────────────────────────────────
+    # Được trả TRÊN P50 thị trường, nhưng chưa từng đổi vai suốt 59 tháng, lương
+    # không được điều chỉnh, và hiệu suất đã tụt. Với mô hình cũ (lương 40%) hai
+    # người này không thể vượt ngưỡng Cao dù có chuyện gì xảy ra — điểm tối đa khi
+    # không thiếu lương là 60 < 66. Họ là bằng chứng sống cho việc mô hình cũ
+    # không phát hiện được, chứ không phải dữ liệu không có ca.
+    # Ép vào CÙNG đơn vị với P1_high_risk_1 để một cán bộ quản lý nhìn thấy cả hai.
+    # Đó mới là cảnh demo có sức nặng: cùng một team, hai người cùng mức Cao,
+    # nguyên nhân khác hẳn nhau — một người tăng lương là giải quyết được, một
+    # người tăng lương không đổi gì hết.
+    ('P1_stuck_well_paid', 1.30, 21, 24, 0, None, 'SAME_AS_P1_high_risk_1'),
+    ('P2_stuck_well_paid', 1.22, 35, 12, 0, None, 'SAME_AS_P1_high_risk_1'),
 ]
 
 case_employees = []
-for tag, compa, kpi_base, freeze_target, n_warn in case_defs:
+_case_dept_by_tag = {}
+
+for tag, compa, kpi_base, freeze_target, n_warn, move_tenure, force_dept in case_defs:
     emp = new_employee(CASE_HIRE_IDX, tag=tag)
+
+    # Ép đơn vị: chọn vị trí ĐẦU TIÊN khớp (không bốc ngẫu nhiên) để không làm
+    # lệch chuỗi số ngẫu nhiên chung.
+    if force_dept:
+        target = (_case_dept_by_tag.get(force_dept[len('SAME_AS_'):])
+                  if force_dept.startswith('SAME_AS_') else force_dept)
+        cands = [q for q in active_positions if q['dept_code'] == target] if target else []
+        if cands:
+            q = cands[0]
+            emp.update({'dept_code': q['dept_code'], 'job_code': q['job_code'],
+                        'band': q['band'], 'position_code': q['position_code'],
+                        'is_manager': q['is_manager'], 'location_code': q['location_code'],
+                        'job_group_code': q['job_group_code']})
+        else:
+            print(f'  ! {tag}: không ép được vào đơn vị {target}, giữ đơn vị bốc ngẫu nhiên '
+                  f'{emp["dept_code"]} — kiểm lại bảng "AI NHÌN THẤY CA MẪU NÀO"')
+    _case_dept_by_tag[tag] = emp['dept_code']
     emp['termination_idx'] = None  # active through end of sim, by design
     emp['freeze_start_offset'] = TENURE_AT_END - freeze_target + 1
     emp['freeze_duration'] = 9999  # ongoing, never ends within sim window
     emp['initial_compa'] = compa
     emp['kpi_base'] = kpi_base
     emp['warn_prob_month'] = 0.0
+    emp['promo_prob_month'] = 0.0          # ca mẫu: lịch sử đổi vai đặt tay, không ngẫu nhiên
+    # GHIM KPI cho hai ca "tiền không phải đòn bẩy".
+    #
+    # Vì sao cần: KPI đi bộ ngẫu nhiên có SÀN ở 10. Đặt kpi_base = 15 hay 18 thì
+    # sau 59 tháng đều trôi xuống đụng sàn và dừng quanh 11 — hai ca lẽ ra kể hai
+    # câu chuyện khác nhau lại ra cùng một con số. Tệ hơn: KPI 11 làm yếu tố trội
+    # thành 'kpi' thay vì 'promo', nên playbook trả về đúng bộ P1/P2/P3 của ca
+    # kia — mất trắng cảnh demo "nguyên nhân khác nhau thì hành động khác nhau".
+    #
+    # Ghim ở đây KHÔNG làm lệch dữ liệu người khác: ca mẫu nằm cuối danh sách
+    # nên các lời gọi random bị bỏ qua không ảnh hưởng ai phía trước.
+    emp['kpi_fixed'] = force_dept is not None
+    emp['forced_move_tenure'] = move_tenure
     emp['forced_warning_months'] = []
     if n_warn:
         # spread forced warnings within the trailing 12 months before END_IDX
@@ -250,11 +364,16 @@ for emp in employees:
     kpi_base = emp['kpi_base']
     warn_prob = emp['warn_prob_month']
     forced_warn_months = set(emp.get('forced_warning_months', []))
+    promo_prob = emp.get('promo_prob_month', 0.0)
+    kpi_fixed = emp.get('kpi_fixed', False)
+    kpi_pinned = kpi_base
+    forced_move_tenure = emp.get('forced_move_tenure')
 
     last_month = term_idx if term_idx is not None else END_IDX
     first_month = max(hire_idx, START_IDX)
 
     current_salary = None
+    last_move_idx = hire_idx        # vào làm cũng tính là một lần "đổi vai"
     warning_months = []  # month indices where a warning occurred
 
     # pass 1: determine warning months across the employee's active window
@@ -267,6 +386,14 @@ for emp in employees:
     for m in range(first_month, min(last_month, END_IDX) + 1):
         y, mo = from_midx(m)
         tenure_t = m - hire_idx
+
+        # ---- đổi vai / thăng cấp ----
+        if forced_move_tenure is not None and tenure_t == forced_move_tenure:
+            last_move_idx = m
+        elif forced_move_tenure is None and tenure_t >= 12 and promo_prob > 0 \
+                and promo_rng.random() < promo_prob:
+            last_move_idx = m
+        months_since_last_move = m - last_move_idx
 
         # ---- salary state machine (recompute forward each month) ----
         if current_salary is None:
@@ -285,8 +412,11 @@ for emp in employees:
         compa_ratio = current_salary / p50
 
         # ---- kpi ----
-        kpi_base = min(100, max(10, kpi_base + random.gauss(0, 1)))
-        kpi_score = round(min(100, max(5, kpi_base + random.gauss(0, 5))), 1)
+        if kpi_fixed:
+            kpi_score = round(min(100, max(5, kpi_pinned + random.gauss(0, 1.0))), 1)
+        else:
+            kpi_base = min(100, max(10, kpi_base + random.gauss(0, 1)))
+            kpi_score = round(min(100, max(5, kpi_base + random.gauss(0, 5))), 1)
 
         # ---- warnings (rolling 12m, inclusive) ----
         warn_this_month = 1 if m in warning_months else 0
@@ -301,12 +431,12 @@ for emp in employees:
             sw_flag, sw_label = False, ''
 
         # ---- risk score ----
-        risk_salary = min(1.0, max(0.0, -gap_pct) / 0.6)
-        risk_kpi = min(1.0, max(0.0, (70 - kpi_score) / 60))
-        risk_freeze = min(1.0, pay_freeze_months / 24)
-        risk_seniority = 1.0 if sw_flag else 0.3
-        flight_risk_score = round(100 * (0.4 * risk_salary + 0.3 * risk_kpi + 0.2 * risk_freeze + 0.1 * risk_seniority), 2)
-        flight_risk_band = 'High' if flight_risk_score >= 66 else ('Medium' if flight_risk_score >= 33 else 'Low')
+        # KHÔNG chép lại công thức ở đây nữa. Trước kia file này giữ một bản sao
+        # của phép tính, và bản sao là chỗ trọng số đi lạc mà không ai biết.
+        _comps = scoring.components(gap_pct, kpi_score, pay_freeze_months, sw_flag,
+                                    months_since_last_move)
+        flight_risk_score, _ = scoring.renormalize(_comps)
+        flight_risk_band = scoring.band(flight_risk_score)
 
         is_excluded = warn_12m >= 2
         exclusion_reason = 'WARNING_LETTERS_GE_2_12M' if is_excluded else ''
@@ -327,6 +457,8 @@ for emp in employees:
             'employment_status': employment_status,
             'hire_date': emp['hire_date'],
             'tenure_months': tenure_t,
+            'months_since_last_move': months_since_last_move,
+            'last_move_date': date_str(*from_midx(last_move_idx)),
             'seniority_risk_window_flag': sw_flag,
             'seniority_risk_window_label': sw_label,
             'warning_letter_count_12m': warn_12m,

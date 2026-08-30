@@ -88,10 +88,11 @@ TOOL_SCHEMAS = [
                     "employee_id": {"type": "string"},
                     "scenario": {
                         "type": "string",
-                        "enum": ["raise_pct", "to_p50", "kpi_recovery"],
+                        "enum": ["raise_pct", "to_p50", "kpi_recovery", "promotion"],
                         "description": (
                             "raise_pct = tăng lương theo %; to_p50 = đưa lương về đúng "
-                            "trung vị thị trường; kpi_recovery = KPI phục hồi lên mức mục tiêu."
+                            "trung vị thị trường; kpi_recovery = KPI phục hồi lên mức mục tiêu; "
+                            "promotion = đổi vai / thăng cấp trong kỳ tới (không tốn ngân sách lương)."
                         ),
                     },
                     "value": {
@@ -99,7 +100,7 @@ TOOL_SCHEMAS = [
                         "description": (
                             "Với raise_pct: tỉ lệ tăng, ví dụ 0.1 cho 10%. "
                             "Với kpi_recovery: điểm KPI mục tiêu 0-100. "
-                            "Với to_p50: bỏ trống."
+                            "Với to_p50 và promotion: bỏ trống."
                         ),
                     },
                 },

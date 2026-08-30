@@ -9,7 +9,8 @@ flight_risk_score.py — scoring engine cho mô hình flight risk (RetAIn).
                                    được engine TỰ tính lại từ đây, không phụ thuộc cột có sẵn trong
                                    fact_workforce_snapshot, để scoring logic độc lập với generation logic)
 
-Trọng số: market gap vs P50 (40%), KPI (30%), pay freeze duration (20%), tenure risk window (10%).
+Trọng số KHÔNG còn khai báo ở file này — xem agent/scoring.py (nguồn sự thật duy nhất,
+dùng chung với generate_facts.py và agent/tools.py). Luận giải: TRONG_SO.md.
 Nếu một record thiếu feature (không tìm thấy salary_snapshot hoặc rm_kpi cùng employee_id+snapshot_date),
 trọng số các feature còn lại được RENORMALIZE (chia lại cho tổng trọng số khả dụng) thay vì coi thiếu = 0.
 
@@ -20,7 +21,12 @@ Output: ./data/fact_flight_risk_score.csv (kèm cột lý do (reason) cho từng
 Usage: python3 flight_risk_score.py
 """
 import csv
+import os
+import sys
 from collections import defaultdict
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from agent import scoring   # noqa: E402  — nguồn sự thật duy nhất của trọng số
 
 DATA_DIR = 'data'
 
@@ -30,7 +36,7 @@ def p(fname):
     return os.path.join(DATA_DIR, fname)
 
 
-WEIGHTS = {'salary': 0.40, 'kpi': 0.30, 'freeze': 0.20, 'seniority': 0.10}
+WEIGHTS = scoring.WEIGHTS
 
 
 def midx(y, m):
@@ -78,27 +84,14 @@ def rolling_warning_count_12m(employee_id, snapshot_month_idx):
     return total
 
 # ------------------------------------------------------- scoring core ----
-def compute_risk_components(gap_pct, kpi_score, freeze_months, seniority_flag):
-    """Returns dict of factor -> (risk_value 0..1) for whichever factors have data."""
-    comps = {}
-    if gap_pct is not None:
-        comps['salary'] = min(1.0, max(0.0, -gap_pct) / 0.6)
-    if freeze_months is not None:
-        comps['freeze'] = min(1.0, max(0.0, freeze_months) / 24)
-    if kpi_score is not None:
-        comps['kpi'] = min(1.0, max(0.0, (70 - kpi_score) / 60))
-    if seniority_flag is not None:
-        comps['seniority'] = 1.0 if seniority_flag else 0.3
-    return comps
+def compute_risk_components(gap_pct, kpi_score, freeze_months, seniority_flag,
+                            months_since_move=None):
+    return scoring.components(gap_pct, kpi_score, freeze_months, seniority_flag,
+                              months_since_move)
 
 
 def renormalized_score(comps):
-    avail_weight = sum(WEIGHTS[k] for k in comps)
-    if avail_weight == 0:
-        return None, {}
-    norm_w = {k: WEIGHTS[k] / avail_weight for k in comps}
-    score = 100 * sum(norm_w[k] * comps[k] for k in comps)
-    return round(score, 2), norm_w
+    return scoring.renormalize(comps)
 
 
 def reason_salary(gap_pct):
@@ -123,6 +116,16 @@ def reason_freeze(freeze_months):
     return 'Không bị đóng băng lương'
 
 
+def reason_promo(months_since_move):
+    if months_since_move is None:
+        return 'Thiếu dữ liệu lịch sử đổi vai'
+    if months_since_move <= scoring.PROMO_RISK_STARTS_AT:
+        return f'Đổi vai gần đây ({months_since_move} tháng trước)'
+    if months_since_move >= scoring.PROMO_SATURATION_MONTHS:
+        return f'Chưa đổi vai hoặc thăng cấp {months_since_move} tháng'
+    return f'Lần đổi vai gần nhất cách đây {months_since_move} tháng'
+
+
 def reason_seniority(flag, label, tenure_months):
     if flag:
         return f'Đang trong cửa sổ rủi ro thâm niên ({label}, {tenure_months} tháng)'
@@ -131,18 +134,27 @@ def reason_seniority(flag, label, tenure_months):
 # ------------------------------------------------------------ self-test --
 def _self_test():
     # đủ 4 feature: trọng số gốc
-    comps_full = compute_risk_components(gap_pct=-0.5, kpi_score=20, freeze_months=24, seniority_flag=True)
+    comps_full = compute_risk_components(gap_pct=-0.5, kpi_score=20, freeze_months=24,
+                                         seniority_flag=True, months_since_move=36)
     score_full, w_full = renormalized_score(comps_full)
     assert abs(sum(w_full.values()) - 1.0) < 1e-9
-    assert abs(w_full['salary'] - 0.40) < 1e-9
+    assert abs(w_full['salary'] - WEIGHTS['salary']) < 1e-9
+
+    inv = scoring.check_invariants()
+    assert not inv['pair_can_reach_high'], inv
+    assert inv['well_paid_can_reach_high'], inv
 
     # thiếu salary+freeze (giả lập không có salary_snapshot tháng đó): chỉ còn kpi(0.3)+seniority(0.1)
-    comps_partial = compute_risk_components(gap_pct=None, kpi_score=20, freeze_months=None, seniority_flag=True)
+    comps_partial = compute_risk_components(gap_pct=None, kpi_score=20, freeze_months=None,
+                                            seniority_flag=True, months_since_move=None)
     score_partial, w_partial = renormalized_score(comps_partial)
     assert abs(sum(w_partial.values()) - 1.0) < 1e-9, 'renormalized weights must sum to 1'
-    assert abs(w_partial['kpi'] - 0.75) < 1e-6, f"kpi weight should renormalize to 0.3/0.4=0.75, got {w_partial['kpi']}"
-    assert abs(w_partial['seniority'] - 0.25) < 1e-6
-    print('self-test passed: renormalization when features are missing works as expected')
+    expect_kpi = WEIGHTS['kpi'] / (WEIGHTS['kpi'] + WEIGHTS['seniority'])
+    assert abs(w_partial['kpi'] - expect_kpi) < 1e-6, w_partial
+    print('self-test passed: renormalization + bất biến trọng số OK')
+    print(f"  trọng số: {WEIGHTS}")
+    print(f"  hai yếu tố nặng nhất = {inv['top_two_weights']} (ngưỡng Cao = {scoring.BAND_HIGH_AT})")
+    print(f"  trần thực tế khi KHÔNG thiếu lương = {inv['realistic_max_without_salary']}")
 
 
 _self_test()
@@ -169,10 +181,13 @@ for wf in workforce:
     freeze_months = int(sal['pay_freeze_months']) if sal else None
     kpi_score = float(kpi['kpi_score']) if kpi else None
     seniority_flag = to_bool(wf['seniority_risk_window_flag'])
+    msm = wf.get('months_since_last_move')
+    months_since_move = int(msm) if msm not in (None, '') else None
     seniority_label = wf['seniority_risk_window_label']
     tenure_months = int(wf['tenure_months'])
 
-    comps = compute_risk_components(gap_pct, kpi_score, freeze_months, seniority_flag)
+    comps = compute_risk_components(gap_pct, kpi_score, freeze_months, seniority_flag,
+                                    months_since_move)
     score, norm_w = renormalized_score(comps)
 
     warn_12m = rolling_warning_count_12m(eid, month_idx)
@@ -182,9 +197,9 @@ for wf in workforce:
     if score is None:
         band = ''
     else:
-        band = 'High' if score >= 66 else ('Medium' if score >= 33 else 'Low')
+        band = scoring.band(score)
 
-    missing_features = ','.join(f for f in ('salary', 'kpi', 'freeze', 'seniority') if f not in comps)
+    missing_features = ','.join(f for f in scoring.FACTOR_ORDER if f not in comps)
 
     key += 1
     out_rows.append({
@@ -198,13 +213,16 @@ for wf in workforce:
         'kpi_score': kpi_score if kpi_score is not None else '',
         'pay_freeze_months': freeze_months if freeze_months is not None else '',
         'tenure_months': tenure_months,
+        'months_since_last_move': months_since_move if months_since_move is not None else '',
         'seniority_risk_window_flag': seniority_flag,
         'risk_component_salary': round(comps['salary'], 4) if 'salary' in comps else '',
         'risk_component_kpi': round(comps['kpi'], 4) if 'kpi' in comps else '',
+        'risk_component_promo': round(comps['promo'], 4) if 'promo' in comps else '',
         'risk_component_freeze': round(comps['freeze'], 4) if 'freeze' in comps else '',
         'risk_component_seniority': round(comps['seniority'], 4) if 'seniority' in comps else '',
         'weight_salary_used': round(norm_w.get('salary', 0), 4),
         'weight_kpi_used': round(norm_w.get('kpi', 0), 4),
+        'weight_promo_used': round(norm_w.get('promo', 0), 4),
         'weight_freeze_used': round(norm_w.get('freeze', 0), 4),
         'weight_seniority_used': round(norm_w.get('seniority', 0), 4),
         'missing_features': missing_features,
@@ -215,6 +233,7 @@ for wf in workforce:
         'flight_risk_band': band,
         'reason_salary': reason_salary(gap_pct),
         'reason_kpi': reason_kpi(kpi_score),
+        'reason_promo': reason_promo(months_since_move),
         'reason_freeze': reason_freeze(freeze_months),
         'reason_seniority': reason_seniority(seniority_flag, seniority_label, tenure_months),
     })
@@ -248,3 +267,95 @@ p1_cases = [eid for eid, e in emp_meta.items() if e['case_study_tag'].startswith
 top10_ids = [r['employee_id'] for r in eligible[:10]]
 p1_in_top10 = [eid for eid in p1_cases if eid in top10_ids]
 print(f'\ncheck: {len(p1_in_top10)}/{len(p1_cases)} case P1 nằm trong top 10 -> {"PASS" if len(p1_in_top10) == len(p1_cases) else "FAIL"}')
+
+# ------------------------------------------------- 11. chẩn đoán vòng luẩn quẩn
+# Bảng này tồn tại để trả lời câu hỏi khó nhất của hội đồng:
+# "mô hình phát hiện rủi ro, hay chỉ đang xếp hạng người thiếu lương?"
+# Nếu mọi ca mức Cao đều nằm ở một ô duy nhất của bảng, câu trả lời là vế sau.
+def _gap_bucket(g):
+    if g is None or g == '':
+        return 'thiếu dữ liệu'
+    g = float(g)
+    if g >= 0:
+        return 'bằng/trên P50'
+    if g > -0.2:
+        return 'thiếu <20%'
+    if g > -0.4:
+        return 'thiếu 20-40%'
+    return 'thiếu >40%'
+
+
+from collections import Counter as _C  # noqa: E402
+_x = _C()
+for r in latest:
+    _x[(_gap_bucket(r['salary_gap_to_p50_pct']), r['flight_risk_band'])] += 1
+
+print(f'\n=== PHÂN BỐ: mức thiếu lương × band @ {latest_date} ===')
+print(f"{'':16}{'Low':>8}{'Medium':>9}{'High':>7}")
+for b in ('bằng/trên P50', 'thiếu <20%', 'thiếu 20-40%', 'thiếu >40%', 'thiếu dữ liệu'):
+    row = [_x[(b, k)] for k in ('Low', 'Medium', 'High')]
+    if sum(row):
+        print(f'{b:16}{row[0]:>8}{row[1]:>9}{row[2]:>7}')
+
+_well_paid_flagged = sum(v for (b, k), v in _x.items()
+                         if b == 'bằng/trên P50' and k in ('Medium', 'High'))
+_inv = scoring.check_invariants()
+print(f"\nbất biến 1 — hai yếu tố nặng nhất = {_inv['top_two_weights']} < {scoring.BAND_HIGH_AT}: "
+      f"{'PASS' if not _inv['pair_can_reach_high'] else 'FAIL'}  (phải cần ≥3 yếu tố xấu)")
+print(f"bất biến 2 — người KHÔNG thiếu lương vẫn lên được mức Cao (trần "
+      f"{_inv['realistic_max_without_salary']}): {'PASS' if _inv['well_paid_can_reach_high'] else 'FAIL'}")
+print(f"thực tế    — số người bằng/trên P50 mà vẫn bị gắn cờ: {_well_paid_flagged} "
+      f"{'PASS' if _well_paid_flagged else 'FAIL (mô hình vẫn chỉ đang xếp hạng người thiếu lương)'}")
+
+print('\n=== CASE STUDY: phân rã từng yếu tố ===')
+for r in latest:
+    tag = emp_meta[r['employee_id']]['case_study_tag']
+    if not tag:
+        continue
+    comps = compute_risk_components(
+        float(r['salary_gap_to_p50_pct']) if r['salary_gap_to_p50_pct'] != '' else None,
+        float(r['kpi_score']) if r['kpi_score'] != '' else None,
+        int(r['pay_freeze_months']) if r['pay_freeze_months'] != '' else None,
+        r['seniority_risk_window_flag'],
+        int(r['months_since_last_move']) if r['months_since_last_move'] != '' else None)
+    sc, w = renormalized_score(comps)
+    parts = '  '.join(f"{k}={100 * w[k] * comps[k]:.1f}" for k in scoring.FACTOR_ORDER if k in comps)
+    print(f"  {sc:6.2f} {scoring.band(sc):<7} {r['employee_id']}  {tag:<18} {parts}")
+
+
+# ------------------------------- 12. ca mẫu có nằm trong tầm nhìn actor không --
+# Điểm đẹp mà actor demo không nhìn thấy thì kịch bản demo vẫn hỏng.
+# Kiểm luôn ở đây thay vì phát hiện lúc đứng trên sân khấu.
+try:
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from agent.scope import resolve_scope
+
+    with open(p('dim_actor.csv'), encoding='utf-8') as f:
+        _actors = list(csv.DictReader(f))
+    _scopes = {a['actor_id']: resolve_scope(a['dept_scope_code']) for a in _actors}
+
+    print('\n=== AI NHÌN THẤY CA MẪU NÀO ===')
+    for r in latest:
+        tag = emp_meta[r['employee_id']]['case_study_tag']
+        if not tag:
+            continue
+        seen = [aid for aid, sc in _scopes.items() if r['dept_code'] in sc]
+        print(f"  {r['employee_id']}  {tag:<20} {r['dept_code']}  ->  "
+              f"{', '.join(seen) if seen else 'KHÔNG AI THẤY — kịch bản demo sẽ hỏng'}")
+except Exception as _e:
+    print(f'\n(bỏ qua kiểm tra tầm nhìn actor: {_e})')
+
+
+# ---------------------------- 13. chọn ngưỡng band bằng số liệu, không bằng cảm --
+# "Bao nhiêu người cần để mắt" là con số sản phẩm, không phải con số kỹ thuật.
+# Gắn cờ 14% nhân sự thì cán bộ quản lý sẽ bỏ qua toàn bộ danh sách.
+_scores = sorted((r['flight_risk_score'] for r in latest
+                  if not r['is_excluded_from_risk_list'] and r['flight_risk_score'] != ''),
+                 reverse=True)
+_n = len(_scores)
+print(f'\n=== CHỌN NGƯỠNG: {_n} nhân sự đủ điều kiện @ {latest_date} ===')
+print(f"{'ngưỡng':>8}{'số người':>10}{'% nhân sự':>11}")
+for th in (33, 38, 40, 45, 50, 55, 66):
+    k = sum(1 for s_ in _scores if s_ >= th)
+    print(f'{th:>8}{k:>10}{100 * k / _n:>10.1f}%')
+print('  (mục tiêu nhóm Trung bình+Cao: khoảng 3-6% — đủ ít để người ta thật sự đọc hết)')
