@@ -17,3 +17,4 @@ __pycache__/
 .agentbase/
 
 out/
+eval*.json

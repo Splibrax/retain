@@ -29,6 +29,17 @@ from agent.llm import make_llm
 # Muốn chạy mock thì phải nói rõ: RETAIN_MOCK=1
 USE_MOCK = os.environ.get("RETAIN_MOCK", "0") == "1"
 
+# NHÃN BẢN DỰNG — sửa TAY mỗi lần dựng image mới.
+#
+# Vì sao cần: endpoint trên AgentBase trỏ tới MỘT version cụ thể. Tạo version mới
+# mà quên trỏ endpoint sang là endpoint vẫn phục vụ bản CŨ — /health vẫn 200, vẫn
+# "mode":"real", mọi thứ xanh, và không có cách nào từ bên ngoài biết mình đang
+# nói chuyện với code nào.
+#
+# Chuỗi này nằm trong image, nên nó đi theo đúng bản code. Thấy nhãn cũ trên
+# /health nghĩa là endpoint chưa được trỏ sang version mới.
+BUILD = os.environ.get("RETAIN_BUILD") or "v4-2026-09-01"
+
 
 class UTF8JSONResponse(JSONResponse):
     """
@@ -96,7 +107,7 @@ def health():
     Runtime yêu cầu endpoint này trả 200. Trả kèm chế độ đang chạy để nhìn một cái
     là biết agent đang dùng model thật hay mock — kiểm tra bắt buộc sau mỗi lần deploy.
     """
-    return {"status": "ok", "mode": "mock" if USE_MOCK else "real"}
+    return {"status": "ok", "mode": "mock" if USE_MOCK else "real", "build": BUILD}
 
 
 @app.post("/chat")

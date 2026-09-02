@@ -84,7 +84,22 @@ def _find(employee_id: str, snapshot: str):
 
 # ─────────────────────────────────────────────────────────────── T1 ─────────
 def list_team_risk(actor: Actor, as_of: str = "latest",
-                   bands=("High", "Medium"), limit: int = 10) -> dict:
+                   bands=("High", "Medium"), limit: int = 5) -> dict:
+    """
+    limit mặc định 5, KHÔNG phải 10 — hạ ngày 1/9 sau khi đo độ trễ.
+
+    Thời gian trả lời tỉ lệ gần như tuyến tính với số chữ model phải viết ra, mà
+    mỗi người trong danh sách là hai dòng chữ. Đo được: câu "đội tôi ai rủi ro cao
+    nhất" mất 49 giây, gần như toàn bộ là thời gian sinh chữ.
+
+    Cắt ở ĐÂY chứ không phải trong lời nhắc là có chủ ý: model không thể liệt kê
+    7 người nếu payload chỉ có 5. Dặn trong lời nhắc là lời khuyên, cắt trong dữ
+    liệu là ràng buộc.
+
+    n_flagged / n_high / scope_headcount VẪN là số đầy đủ, nên câu mở đầu
+    "7 người cần lưu ý trên tổng 149" không bị sai — chỉ phần liệt kê chi tiết
+    là rút gọn.
+    """
     snap = store.latest_snapshot() if as_of == "latest" else as_of
     limit = max(1, min(int(limit), MAX_LIST))
 

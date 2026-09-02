@@ -41,6 +41,31 @@ SYSTEM_DISCLAIMERS = (
 
 NEGATORS = ("không", "chưa", "chẳng")
 
+# ── Chữ không phải hệ La-tinh ────────────────────────────────────────────────
+#
+# GLM là model Trung Quốc. Thỉnh thoảng nó rơi lại ngôn ngữ gốc giữa câu trả lời
+# tiếng Việt — bộ đo ngày 31/8 bắt được một câu trong ca B05:
+#
+#     "...các đơn vị bạn đang được phân quyền.要我帮您查看吗？"
+#
+# 58 bài test không bắt được vì chúng kiểm logic, không kiểm chữ model sinh ra.
+# Chỉ chạy 35 câu thật mới lòi. Trên sân khấu, một dòng tiếng Trung trong câu
+# trả lời về dữ liệu lương là loại lỗi người ta nhớ lâu hơn cả phần demo.
+#
+# Bắt cả ba khối chữ Hán/Nhật/Hàn, không chỉ tiếng Trung: model đa ngữ có thể rơi
+# sang bất kỳ khối nào, và không khối nào trong số đó có lý do xuất hiện ở đây.
+# CHỈ chặn theo hệ chữ viết, KHÔNG đoán ngôn ngữ — đoán thì sai với tên riêng
+# nước ngoài viết bằng chữ La-tinh, mà tên riêng thì phải cho qua.
+CJK_RE = re.compile(
+    "["
+    "぀-ヿ"      # hiragana, katakana
+    "㐀-䶿"      # CJK mở rộng A
+    "一-鿿"      # CJK cơ bản (chữ Hán)
+    "가-힯"      # hangul
+    "！-｠"      # dấu câu toàn rộng (？！，。)
+    "]"
+)
+
 
 def _variants(token: str) -> list[float]:
     """
@@ -79,10 +104,40 @@ def _norm(token: str):
     return v[0] if v else None
 
 
+# Trường chỉ chứa ĐỊNH DANH, không chứa số liệu. Chữ số trong đó không được
+# phép trở thành "số hợp lệ".
+#
+# audit_id là hex NGẪU NHIÊN mỗi lần gọi. Trước khi bịt, tập số hợp lệ đổi theo
+# từng lần chạy: nhóm C — vốn 0 token và đáng lẽ tất định — lúc báo "6.0, 78.0",
+# lúc chỉ "78.0", tuỳ audit_id lần đó có chứa chữ số 6 hay không.
+#
+# Một lớp hậu kiểm mà kết quả đổi giữa các lần chạy trên CÙNG dữ liệu thì không
+# dùng làm bằng chứng được. Đây là lỗi nghiêm trọng hơn cả cái lỗ nó để lọt.
+ID_FIELDS = {"audit_id", "employee_id", "dept_code", "actor_id", "scope_code",
+             "flight_risk_score_key"}
+
+
+def identifier_strings(obj, acc: set | None = None) -> set:
+    """Gom giá trị của các trường định danh, để cắt khỏi câu trả lời trước khi quét."""
+    acc = set() if acc is None else acc
+    if isinstance(obj, dict):
+        for k, v in obj.items():
+            if k in ID_FIELDS and isinstance(v, str) and v:
+                acc.add(v)
+            else:
+                identifier_strings(v, acc)
+    elif isinstance(obj, (list, tuple)):
+        for v in obj:
+            identifier_strings(v, acc)
+    return acc
+
+
 def collect_allowed(obj, acc: set | None = None) -> set:
     """
     Gom mọi con số hợp lệ từ kết quả tool — kể cả số nằm trong chuỗi
     (reason_salary chứa "thấp hơn P50 thị trường 50.7%").
+
+    BỎ QUA các trường định danh: xem ID_FIELDS ở trên.
     """
     acc = set() if acc is None else acc
     if isinstance(obj, bool):
@@ -94,7 +149,9 @@ def collect_allowed(obj, acc: set | None = None) -> set:
             for v in _variants(m):      # nạp mọi cách đọc vào tập cho phép
                 _add(acc, v)
     elif isinstance(obj, dict):
-        for v in obj.values():
+        for k, v in obj.items():
+            if k in ID_FIELDS:
+                continue
             collect_allowed(v, acc)
     elif isinstance(obj, (list, tuple)):
         for v in obj:
@@ -116,16 +173,50 @@ def _add(acc: set, v: float):
 # Số mang tính cấu trúc, luôn cho phép: thang /100, ngưỡng band, trọng số gốc,
 # nhãn P1/P2/P3, 4 yếu tố. KHÔNG cho phép mọi số nhỏ — đếm sai là kiểu bịa
 # hay gặp nhất ("có khoảng 12 người rủi ro cao").
-STRUCTURAL = {0.0, 1.0, 2.0, 3.0, 4.0, 100.0, 66.0, 33.0, 40.0, 30.0, 20.0, 10.0, 50.0}
+# Hằng số cấu trúc — không phải số liệu, nên không cần truy về tool.
+# Thêm 5.0 ngày 1/9: mô hình có ĐÚNG 5 yếu tố, và chính lời nhắc bảo model viết
+# "tính trên bao nhiêu trên 5 yếu tố". Bộ đo bắt được nó ba lần trong một lần chạy.
+STRUCTURAL = {0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 100.0, 66.0, 33.0, 40.0, 30.0, 20.0, 10.0, 50.0}
+
+# MÃ ĐỊNH DANH KHÔNG PHẢI LÀ SỐ.
+#
+# "E001881" bị tách thành "001881" → 1881 → không thấy trong dữ liệu → bắt viết
+# lại. Lần chạy 1/9: 2 trong 5 lần viết lại là do đúng lỗi này. Mỗi lần viết lại
+# là một lượt sinh chữ nữa — đắt nhất trong mọi thứ.
+#
+# Đây là lần thứ ba phần tách số gây chuyện (trước đó là 85 lọt qua vì trùng một
+# giá trị khác). Bài học: cắt sạch những gì KHÔNG phải số TRƯỚC khi quét, thay vì
+# nới điều kiện so khớp — nới thì thủng, cắt thì không.
+# Bắt MỌI mã trộn chữ và số, không chỉ dạng chữ-trước-số: nhân viên "E001881"
+# nhưng đơn vị lại là "01CN000071" — số đứng trước. Điều kiện: từ 5 ký tự trở lên,
+# chỉ gồm chữ HOA và số, và có ít nhất một chữ cái. "P50" (3 ký tự) không dính,
+# đúng ý — 50 vẫn được kiểm như một con số bình thường.
+ID_RE = re.compile(r"\b(?=[A-Z0-9]*[A-Z])[A-Z0-9]{5,}\b")
 
 # Số thứ tự đầu dòng ("1.", "2)") là cấu trúc trình bày, không phải dữ liệu.
 ORDINAL_RE = re.compile(r"^[ \t]*\d+[.)]", re.MULTILINE)
 
 
-def check_numbers(answer: str, tool_results) -> list[float]:
-    """Trả về danh sách số XUẤT HIỆN TRONG CÂU TRẢ LỜI mà không truy được về tool."""
+def check_numbers(answer: str, tool_results, asked: str = "") -> list[float]:
+    """
+    Trả về danh sách số XUẤT HIỆN TRONG CÂU TRẢ LỜI mà không truy được về tool.
+
+    asked: câu hỏi của người dùng. Số nào NGƯỜI HỎI tự đưa ra thì model nhắc lại
+    không phải là bịa — "tăng lương 300% thì sao" rồi trả lời có chữ 300%. Bỏ qua
+    tham số này thì guard vẫn chạy, chỉ là bắt oan như trước.
+    """
     allowed = collect_allowed(tool_results) | STRUCTURAL
+    for m in NUM_RE.findall(ID_RE.sub(" ", asked or "")):
+        for v in _variants(m):
+            allowed.add(v)
+
     text = ORDINAL_RE.sub(" ", answer or "")     # bỏ số thứ tự đầu dòng
+    text = ID_RE.sub(" ", text)                  # mã nhân viên / đơn vị: không phải số
+    # Cắt luôn ĐÚNG các chuỗi định danh có trong kết quả tool. Cần bước này vì
+    # audit_id là hex CHỮ THƯỜNG ("e40c582e") nên ID_RE không bắt được, mà model
+    # thì luôn in nó ra ở dòng nguồn cuối câu trả lời.
+    for ident in sorted(identifier_strings(tool_results), key=len, reverse=True):
+        text = text.replace(ident, " ")
     bad = []
     for m in NUM_RE.findall(text):
         variants = _variants(m)
@@ -153,14 +244,37 @@ def check_phrases(answer: str) -> list[str]:
     return hits
 
 
-def verify(answer: str, tool_results) -> dict:
+def check_script(answer: str) -> list[str]:
+    """
+    Trả về các đoạn chữ không phải hệ La-tinh lọt vào câu trả lời.
+
+    Trả về ĐOẠN chứ không phải từng ký tự, để câu yêu cầu viết lại nói được rõ
+    model phải bỏ cái gì.
+    """
+    if not answer:
+        return []
+    hits, run = [], []
+    for ch in answer:
+        if CJK_RE.match(ch):
+            run.append(ch)
+        elif run:
+            hits.append("".join(run))
+            run = []
+    if run:
+        hits.append("".join(run))
+    return hits
+
+
+def verify(answer: str, tool_results, asked: str = "") -> dict:
     """Kết quả hậu kiểm gộp. ok=False → runtime yêu cầu viết lại một lần."""
-    bad_nums = check_numbers(answer, tool_results)
+    bad_nums = check_numbers(answer, tool_results, asked)
     bad_phr = check_phrases(answer)
+    bad_script = check_script(answer)
     return {
-        "ok": not bad_nums and not bad_phr,
+        "ok": not bad_nums and not bad_phr and not bad_script,
         "unverified_numbers": bad_nums,
         "forbidden_phrases": bad_phr,
+        "foreign_script": bad_script,
     }
 
 
@@ -179,5 +293,12 @@ def correction_prompt(report: dict) -> str:
             f"{', '.join(report['forbidden_phrases'])}. "
             "Bỏ những từ đó. Mô phỏng là giả định, không phải cam kết giữ được người; "
             "vấn đề kỷ luật/pháp lý thì chuyển sang bộ phận pháp chế."
+        )
+    if report.get("foreign_script"):
+        frag = ", ".join(f"“{s}”" for s in report["foreign_script"][:5])
+        bits.append(
+            f"Câu trả lời có chữ không phải tiếng Việt lọt vào: {frag}. "
+            "Viết lại HOÀN TOÀN bằng tiếng Việt. Giữ nguyên mã nhân viên, mã đơn vị "
+            "và các con số."
         )
     return " ".join(bits)

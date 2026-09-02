@@ -77,7 +77,7 @@ def answer(llm, actor_id: str, user_text: str, history=None) -> dict:
         final = out["content"]
 
     # ── B6: hậu kiểm, viết lại một lần nếu sai ──────────────────────────
-    report = guard.verify(final, tool_results)
+    report = guard.verify(final, tool_results, user_text)
     first_draft_report = dict(report)      # giữ lại để biết CÁI GÌ đã kích hoạt
     retried = False
     if not report["ok"]:
@@ -87,13 +87,13 @@ def answer(llm, actor_id: str, user_text: str, history=None) -> dict:
         out2 = llm.chat(messages)
         _acc(usage_total, out2.get("usage"))
         candidate = out2["content"]
-        report2 = guard.verify(candidate, tool_results)
+        report2 = guard.verify(candidate, tool_results, user_text)
         if report2["ok"]:
             final, report = candidate, report2
         else:
             # Vẫn sai → KHÔNG đưa câu bịa ra ngoài. Trả bản dựng từ template.
             final = _fallback(tool_results)
-            report = guard.verify(final, tool_results)
+            report = guard.verify(final, tool_results, user_text)
 
     return {
         "answer": final,
