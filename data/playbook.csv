@@ -1,16 +1,16 @@
 factor,priority,status,action
-salary,P1,draft,Line manager đặt lịch trao đổi riêng trong 2 tuần: hỏi về mức độ gắn bó và mong muốn phát triển. Không hứa hẹn bất kỳ điều chỉnh lương nào ở buổi này.
-salary,P2,draft,"HRBP dựng phương án điều chỉnh kèm số liệu thị trường và vị trí trong dải lương, đưa vào kỳ review gần nhất thay vì chờ nhận offer bên ngoài rồi mới xử lý."
-salary,P3,draft,"Rà soát toàn đơn vị: bao nhiêu phần trăm nhân sự cùng nhóm chức danh đang dưới P50, báo cáo lãnh đạo khối để xử lý theo nhóm thay vì chữa từng ca."
-kpi,P1,draft,"Line manager làm 1-1 trong 2 tuần để tách bạch ba khả năng: không làm được, không muốn làm, hay chỉ tiêu giao chưa hợp lý."
-kpi,P2,draft,"Thống nhất kế hoạch hỗ trợ 90 ngày có mốc đo cụ thể, HRBP theo dõi; nếu nguyên nhân là phân giao thì điều chỉnh chỉ tiêu."
-kpi,P3,draft,Xem lại cách giao và phân bổ chỉ tiêu của đơn vị nếu nhiều nhân sự cùng rơi vào nhóm KPI thấp.
-freeze,P1,draft,"HRBP kiểm tra lý do đóng băng lương còn hợp lệ không, trước khi bàn bất cứ phương án nào khác."
-freeze,P2,draft,"Nếu lý do đóng băng đã hết hiệu lực, đưa vào kỳ điều chỉnh gần nhất và thông báo rõ lộ trình cho nhân sự."
-freeze,P3,draft,Rà soát chính sách đóng băng lương: cơ chế rà lại định kỳ để không ai bị treo quá lâu mà không ai biết.
-seniority,P1,draft,Line manager đối thoại về lộ trình phát triển và mong muốn nghề nghiệp trong 2 tuần.
-seniority,P2,draft,Mở rộng phạm vi công việc hoặc xem xét cơ hội luân chuyển nội bộ; tiền thường không phải đòn bẩy ở nhóm này.
-seniority,P3,draft,Thiết kế lộ trình nghề nghiệp cho nhóm thâm niên đang nằm trong cửa sổ rủi ro.
-promo,P1,draft,Line manager trao đổi riêng trong 2 tuần về lộ trình nghề nghiệp: hỏi người này muốn đi hướng nào trong 12-24 tháng tới và đang thấy vướng ở đâu. Không hứa một vị trí cụ thể nào ở buổi này.
-promo,P2,draft,"HRBP cùng line manager rà cơ hội trong quý: luân chuyển ngang, mở rộng phạm vi công việc, dẫn dắt một dự án, hoặc đưa vào diện quy hoạch. Chốt một cam kết cụ thể có mốc thời gian thay vì để ngỏ."
-promo,P3,draft,"Soát lại cơ cấu đơn vị nếu nhiều nhân sự cùng đứng yên quá 4 năm: có thể là do đơn vị không có bậc trung gian, hoặc do quy hoạch chưa bao giờ được rà. Đây là vấn đề thiết kế tổ chức, không phải vấn đề của từng cá nhân."
+salary,P1,final,Line manager đặt lịch trao đổi riêng trong 2 tuần: hỏi về mức độ gắn bó và mong muốn phát triển. Không hứa hẹn bất kỳ điều chỉnh lương nào ở buổi này.
+salary,P2,final,"HRBP dựng phương án điều chỉnh kèm số liệu thị trường và vị trí trong dải lương, đưa vào kỳ review gần nhất thay vì chờ nhận offer bên ngoài rồi mới xử lý."
+salary,P3,final,"Rà soát toàn đơn vị: bao nhiêu phần trăm nhân sự cùng nhóm chức danh đang dưới P50, báo cáo lãnh đạo khối để xử lý theo nhóm thay vì chữa từng ca."
+kpi,P1,final,"Line manager gặp 1-1 trong 2 tuần để tách bạch ba khả năng: không làm được, không muốn làm, hay chỉ tiêu giao chưa hợp lý."
+kpi,P2,final,"Thống nhất kế hoạch hỗ trợ 90 ngày có mốc đo cụ thể, HRBP theo dõi; nếu nguyên nhân là phân giao thì điều chỉnh chỉ tiêu."
+kpi,P3,final,Xem lại cách giao và phân bổ chỉ tiêu của đơn vị nếu nhiều nhân sự cùng rơi vào nhóm KPI thấp.
+promo,P1,final,Line manager trao đổi riêng trong 2 tuần về lộ trình nghề nghiệp: hỏi người này muốn phát triển theo hướng nào trong 12-24 tháng tới và đang thấy vướng ở đâu. Không hứa một vị trí cụ thể nào ở buổi này.
+promo,P2,final,"HRBP cùng line manager rà cơ hội trong quý: luân chuyển ngang, mở rộng phạm vi công việc, dẫn dắt một dự án, hoặc đưa vào diện quy hoạch. Chốt một cam kết cụ thể có mốc thời gian thay vì để ngỏ."
+promo,P3,final,"Soát lại cơ cấu đơn vị nếu nhiều nhân sự cùng đứng yên quá 4 năm: có thể là do đơn vị không có bậc trung gian, hoặc do quy hoạch chưa bao giờ được rà. Đây là vấn đề thiết kế tổ chức, không phải vấn đề của từng cá nhân."
+freeze,P1,final,HRBP và Line manager rà soát lý do thời gian chưa điều chỉnh lương.
+freeze,P2,final,Trao đổi 1-1 với các CBNV chưa được điều chỉnh lương trên 12 tháng và kết quả kinh doanh hiện tại >100% về nguyện vọng và ghi nhận. Đề xuất với HRBP điều chỉnh các case có kết quả kinh doanh >100%
+freeze,P3,final,Rà soát tổng thể lương của vị trí chức danh so với thị trường và kết quả kinh doanh của từng cá nhân để có điều chỉnh hợp lý tổng thể đối với các chức danh.
+seniority,P1,final,Line manager đối thoại về lộ trình phát triển và mong muốn nghề nghiệp trong 2 tuần.
+seniority,P2,final,Mở rộng phạm vi công việc hoặc xem xét cơ hội luân chuyển nội bộ; tiền thường không phải đòn bẩy ở nhóm này.
+seniority,P3,final,Thiết kế lộ trình nghề nghiệp cho nhóm thâm niên đang nằm trong cửa sổ rủi ro.
