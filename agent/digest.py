@@ -29,7 +29,7 @@ from .scope import resolve_scope
 FACTOR_VI = {
     "salary": "khoảng cách lương so với thị trường",
     "kpi": "điểm KPI",
-    "freeze": "thời gian đóng băng lương",
+    "freeze": "thời gian bị dừng xét điều chỉnh lương",
     "seniority": "cửa sổ rủi ro theo thâm niên",
 }
 

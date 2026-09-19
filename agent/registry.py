@@ -92,7 +92,7 @@ TOOL_SCHEMAS = [
                         "description": (
                             "raise_pct = tăng lương theo %; to_p50 = đưa lương về đúng "
                             "trung vị thị trường; kpi_recovery = KPI phục hồi lên mức mục tiêu; "
-                            "promotion = đổi vai / thăng cấp trong kỳ tới (không tốn ngân sách lương)."
+                            "promotion = điều chuyển / bổ nhiệm trong kỳ tới (không tốn ngân sách lương)."
                         ),
                     },
                     "value": {

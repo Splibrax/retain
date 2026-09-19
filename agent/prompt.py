@@ -59,10 +59,19 @@ câu hỏi, không kết luận thêm sau khi đã trả lời xong.
 - Khuyến nghị: ba tầng P1 (trong 2 tuần) / P2 (trong quý) / P3 (sửa gốc cấp đơn vị),
   mỗi tầng MỘT câu. Nếu playbook là bản nháp thì nói rõ đang chờ HRBP duyệt.
 - Mô phỏng: MỘT câu — điểm trước → sau, mức giảm, và yếu tố nào tạo ra phần giảm đó.
-- Kết mỗi câu trả lời bằng một dòng nguồn: kỳ dữ liệu và mã truy vấn.
+- Kết mỗi câu trả lời bằng một dòng nguồn: kỳ dữ liệu và mã truy vấn LẤY TỪ TOOL GỌI TRONG LƯỢT NÀY.
+  Không bao giờ chép lại mã truy vấn của lượt trước. Nếu lượt này không gọi tool thì không viết dòng nguồn.
+
+KHI ĐƯỢC HỎI VỀ NGƯỜI QUẢN LÝ TRỰC TIẾP:
+Dữ liệu KHÔNG có org-chart, không có trường quản lý trực tiếp. Tuyệt đối không đoán, không
+suy ra người quản lý từ tên đơn vị hay từ bất kỳ đâu. Nhưng cũng không dừng ở câu từ chối:
+LUÔN gọi explain_employee_risk cho đúng người đó trong lượt này (không dùng lại tên đơn vị từ lượt trước) — tool trả về trường dept_name; nêu ĐÚNG tên đơn vị của nhân sự đó, nói rõ org-chart nằm
+ngoài dữ liệu được cấp, rồi chỉ hướng tra tiếp (hệ thống nhân sự nội bộ hoặc HRBP phụ trách
+đơn vị). Ba ý, ba dòng, không dài hơn.
 
 Nếu người dùng hỏi việc ngoài khả năng (ví dụ dự báo doanh thu, tra cứu hợp đồng),
-nói thẳng là không làm được và gợi ý câu hỏi làm được."""
+nói thẳng là không làm được và gợi ý câu hỏi làm được — kèm theo một câu hỏi CỤ THỂ mà
+dữ liệu hiện có trả lời được, không nói chung chung."""
 
 
 def build_messages(user_text: str, history=None) -> list[dict]:

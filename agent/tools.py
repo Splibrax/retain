@@ -115,6 +115,10 @@ def list_team_risk(actor: Actor, as_of: str = "latest",
     items = [{
         "employee_id": r["employee_id"],
         "full_name": store.display_name(r["employee_id"]),
+        # Tên ĐƠN VỊ, không phải người quản lý — dữ liệu không có org-chart.
+        # Có trường này để khi được hỏi "ai quản lý người này", agent còn chỗ
+        # chỉ tiếp thay vì dừng ở một câu từ chối cụt.
+        "dept_name": store.dept_name(r["dept_code"]),
         "score": r["flight_risk_score"],
         "band": r["flight_risk_band"],
         "band_vi": BAND_VI.get(r["flight_risk_band"], r["flight_risk_band"]),
@@ -191,6 +195,7 @@ def explain_employee_risk(actor: Actor, employee_id: str, as_of: str = "latest")
     return {
         "employee_id": employee_id,
         "full_name": store.display_name(employee_id),
+        "dept_name": store.dept_name(r["dept_code"]),
         "snapshot_date": snap,
         "score": r["flight_risk_score"],
         "band": r["flight_risk_band"],
@@ -319,13 +324,13 @@ def simulate_intervention(actor: Actor, employee_id: str, scenario: str,
         label = f"KPI phục hồi lên {value:.0f}/100"
 
     elif scenario == "promotion":
-        # Đổi vai / thăng cấp: đồng hồ "chưa được đổi vai" về 0.
+        # Điều chuyển / bổ nhiệm: đồng hồ "chưa được điều chuyển" về 0.
         # Đây là phương án KHÔNG tốn ngân sách lương, và với người đã được trả
         # trên P50 thì thường là phương án duy nhất còn tác dụng.
         if move is None:
-            raise ScenarioError("Thiếu dữ liệu lịch sử đổi vai, không mô phỏng được")
+            raise ScenarioError("Thiếu dữ liệu lịch sử điều chuyển/bổ nhiệm, không mô phỏng được")
         move = 0
-        label = "Đổi vai / thăng cấp trong kỳ tới"
+        label = "Điều chuyển / bổ nhiệm trong kỳ tới"
 
     else:
         raise ScenarioError(f"Kịch bản không hợp lệ: {scenario}")

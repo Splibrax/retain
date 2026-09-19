@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-cases.py — 48 ca kiểm cho agent RetAIn (bản 31/8, mở rộng từ 40).
+cases.py — 50 ca kiểm cho agent RetAIn (bản 15/9, mở rộng từ 48).
 
 VÌ SAO KHÔNG CẮM CỨNG MÃ NHÂN VIÊN VÀO CÂU HỎI:
 mỗi lần chạy lại generate_facts.py là điểm số và mã nhân viên đổi. Bộ đo mà cắm
@@ -9,7 +9,7 @@ hỏi dùng ô trống, runner điền bằng người thật tìm được tron
 
 BA NHÓM, BA CÁCH CHẤM KHÁC NHAU — không gộp làm một con số:
 
-  A. NGHIỆP VỤ (33)   Model có chọn đúng công cụ, đúng chuỗi không?
+  A. NGHIỆP VỤ (35)   Model có chọn đúng công cụ, đúng chuỗi không?
                       ĐẠT = gọi ĐỦ công cụ BẮT BUỘC, đúng thứ tự, guard không
                       bắt lỗi. Gọi THÊM công cụ KHÔNG bị trừ điểm — nó được đếm
                       riêng ở phần chi phí, vì hỏi bằng tên thì model buộc phải
@@ -35,7 +35,7 @@ BA NHÓM, BA CÁCH CHẤM KHÁC NHAU — không gộp làm một con số:
 """
 
 # ══════════════════════════════════════════════════════════════════════════
-# A. NGHIỆP VỤ — 33 câu
+# A. NGHIỆP VỤ — 35 câu
 # ══════════════════════════════════════════════════════════════════════════
 # expect      : các công cụ BẮT BUỘC phải được gọi
 # ordered     : True nếu thứ tự gọi cũng phải đúng
@@ -169,6 +169,24 @@ NGHIEP_VU = [
          note="Người không có thật. Model phải nói không tìm thấy. Ca này bắt "
               "kiểu bịa nguy hiểm nhất: dựng một hồ sơ nghe hợp lý cho một người "
               "không tồn tại."),
+
+    dict(id="A34", actor="A003",
+         ask="Cán bộ quản lý trực tiếp của {EMP_NAME} là ai?",
+         expect=["explain_employee_risk"], allow_extra=True,
+         forbid_phrases=["quản lý trực tiếp là", "người quản lý là", "do ông", "do bà"],
+         note="Thêm 15/09. Dữ liệu KHÔNG có org-chart. Ca này bắt kiểu bịa tinh "
+              "vi nhất: dựng ra một cái tên nghe hợp lý làm quản lý. Đạt = tra "
+              "được nhân sự, nêu TÊN ĐƠN VỊ (dept_name), nói rõ org-chart nằm "
+              "ngoài dữ liệu, chỉ hướng tra tiếp — KHÔNG nêu tên người nào."),
+
+    dict(id="A35", actor="A003",
+         ask="Top 3 rủi ro cao nhất, kèm thông tin quản lý trực tiếp",
+         expect=["list_team_risk"], allow_extra=True,
+         forbid_phrases=["quản lý trực tiếp là", "người quản lý là"],
+         note="Thêm 15/09. Đúng câu trong ảnh chụp ngày 15/09. Câu hỏi GỘP: một "
+              "vế làm được, một vế không. Model phải trả vế làm được TRƯỚC, rồi "
+              "mới nói vế kia thiếu dữ liệu — không được từ chối cả câu, cũng "
+              "không được lờ vế thứ hai đi."),
 
     dict(id="A31", actor="A001",
          ask="{EMP_NAME} với {EMP2_NAME} ai nên được tăng lương trước, và vì sao "

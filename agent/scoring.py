@@ -32,8 +32,8 @@ FACTOR_ORDER = ("salary", "kpi", "promo", "freeze", "seniority")
 FACTOR_VI = {
     "salary":    "khoảng cách lương so với P50 thị trường",
     "kpi":       "điểm KPI",
-    "promo":     "thời gian chưa đổi vai / thăng cấp",
-    "freeze":    "thời gian đóng băng lương",
+    "promo":     "thời gian chưa được điều chuyển / bổ nhiệm",
+    "freeze":    "thời gian bị dừng xét điều chỉnh lương",
     "seniority": "cửa sổ rủi ro theo thâm niên",
 }
 

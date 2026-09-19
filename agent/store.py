@@ -116,6 +116,41 @@ def rows_for(snapshot_date: str, scope: frozenset[str], active_only: bool = True
 
 
 @lru_cache(maxsize=1)
+def load_dept_names() -> dict:
+    """
+    dim_dept_hierarchy → {dept_code: tên đơn vị}, gom ở MỌI cấp.
+
+    Vì sao phải quét mọi cấp chứ không chỉ lowest_code: 8 mã trong fact table
+    nằm ở cấp trung gian (lvl2/lvl3), không phải node lá — cùng lý do mà
+    scope.py phải match trên mọi cấp (BLUEPRINT §5.4). Chỉ lấy lowest_code là
+    8 người đó mất tên đơn vị.
+
+    ĐÂY KHÔNG PHẢI ORG-CHART. File này ánh xạ mã sang TÊN ĐƠN VỊ, không hề có
+    thông tin ai quản lý ai. Agent chỉ dùng nó để chỉ đường, không được suy ra
+    người quản lý trực tiếp từ đây.
+    """
+    path = _p("dim_dept_hierarchy.csv")
+    if not os.path.exists(path):
+        return {}
+    out: dict = {}
+    with open(path, encoding="utf-8") as f:
+        for r in csv.DictReader(f):
+            for lvl in ("lvl1", "lvl2", "lvl3", "lvl4", "lowest"):
+                code = (r.get(f"{lvl}_code") or "").strip()
+                name = (r.get(f"{lvl}_name") or "").strip()
+                if code and name:
+                    out.setdefault(code, name)
+    return out
+
+
+def dept_name(dept_code: str) -> str:
+    """Tên đơn vị, hoặc chính mã nếu không tra được. Không bao giờ raise."""
+    if not dept_code:
+        return ""
+    return load_dept_names().get(dept_code, dept_code)
+
+
+@lru_cache(maxsize=1)
 def load_playbook() -> dict:
     """
     data/playbook.csv → {factor: {P1, P2, P3}}.

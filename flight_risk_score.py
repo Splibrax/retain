@@ -109,21 +109,42 @@ def reason_kpi(kpi_score):
 
 
 def reason_freeze(freeze_months):
+    """
+    KHÔNG dùng chữ 'đóng băng lương' (sửa 15/09).
+
+    Hai lý do. Một: đó là chữ nặng, hàm ý chế tài, trong khi biến này chỉ đo
+    một cửa sổ kỹ thuật. Hai — quan trọng hơn: freeze_months == 0 KHÔNG có
+    nghĩa là người đó vừa được tăng lương. Nó chỉ có nghĩa là họ không nằm
+    trong cửa sổ dừng xét. Người chưa tới kỳ xét cũng bằng 0. Vì vậy câu phủ
+    định phải nói về DIỆN XÉT, không nói về việc đã tăng hay chưa.
+    """
     if freeze_months is None:
-        return 'Thiếu dữ liệu lương (không xác định pay freeze)'
+        return 'Thiếu dữ liệu lương (không xác định được diện xét điều chỉnh)'
     if freeze_months > 0:
-        return f'Đang bị đóng băng lương {freeze_months} tháng'
-    return 'Không bị đóng băng lương'
+        return f'Bị dừng xét điều chỉnh lương {freeze_months} tháng'
+    return 'Vẫn trong diện xét điều chỉnh lương bình thường'
 
 
-def reason_promo(months_since_move):
+def reason_promo(months_since_move, tenure_months=None):
+    """
+    KHÔNG dùng chữ 'đổi vai' (sửa 15/09) — đó là chữ tự đặt, không phải ngôn
+    ngữ ngân hàng. Từ đúng là ĐIỀU CHUYỂN (ngang) và BỔ NHIỆM (lên).
+
+    Bẫy đã xử lý: trong generate_facts.py, NGÀY VÀO LÀM cũng được tính là một
+    lần 'move' (last_move_idx = hire_idx). Nên người mới vào 3 tháng sẽ ra
+    'Lần điều chuyển gần nhất cách đây 3 tháng' — nghe như vừa được bổ nhiệm,
+    sai hoàn toàn. Khi months_since_move == tenure_months thì chưa từng có lần
+    nào, chỉ có lần vào làm. Nói thẳng điều đó.
+    """
     if months_since_move is None:
-        return 'Thiếu dữ liệu lịch sử đổi vai'
+        return 'Thiếu dữ liệu lịch sử điều chuyển/bổ nhiệm'
+    if tenure_months is not None and months_since_move >= tenure_months:
+        return f'Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm ({tenure_months} tháng)'
     if months_since_move <= scoring.PROMO_RISK_STARTS_AT:
-        return f'Đổi vai gần đây ({months_since_move} tháng trước)'
+        return f'Vừa được điều chuyển/bổ nhiệm ({months_since_move} tháng trước)'
     if months_since_move >= scoring.PROMO_SATURATION_MONTHS:
-        return f'Chưa đổi vai hoặc thăng cấp {months_since_move} tháng'
-    return f'Lần đổi vai gần nhất cách đây {months_since_move} tháng'
+        return f'Chưa được điều chuyển hoặc bổ nhiệm {months_since_move} tháng'
+    return f'Lần điều chuyển/bổ nhiệm gần nhất cách đây {months_since_move} tháng'
 
 
 def reason_seniority(flag, label, tenure_months):
@@ -233,7 +254,7 @@ for wf in workforce:
         'flight_risk_band': band,
         'reason_salary': reason_salary(gap_pct),
         'reason_kpi': reason_kpi(kpi_score),
-        'reason_promo': reason_promo(months_since_move),
+        'reason_promo': reason_promo(months_since_move, tenure_months),
         'reason_freeze': reason_freeze(freeze_months),
         'reason_seniority': reason_seniority(seniority_flag, seniority_label, tenure_months),
     })
