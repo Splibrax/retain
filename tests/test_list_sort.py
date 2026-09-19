@@ -485,3 +485,160 @@ def test_ba_case_moi_dung_gia_tri_hop_le():
         for k, v in args.items():
             assert v in (tools.BAND_INPUT if k == "band" else tools.SORT_FIELDS)
         assert tools.build_actor(c["actor"]).scope, "actor của case phải có scope"
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# 10. Hai quy tắc thêm sau khi duyệt: limit mặc định, và MỘT người cụ thể → explain
+# ══════════════════════════════════════════════════════════════════════════
+def test_prompt_dan_limit_mac_dinh_va_explain_trong_luot_nay():
+    p = prompt.SYSTEM_PROMPT
+    # 1. limit: không nêu số người thì không truyền, không tự tăng
+    assert "KHÔNG truyền" in p and "limit" in p
+    assert "Không tự tăng limit" in p
+    assert "nói rõ số người" in p
+    # 2. một người cụ thể: explain trong lượt này, không dùng lại số cũ
+    assert "HỎI VỀ MỘT NGƯỜI CỤ THỂ" in p
+    flat = " ".join(p.split())          # prompt xuống dòng giữa câu; so theo câu liền
+    assert "ÍT NHẤT MỘT công cụ về đúng người đó TRONG LƯỢT NÀY" in flat
+    assert "không bắt buộc gọi thêm explain_employee_risk" in flat      # câu mô phỏng chỉ cần simulate
+    assert "bạn ấy" in p
+    assert "Không dùng lại con số của lượt trước" in p
+    assert "Không bao giờ đòi người dùng cung cấp mã nhân viên" in p
+
+
+def test_schema_nhac_limit_va_explain_dung_cho_moi_cau_hoi_ve_mot_nguoi():
+    limit_desc = _schema("list_team_risk")["parameters"]["properties"]["limit"]["description"]
+    assert "CHỈ truyền khi người dùng nói rõ số người" in limit_desc
+    assert "mặc định 5" in limit_desc
+    explain = _schema("explain_employee_risk")["description"]
+    assert "ít nhất một công cụ về người đó trong lượt này" in explain and "bạn ấy" in explain
+    assert "không dùng lại số của lượt trước" in explain
+    assert "LUÔN gọi" not in explain, "không còn bắt buộc explain cho mọi câu về một người"
+
+
+class _FakeLLM:
+    """Model giả: lượt 1 gọi list_team_risk với tham số cho trước, lượt 2 trả câu bất kỳ."""
+
+    def __init__(self, args):
+        self.args, self.n = args, 0
+
+    def chat(self, messages, tools=None, tool_choice="auto"):
+        self.n += 1
+        if self.n == 1:
+            return {"content": "", "usage": {},
+                    "tool_calls": [{"id": "x", "name": "list_team_risk", "arguments": self.args}]}
+        return {"content": "Kết quả.", "tool_calls": [], "usage": {}}
+
+
+def _case(**over):
+    from evalset.cases import NGHIEP_VU
+    c = dict(next(c for c in NGHIEP_VU if c["id"] == "A38"))
+    c.update(over)
+    return c
+
+
+def test_bo_cham_eval_bat_model_tu_xin_limit_va_bo_qua_bo_loc():
+    from run_eval import run_nghiep_vu
+    snap = store.latest_snapshot()
+    ok = run_nghiep_vu(_FakeLLM({"sort_by": "kpi"}), _case(table=False), snap)
+    assert ok["ok"], ok["why"]
+    # model xin limit 20 cho câu không có số: runtime đã ép về 5 → vô hiệu hoá bằng code, đạt,
+    # nhưng vẫn ghi lại là model đã cố xin
+    tang = run_nghiep_vu(_FakeLLM({"sort_by": "kpi", "limit": 20}), _case(table=False), snap)
+    assert tang["ok"], tang["why"]
+    assert tang["limit_clamped"] == [20] and "ép limit" in tang["why"]
+    # forbid_args vẫn có hiệu lực với tham số khác không bị ép
+    cam = run_nghiep_vu(_FakeLLM({"sort_by": "kpi"}),
+                        _case(table=False, forbid_args={"list_team_risk": ["limit", "sort_by"]}), snap)
+    assert not cam["ok"] and "sort_by" in cam["why"]
+    quen = run_nghiep_vu(_FakeLLM({}), _case(table=False), snap)
+    assert not quen["ok"] and "sort_by" in quen["why"]
+
+
+def test_case_A36_va_A38_cam_limit_con_A37_thi_khong():
+    from evalset.cases import NGHIEP_VU
+    by = {c["id"]: c for c in NGHIEP_VU}
+    assert by["A36"]["forbid_args"] == {"list_team_risk": ["limit"]}
+    assert by["A38"]["forbid_args"] == {"list_team_risk": ["limit"]}
+    assert "forbid_args" not in by["A37"]
+
+
+def test_prompt_cau_noi_tiep_ke_thua_phuong_an_luot_truoc():
+    """Bắt lỗi thấy khi đo: 'Còn Đỗ Đức Thái?' bị trả lời như câu giải thích, mất 'đòn bẩy đã cạn'."""
+    p = prompt.SYSTEM_PROMPT
+    assert '"Còn X?"' in p and "KẾ THỪA phương án của lượt trước" in p
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# 11. Ép limit bằng code (runtime) — phạm vi hẹp
+# ══════════════════════════════════════════════════════════════════════════
+from agent import runtime                                                     # noqa: E402
+
+
+def _n_items(res):
+    """Số dòng model THỰC SỰ nhận, lấy từ audit: n_rows_returned của lần gọi vừa rồi."""
+    aid = res["audit_ids"][0]
+    return next(e["n_rows_returned"] for e in tools.AUDIT_LOG if e["audit_id"] == aid)
+
+
+@pytest.mark.parametrize("args", [{"sort_by": "kpi", "limit": 20},
+                                  {"band": "Cao", "limit": 20},
+                                  {"band": "Trung bình", "sort_by": "kpi", "limit": 20},
+                                  {"sort_by": "salary_gap", "limit": 8}])
+def test_co_band_hoac_sort_by_va_cau_hoi_khong_co_so_thi_ha_limit_ve_5(args):
+    q = "ai có khoảng cách lương thị trường thấp nhất?"
+    res = runtime.answer(_FakeLLM(dict(args)), "A001", q, None)
+    call = res["tool_calls"][0]
+    assert call["limit_clamped_from"] == args["limit"]
+    assert call["arguments"]["limit"] == args["limit"], "ghi lại đúng cái model xin"
+    assert _n_items(res) <= tools.DEFAULT_LIMIT
+    if args.get("band") != "Cao":           # A001 chỉ có 2 người mức Cao nên bỏ qua để phép so có nghĩa
+        assert _n_items(res) == tools.DEFAULT_LIMIT
+
+
+@pytest.mark.parametrize("q", ["top 10 người KPI thấp nhất", "cho tôi 10 người", "ai thấp lương nhất trong 12 tháng qua?",
+                               "top3 KPI thấp nhất"])
+def test_cau_hoi_co_chu_so_thi_giu_nguyen_limit_model_xin(q):
+    res = runtime.answer(_FakeLLM({"sort_by": "kpi", "limit": 20}), "A001", q, None)
+    assert "limit_clamped_from" not in res["tool_calls"][0]
+    assert _n_items(res) == 20
+
+
+def test_tra_ma_tu_ten_khong_loc_khong_sap_xep_giu_nguyen_limit_20():
+    """Nhánh KHÔNG bị ép: lời gọi thuần list_team_risk(limit=20) để đổi tên thành mã."""
+    for args in ({"limit": 20}, {"limit": 20, "band": None}, {"limit": 20, "sort_by": None}):
+        res = runtime.answer(_FakeLLM(dict(args)), "A003", "Mai Hữu Tuấn có vấn đề gì?", None)
+        assert "limit_clamped_from" not in res["tool_calls"][0], args
+        assert _n_items(res) == 20, args
+
+
+def test_chi_ha_khong_bao_gio_nang_limit():
+    q = "ai KPI thấp nhất team tôi?"
+    for lim in (1, 3, 5):
+        res = runtime.answer(_FakeLLM({"sort_by": "kpi", "limit": lim}), "A001", q, None)
+        assert "limit_clamped_from" not in res["tool_calls"][0]
+        assert _n_items(res) == lim
+    res = runtime.answer(_FakeLLM({"sort_by": "kpi"}), "A001", q, None)          # không truyền limit
+    assert "limit_clamped_from" not in res["tool_calls"][0]
+    assert _n_items(res) == tools.DEFAULT_LIMIT
+
+
+def test_ep_limit_khong_dung_toi_tool_khac_va_gia_tri_rac():
+    q = "ai KPI thấp nhất team tôi?"
+    assert runtime._clamp_list_limit("explain_employee_risk", {"employee_id": "E1", "limit": 20, "sort_by": "kpi"}, q) \
+        == ({"employee_id": "E1", "limit": 20, "sort_by": "kpi"}, None)
+    assert runtime._clamp_list_limit("list_team_risk", {"sort_by": "kpi", "limit": "abc"}, q)[1] is None
+    assert runtime._clamp_list_limit("list_team_risk", {"sort_by": "kpi", "limit": None}, q)[1] is None
+    assert runtime._clamp_list_limit("list_team_risk", {"sort_by": "kpi", "limit": "20"}, q)[0]["limit"] == 5
+    assert runtime._clamp_list_limit(None, {}, q) == ({}, None)
+
+
+def test_ep_limit_van_di_qua_scope_va_gia_tri_la_van_bi_tu_choi():
+    """Ép limit không được làm thủng scope hay nuốt lỗi tham số."""
+    q = "ai KPI thấp nhất?"
+    res = runtime.answer(_FakeLLM({"sort_by": "kpi", "limit": 20, "dept_code": "01CN000028"}), "A002", q, None)
+    assert res["tool_calls"][0]["dropped_params"] == ["dept_code"]
+    inside = {r["employee_id"] for r in _scope_rows("A002")}
+    assert res["scope_size"] == 1 and _n_items(res) == 5 and inside
+    bad = runtime.answer(_FakeLLM({"sort_by": "luong", "limit": 20}), "A001", q, None)
+    assert bad["audit_ids"] == [], "sort_by lạ vẫn bị từ chối (INVALID_PARAM), không có dòng nào"

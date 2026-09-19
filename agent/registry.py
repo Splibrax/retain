@@ -39,7 +39,11 @@ TOOL_SCHEMAS = [
                 "properties": {
                     "limit": {
                         "type": "integer",
-                        "description": "Số người muốn xem, mặc định 5, tối đa 20.",
+                        "description": (
+                            "Số người muốn xem, mặc định 5, tối đa 20. CHỈ truyền khi người "
+                            "dùng nói rõ số người ('top 3', '10 người'); câu 'ai … nhất' không "
+                            "nêu số lượng thì KHÔNG truyền. Ngoại lệ duy nhất: tra mã từ tên."
+                        ),
                     },
                     "band": {
                         "type": "string",
@@ -73,9 +77,11 @@ TOOL_SCHEMAS = [
             "description": (
                 "Giải thích vì sao một nhân sự cụ thể bị chấm điểm rủi ro cao, theo các "
                 "yếu tố có trọng số. Dùng khi người dùng hỏi 'vì sao', 'lý do', 'sao "
-                "bạn ấy bị chấm cao', và khi hỏi về MỘT người cụ thể (lương, KPI, đơn vị, "
-                "người quản lý). Chỉ nhận mã nhân viên; nếu người dùng chỉ nêu tên thì gọi "
-                "list_team_risk trước để lấy mã, đừng hỏi lại người dùng."
+                "bạn ấy bị chấm cao', và khi hỏi lương, KPI, đơn vị, người quản lý của MỘT "
+                "người cụ thể (theo tên, mã, hoặc 'bạn ấy'). Mọi câu hỏi về một người phải "
+                "gọi ít nhất một công cụ về người đó trong lượt này, không dùng lại số của "
+                "lượt trước. Chỉ nhận mã nhân viên; nếu chỉ có tên thì lấy mã từ câu trả lời "
+                "trước hoặc gọi list_team_risk để tìm, đừng hỏi lại người dùng."
             ),
             "parameters": {
                 "type": "object",

@@ -22,6 +22,7 @@ WEIGHTS = scoring.WEIGHTS
 BAND_VI = scoring.BAND_VI
 
 MAX_LIST = 20          # BLUEPRINT §6 T1 — hard cap, LLM xin nhiều hơn cũng không cho
+DEFAULT_LIMIT = 5      # số dòng mặc định của list_team_risk (xem docstring bên dưới)
 AUDIT_LOG: list[dict] = []
 
 # ── Lọc và sắp xếp cho list_team_risk ───────────────────────────────────────
@@ -183,7 +184,7 @@ def _find(employee_id: str, snapshot: str):
 
 # ─────────────────────────────────────────────────────────────── T1 ─────────
 def list_team_risk(actor: Actor, as_of: str = "latest",
-                   bands=("High", "Medium"), limit: int = 5,
+                   bands=("High", "Medium"), limit: int = DEFAULT_LIMIT,
                    band=None, sort_by=None) -> dict:
     """
     band    : None | "Cao" | "Trung bình" | "Thấp" — chỉ lấy người ở đúng mức đó.

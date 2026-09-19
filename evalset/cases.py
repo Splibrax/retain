@@ -44,6 +44,7 @@ BA NHÓM, BA CÁCH CHẤM KHÁC NHAU — không gộp làm một con số:
 # forbid_phrases : cụm từ không được xuất hiện trong câu trả lời
 # allow_extra : giữ lại cho tương thích; không còn ảnh hưởng đến đạt/trượt
 
+# forbid_args : {tên công cụ: [tham số]} — lời gọi công cụ đó KHÔNG được chứa các tham số này
 # expect_args : xem ba ca A36–A38 bên dưới
 # table       : xem ba ca A36–A38 bên dưới
 
@@ -201,7 +202,8 @@ NGHIEP_VU = [
     dict(id="A36", actor="A003",
          ask="ai có khoảng cách lương thị trường thấp nhất?",
          expect=["list_team_risk"], allow_extra=True,
-         expect_args={"list_team_risk": {"sort_by": "salary_gap"}}, table=True,
+         expect_args={"list_team_risk": {"sort_by": "salary_gap"}},
+         forbid_args={"list_team_risk": ["limit"]}, table=True,
          note="Thêm 19/09. 'Khoảng cách lương thấp nhất' = thấp hơn P50 nhiều nhất. "
               "Model phải truyền sort_by=salary_gap. Không truyền thì nó chỉ trả danh "
               "sách xếp theo điểm — đạt về tên công cụ nhưng trả lời SAI câu hỏi."),
@@ -215,7 +217,8 @@ NGHIEP_VU = [
     dict(id="A38", actor="A001",
          ask="ai KPI thấp nhất team tôi?",
          expect=["list_team_risk"], allow_extra=True,
-         expect_args={"list_team_risk": {"sort_by": "kpi"}}, table=True,
+         expect_args={"list_team_risk": {"sort_by": "kpi"}},
+         forbid_args={"list_team_risk": ["limit"]}, table=True,
          note="Thêm 19/09. Phải truyền sort_by=kpi và KHÔNG tự thêm band: hỏi cả đội "
               "thì phải xét cả đội, không chỉ người đã bị gắn cờ."),
 

@@ -192,6 +192,21 @@ def run_nghiep_vu(llm, case, snap) -> dict:
                 ok = False
                 why.append(f"{tool_name} không truyền {need}; đã truyền: {calls or 'không gọi'}")
 
+    # Tham số KHÔNG được truyền — ví dụ model tự xin limit 20 cho câu "ai … nhất".
+    if ok:
+        for tool_name, keys in (case.get("forbid_args") or {}).items():
+            for c in res.get("tool_calls") or []:
+                if (registry.normalize_tool_name(c["name"]) or c["name"]) != tool_name:
+                    continue
+                # limit đã bị runtime ép về mặc định (limit_clamped_from) thì đã được
+                # vô hiệu hoá bằng code — không tính là lỗi, chỉ đếm riêng ở kết quả.
+                bad = [k for k in keys if k in (c.get("arguments") or {})
+                       and not (k == "limit" and "limit_clamped_from" in c)]
+                if bad:
+                    ok = False
+                    why.append(f"{tool_name} tự truyền {bad}: {c.get('arguments')}")
+                    break
+
     # Định dạng danh sách: từ 2 người trở lên phải là bảng 5 cột (quy tắc trong prompt.py).
     if ok and case.get("table"):
         bad = check_table_format(res.get("answer") or "")
@@ -214,7 +229,11 @@ def run_nghiep_vu(llm, case, snap) -> dict:
     if ok and extra:
         note = "đạt · thừa " + ", ".join(sorted(set(extra)))
 
-    return dict(ok=ok, why="; ".join(why) or note, called=called,
+    clamped = [c["limit_clamped_from"] for c in res.get("tool_calls") or []
+               if "limit_clamped_from" in c]
+    if ok and clamped:
+        note += f" · runtime ép limit {clamped} → 5"
+    return dict(ok=ok, why="; ".join(why) or note, called=called, limit_clamped=clamped,
                 extra_calls=len(called) - len(want),
                 retried=res.get("retried", False),
                 # GHI LẠI GUARD BẮT CÁI GÌ ở bản nháp ĐẦU.

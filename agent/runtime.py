@@ -17,11 +17,43 @@ Bước 2 xảy ra TRƯỚC bước 3. Đó là lý do người hỏi không "h�
 from __future__ import annotations
 
 import json
+import re
 
 from . import guard, registry, tools
 from .prompt import build_messages
 
 MAX_TOOL_ROUNDS = 3      # chặn vòng lặp vô hạn nếu model cứ gọi tool
+_DIGIT = re.compile(r"\d")
+
+
+def _clamp_list_limit(tool: str | None, args, user_text: str):
+    """
+    Ép limit về mặc định (5) khi model tự xin nhiều hơn mà người dùng không nêu số nào.
+
+    PHẠM VI HẸP, cố ý: chỉ khi lời gọi list_team_risk có band hoặc sort_by (câu hỏi
+    kiểu "ai … nhất") VÀ câu hỏi không chứa chữ số nào. Lời gọi không lọc/sắp xếp
+    (tra mã từ tên, cần limit 20 để tìm được người) giữ nguyên. Câu có số ("top 10")
+    giữ nguyên limit model xin. Chỉ HẠ, không bao giờ nâng.
+
+    Vì sao bằng code: dặn trong lời nhắc thì model vẫn thỉnh thoảng xin limit 20 —
+    đo được 1/3 lần ở ca A36. Một quy tắc tất định không nên phụ thuộc vào việc
+    model có nghe lời hay không.
+
+    Trả về (args dùng để gọi, limit gốc nếu đã hạ hoặc None).
+    """
+    if tool != "list_team_risk" or not isinstance(args, dict):
+        return args, None
+    if args.get("band") is None and args.get("sort_by") is None:
+        return args, None
+    if _DIGIT.search(user_text or ""):
+        return args, None
+    try:
+        asked = int(args.get("limit"))
+    except (TypeError, ValueError):
+        return args, None
+    if asked <= tools.DEFAULT_LIMIT:
+        return args, None
+    return {**args, "limit": tools.DEFAULT_LIMIT}, asked
 
 
 def answer(llm, actor_id: str, user_text: str, history=None) -> dict:
@@ -62,10 +94,14 @@ def answer(llm, actor_id: str, user_text: str, history=None) -> dict:
             if sig in seen_calls:      # model gọi trùng → bỏ qua, đỡ tốn token
                 continue
             seen_calls.add(sig)
-            result = registry.dispatch(actor, tc["name"], tc["arguments"])   # ← actor tiêm ở đây
+            call_args, clamped_from = _clamp_list_limit(
+                registry.normalize_tool_name(tc["name"]), tc["arguments"], user_text)
+            result = registry.dispatch(actor, tc["name"], call_args)         # ← actor tiêm ở đây
             tool_results.append(result)
             called.append({"name": tc["name"], "arguments": tc["arguments"],
                            "dropped_params": result.get("_dropped_params", [])})
+            if clamped_from is not None:
+                called[-1]["limit_clamped_from"] = clamped_from
             messages.append({"role": "tool", "tool_call_id": tc["id"],
                              "content": json.dumps(result, ensure_ascii=False, default=str)})
 
