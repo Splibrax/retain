@@ -303,10 +303,10 @@ def simulate_intervention(actor: Actor, employee_id: str, scenario: str,
             #
             # Bản trước đặt thẳng gap = 0, nghĩa là mô phỏng GIẢM lương người ta
             # về đúng trung vị rồi gọi đó là phương án giữ chân. Điểm vẫn giảm
-            # (vì chuỗi đóng băng bị phá) nên nhìn qua tưởng hợp lý. Đó là loại
+            # (vì chuỗi dừng xét lương bị phá) nên nhìn qua tưởng hợp lý. Đó là loại
             # lỗi mà hội đồng bắt được là hỏng cả bài.
             #
-            # Không có hành động lương nào xảy ra ⇒ chuỗi đóng băng cũng không
+            # Không có hành động lương nào xảy ra ⇒ chuỗi dừng xét lương cũng không
             # được phá ⇒ điểm không đổi. Đúng bản chất: đòn bẩy này đã cạn.
             salary_lever = False
             label = "Đưa lương về P50 — không áp dụng được, người này đã ở trên P50"

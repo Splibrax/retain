@@ -14,7 +14,7 @@ from __future__ import annotations
 
 # ── Trọng số ────────────────────────────────────────────────────────────────
 # Ba nhóm tín hiệu:
-#   đãi ngộ  = lương (20) + đóng băng (20) = 40  ← nhóm nặng nhất
+#   đãi ngộ  = lương (20) + dừng xét điều chỉnh lương (20) = 40  ← nhóm nặng nhất
 #   phát triển nghề nghiệp = thăng tiến (25)
 #   gắn kết  = KPI (25)
 #   nền thống kê = cửa sổ thâm niên (10)
@@ -62,7 +62,7 @@ FREEZE_SATURATION_MONTHS = 24     # 24 tháng không điều chỉnh → rủi r
 # Đình trệ thăng tiến KHÔNG tính tuyến tính từ 0.
 #
 # Bản đầu dùng min(1, tháng/48): người vừa được thăng chức 12 tháng trước đã mang
-# sẵn 0,25 rủi ro. Sai bản chất — 12 tháng chưa đổi vai là chuyện bình thường,
+# sẵn 0,25 rủi ro. Sai bản chất — 12 tháng chưa điều chuyển/bổ nhiệm là chuyện bình thường,
 # không phải tín hiệu gì cả. Hậu quả đo được: nhóm Trung bình phình lên 159/1.127
 # người (14%), tức là bảo cán bộ quản lý "để mắt tới 26 người" — không dùng được.
 #

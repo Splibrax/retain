@@ -51,7 +51,7 @@ def load_scores() -> tuple[dict, ...]:
         r["kpi_score"] = _to_float(r["kpi_score"])
         r["pay_freeze_months"] = _to_int(r["pay_freeze_months"])
         r["tenure_months"] = _to_int(r["tenure_months"])
-        # Cột của yếu tố "chưa đổi vai". Dữ liệu sinh bằng engine cũ không có cột
+        # Cột của yếu tố "chưa điều chuyển/bổ nhiệm". Dữ liệu sinh bằng engine cũ không có cột
         # này → để None, và scoring sẽ chia lại trọng số cho 4 yếu tố còn lại
         # thay vì coi là 0 tháng (tức là "vừa mới được thăng chức") — sai nguy hiểm.
         r["months_since_last_move"] = _to_int(r.get("months_since_last_move"))
