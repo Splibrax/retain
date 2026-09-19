@@ -187,12 +187,27 @@ def _render(p: dict) -> str:
                 f"{p.get('reason')}. Không đưa ra khuyến nghị giữ chân cho trường hợp này.\n"
                 f"Truy vấn: {p.get('audit_id','')}")
     if "items" in p:
-        lines = [f"Trong phạm vi của anh/chị, kỳ {p['snapshot_date']}: {p['n_flagged']} người "
-                 f"cần lưu ý ({p['n_high']} High, {p['n_medium']} Medium) trên tổng "
-                 f"{p['scope_headcount']} nhân sự."]
-        for i, it in enumerate(p["items"], 1):
-            lines.append(f"{i}. {it['full_name']} ({it['employee_id']}) — {it['score']}/100, "
-                         f"{it['band']}. {it['top_factor']}")
+        if "n_matching" in p:       # đã lọc theo mức / xếp theo yếu tố
+            lines = [f"Trong phạm vi của anh/chị, kỳ {p['snapshot_date']}: {p['n_matching']} người "
+                     f"{p['population_vi']} trên tổng {p['scope_headcount']} nhân sự; "
+                     f"thứ tự: {p['sort_order_vi']}."]
+        else:
+            lines = [f"Trong phạm vi của anh/chị, kỳ {p['snapshot_date']}: {p['n_flagged']} người "
+                     f"cần lưu ý ({p['n_high']} High, {p['n_medium']} Medium) trên tổng "
+                     f"{p['scope_headcount']} nhân sự."]
+        # Từ 2 người trở lên: bảng 5 cột cố định (quy tắc trình bày trong prompt.py).
+        # Một người: viết thành câu.
+        if len(p["items"]) >= 2:
+            lines += ["| Tên | Mã NV | Điểm/100 | Mức | Lý do chính |", "|---|---|---|---|---|"]
+            for it in p["items"]:
+                reason = it.get("sort_value_text") or it["top_factor"]
+                lines.append(f"| {it['full_name']} | {it['employee_id']} | {it['score']} | "
+                             f"{it.get('band_vi') or it['band']} | {reason} |")
+        else:
+            for it in p["items"]:
+                reason = it.get("sort_value_text") or it["top_factor"]
+                lines.append(f"{it['full_name']} ({it['employee_id']}) — {it['score']}/100, "
+                             f"mức {it.get('band_vi') or it['band']}. {reason}")
         if p.get("n_excluded"):
             lines.append(f"{p['n_excluded']} người bị loại theo quy tắc từ 2 thư cảnh cáo trong 12 tháng.")
         lines.append(f"Nguồn: fact_flight_risk_score @ {p['snapshot_date']} · Truy vấn: {p['audit_id']}")

@@ -22,17 +22,45 @@ TOOL_SCHEMAS = [
         "function": {
             "name": "list_team_risk",
             "description": (
-                "Liệt kê nhân sự đang có nguy cơ nghỉ việc trong phạm vi quản lý của "
-                "người đang hỏi. Dùng khi người dùng hỏi 'ai đang muốn đi', 'team mình "
-                "thế nào', 'có ai đáng lo không'."
+                "Liệt kê nhân sự trong phạm vi quản lý của người đang hỏi. Mặc định lấy "
+                "nhóm mức Cao + Trung bình, xếp theo điểm rủi ro giảm dần. Dùng khi người "
+                "dùng hỏi 'ai đang muốn đi', 'team mình thế nào', 'có ai đáng lo không'. "
+                "Có thể LỌC theo mức (band) và SẮP XẾP theo một yếu tố (sort_by): chỉ truyền "
+                "khi người dùng nêu rõ một mức ('những người mức Cao') hoặc hỏi theo một yếu "
+                "tố ('ai KPI thấp nhất', 'lương thấp hơn thị trường nhiều nhất'); xếp theo "
+                "yếu tố mà không nêu mức thì xét cả phạm vi, mọi mức. Hỏi chung chung thì "
+                "KHÔNG truyền hai tham số này. Mỗi dòng kết quả kèm giá trị của "
+                "trường dùng để xếp (sort_value, sort_value_text). KHÔNG dùng để tra một "
+                "người cụ thể — trừ khi chỉ có tên chưa có mã: khi đó gọi với limit 20, "
+                "không band, không sort_by, để lấy mã rồi gọi công cụ khác cho người đó."
             ),
             "parameters": {
                 "type": "object",
                 "properties": {
                     "limit": {
                         "type": "integer",
-                        "description": "Số người muốn xem, mặc định 10, tối đa 20.",
-                    }
+                        "description": "Số người muốn xem, mặc định 5, tối đa 20.",
+                    },
+                    "band": {
+                        "type": "string",
+                        "enum": list(tools.BAND_INPUT),
+                        "description": (
+                            "Chỉ lấy người ở đúng mức này. Chỉ nhận: Cao / Trung bình / Thấp. "
+                            "Không truyền nếu người dùng không nêu mức."
+                        ),
+                    },
+                    "sort_by": {
+                        "type": "string",
+                        "enum": list(tools.SORT_FIELDS),
+                        "description": (
+                            "Xếp theo: score = điểm rủi ro cao nhất trước (mặc định); "
+                            "salary_gap = lương thấp hơn P50 thị trường nhiều nhất trước; "
+                            "kpi = điểm KPI thấp nhất trước; "
+                            "freeze = bị dừng xét điều chỉnh lương lâu nhất trước; "
+                            "promo = lâu chưa điều chuyển/bổ nhiệm nhất trước; "
+                            "tenure = thâm niên dài nhất trước."
+                        ),
+                    },
                 },
                 "required": [],
             },
@@ -43,9 +71,11 @@ TOOL_SCHEMAS = [
         "function": {
             "name": "explain_employee_risk",
             "description": (
-                "Giải thích vì sao một nhân sự cụ thể bị chấm điểm rủi ro cao, theo 4 "
+                "Giải thích vì sao một nhân sự cụ thể bị chấm điểm rủi ro cao, theo các "
                 "yếu tố có trọng số. Dùng khi người dùng hỏi 'vì sao', 'lý do', 'sao "
-                "bạn ấy bị chấm cao'."
+                "bạn ấy bị chấm cao', và khi hỏi về MỘT người cụ thể (lương, KPI, đơn vị, "
+                "người quản lý). Chỉ nhận mã nhân viên; nếu người dùng chỉ nêu tên thì gọi "
+                "list_team_risk trước để lấy mã, đừng hỏi lại người dùng."
             ),
             "parameters": {
                 "type": "object",
@@ -160,6 +190,9 @@ def dispatch(actor: tools.Actor, name: str, args: dict) -> dict:
         result = fn(actor, **clean)
     except tools.ScenarioError as e:
         return {"error": "INVALID_SCENARIO", "message": str(e)}
+    except tools.InvalidParam as e:
+        # Giá trị ngoài danh sách: báo rõ được phép những gì, không đoán ý model.
+        return {"error": "INVALID_PARAM", "message": str(e)}
     except TypeError as e:
         return {"error": "BAD_ARGUMENTS", "message": str(e)}
 

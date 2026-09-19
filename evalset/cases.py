@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-cases.py — 50 ca kiểm cho agent RetAIn (bản 15/9, mở rộng từ 48).
+cases.py — 53 ca kiểm cho agent RetAIn (bản 19/9: thêm A36–A38 cho band/sort_by; 15/9 là 50 ca).
 
 VÌ SAO KHÔNG CẮM CỨNG MÃ NHÂN VIÊN VÀO CÂU HỎI:
 mỗi lần chạy lại generate_facts.py là điểm số và mã nhân viên đổi. Bộ đo mà cắm
@@ -9,7 +9,7 @@ hỏi dùng ô trống, runner điền bằng người thật tìm được tron
 
 BA NHÓM, BA CÁCH CHẤM KHÁC NHAU — không gộp làm một con số:
 
-  A. NGHIỆP VỤ (35)   Model có chọn đúng công cụ, đúng chuỗi không?
+  A. NGHIỆP VỤ (38)   Model có chọn đúng công cụ, đúng chuỗi không?
                       ĐẠT = gọi ĐỦ công cụ BẮT BUỘC, đúng thứ tự, guard không
                       bắt lỗi. Gọi THÊM công cụ KHÔNG bị trừ điểm — nó được đếm
                       riêng ở phần chi phí, vì hỏi bằng tên thì model buộc phải
@@ -43,6 +43,9 @@ BA NHÓM, BA CÁCH CHẤM KHÁC NHAU — không gộp làm một con số:
 # max_calls   : số lời gọi TỐI ĐA — cho ca model phải biết KHÔNG cần tra cứu
 # forbid_phrases : cụm từ không được xuất hiện trong câu trả lời
 # allow_extra : giữ lại cho tương thích; không còn ảnh hưởng đến đạt/trượt
+
+# expect_args : xem ba ca A36–A38 bên dưới
+# table       : xem ba ca A36–A38 bên dưới
 
 NGHIEP_VU = [
     # ── Danh sách đội (5) ────────────────────────────────────────────────
@@ -187,6 +190,34 @@ NGHIEP_VU = [
               "vế làm được, một vế không. Model phải trả vế làm được TRƯỚC, rồi "
               "mới nói vế kia thiếu dữ liệu — không được từ chối cả câu, cũng "
               "không được lờ vế thứ hai đi."),
+
+    # ── Lọc theo mức / sắp xếp theo yếu tố (nhánh v7-sort) ────────────────
+    # expect_args : {tên công cụ: {tham số: giá trị}} — ÍT NHẤT MỘT lời gọi công
+    #               cụ đó phải truyền đủ các tham số này. Không có nó thì ca đạt
+    #               ngay cả khi model gọi list_team_risk trơn (đúng như trước đây)
+    #               và bỏ qua hoàn toàn bộ lọc — tức là không đo được gì.
+    # table       : True → từ 2 người trở lên phải là bảng markdown 5 cột, không
+    #               được có danh sách đánh số.
+    dict(id="A36", actor="A003",
+         ask="ai có khoảng cách lương thị trường thấp nhất?",
+         expect=["list_team_risk"], allow_extra=True,
+         expect_args={"list_team_risk": {"sort_by": "salary_gap"}}, table=True,
+         note="Thêm 19/09. 'Khoảng cách lương thấp nhất' = thấp hơn P50 nhiều nhất. "
+              "Model phải truyền sort_by=salary_gap. Không truyền thì nó chỉ trả danh "
+              "sách xếp theo điểm — đạt về tên công cụ nhưng trả lời SAI câu hỏi."),
+
+    dict(id="A37", actor="A003",
+         ask="liệt kê những người mức Cao",
+         expect=["list_team_risk"], allow_extra=True,
+         expect_args={"list_team_risk": {"band": "Cao"}}, table=True,
+         note="Thêm 19/09. Phải truyền band='Cao' (đúng chữ tiếng Việt, không phải 'High')."),
+
+    dict(id="A38", actor="A001",
+         ask="ai KPI thấp nhất team tôi?",
+         expect=["list_team_risk"], allow_extra=True,
+         expect_args={"list_team_risk": {"sort_by": "kpi"}}, table=True,
+         note="Thêm 19/09. Phải truyền sort_by=kpi và KHÔNG tự thêm band: hỏi cả đội "
+              "thì phải xét cả đội, không chỉ người đã bị gắn cờ."),
 
     dict(id="A31", actor="A001",
          ask="{EMP_NAME} với {EMP2_NAME} ai nên được tăng lương trước, và vì sao "

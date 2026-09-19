@@ -24,6 +24,105 @@ BAND_VI = scoring.BAND_VI
 MAX_LIST = 20          # BLUEPRINT §6 T1 — hard cap, LLM xin nhiều hơn cũng không cho
 AUDIT_LOG: list[dict] = []
 
+# ── Lọc và sắp xếp cho list_team_risk ───────────────────────────────────────
+# Người dùng gọi mức bằng tiếng Việt ("Cao"), dữ liệu lưu tiếng Anh ("High").
+# Ngưỡng KHÔNG nằm ở đây: mức của mỗi dòng đã được scoring.band() ghi sẵn vào
+# flight_risk_band (66 / 38), tool chỉ đọc lại — không tự tính lại ngưỡng.
+BAND_INPUT = {"Cao": "High", "Trung bình": "Medium", "Thấp": "Low"}
+
+# sort_by → cột dữ liệu, chiều sắp, cách gọi thứ tự, đơn vị của sort_value.
+# desc=True: giá trị LỚN lên đầu. Với lương và KPI thì "xấu" là giá trị NHỎ, nên desc=False.
+_SORTS = {
+    "score":      dict(col="flight_risk_score", desc=True,
+                       order_vi="điểm rủi ro cao nhất lên đầu", unit="điểm/100"),
+    "salary_gap": dict(col="salary_gap_to_p50_pct", desc=False,
+                       order_vi="thấp hơn P50 thị trường nhiều nhất lên đầu",
+                       unit="% so với P50 (âm = thấp hơn P50)"),
+    "kpi":        dict(col="kpi_score", desc=False,
+                       order_vi="điểm KPI thấp nhất lên đầu", unit="điểm KPI/100"),
+    "freeze":     dict(col="pay_freeze_months", desc=True,
+                       order_vi="bị dừng xét điều chỉnh lương lâu nhất lên đầu", unit="tháng"),
+    "promo":      dict(col="months_since_last_move", desc=True,
+                       order_vi="lâu chưa điều chuyển/bổ nhiệm nhất lên đầu", unit="tháng"),
+    "tenure":     dict(col="tenure_months", desc=True,
+                       order_vi="thâm niên dài nhất lên đầu", unit="tháng"),
+}
+SORT_FIELDS = tuple(_SORTS)
+
+# Câu lý do đã được pipeline tính sẵn trong CSV — dùng lại đúng chữ đó làm
+# sort_value_text, không tự nghĩ câu mới (thâm niên không có cột lý do riêng).
+_SORT_REASON_COL = {"salary_gap": "reason_salary", "kpi": "reason_kpi",
+                    "freeze": "reason_freeze", "promo": "reason_promo"}
+
+
+class InvalidParam(ValueError):
+    """Tham số ngoài danh sách cho phép. registry.dispatch đổi thành INVALID_PARAM."""
+
+
+def _parse_band(band):
+    """None = không lọc. Giá trị lạ thì báo lỗi rõ ràng, KHÔNG đoán ý."""
+    if band is None:
+        return None
+    if not isinstance(band, str) or band not in BAND_INPUT:
+        raise InvalidParam(
+            f"band = {band!r} không hợp lệ. Chỉ nhận đúng: {' / '.join(BAND_INPUT)}. "
+            "Bỏ trống band để dùng mặc định (Cao + Trung bình).")
+    return BAND_INPUT[band]
+
+
+def _parse_sort(sort_by):
+    if sort_by is None:
+        return None
+    if not isinstance(sort_by, str) or sort_by not in _SORTS:
+        raise InvalidParam(
+            f"sort_by = {sort_by!r} không hợp lệ. Chỉ nhận đúng: {' / '.join(SORT_FIELDS)}. "
+            "Bỏ trống sort_by để xếp theo điểm rủi ro (score).")
+    return sort_by
+
+
+def _sort_rows(rows, name):
+    """
+    Sắp theo một yếu tố. Hoà thì điểm rủi ro cao hơn đứng trước, hoà nữa thì giữ
+    thứ tự gốc của dữ liệu (sorted ổn định). Dòng THIẾU giá trị xuống cuối thay
+    vì bị coi là 0 — thiếu dữ liệu và bằng 0 là hai chuyện khác nhau.
+    """
+    spec = _SORTS[name]
+
+    def key(r):
+        v = r.get(spec["col"])
+        if v is None:
+            return (1, 0, 0)
+        return (0, -v if spec["desc"] else v, -r["flight_risk_score"])
+
+    return sorted(rows, key=key)
+
+
+def _sort_value(r, name):
+    """Giá trị theo ĐƠN VỊ HIỂN THỊ. Chênh lệch lương lưu dạng phân số (-0.48) → đổi ra % (-48.0)."""
+    v = r.get(_SORTS[name]["col"])
+    if v is None:
+        return None
+    return round(v * 100, 1) if name == "salary_gap" else v
+
+
+def _sort_text(r, name):
+    """
+    Chuỗi có sẵn con số dùng để sắp xếp, để model chép nguyên và guard truy được.
+
+    Vì sao cần cả chuỗi chứ không chỉ số: chênh lệch lương là số ÂM (-48.0) còn
+    câu văn viết "thấp hơn 48,0%" — guard chỉ nạp -48.0 từ trường số, nên con số
+    dương model viết ra sẽ bị bắt oan. Chuỗi thì mang sẵn "48.0" dương.
+    """
+    if r.get(_SORTS[name]["col"]) is None:
+        return "Không có dữ liệu"
+    if name == "tenure":
+        return f"Thâm niên {r['tenure_months']} tháng"
+    col = _SORT_REASON_COL.get(name)
+    text = r.get(col) if col else None
+    if text:
+        return text
+    return f"{_sort_value(r, name)} {_SORTS[name]['unit']}"
+
 
 # ─────────────────────────────────────────────────────────── actor & audit ──
 @dataclass(frozen=True)
@@ -84,8 +183,25 @@ def _find(employee_id: str, snapshot: str):
 
 # ─────────────────────────────────────────────────────────────── T1 ─────────
 def list_team_risk(actor: Actor, as_of: str = "latest",
-                   bands=("High", "Medium"), limit: int = 5) -> dict:
+                   bands=("High", "Medium"), limit: int = 5,
+                   band=None, sort_by=None) -> dict:
     """
+    band    : None | "Cao" | "Trung bình" | "Thấp" — chỉ lấy người ở đúng mức đó.
+    sort_by : None | "score" | "salary_gap" | "kpi" | "freeze" | "promo" | "tenure".
+    Giá trị nào ngoài danh sách thì raise InvalidParam (dispatch → INVALID_PARAM).
+
+    GỌI KHÔNG KÈM band / sort_by thì kết quả GIỐNG HỆT bản trước khi có hai tham số
+    này — kể cả tập khoá của dict (tests/test_list_sort.py so với file vàng lấy từ
+    master). Các trường mới (band_filter, sort_by, n_matching, sort_value...) chỉ
+    xuất hiện khi có ít nhất một trong hai tham số.
+
+    n_flagged / n_high / n_medium luôn nói về nhóm Cao + Trung bình, KHÔNG đổi theo
+    bộ lọc; số người khớp bộ lọc là n_matching, nhóm đang xét ghi ở population_vi:
+    có band → đúng mức đó; sort_by ≠ score mà không có band → cả phạm vi (mọi mức);
+    còn lại → Cao + Trung bình như cũ.
+
+    (bands= là tham số nội bộ cũ, vẫn giữ cho test; LLM chỉ được thấy band.)
+
     limit mặc định 5, KHÔNG phải 10 — hạ ngày 1/9 sau khi đo độ trễ.
 
     Thời gian trả lời tỉ lệ gần như tuyến tính với số chữ model phải viết ra, mà
@@ -100,6 +216,11 @@ def list_team_risk(actor: Actor, as_of: str = "latest",
     "7 người cần lưu ý trên tổng 149" không bị sai — chỉ phần liệt kê chi tiết
     là rút gọn.
     """
+    # Kiểm tham số TRƯỚC khi đụng tới dữ liệu: giá trị lạ thì dừng, không đoán.
+    want_band = _parse_band(band)
+    sort_name = _parse_sort(sort_by)
+    extended = band is not None or sort_by is not None
+
     snap = store.latest_snapshot() if as_of == "latest" else as_of
     limit = max(1, min(int(limit), MAX_LIST))
 
@@ -109,8 +230,33 @@ def list_team_risk(actor: Actor, as_of: str = "latest",
             if not r["is_excluded_from_risk_list"]
             and r["flight_risk_band"] in bands
             and r["flight_risk_score"] is not None]
-    elig.sort(key=lambda r: -r["flight_risk_score"])
-    top = elig[:limit]
+    # Người khớp bộ lọc — ba trường hợp:
+    #   có band                    → đúng mức đó
+    #   xếp theo yếu tố (≠ score)  → CẢ phạm vi, mọi mức
+    #   còn lại                    → elig (Cao + Trung bình) như cũ
+    # Vì sao xếp theo yếu tố thì phải xét cả phạm vi: hỏi "ai KPI/lương thấp nhất
+    # đội tôi" mà chỉ xét nhóm Cao + Trung bình thì người đứng thứ hai có thể SAI —
+    # đo trên A001: chỉ trong nhóm gắn cờ, người thấp lương thứ hai là -26,7%,
+    # nhưng cả đội có người mức Thấp thấp hơn (-33,5%).
+    # Người bị loại theo quy tắc cứng không bao giờ lên danh sách, bất kể trường hợp nào.
+    whole_scope = [r for r in pool
+                   if not r["is_excluded_from_risk_list"]
+                   and r["flight_risk_score"] is not None]
+    if want_band:
+        match = [r for r in whole_scope if r["flight_risk_band"] == want_band]
+        population_vi = f"mức {band}"
+    elif sort_name not in (None, "score"):
+        match = whole_scope
+        population_vi = "ở mọi mức"
+    else:
+        match = elig
+        population_vi = "mức Cao + Trung bình"
+
+    if sort_name in (None, "score"):
+        match = sorted(match, key=lambda r: -r["flight_risk_score"])    # đúng như cũ
+    else:
+        match = _sort_rows(match, sort_name)
+    top = match[:limit]
 
     items = [{
         "employee_id": r["employee_id"],
@@ -125,7 +271,7 @@ def list_team_risk(actor: Actor, as_of: str = "latest",
         "top_factor": _top_factor_reason(r),
     } for r in top]
 
-    return {
+    res = {
         "snapshot_date": snap,
         "scope_headcount": len(pool),
         "n_flagged": len(elig),
@@ -140,6 +286,29 @@ def list_team_risk(actor: Actor, as_of: str = "latest",
         "status": "ok" if items else "no_risk",
         "audit_id": _audit(actor, "list_team_risk", None, len(items)),
     }
+
+    if extended:
+        name = sort_name or "score"
+        spec = _SORTS[name]
+        # Mỗi dòng mang giá trị của CHÍNH trường dùng để xếp — để guard truy được số
+        # và để người đọc thấy vì sao người này đứng ở đó. Xếp theo score thì điểm
+        # đã nằm sẵn trong "score", nên chỉ thêm chuỗi khi xếp theo yếu tố khác.
+        for it, r in zip(items, top):
+            it["sort_value"] = _sort_value(r, name)
+            if name != "score":
+                it["sort_value_text"] = _sort_text(r, name)
+        res.update({
+            "band_filter": band,                     # đúng chữ tiếng Việt đã lọc, hoặc None
+            "population_vi": population_vi,          # đang xét nhóm nào — để câu mở đầu nói đúng
+            "sort_by": name,
+            "sort_order_vi": spec["order_vi"],
+            "sort_unit": spec["unit"],
+            "n_matching": len(match),                # số người khớp bộ lọc, TRƯỚC khi cắt limit
+            "n_missing_sort_value": sum(1 for r in match if r.get(spec["col"]) is None),
+        })
+        if not items:
+            res["status"] = "no_match"
+    return res
 
 
 def _comps_of(r) -> dict:

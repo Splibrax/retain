@@ -1,0 +1,2494 @@
+{
+ "_meta": {
+  "bo_qua": "audit_id (ngẫu nhiên mỗi lần gọi)",
+  "nguon": "list_team_risk của master e568923, trước khi thêm band/sort_by",
+  "snapshot_moi_nhat": "2025-12-01"
+ },
+ "cases": {
+  "A001|ca_ba_band": {
+   "kwargs": {
+    "bands": [
+     "High",
+     "Medium",
+     "Low"
+    ],
+    "limit": 20
+   },
+   "result": {
+    "exclusion_rule": "Bị loại theo quy tắc cứng: có từ 2 thư cảnh cáo trong 12 tháng gần nhất",
+    "items": [
+     {
+      "band": "High",
+      "band_vi": "Cao",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001889",
+      "full_name": "Đỗ Đức Thái",
+      "score": 68.26,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (59 tháng)"
+     },
+     {
+      "band": "High",
+      "band_vi": "Cao",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001881",
+      "full_name": "Mai Hữu Tuấn",
+      "score": 67.01,
+      "top_factor": "Điểm KPI 11.1/100"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001890",
+      "full_name": "Lý Nhật Khánh",
+      "score": 51.76,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (59 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Phân tích Kinh doanh Cấp 1",
+      "employee_id": "E000178",
+      "full_name": "Bùi Công Nghĩa",
+      "score": 43.14,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (143 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Tổ Phát triển Sản phẩm Cấp 1",
+      "employee_id": "E000641",
+      "full_name": "Cao Cảnh",
+      "score": 41.93,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (51 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Điều phối Hoạt động Kinh doanh Miền Nam",
+      "employee_id": "E000293",
+      "full_name": "Lâm Đức Khoa",
+      "score": 41.1,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (68 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Tổ Thẩm định Khách hàng Cấp 1",
+      "employee_id": "E000435",
+      "full_name": "Hà Việt Hiếu",
+      "score": 38.21,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (90 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Phòng Khách hàng Tổ chức Miền Bắc",
+      "employee_id": "E000440",
+      "full_name": "Thái Tuyết Hằng",
+      "score": 37.76,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (115 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Tổ Phát triển Sản phẩm Cấp 1",
+      "employee_id": "E000039",
+      "full_name": "Nguyễn Duy Hải",
+      "score": 37.18,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (71 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E000407",
+      "full_name": "Cao Xuân Lan",
+      "score": 36.91,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (66 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Phòng Khách hàng Tổ chức Miền Bắc",
+      "employee_id": "E000574",
+      "full_name": "Lâm Mạnh Dũng",
+      "score": 35.61,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (55 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Phòng Khách hàng Tổ chức Miền Bắc",
+      "employee_id": "E000392",
+      "full_name": "Vương Thanh Hoa",
+      "score": 35.25,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (64 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Trung tâm Khách hàng Lớn Cấp 2",
+      "employee_id": "E000368",
+      "full_name": "Đoàn Diệu Dung",
+      "score": 35.15,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (104 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Phòng Phân tích Dữ liệu Kinh doanh Cấp 3",
+      "employee_id": "E000472",
+      "full_name": "Dương Phương Vân",
+      "score": 35.0,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (68 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Phòng Khách hàng Tổ chức Miền Bắc",
+      "employee_id": "E000593",
+      "full_name": "Vương Bảo Nga",
+      "score": 34.77,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (54 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Tổ Thẩm định Khách hàng Cấp 1",
+      "employee_id": "E000122",
+      "full_name": "Phan Thu Vy",
+      "score": 34.62,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (127 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Phòng Hỗ trợ Tín dụng Khu vực 1",
+      "employee_id": "E000341",
+      "full_name": "Lương Hoài Trang",
+      "score": 31.82,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (68 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Phòng Khách hàng Vừa và Nhỏ Khu vực 2",
+      "employee_id": "E000177",
+      "full_name": "Kiều Hiếu",
+      "score": 31.81,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (89 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Trung tâm Khách hàng Lớn Cấp 2",
+      "employee_id": "E000863",
+      "full_name": "Kiều Minh Tâm",
+      "score": 31.5,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (39 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Phòng Hỗ trợ Tín dụng Khu vực 1",
+      "employee_id": "E000882",
+      "full_name": "Vương Bảo Ngân",
+      "score": 29.95,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (38 tháng)"
+     }
+    ],
+    "n_excluded": 2,
+    "n_flagged": 147,
+    "n_high": 2,
+    "n_medium": 5,
+    "scope_headcount": 149,
+    "snapshot_date": "2025-12-01",
+    "status": "ok"
+   }
+  },
+  "A001|chi_High": {
+   "kwargs": {
+    "bands": [
+     "High"
+    ],
+    "limit": 20
+   },
+   "result": {
+    "exclusion_rule": "Bị loại theo quy tắc cứng: có từ 2 thư cảnh cáo trong 12 tháng gần nhất",
+    "items": [
+     {
+      "band": "High",
+      "band_vi": "Cao",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001889",
+      "full_name": "Đỗ Đức Thái",
+      "score": 68.26,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (59 tháng)"
+     },
+     {
+      "band": "High",
+      "band_vi": "Cao",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001881",
+      "full_name": "Mai Hữu Tuấn",
+      "score": 67.01,
+      "top_factor": "Điểm KPI 11.1/100"
+     }
+    ],
+    "n_excluded": 2,
+    "n_flagged": 2,
+    "n_high": 2,
+    "n_medium": 0,
+    "scope_headcount": 149,
+    "snapshot_date": "2025-12-01",
+    "status": "ok"
+   }
+  },
+  "A001|ky_truoc": {
+   "kwargs": {
+    "as_of": "2025-11-01"
+   },
+   "result": {
+    "exclusion_rule": "Bị loại theo quy tắc cứng: có từ 2 thư cảnh cáo trong 12 tháng gần nhất",
+    "items": [
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001889",
+      "full_name": "Đỗ Đức Thái",
+      "score": 65.74,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (58 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001881",
+      "full_name": "Mai Hữu Tuấn",
+      "score": 62.15,
+      "top_factor": "Điểm KPI 19.1/100"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Định phí Khu vực 1",
+      "employee_id": "E001887",
+      "full_name": "Tô Ngọc",
+      "score": 60.19,
+      "top_factor": "Điểm KPI 5.0/100"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001890",
+      "full_name": "Lý Nhật Khánh",
+      "score": 50.32,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (58 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Phân tích Kinh doanh Cấp 1",
+      "employee_id": "E000178",
+      "full_name": "Bùi Công Nghĩa",
+      "score": 47.05,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (142 tháng)"
+     }
+    ],
+    "n_excluded": 1,
+    "n_flagged": 8,
+    "n_high": 0,
+    "n_medium": 8,
+    "scope_headcount": 144,
+    "snapshot_date": "2025-11-01",
+    "status": "ok"
+   }
+  },
+  "A001|limit_3": {
+   "kwargs": {
+    "limit": 3
+   },
+   "result": {
+    "exclusion_rule": "Bị loại theo quy tắc cứng: có từ 2 thư cảnh cáo trong 12 tháng gần nhất",
+    "items": [
+     {
+      "band": "High",
+      "band_vi": "Cao",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001889",
+      "full_name": "Đỗ Đức Thái",
+      "score": 68.26,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (59 tháng)"
+     },
+     {
+      "band": "High",
+      "band_vi": "Cao",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001881",
+      "full_name": "Mai Hữu Tuấn",
+      "score": 67.01,
+      "top_factor": "Điểm KPI 11.1/100"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001890",
+      "full_name": "Lý Nhật Khánh",
+      "score": 51.76,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (59 tháng)"
+     }
+    ],
+    "n_excluded": 2,
+    "n_flagged": 7,
+    "n_high": 2,
+    "n_medium": 5,
+    "scope_headcount": 149,
+    "snapshot_date": "2025-12-01",
+    "status": "ok"
+   }
+  },
+  "A001|limit_999": {
+   "kwargs": {
+    "limit": 999
+   },
+   "result": {
+    "exclusion_rule": "Bị loại theo quy tắc cứng: có từ 2 thư cảnh cáo trong 12 tháng gần nhất",
+    "items": [
+     {
+      "band": "High",
+      "band_vi": "Cao",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001889",
+      "full_name": "Đỗ Đức Thái",
+      "score": 68.26,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (59 tháng)"
+     },
+     {
+      "band": "High",
+      "band_vi": "Cao",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001881",
+      "full_name": "Mai Hữu Tuấn",
+      "score": 67.01,
+      "top_factor": "Điểm KPI 11.1/100"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001890",
+      "full_name": "Lý Nhật Khánh",
+      "score": 51.76,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (59 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Phân tích Kinh doanh Cấp 1",
+      "employee_id": "E000178",
+      "full_name": "Bùi Công Nghĩa",
+      "score": 43.14,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (143 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Tổ Phát triển Sản phẩm Cấp 1",
+      "employee_id": "E000641",
+      "full_name": "Cao Cảnh",
+      "score": 41.93,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (51 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Điều phối Hoạt động Kinh doanh Miền Nam",
+      "employee_id": "E000293",
+      "full_name": "Lâm Đức Khoa",
+      "score": 41.1,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (68 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Tổ Thẩm định Khách hàng Cấp 1",
+      "employee_id": "E000435",
+      "full_name": "Hà Việt Hiếu",
+      "score": 38.21,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (90 tháng)"
+     }
+    ],
+    "n_excluded": 2,
+    "n_flagged": 7,
+    "n_high": 2,
+    "n_medium": 5,
+    "scope_headcount": 149,
+    "snapshot_date": "2025-12-01",
+    "status": "ok"
+   }
+  },
+  "A001|mac_dinh": {
+   "kwargs": {},
+   "result": {
+    "exclusion_rule": "Bị loại theo quy tắc cứng: có từ 2 thư cảnh cáo trong 12 tháng gần nhất",
+    "items": [
+     {
+      "band": "High",
+      "band_vi": "Cao",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001889",
+      "full_name": "Đỗ Đức Thái",
+      "score": 68.26,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (59 tháng)"
+     },
+     {
+      "band": "High",
+      "band_vi": "Cao",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001881",
+      "full_name": "Mai Hữu Tuấn",
+      "score": 67.01,
+      "top_factor": "Điểm KPI 11.1/100"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001890",
+      "full_name": "Lý Nhật Khánh",
+      "score": 51.76,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (59 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Phân tích Kinh doanh Cấp 1",
+      "employee_id": "E000178",
+      "full_name": "Bùi Công Nghĩa",
+      "score": 43.14,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (143 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Tổ Phát triển Sản phẩm Cấp 1",
+      "employee_id": "E000641",
+      "full_name": "Cao Cảnh",
+      "score": 41.93,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (51 tháng)"
+     }
+    ],
+    "n_excluded": 2,
+    "n_flagged": 7,
+    "n_high": 2,
+    "n_medium": 5,
+    "scope_headcount": 149,
+    "snapshot_date": "2025-12-01",
+    "status": "ok"
+   }
+  },
+  "A002|ca_ba_band": {
+   "kwargs": {
+    "bands": [
+     "High",
+     "Medium",
+     "Low"
+    ],
+    "limit": 20
+   },
+   "result": {
+    "exclusion_rule": "",
+    "items": [
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E001882",
+      "full_name": "Mai Diệu Thu",
+      "score": 60.83,
+      "top_factor": "Điểm KPI 24.7/100"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E000064",
+      "full_name": "Bùi Ngọc Huệ",
+      "score": 39.38,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (64 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E000084",
+      "full_name": "Vương Đình Minh",
+      "score": 38.75,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (97 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E000335",
+      "full_name": "Trịnh Khoa",
+      "score": 38.73,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (107 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E000232",
+      "full_name": "Lê Mạnh Tân",
+      "score": 38.45,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (132 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E000303",
+      "full_name": "Dương Ngọc Hoài",
+      "score": 37.3,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (91 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E001324",
+      "full_name": "Phạm Mạnh Huy",
+      "score": 36.31,
+      "top_factor": "Điểm KPI 23.8/100"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E000008",
+      "full_name": "Lê Hữu Vũ",
+      "score": 35.23,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (114 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E000223",
+      "full_name": "Bùi Thanh Hoài",
+      "score": 34.96,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (60 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E000120",
+      "full_name": "Vũ Kiều Dung",
+      "score": 34.08,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (89 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E000426",
+      "full_name": "Nguyễn Xuân Cường",
+      "score": 30.47,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (88 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E000253",
+      "full_name": "Bùi Loan",
+      "score": 29.12,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (124 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E000329",
+      "full_name": "Tô Đức",
+      "score": 28.76,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (93 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E000623",
+      "full_name": "Mai Mạnh Nguyên",
+      "score": 28.1,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (52 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E000050",
+      "full_name": "Đinh Lan Tuyết",
+      "score": 28.0,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (126 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E000778",
+      "full_name": "Đặng Vân",
+      "score": 26.05,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (43 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E000675",
+      "full_name": "Trịnh Hà Hằng",
+      "score": 24.87,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (49 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E001476",
+      "full_name": "Đinh Khánh",
+      "score": 24.42,
+      "top_factor": "Điểm KPI 35.4/100"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E000042",
+      "full_name": "Chu Khánh Yến",
+      "score": 22.81,
+      "top_factor": "Lần điều chuyển/bổ nhiệm gần nhất cách đây 47 tháng"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E000956",
+      "full_name": "Phạm Trung Nghĩa",
+      "score": 21.71,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (35 tháng)"
+     }
+    ],
+    "n_excluded": 0,
+    "n_flagged": 67,
+    "n_high": 0,
+    "n_medium": 5,
+    "scope_headcount": 67,
+    "snapshot_date": "2025-12-01",
+    "status": "ok"
+   }
+  },
+  "A002|chi_High": {
+   "kwargs": {
+    "bands": [
+     "High"
+    ],
+    "limit": 20
+   },
+   "result": {
+    "exclusion_rule": "",
+    "items": [],
+    "n_excluded": 0,
+    "n_flagged": 0,
+    "n_high": 0,
+    "n_medium": 0,
+    "scope_headcount": 67,
+    "snapshot_date": "2025-12-01",
+    "status": "no_risk"
+   }
+  },
+  "A002|ky_truoc": {
+   "kwargs": {
+    "as_of": "2025-11-01"
+   },
+   "result": {
+    "exclusion_rule": "",
+    "items": [
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E001882",
+      "full_name": "Mai Diệu Thu",
+      "score": 60.47,
+      "top_factor": "Điểm KPI 21.9/100"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E000335",
+      "full_name": "Trịnh Khoa",
+      "score": 42.69,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (106 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E000232",
+      "full_name": "Lê Mạnh Tân",
+      "score": 41.25,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (131 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E000084",
+      "full_name": "Vương Đình Minh",
+      "score": 40.96,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (96 tháng)"
+     }
+    ],
+    "n_excluded": 0,
+    "n_flagged": 4,
+    "n_high": 0,
+    "n_medium": 4,
+    "scope_headcount": 67,
+    "snapshot_date": "2025-11-01",
+    "status": "ok"
+   }
+  },
+  "A002|limit_3": {
+   "kwargs": {
+    "limit": 3
+   },
+   "result": {
+    "exclusion_rule": "",
+    "items": [
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E001882",
+      "full_name": "Mai Diệu Thu",
+      "score": 60.83,
+      "top_factor": "Điểm KPI 24.7/100"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E000064",
+      "full_name": "Bùi Ngọc Huệ",
+      "score": 39.38,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (64 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E000084",
+      "full_name": "Vương Đình Minh",
+      "score": 38.75,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (97 tháng)"
+     }
+    ],
+    "n_excluded": 0,
+    "n_flagged": 5,
+    "n_high": 0,
+    "n_medium": 5,
+    "scope_headcount": 67,
+    "snapshot_date": "2025-12-01",
+    "status": "ok"
+   }
+  },
+  "A002|limit_999": {
+   "kwargs": {
+    "limit": 999
+   },
+   "result": {
+    "exclusion_rule": "",
+    "items": [
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E001882",
+      "full_name": "Mai Diệu Thu",
+      "score": 60.83,
+      "top_factor": "Điểm KPI 24.7/100"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E000064",
+      "full_name": "Bùi Ngọc Huệ",
+      "score": 39.38,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (64 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E000084",
+      "full_name": "Vương Đình Minh",
+      "score": 38.75,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (97 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E000335",
+      "full_name": "Trịnh Khoa",
+      "score": 38.73,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (107 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E000232",
+      "full_name": "Lê Mạnh Tân",
+      "score": 38.45,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (132 tháng)"
+     }
+    ],
+    "n_excluded": 0,
+    "n_flagged": 5,
+    "n_high": 0,
+    "n_medium": 5,
+    "scope_headcount": 67,
+    "snapshot_date": "2025-12-01",
+    "status": "ok"
+   }
+  },
+  "A002|mac_dinh": {
+   "kwargs": {},
+   "result": {
+    "exclusion_rule": "",
+    "items": [
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E001882",
+      "full_name": "Mai Diệu Thu",
+      "score": 60.83,
+      "top_factor": "Điểm KPI 24.7/100"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E000064",
+      "full_name": "Bùi Ngọc Huệ",
+      "score": 39.38,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (64 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E000084",
+      "full_name": "Vương Đình Minh",
+      "score": 38.75,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (97 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E000335",
+      "full_name": "Trịnh Khoa",
+      "score": 38.73,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (107 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E000232",
+      "full_name": "Lê Mạnh Tân",
+      "score": 38.45,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (132 tháng)"
+     }
+    ],
+    "n_excluded": 0,
+    "n_flagged": 5,
+    "n_high": 0,
+    "n_medium": 5,
+    "scope_headcount": 67,
+    "snapshot_date": "2025-12-01",
+    "status": "ok"
+   }
+  },
+  "A003|ca_ba_band": {
+   "kwargs": {
+    "bands": [
+     "High",
+     "Medium",
+     "Low"
+    ],
+    "limit": 20
+   },
+   "result": {
+    "exclusion_rule": "Bị loại theo quy tắc cứng: có từ 2 thư cảnh cáo trong 12 tháng gần nhất",
+    "items": [
+     {
+      "band": "High",
+      "band_vi": "Cao",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001889",
+      "full_name": "Đỗ Đức Thái",
+      "score": 68.26,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (59 tháng)"
+     },
+     {
+      "band": "High",
+      "band_vi": "Cao",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001881",
+      "full_name": "Mai Hữu Tuấn",
+      "score": 67.01,
+      "top_factor": "Điểm KPI 11.1/100"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E001882",
+      "full_name": "Mai Diệu Thu",
+      "score": 60.83,
+      "top_factor": "Điểm KPI 24.7/100"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Trung tâm Vận hành Sản phẩm Cấp 3",
+      "employee_id": "E001883",
+      "full_name": "Võ Hải Diệp",
+      "score": 55.09,
+      "top_factor": "Điểm KPI 19.8/100"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001890",
+      "full_name": "Lý Nhật Khánh",
+      "score": 51.76,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (59 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Bộ phận Khách hàng Tổ chức Miền Nam",
+      "employee_id": "E000309",
+      "full_name": "Lâm Thu Tú",
+      "score": 50.51,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (64 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Bộ phận Khách hàng Vừa và Nhỏ Cấp 4",
+      "employee_id": "E000108",
+      "full_name": "Bùi Quỳnh Khuê",
+      "score": 50.47,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (82 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Ban Quản lý Danh mục",
+      "employee_id": "E000068",
+      "full_name": "Trần Hồng Hoa",
+      "score": 49.21,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (72 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Tư vấn Đầu tư Doanh nghiệp Khu vực 2",
+      "employee_id": "E000189",
+      "full_name": "Huỳnh Linh",
+      "score": 49.2,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (86 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Bộ phận Quản trị Rủi ro Tín dụng Cấp 4",
+      "employee_id": "E000197",
+      "full_name": "Thái Minh Việt",
+      "score": 47.16,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (97 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Ban Đối tác Kinh doanh Cấp 1",
+      "employee_id": "E000678",
+      "full_name": "Hà Hải Nhi",
+      "score": 45.42,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (49 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Ban Quản lý Danh mục",
+      "employee_id": "E000642",
+      "full_name": "Huỳnh Phương Thảo",
+      "score": 44.96,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (51 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Trung tâm Tăng trưởng Kinh doanh Miền Bắc",
+      "employee_id": "E000075",
+      "full_name": "Huỳnh Chí Nghĩa",
+      "score": 44.01,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (146 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quan hệ Đối tác Chiến lược Cấp 1",
+      "employee_id": "E000559",
+      "full_name": "Ngô Minh Thành",
+      "score": 43.16,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (56 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Phân tích Kinh doanh Cấp 1",
+      "employee_id": "E000178",
+      "full_name": "Bùi Công Nghĩa",
+      "score": 43.14,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (143 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Ban Quản lý Danh mục",
+      "employee_id": "E000259",
+      "full_name": "Thái Nhật Phát",
+      "score": 42.86,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (91 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Trung tâm Quản lý Danh mục",
+      "employee_id": "E000093",
+      "full_name": "Lâm Quỳnh Hạnh",
+      "score": 42.39,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (96 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Trung tâm Vận hành Sản phẩm Cấp 3",
+      "employee_id": "E000017",
+      "full_name": "Đoàn Chí Hiếu",
+      "score": 42.3,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (86 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quan hệ Đối tác Chiến lược Cấp 4",
+      "employee_id": "E000083",
+      "full_name": "Lê Tuấn Lâm",
+      "score": 42.18,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (88 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Ban Nghiên cứu Tiềm năng Thị trường Cấp 1",
+      "employee_id": "E000515",
+      "full_name": "Phan Trung Lộc",
+      "score": 42.06,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (59 tháng)"
+     }
+    ],
+    "n_excluded": 2,
+    "n_flagged": 1125,
+    "n_high": 2,
+    "n_medium": 34,
+    "scope_headcount": 1127,
+    "snapshot_date": "2025-12-01",
+    "status": "ok"
+   }
+  },
+  "A003|chi_High": {
+   "kwargs": {
+    "bands": [
+     "High"
+    ],
+    "limit": 20
+   },
+   "result": {
+    "exclusion_rule": "Bị loại theo quy tắc cứng: có từ 2 thư cảnh cáo trong 12 tháng gần nhất",
+    "items": [
+     {
+      "band": "High",
+      "band_vi": "Cao",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001889",
+      "full_name": "Đỗ Đức Thái",
+      "score": 68.26,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (59 tháng)"
+     },
+     {
+      "band": "High",
+      "band_vi": "Cao",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001881",
+      "full_name": "Mai Hữu Tuấn",
+      "score": 67.01,
+      "top_factor": "Điểm KPI 11.1/100"
+     }
+    ],
+    "n_excluded": 2,
+    "n_flagged": 2,
+    "n_high": 2,
+    "n_medium": 0,
+    "scope_headcount": 1127,
+    "snapshot_date": "2025-12-01",
+    "status": "ok"
+   }
+  },
+  "A003|ky_truoc": {
+   "kwargs": {
+    "as_of": "2025-11-01"
+   },
+   "result": {
+    "exclusion_rule": "Bị loại theo quy tắc cứng: có từ 2 thư cảnh cáo trong 12 tháng gần nhất",
+    "items": [
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001889",
+      "full_name": "Đỗ Đức Thái",
+      "score": 65.74,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (58 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001881",
+      "full_name": "Mai Hữu Tuấn",
+      "score": 62.15,
+      "top_factor": "Điểm KPI 19.1/100"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E001882",
+      "full_name": "Mai Diệu Thu",
+      "score": 60.47,
+      "top_factor": "Điểm KPI 21.9/100"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Định phí Khu vực 1",
+      "employee_id": "E001887",
+      "full_name": "Tô Ngọc",
+      "score": 60.19,
+      "top_factor": "Điểm KPI 5.0/100"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Trung tâm Vận hành Sản phẩm Cấp 3",
+      "employee_id": "E001883",
+      "full_name": "Võ Hải Diệp",
+      "score": 58.34,
+      "top_factor": "Điểm KPI 7.6/100"
+     }
+    ],
+    "n_excluded": 1,
+    "n_flagged": 35,
+    "n_high": 0,
+    "n_medium": 35,
+    "scope_headcount": 1109,
+    "snapshot_date": "2025-11-01",
+    "status": "ok"
+   }
+  },
+  "A003|limit_3": {
+   "kwargs": {
+    "limit": 3
+   },
+   "result": {
+    "exclusion_rule": "Bị loại theo quy tắc cứng: có từ 2 thư cảnh cáo trong 12 tháng gần nhất",
+    "items": [
+     {
+      "band": "High",
+      "band_vi": "Cao",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001889",
+      "full_name": "Đỗ Đức Thái",
+      "score": 68.26,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (59 tháng)"
+     },
+     {
+      "band": "High",
+      "band_vi": "Cao",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001881",
+      "full_name": "Mai Hữu Tuấn",
+      "score": 67.01,
+      "top_factor": "Điểm KPI 11.1/100"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E001882",
+      "full_name": "Mai Diệu Thu",
+      "score": 60.83,
+      "top_factor": "Điểm KPI 24.7/100"
+     }
+    ],
+    "n_excluded": 2,
+    "n_flagged": 36,
+    "n_high": 2,
+    "n_medium": 34,
+    "scope_headcount": 1127,
+    "snapshot_date": "2025-12-01",
+    "status": "ok"
+   }
+  },
+  "A003|limit_999": {
+   "kwargs": {
+    "limit": 999
+   },
+   "result": {
+    "exclusion_rule": "Bị loại theo quy tắc cứng: có từ 2 thư cảnh cáo trong 12 tháng gần nhất",
+    "items": [
+     {
+      "band": "High",
+      "band_vi": "Cao",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001889",
+      "full_name": "Đỗ Đức Thái",
+      "score": 68.26,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (59 tháng)"
+     },
+     {
+      "band": "High",
+      "band_vi": "Cao",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001881",
+      "full_name": "Mai Hữu Tuấn",
+      "score": 67.01,
+      "top_factor": "Điểm KPI 11.1/100"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E001882",
+      "full_name": "Mai Diệu Thu",
+      "score": 60.83,
+      "top_factor": "Điểm KPI 24.7/100"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Trung tâm Vận hành Sản phẩm Cấp 3",
+      "employee_id": "E001883",
+      "full_name": "Võ Hải Diệp",
+      "score": 55.09,
+      "top_factor": "Điểm KPI 19.8/100"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001890",
+      "full_name": "Lý Nhật Khánh",
+      "score": 51.76,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (59 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Bộ phận Khách hàng Tổ chức Miền Nam",
+      "employee_id": "E000309",
+      "full_name": "Lâm Thu Tú",
+      "score": 50.51,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (64 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Bộ phận Khách hàng Vừa và Nhỏ Cấp 4",
+      "employee_id": "E000108",
+      "full_name": "Bùi Quỳnh Khuê",
+      "score": 50.47,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (82 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Ban Quản lý Danh mục",
+      "employee_id": "E000068",
+      "full_name": "Trần Hồng Hoa",
+      "score": 49.21,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (72 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Tư vấn Đầu tư Doanh nghiệp Khu vực 2",
+      "employee_id": "E000189",
+      "full_name": "Huỳnh Linh",
+      "score": 49.2,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (86 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Bộ phận Quản trị Rủi ro Tín dụng Cấp 4",
+      "employee_id": "E000197",
+      "full_name": "Thái Minh Việt",
+      "score": 47.16,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (97 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Ban Đối tác Kinh doanh Cấp 1",
+      "employee_id": "E000678",
+      "full_name": "Hà Hải Nhi",
+      "score": 45.42,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (49 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Ban Quản lý Danh mục",
+      "employee_id": "E000642",
+      "full_name": "Huỳnh Phương Thảo",
+      "score": 44.96,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (51 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Trung tâm Tăng trưởng Kinh doanh Miền Bắc",
+      "employee_id": "E000075",
+      "full_name": "Huỳnh Chí Nghĩa",
+      "score": 44.01,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (146 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quan hệ Đối tác Chiến lược Cấp 1",
+      "employee_id": "E000559",
+      "full_name": "Ngô Minh Thành",
+      "score": 43.16,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (56 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Phân tích Kinh doanh Cấp 1",
+      "employee_id": "E000178",
+      "full_name": "Bùi Công Nghĩa",
+      "score": 43.14,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (143 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Ban Quản lý Danh mục",
+      "employee_id": "E000259",
+      "full_name": "Thái Nhật Phát",
+      "score": 42.86,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (91 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Trung tâm Quản lý Danh mục",
+      "employee_id": "E000093",
+      "full_name": "Lâm Quỳnh Hạnh",
+      "score": 42.39,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (96 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Trung tâm Vận hành Sản phẩm Cấp 3",
+      "employee_id": "E000017",
+      "full_name": "Đoàn Chí Hiếu",
+      "score": 42.3,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (86 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quan hệ Đối tác Chiến lược Cấp 4",
+      "employee_id": "E000083",
+      "full_name": "Lê Tuấn Lâm",
+      "score": 42.18,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (88 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Ban Nghiên cứu Tiềm năng Thị trường Cấp 1",
+      "employee_id": "E000515",
+      "full_name": "Phan Trung Lộc",
+      "score": 42.06,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (59 tháng)"
+     }
+    ],
+    "n_excluded": 2,
+    "n_flagged": 36,
+    "n_high": 2,
+    "n_medium": 34,
+    "scope_headcount": 1127,
+    "snapshot_date": "2025-12-01",
+    "status": "ok"
+   }
+  },
+  "A003|mac_dinh": {
+   "kwargs": {},
+   "result": {
+    "exclusion_rule": "Bị loại theo quy tắc cứng: có từ 2 thư cảnh cáo trong 12 tháng gần nhất",
+    "items": [
+     {
+      "band": "High",
+      "band_vi": "Cao",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001889",
+      "full_name": "Đỗ Đức Thái",
+      "score": 68.26,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (59 tháng)"
+     },
+     {
+      "band": "High",
+      "band_vi": "Cao",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001881",
+      "full_name": "Mai Hữu Tuấn",
+      "score": 67.01,
+      "top_factor": "Điểm KPI 11.1/100"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Chất lượng Dịch vụ Miền Trung",
+      "employee_id": "E001882",
+      "full_name": "Mai Diệu Thu",
+      "score": 60.83,
+      "top_factor": "Điểm KPI 24.7/100"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Trung tâm Vận hành Sản phẩm Cấp 3",
+      "employee_id": "E001883",
+      "full_name": "Võ Hải Diệp",
+      "score": 55.09,
+      "top_factor": "Điểm KPI 19.8/100"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001890",
+      "full_name": "Lý Nhật Khánh",
+      "score": 51.76,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (59 tháng)"
+     }
+    ],
+    "n_excluded": 2,
+    "n_flagged": 36,
+    "n_high": 2,
+    "n_medium": 34,
+    "scope_headcount": 1127,
+    "snapshot_date": "2025-12-01",
+    "status": "ok"
+   }
+  },
+  "A004|ca_ba_band": {
+   "kwargs": {
+    "bands": [
+     "High",
+     "Medium",
+     "Low"
+    ],
+    "limit": 20
+   },
+   "result": {
+    "exclusion_rule": "",
+    "items": [
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Ban Hành chính Quản trị Miền Trung",
+      "employee_id": "E000564",
+      "full_name": "Kiều Xuân Duyên",
+      "score": 44.15,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (55 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Trung tâm Quản lý Rủi ro Vận hành Miền Nam",
+      "employee_id": "E000115",
+      "full_name": "Kiều Bảo",
+      "score": 43.56,
+      "top_factor": "Lần điều chuyển/bổ nhiệm gần nhất cách đây 59 tháng"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Ngân sách Miền Bắc",
+      "employee_id": "E000550",
+      "full_name": "Cao Bích Nhung",
+      "score": 42.74,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (56 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Trung tâm Quản lý Rủi ro Vận hành Cấp 4",
+      "employee_id": "E000076",
+      "full_name": "Hoàng Phúc",
+      "score": 42.38,
+      "top_factor": "Lần điều chuyển/bổ nhiệm gần nhất cách đây 50 tháng"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Trung tâm Mua sắm và Đấu thầu Miền Nam",
+      "employee_id": "E000257",
+      "full_name": "Đào Phương Ánh",
+      "score": 39.48,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (101 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Tài sản Cấp 3",
+      "employee_id": "E000291",
+      "full_name": "Lương Tuyết Thảo",
+      "score": 38.33,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (84 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Trung tâm Quản lý Văn phòng Miền Trung",
+      "employee_id": "E000452",
+      "full_name": "Hà Phương Huệ",
+      "score": 37.72,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (191 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Trung tâm Quản lý Hợp đồng Nội bộ Miền Trung",
+      "employee_id": "E000439",
+      "full_name": "Vũ Trí",
+      "score": 37.42,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (71 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Trung tâm Quản lý Văn phòng Cấp 1",
+      "employee_id": "E000180",
+      "full_name": "Lương Gia Hùng",
+      "score": 36.08,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (107 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Phòng Quản lý Tài sản Cấp 3",
+      "employee_id": "E000583",
+      "full_name": "Chu Tuyết Duyên",
+      "score": 35.59,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (54 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Trung tâm Quản lý Văn phòng Cấp 1",
+      "employee_id": "E000080",
+      "full_name": "Ngô Hoàng Sơn",
+      "score": 35.17,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (92 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Trung tâm Quản lý Rủi ro Vận hành Miền Nam",
+      "employee_id": "E000356",
+      "full_name": "Bùi Mạnh Cường",
+      "score": 32.23,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (197 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Trung tâm Quản lý Rủi ro Vận hành Cấp 4",
+      "employee_id": "E000466",
+      "full_name": "Hoàng Lan Lan",
+      "score": 31.86,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (68 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Ban Chiến lược và Kế hoạch Miền Trung",
+      "employee_id": "E000222",
+      "full_name": "Đặng Hữu Duy",
+      "score": 31.24,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (65 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Phòng Quản lý Ngân sách Miền Bắc",
+      "employee_id": "E000594",
+      "full_name": "Tô Việt Trí",
+      "score": 29.73,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (54 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Trung tâm Mua sắm và Đấu thầu Khu vực 2",
+      "employee_id": "E000005",
+      "full_name": "Lý Thuỳ Trâm",
+      "score": 28.0,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (135 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Trung tâm Quản lý Hợp đồng Nội bộ Miền Trung",
+      "employee_id": "E000174",
+      "full_name": "Lương Vân",
+      "score": 28.0,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (115 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Trung tâm Truyền thông Nội bộ Cấp 4",
+      "employee_id": "E001320",
+      "full_name": "Huỳnh Mai Loan",
+      "score": 27.63,
+      "top_factor": "Điểm KPI 34.9/100"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Ban Chiến lược và Kế hoạch Miền Trung",
+      "employee_id": "E000585",
+      "full_name": "Trần Lan Ngân",
+      "score": 27.18,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (54 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Ban Hành chính Quản trị Miền Trung",
+      "employee_id": "E000665",
+      "full_name": "Võ Bích Khuê",
+      "score": 25.52,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (49 tháng)"
+     }
+    ],
+    "n_excluded": 0,
+    "n_flagged": 160,
+    "n_high": 0,
+    "n_medium": 6,
+    "scope_headcount": 160,
+    "snapshot_date": "2025-12-01",
+    "status": "ok"
+   }
+  },
+  "A004|chi_High": {
+   "kwargs": {
+    "bands": [
+     "High"
+    ],
+    "limit": 20
+   },
+   "result": {
+    "exclusion_rule": "",
+    "items": [],
+    "n_excluded": 0,
+    "n_flagged": 0,
+    "n_high": 0,
+    "n_medium": 0,
+    "scope_headcount": 160,
+    "snapshot_date": "2025-12-01",
+    "status": "no_risk"
+   }
+  },
+  "A004|ky_truoc": {
+   "kwargs": {
+    "as_of": "2025-11-01"
+   },
+   "result": {
+    "exclusion_rule": "",
+    "items": [
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Trung tâm Quản lý Rủi ro Vận hành Miền Nam",
+      "employee_id": "E000115",
+      "full_name": "Kiều Bảo",
+      "score": 43.32,
+      "top_factor": "Lần điều chuyển/bổ nhiệm gần nhất cách đây 58 tháng"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Trung tâm Quản lý Rủi ro Vận hành Cấp 4",
+      "employee_id": "E000076",
+      "full_name": "Hoàng Phúc",
+      "score": 40.65,
+      "top_factor": "Lần điều chuyển/bổ nhiệm gần nhất cách đây 49 tháng"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Trung tâm Quản lý Văn phòng Miền Trung",
+      "employee_id": "E000452",
+      "full_name": "Hà Phương Huệ",
+      "score": 40.1,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (190 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Trung tâm Mua sắm và Đấu thầu Miền Nam",
+      "employee_id": "E000257",
+      "full_name": "Đào Phương Ánh",
+      "score": 39.1,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (100 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Ban Hành chính Quản trị Miền Trung",
+      "employee_id": "E000564",
+      "full_name": "Kiều Xuân Duyên",
+      "score": 38.71,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (54 tháng)"
+     }
+    ],
+    "n_excluded": 0,
+    "n_flagged": 6,
+    "n_high": 0,
+    "n_medium": 6,
+    "scope_headcount": 157,
+    "snapshot_date": "2025-11-01",
+    "status": "ok"
+   }
+  },
+  "A004|limit_3": {
+   "kwargs": {
+    "limit": 3
+   },
+   "result": {
+    "exclusion_rule": "",
+    "items": [
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Ban Hành chính Quản trị Miền Trung",
+      "employee_id": "E000564",
+      "full_name": "Kiều Xuân Duyên",
+      "score": 44.15,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (55 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Trung tâm Quản lý Rủi ro Vận hành Miền Nam",
+      "employee_id": "E000115",
+      "full_name": "Kiều Bảo",
+      "score": 43.56,
+      "top_factor": "Lần điều chuyển/bổ nhiệm gần nhất cách đây 59 tháng"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Ngân sách Miền Bắc",
+      "employee_id": "E000550",
+      "full_name": "Cao Bích Nhung",
+      "score": 42.74,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (56 tháng)"
+     }
+    ],
+    "n_excluded": 0,
+    "n_flagged": 6,
+    "n_high": 0,
+    "n_medium": 6,
+    "scope_headcount": 160,
+    "snapshot_date": "2025-12-01",
+    "status": "ok"
+   }
+  },
+  "A004|limit_999": {
+   "kwargs": {
+    "limit": 999
+   },
+   "result": {
+    "exclusion_rule": "",
+    "items": [
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Ban Hành chính Quản trị Miền Trung",
+      "employee_id": "E000564",
+      "full_name": "Kiều Xuân Duyên",
+      "score": 44.15,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (55 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Trung tâm Quản lý Rủi ro Vận hành Miền Nam",
+      "employee_id": "E000115",
+      "full_name": "Kiều Bảo",
+      "score": 43.56,
+      "top_factor": "Lần điều chuyển/bổ nhiệm gần nhất cách đây 59 tháng"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Ngân sách Miền Bắc",
+      "employee_id": "E000550",
+      "full_name": "Cao Bích Nhung",
+      "score": 42.74,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (56 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Trung tâm Quản lý Rủi ro Vận hành Cấp 4",
+      "employee_id": "E000076",
+      "full_name": "Hoàng Phúc",
+      "score": 42.38,
+      "top_factor": "Lần điều chuyển/bổ nhiệm gần nhất cách đây 50 tháng"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Trung tâm Mua sắm và Đấu thầu Miền Nam",
+      "employee_id": "E000257",
+      "full_name": "Đào Phương Ánh",
+      "score": 39.48,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (101 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Tài sản Cấp 3",
+      "employee_id": "E000291",
+      "full_name": "Lương Tuyết Thảo",
+      "score": 38.33,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (84 tháng)"
+     }
+    ],
+    "n_excluded": 0,
+    "n_flagged": 6,
+    "n_high": 0,
+    "n_medium": 6,
+    "scope_headcount": 160,
+    "snapshot_date": "2025-12-01",
+    "status": "ok"
+   }
+  },
+  "A004|mac_dinh": {
+   "kwargs": {},
+   "result": {
+    "exclusion_rule": "",
+    "items": [
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Ban Hành chính Quản trị Miền Trung",
+      "employee_id": "E000564",
+      "full_name": "Kiều Xuân Duyên",
+      "score": 44.15,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (55 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Trung tâm Quản lý Rủi ro Vận hành Miền Nam",
+      "employee_id": "E000115",
+      "full_name": "Kiều Bảo",
+      "score": 43.56,
+      "top_factor": "Lần điều chuyển/bổ nhiệm gần nhất cách đây 59 tháng"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Phòng Quản lý Ngân sách Miền Bắc",
+      "employee_id": "E000550",
+      "full_name": "Cao Bích Nhung",
+      "score": 42.74,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (56 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Trung tâm Quản lý Rủi ro Vận hành Cấp 4",
+      "employee_id": "E000076",
+      "full_name": "Hoàng Phúc",
+      "score": 42.38,
+      "top_factor": "Lần điều chuyển/bổ nhiệm gần nhất cách đây 50 tháng"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Trung tâm Mua sắm và Đấu thầu Miền Nam",
+      "employee_id": "E000257",
+      "full_name": "Đào Phương Ánh",
+      "score": 39.48,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (101 tháng)"
+     }
+    ],
+    "n_excluded": 0,
+    "n_flagged": 6,
+    "n_high": 0,
+    "n_medium": 6,
+    "scope_headcount": 160,
+    "snapshot_date": "2025-12-01",
+    "status": "ok"
+   }
+  },
+  "A005|ca_ba_band": {
+   "kwargs": {
+    "bands": [
+     "High",
+     "Medium",
+     "Low"
+    ],
+    "limit": 20
+   },
+   "result": {
+    "exclusion_rule": "",
+    "items": [
+     {
+      "band": "High",
+      "band_vi": "Cao",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001889",
+      "full_name": "Đỗ Đức Thái",
+      "score": 68.26,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (59 tháng)"
+     },
+     {
+      "band": "High",
+      "band_vi": "Cao",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001881",
+      "full_name": "Mai Hữu Tuấn",
+      "score": 67.01,
+      "top_factor": "Điểm KPI 11.1/100"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001890",
+      "full_name": "Lý Nhật Khánh",
+      "score": 51.76,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (59 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E000407",
+      "full_name": "Cao Xuân Lan",
+      "score": 36.91,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (66 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E000310",
+      "full_name": "Trần Nam",
+      "score": 25.65,
+      "top_factor": "Lần điều chuyển/bổ nhiệm gần nhất cách đây 49 tháng"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E000272",
+      "full_name": "Huỳnh Trung Thắng",
+      "score": 13.12,
+      "top_factor": "Lương thấp hơn P50 thị trường 19.8%"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E000321",
+      "full_name": "Mai Yến Lan",
+      "score": 13.06,
+      "top_factor": "Lương thấp hơn P50 thị trường 16.1%"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001830",
+      "full_name": "Mai Hồng Nhung",
+      "score": 12.42,
+      "top_factor": "Điểm KPI 47.4/100"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E000349",
+      "full_name": "Vũ Khánh Trinh",
+      "score": 11.66,
+      "top_factor": "Lương thấp hơn P50 thị trường 26.0%"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001011",
+      "full_name": "Mai Kim Trinh",
+      "score": 11.34,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (32 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001867",
+      "full_name": "Kiều Như Tuyết",
+      "score": 10.02,
+      "top_factor": "Điểm KPI 58.4/100"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001838",
+      "full_name": "Tô Hoàng Đạt",
+      "score": 9.55,
+      "top_factor": "Lương thấp hơn P50 thị trường 11.4%"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001444",
+      "full_name": "Trần Như Hồng",
+      "score": 8.34,
+      "top_factor": "Lương thấp hơn P50 thị trường 16.0%"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001720",
+      "full_name": "Hồ Bích Trang",
+      "score": 7.84,
+      "top_factor": "Lương thấp hơn P50 thị trường 11.8%"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001837",
+      "full_name": "Trịnh Lan Thu",
+      "score": 5.96,
+      "top_factor": "Ngoài cửa sổ rủi ro thâm niên (thâm niên 1 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E000071",
+      "full_name": "Đỗ Hùng",
+      "score": 4.77,
+      "top_factor": "Ngoài cửa sổ rủi ro thâm niên (thâm niên 85 tháng)"
+     },
+     {
+      "band": "Low",
+      "band_vi": "Thấp",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001006",
+      "full_name": "Kiều Nhi",
+      "score": 3.0,
+      "top_factor": "Ngoài cửa sổ rủi ro thâm niên (thâm niên 32 tháng)"
+     }
+    ],
+    "n_excluded": 0,
+    "n_flagged": 17,
+    "n_high": 2,
+    "n_medium": 1,
+    "scope_headcount": 17,
+    "snapshot_date": "2025-12-01",
+    "status": "ok"
+   }
+  },
+  "A005|chi_High": {
+   "kwargs": {
+    "bands": [
+     "High"
+    ],
+    "limit": 20
+   },
+   "result": {
+    "exclusion_rule": "",
+    "items": [
+     {
+      "band": "High",
+      "band_vi": "Cao",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001889",
+      "full_name": "Đỗ Đức Thái",
+      "score": 68.26,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (59 tháng)"
+     },
+     {
+      "band": "High",
+      "band_vi": "Cao",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001881",
+      "full_name": "Mai Hữu Tuấn",
+      "score": 67.01,
+      "top_factor": "Điểm KPI 11.1/100"
+     }
+    ],
+    "n_excluded": 0,
+    "n_flagged": 2,
+    "n_high": 2,
+    "n_medium": 0,
+    "scope_headcount": 17,
+    "snapshot_date": "2025-12-01",
+    "status": "ok"
+   }
+  },
+  "A005|ky_truoc": {
+   "kwargs": {
+    "as_of": "2025-11-01"
+   },
+   "result": {
+    "exclusion_rule": "",
+    "items": [
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001889",
+      "full_name": "Đỗ Đức Thái",
+      "score": 65.74,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (58 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001881",
+      "full_name": "Mai Hữu Tuấn",
+      "score": 62.15,
+      "top_factor": "Điểm KPI 19.1/100"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001890",
+      "full_name": "Lý Nhật Khánh",
+      "score": 50.32,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (58 tháng)"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E000407",
+      "full_name": "Cao Xuân Lan",
+      "score": 38.29,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (65 tháng)"
+     }
+    ],
+    "n_excluded": 0,
+    "n_flagged": 4,
+    "n_high": 0,
+    "n_medium": 4,
+    "scope_headcount": 16,
+    "snapshot_date": "2025-11-01",
+    "status": "ok"
+   }
+  },
+  "A005|limit_3": {
+   "kwargs": {
+    "limit": 3
+   },
+   "result": {
+    "exclusion_rule": "",
+    "items": [
+     {
+      "band": "High",
+      "band_vi": "Cao",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001889",
+      "full_name": "Đỗ Đức Thái",
+      "score": 68.26,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (59 tháng)"
+     },
+     {
+      "band": "High",
+      "band_vi": "Cao",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001881",
+      "full_name": "Mai Hữu Tuấn",
+      "score": 67.01,
+      "top_factor": "Điểm KPI 11.1/100"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001890",
+      "full_name": "Lý Nhật Khánh",
+      "score": 51.76,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (59 tháng)"
+     }
+    ],
+    "n_excluded": 0,
+    "n_flagged": 3,
+    "n_high": 2,
+    "n_medium": 1,
+    "scope_headcount": 17,
+    "snapshot_date": "2025-12-01",
+    "status": "ok"
+   }
+  },
+  "A005|limit_999": {
+   "kwargs": {
+    "limit": 999
+   },
+   "result": {
+    "exclusion_rule": "",
+    "items": [
+     {
+      "band": "High",
+      "band_vi": "Cao",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001889",
+      "full_name": "Đỗ Đức Thái",
+      "score": 68.26,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (59 tháng)"
+     },
+     {
+      "band": "High",
+      "band_vi": "Cao",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001881",
+      "full_name": "Mai Hữu Tuấn",
+      "score": 67.01,
+      "top_factor": "Điểm KPI 11.1/100"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001890",
+      "full_name": "Lý Nhật Khánh",
+      "score": 51.76,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (59 tháng)"
+     }
+    ],
+    "n_excluded": 0,
+    "n_flagged": 3,
+    "n_high": 2,
+    "n_medium": 1,
+    "scope_headcount": 17,
+    "snapshot_date": "2025-12-01",
+    "status": "ok"
+   }
+  },
+  "A005|mac_dinh": {
+   "kwargs": {},
+   "result": {
+    "exclusion_rule": "",
+    "items": [
+     {
+      "band": "High",
+      "band_vi": "Cao",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001889",
+      "full_name": "Đỗ Đức Thái",
+      "score": 68.26,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (59 tháng)"
+     },
+     {
+      "band": "High",
+      "band_vi": "Cao",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001881",
+      "full_name": "Mai Hữu Tuấn",
+      "score": 67.01,
+      "top_factor": "Điểm KPI 11.1/100"
+     },
+     {
+      "band": "Medium",
+      "band_vi": "Trung bình",
+      "dept_name": "Tổ Quan hệ Đối tác Chiến lược Miền Trung",
+      "employee_id": "E001890",
+      "full_name": "Lý Nhật Khánh",
+      "score": 51.76,
+      "top_factor": "Chưa điều chuyển/bổ nhiệm lần nào kể từ khi vào làm (59 tháng)"
+     }
+    ],
+    "n_excluded": 0,
+    "n_flagged": 3,
+    "n_high": 2,
+    "n_medium": 1,
+    "scope_headcount": 17,
+    "snapshot_date": "2025-12-01",
+    "status": "ok"
+   }
+  },
+  "A999|ca_ba_band": {
+   "kwargs": {
+    "bands": [
+     "High",
+     "Medium",
+     "Low"
+    ],
+    "limit": 20
+   },
+   "result": {
+    "exclusion_rule": "",
+    "items": [],
+    "n_excluded": 0,
+    "n_flagged": 0,
+    "n_high": 0,
+    "n_medium": 0,
+    "scope_headcount": 0,
+    "snapshot_date": "2025-12-01",
+    "status": "no_risk"
+   }
+  },
+  "A999|chi_High": {
+   "kwargs": {
+    "bands": [
+     "High"
+    ],
+    "limit": 20
+   },
+   "result": {
+    "exclusion_rule": "",
+    "items": [],
+    "n_excluded": 0,
+    "n_flagged": 0,
+    "n_high": 0,
+    "n_medium": 0,
+    "scope_headcount": 0,
+    "snapshot_date": "2025-12-01",
+    "status": "no_risk"
+   }
+  },
+  "A999|ky_truoc": {
+   "kwargs": {
+    "as_of": "2025-11-01"
+   },
+   "result": {
+    "exclusion_rule": "",
+    "items": [],
+    "n_excluded": 0,
+    "n_flagged": 0,
+    "n_high": 0,
+    "n_medium": 0,
+    "scope_headcount": 0,
+    "snapshot_date": "2025-11-01",
+    "status": "no_risk"
+   }
+  },
+  "A999|limit_3": {
+   "kwargs": {
+    "limit": 3
+   },
+   "result": {
+    "exclusion_rule": "",
+    "items": [],
+    "n_excluded": 0,
+    "n_flagged": 0,
+    "n_high": 0,
+    "n_medium": 0,
+    "scope_headcount": 0,
+    "snapshot_date": "2025-12-01",
+    "status": "no_risk"
+   }
+  },
+  "A999|limit_999": {
+   "kwargs": {
+    "limit": 999
+   },
+   "result": {
+    "exclusion_rule": "",
+    "items": [],
+    "n_excluded": 0,
+    "n_flagged": 0,
+    "n_high": 0,
+    "n_medium": 0,
+    "scope_headcount": 0,
+    "snapshot_date": "2025-12-01",
+    "status": "no_risk"
+   }
+  },
+  "A999|mac_dinh": {
+   "kwargs": {},
+   "result": {
+    "exclusion_rule": "",
+    "items": [],
+    "n_excluded": 0,
+    "n_flagged": 0,
+    "n_high": 0,
+    "n_medium": 0,
+    "scope_headcount": 0,
+    "snapshot_date": "2025-12-01",
+    "status": "no_risk"
+   }
+  }
+ }
+}

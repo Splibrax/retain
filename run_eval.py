@@ -111,6 +111,25 @@ def fill_slots(text: str, actor_id: str, snap: str) -> tuple[str, dict]:
 # ══════════════════════════════════════════════════════════════════════════
 # NHÓM A — chọn đúng công cụ
 # ══════════════════════════════════════════════════════════════════════════
+TABLE_HEADER_RE = re.compile(
+    r"\|\s*Tên\s*\|\s*Mã NV\s*\|\s*Điểm/100\s*\|\s*Mức\s*\|\s*Lý do chính\s*\|")
+LIST_LINE_RE = re.compile(r"^\s*(\d+[.)]|[-*•])\s+\S", re.MULTILINE)
+
+
+def check_table_format(answer: str) -> str:
+    """
+    Rỗng nếu đạt. Từ 2 mã nhân viên trở lên trong câu trả lời thì phải có đúng bảng
+    5 cột và KHÔNG có dòng đánh số / gạch đầu dòng. Dưới 2 người thì không áp quy tắc.
+    """
+    if len(set(EMP_RE.findall(answer))) < 2:
+        return ""
+    if not TABLE_HEADER_RE.search(answer):
+        return "liệt kê từ 2 người nhưng không có bảng 5 cột Tên | Mã NV | Điểm/100 | Mức | Lý do chính"
+    if LIST_LINE_RE.search(answer):
+        return "có dòng danh sách đánh số / gạch đầu dòng bên cạnh bảng"
+    return ""
+
+
 def run_nghiep_vu(llm, case, snap) -> dict:
     ask, _ = fill_slots(case["ask"], case["actor"], snap)
     res = runtime.answer(llm, case["actor"], ask, None)
@@ -162,6 +181,23 @@ def run_nghiep_vu(llm, case, snap) -> dict:
         ok = False
         why.append(f"gọi {len(called)} công cụ, đáng lẽ tối đa {case['max_calls']}: "
                    + ", ".join(called))
+
+    # Tham số model truyền cho công cụ (ca lọc mức / xếp theo yếu tố). Chỉ chấm khi ca
+    # khai expect_args — ca cũ không bị ảnh hưởng.
+    if ok:
+        for tool_name, need in (case.get("expect_args") or {}).items():
+            calls = [c.get("arguments") or {} for c in res.get("tool_calls") or []
+                     if (registry.normalize_tool_name(c["name"]) or c["name"]) == tool_name]
+            if not any(all(a.get(k) == v for k, v in need.items()) for a in calls):
+                ok = False
+                why.append(f"{tool_name} không truyền {need}; đã truyền: {calls or 'không gọi'}")
+
+    # Định dạng danh sách: từ 2 người trở lên phải là bảng 5 cột (quy tắc trong prompt.py).
+    if ok and case.get("table"):
+        bad = check_table_format(res.get("answer") or "")
+        if bad:
+            ok = False
+            why.append(bad)
 
     # Cụm từ KHÔNG được xuất hiện — bẫy tiên đoán, bẫy bịa hồ sơ.
     text_low = (res["answer"] or "").lower()
